@@ -20,6 +20,7 @@ import ContentNavigation from './components/public/ContentNavigation'
 import HomeComponent from './components/public/HomeComponent'
 import ProblemList from './components/public/ProblemList'; 
 import FdCInfoPage from './components/admin/FdCInfoPage';
+import RegisterPage from './components/admin/pages/registration/RegisterPage'
 import './App.css'
 
 function App () {
@@ -90,6 +91,7 @@ function App () {
           <Route path='/admin/FdCInfoPage' element={<FdCInfoPage />} />
           <Route path='/admin' element={<AdminMainPage />} />
           <Route path='/admin/login' element={<LoginPage />} />
+          <Route path='/admin/register' element={<RegisterPage />} />
           <Route
             path='/topics/:topicId/lessons/:lessonId'
             element={<ContentNavigation />}

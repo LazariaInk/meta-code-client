@@ -36,6 +36,9 @@ function AdminNavigation() {
           <Nav.Link eventKey='/admin/login' href='/admin/login'>
             login
           </Nav.Link>
+          <Nav.Link eventKey='/admin/register' href='/admin/register'>
+            register
+          </Nav.Link>
         </Nav>
         
         <Nav>
