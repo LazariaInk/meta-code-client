@@ -7,6 +7,7 @@ import { FaRegTrashAlt, FaArrowUp } from 'react-icons/fa';
 import EditLesson from './EditLesson';
 import CreateLesson from './CreateLesson';
 import Modal from 'react-bootstrap/Modal';
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function LessonsTable() {
   const [error, setError] = useState(null);
@@ -50,7 +51,7 @@ function LessonsTable() {
     };
   
     try {
-      const response = await fetch(`http://localhost:8080/admin/lesson/${lessonId}/insert`, {
+      const response = await fetch(API_BASE_URL + `admin/lesson/${lessonId}/insert`, {
         method: 'PUT',
         headers: {
           Accept: 'application/json',
@@ -111,7 +112,7 @@ function LessonsTable() {
   };
 
   async function handleDelete(id) {
-    await fetch(`http://localhost:8080/admin/lesson/delete/${id}`, {
+    await fetch(API_BASE_URL + `admin/lesson/delete/${id}`, {
       method: 'DELETE',
       headers: {
         Accept: 'application/json',
@@ -136,7 +137,7 @@ function LessonsTable() {
     if (tempId === '*') {
       tempId = ' '
     }
-    fetch(`http://localhost:8080/admin/lesson/all/${tempId}`, {
+    fetch(API_BASE_URL + `admin/lesson/all/${tempId}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')} `,
         'Access-Control-Allow-Origin': '*'

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
+import { API_BASE_URL } from '../config/endpoints';
 
 const FdCInfoPage = () => {
   const [id, setId] = useState(1)
@@ -79,7 +80,7 @@ const FdCInfoPage = () => {
 
   const handleUpdateField = async (fieldName, newValue) => {
     console.log(
-      'http://localhost:8080/admin/fabrica-de-coduri-info/' +
+      API_BASE_URL + 'admin/fabrica-de-coduri-info/' +
         id +
         '/' +
         fieldName
@@ -92,7 +93,7 @@ const FdCInfoPage = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:8080/admin/fabrica-de-coduri-info/${id}/${fieldName}`,
+        API_BASE_URL + `admin/fabrica-de-coduri-info/${id}/${fieldName}`,
         newValue,
         { headers }
       )

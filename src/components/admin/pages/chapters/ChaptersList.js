@@ -1,6 +1,7 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useEffect, useState } from 'react'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function ChaptersList (params) {
   const { nameOfTopic, hrefValue, nameOfChapter, topicId } = params
@@ -9,7 +10,7 @@ function ChaptersList (params) {
   const [chapters, setItems] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8080/admin/chapter/all/' + topicId,{headers: {
+    fetch(API_BASE_URL + 'admin/chapter/all/' + topicId,{headers: {
       'Content-Type': 'application/json',
     Authorization: `Bearer ${localStorage.getItem('token')} `,
     'Access-Control-Allow-Origin': '*'

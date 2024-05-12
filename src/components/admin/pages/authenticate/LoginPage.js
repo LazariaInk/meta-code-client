@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Container, Form, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('')
@@ -16,7 +17,7 @@ const LoginPage = () => {
     }
 
     axios
-      .post('http://localhost:8080/api/v1/auth/authenticate', data)
+      .post(API_BASE_URL + 'api/v1/auth/authenticate', data)
       .then(response => {
         alert(response.data.token)
         console.log(response.data.token)

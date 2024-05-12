@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import EditLessonForm from './EditLessonForm'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 export default function CreateLesson (props) {
   const [show, setShow] = React.useState(false)
@@ -32,7 +33,7 @@ export default function CreateLesson (props) {
     }
 
     fetch(
-      `http://localhost:8080/admin/lesson/create/${chapterId}`,
+      API_BASE_URL + `admin/lesson/create/${chapterId}`,
       requestOptions
     ).then(() => {
       window.location.reload(false)

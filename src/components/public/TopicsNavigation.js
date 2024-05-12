@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './PublicApp.module.css';
 import './../../App.css';
+import { API_BASE_URL } from '../config/endpoints';
 
 function TopicsNavigation() {
   const [topics, setItems] = useState([]);
@@ -14,7 +15,7 @@ function TopicsNavigation() {
   const menuRef = useRef(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/topic/all', {
+    fetch(API_BASE_URL +'topic/all', {
       mode: 'cors'
     })
       .then(res => res.json())

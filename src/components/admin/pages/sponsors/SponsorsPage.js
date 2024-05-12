@@ -9,6 +9,7 @@ import {
   Col
 } from 'react-bootstrap'
 import axios from 'axios'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function SponsorsPage () {
   const [sponsors, setSponsors] = useState([])
@@ -28,7 +29,7 @@ function SponsorsPage () {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.get(
-        'http://localhost:8080/admin/sponsor/all',
+        API_BASE_URL + 'admin/sponsor/all',
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -55,7 +56,7 @@ function SponsorsPage () {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'http://localhost:8080/admin/sponsor/create',
+        API_BASE_URL + 'admin/sponsor/create',
         {
           sponsorName,
           sponsorLink
@@ -85,7 +86,7 @@ function SponsorsPage () {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `http://localhost:8080/admin/sponsor/edit/${sponsorId}`,
+        API_BASE_URL +  `admin/sponsor/edit/${sponsorId}`,
         {
             sponsorName,
           sponsorLink
@@ -125,7 +126,7 @@ function SponsorsPage () {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `http://localhost:8080/admin/sponsor/delete/${sponsorId}`,
+        API_BASE_URL +  `admin/sponsor/delete/${sponsorId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

@@ -3,6 +3,7 @@ import styles from './PublicApp.module.css'
 import { Link } from 'react-router-dom'
 import PublicFooter from './PublicFooter'
 import SocialLinks from '../SocialLinks'
+import { API_BASE_URL } from '../config/endpoints';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([])
@@ -11,7 +12,7 @@ function HomeComponent() {
 
   useEffect(() => {
     // Fetch Topics
-    fetch('http://localhost:8080/topic/all', { mode: 'cors' })
+    fetch(API_BASE_URL + 'topic/all', { mode: 'cors' })
       .then(res => res.json())
       .then(
         result => {
@@ -22,7 +23,7 @@ function HomeComponent() {
         }
       )
 
-    fetch('http://localhost:8080/fabrica-de-coduri-info/1', { mode: 'cors' })
+    fetch(API_BASE_URL + 'fabrica-de-coduri-info/1', { mode: 'cors' })
       .then(res => res.json())
       .then(
         result => {

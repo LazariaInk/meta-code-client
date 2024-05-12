@@ -7,6 +7,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import Pagination from 'react-bootstrap/Pagination'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './PublicApp.module.css'
+import { API_BASE_URL } from '../config/endpoints';
 
 function ProblemList () {
   const [problems, setProblems] = useState([])
@@ -31,7 +32,7 @@ function ProblemList () {
       return
     }
 
-    let apiUrl = `http://localhost:8080/problems/list?page=${currentPageInt}`
+    let apiUrl = API_BASE_URL + `problems/list?page=${currentPageInt}`
 
     if (filterName) {
       apiUrl += `&problemNameFilter=${filterName}`
@@ -61,7 +62,7 @@ function ProblemList () {
 
   const openProblemPopup = problemId => {
     console.log('Opening problem popup for problemId:', problemId)
-    fetch(`http://localhost:8080/problems/${problemId}/content`)
+    fetch(API_BASE_URL + `problems/${problemId}/content`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched problem details:', data)

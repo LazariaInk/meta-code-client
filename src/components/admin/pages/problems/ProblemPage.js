@@ -10,6 +10,7 @@ import {
   Col
 } from 'react-bootstrap'
 import axios from 'axios'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function ProblemPage () {
   const [problems, setProblems] = useState([]);
@@ -35,7 +36,7 @@ function ProblemPage () {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get(
-        'http://localhost:8080/admin/problem/all',
+        API_BASE_URL + 'admin/problem/all',
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -73,7 +74,7 @@ function ProblemPage () {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.post(
-        'http://localhost:8080/admin/problem/create',
+        API_BASE_URL + 'admin/problem/create',
         {
           problemName,
           problemContent,
@@ -106,7 +107,7 @@ function ProblemPage () {
     try {
       const token = localStorage.getItem('token')
       const response = await axios.put(
-        `http://localhost:8080/admin/problem/edit/${problemId}`,
+        API_BASE_URL + `admin/problem/edit/${problemId}`,
         {
           problemName,
           problemContent,
@@ -152,7 +153,7 @@ function ProblemPage () {
     try {
       const token = localStorage.getItem('token')
       await axios.delete(
-        `http://localhost:8080/admin/problem/delete/${problemId}`,
+        API_BASE_URL + `admin/problem/delete/${problemId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

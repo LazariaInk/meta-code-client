@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import EditTopicForm from './EditTopicForm'
 import { FaRegEdit } from 'react-icons/fa'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 export default function EditTopic (props) {
   const [show, setShow] = React.useState(false)
@@ -25,7 +26,7 @@ export default function EditTopic (props) {
       topicName: newTopicName
     }
 
-    fetch(`http://localhost:8080/admin/topic/edit/${topicId}`, {
+    fetch(API_BASE_URL + `admin/topic/edit/${topicId}`, {
       method: 'PUT',
       body: JSON.stringify(jsonData),
       headers: headers

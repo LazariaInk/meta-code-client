@@ -1,6 +1,7 @@
 import React, { useEffect, useState ,useRef} from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from './PublicApp.module.css'
+import { API_BASE_URL } from '../config/endpoints';
 
 const ChapterNavigation = ({ topicId, onLessonClick }) => {
   const [error, setError] = useState(null)
@@ -17,7 +18,7 @@ const ChapterNavigation = ({ topicId, onLessonClick }) => {
   const fetchChapters = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/chapter/${topicId}/all`
+        API_BASE_URL +  `chapter/${topicId}/all`
       )
       const result = await response.json()
       setIsLoaded(true)

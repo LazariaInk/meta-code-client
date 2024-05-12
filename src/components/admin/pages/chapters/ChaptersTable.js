@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { FaRegTrashAlt } from 'react-icons/fa'
 import EditChapter from './EditChapter'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function ChaptersTable () {
   const [error, setError] = useState(null)
@@ -14,7 +15,7 @@ function ChaptersTable () {
   const { id } = useParams()
 
   async function handleDelete (id) {
-    await fetch(`http://localhost:8080/admin/chapter/delete/${id}`, {
+    await fetch(API_BASE_URL + `admin/chapter/delete/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +34,7 @@ function ChaptersTable () {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:8080/admin/chapter/all/${id}`,{
+    fetch(API_BASE_URL + `admin/chapter/all/${id}`,{
       headers: {
         'Content-Type': 'application/json',
       Authorization: `Bearer ${localStorage.getItem('token')} `,

@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './PublicApp.module.css'
 import PublicFooter from './PublicFooter'
 import Table from 'react-bootstrap/Table'
+import { API_BASE_URL } from '../config/endpoints';
 
 function ContentNavigation () {
   const { topicId, lessonId } = useParams()
@@ -21,7 +22,7 @@ function ContentNavigation () {
   }
 
   const fetchLessonContent = lessonId => {
-    fetch(`http://localhost:8080/lesson/${lessonId}/content`)
+    fetch(API_BASE_URL + `lesson/${lessonId}/content`)
       .then(res => res.json())
       .then(
         result => {

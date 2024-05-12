@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import CreateTopicForm from './CreateTopicForm'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 export default function CreateTopic (props) {
   const [show, setShow] = React.useState(false)
@@ -23,7 +24,7 @@ export default function CreateTopic (props) {
       topicName: newTopicName
     }
 
-    fetch(`http://localhost:8080/admin/topic/create`, {
+    fetch(API_BASE_URL + `admin/topic/create`, {
       method: 'POST',
       body: JSON.stringify(jsonData),
       headers: headers

@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import EditLessonForm from './EditLessonForm'
 import { FaRegEdit } from 'react-icons/fa'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 export default function EditLesson (props) {
   const [show, setShow] = React.useState(false)
@@ -24,7 +25,7 @@ export default function EditLesson (props) {
       lessonName: newLessonName
     }
 
-    fetch(`http://localhost:8080/admin/lesson/edit/${lessonId}`, {
+    fetch(API_BASE_URL + `admin/lesson/edit/${lessonId}`, {
       method: 'PUT',
       body: JSON.stringify(jsonData),
       headers: headers,

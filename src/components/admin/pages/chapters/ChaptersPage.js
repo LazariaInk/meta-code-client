@@ -5,6 +5,7 @@ import TopicsList from '../topics/TopicsList'
 import ChaptersTable from './ChaptersTable'
 import { useParams } from 'react-router-dom'
 import CreateChapter from './CreateChapter'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function ChaptersPage () {
   const { id } = useParams()

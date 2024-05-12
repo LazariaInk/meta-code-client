@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { FaRegTrashAlt } from 'react-icons/fa'
 import EditTopic from './EditTopic'
 import CreateTopic from './CreateTopic'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 function TopicsTable (props) {
   console.log(localStorage.getItem('token'))
@@ -13,7 +14,7 @@ function TopicsTable (props) {
   const [topics, setItems] = useState([])
 
   async function removeTopic (id) {
-    await fetch(`http://localhost:8080/admin/topic/delete/${id}`, {
+    await fetch(API_BASE_URL + `admin/topic/delete/${id}`, {
       method: 'DELETE',
       headers: {
         Accept: 'application/json',
@@ -34,7 +35,7 @@ function TopicsTable (props) {
   }
 
   useEffect(() => {
-    fetch('http://localhost:8080/admin/topic/all', {
+    fetch(API_BASE_URL + 'admin/topic/all', {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')} `,
         'Access-Control-Allow-Origin': '*'

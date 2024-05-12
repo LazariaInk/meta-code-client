@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 const AboutPage = () => {
   const [content, setContent] = useState('')
@@ -12,7 +13,7 @@ const AboutPage = () => {
   const handleSubmit = async event => {
     event.preventDefault()
     console.log(localStorage.getItem('token'))
-    const response = await fetch('http://localhost:8080/admin/about/update', {
+    const response = await fetch(API_BASE_URL + 'admin/about/update', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

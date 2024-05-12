@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import EditChapterForm from './EditChapterForm'
 import { FaRegEdit } from 'react-icons/fa'
+import { API_BASE_URL } from '../../../config/endpoints';
 
 export default function EditChapter (props) {
   const [show, setShow] = React.useState(false)
@@ -25,7 +26,7 @@ export default function EditChapter (props) {
       chapterName: newChapterName
     }
 
-    fetch(`http://localhost:8080/admin/chapter/edit/${chapterId}`, {
+    fetch(API_BASE_URL + `admin/chapter/edit/${chapterId}`, {
       method: 'PUT',
       body: JSON.stringify(jsonData),
       headers: headers,
