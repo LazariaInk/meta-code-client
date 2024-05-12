@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Alert } from 'react-bootstrap';
+import {API_BASE_URL} from '../../../config/endpoints';
 
 function RegisterPage() {
     const [username, setUsername] = useState('');
