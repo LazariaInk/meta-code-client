@@ -31,6 +31,7 @@ const LoginPage = () => {
       console.error('Error:', error);
       alert('Error: ' + error.message);
     });
+  }
 
   return (
     <Container className='mt-5'>
