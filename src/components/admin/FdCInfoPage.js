@@ -100,6 +100,7 @@ const FdCInfoPage = () => {
 
       console.log('Field updated successfully:', response.data)
     } catch (error) {
+      console.log(API_BASE_URL)
       console.error('Error updating field:', error.response)
     }
   }
