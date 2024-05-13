@@ -137,10 +137,11 @@ function LessonsTable() {
     if (tempId === '*') {
       tempId = ' '
     }
-    fetch(API_BASE_URL + `admin/lesson/all/${tempId}`, {
+    fetch(API_BASE_URL + 'admin/lesson/all/' + tempId, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('token')} `,
-        'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/json',
+      Authorization: `Bearer ${localStorage.getItem('token')} `,
+      'Access-Control-Allow-Origin': '*'
       },
       mode: 'cors'
     })
