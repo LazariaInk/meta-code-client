@@ -16,18 +16,21 @@ const LoginPage = () => {
       password: password
     }
 
-    axios
-      .post(API_BASE_URL + 'api/v1/auth/authenticate', data)
-      .then(response => {
-        alert(response.data.token)
-        console.log(response.data.token)
-        localStorage.setItem('token', response.data.token)
-      })
-      .catch(error => {
-        console.log(error)
-        alert(error)
-      })
-  }
+    axios.post(API_BASE_URL + 'api/v1/auth/authenticate', data, {
+      withCredentials: true,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      alert(response.data.token);
+      console.log(response.data.token);
+      localStorage.setItem('token', response.data.token);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error: ' + error.message);
+    });
 
   return (
     <Container className='mt-5'>
