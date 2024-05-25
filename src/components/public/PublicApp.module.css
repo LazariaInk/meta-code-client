@@ -1,45 +1,8 @@
-/* Styles for main navigation menu */
-.main_nav {
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* optional: add a background color */
-  z-index: 999;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-.logo {
-  width: 150px;
-}
-
-.nav_links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav_links li {
-  margin-left: 20px;
-}
-
-.nav_links a {
-  text-decoration: none;
-  color: #444;
-  font-weight: bold;
-  font-size: 28px;
-  transition: all 0.2s ease-in-out;
-}
-
-.nav_links a:hover {
-  color: #2BAF49;
+.img {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .topics_nav {
@@ -47,11 +10,10 @@
   margin-top: -44px;
   left: 0;
   width: 100%;
-  background-color: #fff; /* optional: add a background color */
+  background-color: #fff;
   z-index: 999;
 }
 
-/* Styles for topics navigation menu */
 .topics_nav_toggle {
   display: none;
   cursor: pointer;
@@ -77,12 +39,12 @@
 
 .topics_navbar_menu {
   position: absolute;
-  margin-top:50px;
+  margin-top: 50px;
   width: 100%;
   background-color: #333;
   display: flex;
   justify-content: center;
-  overflow-x: auto; /* Add this line for horizontal scroll */
+  overflow-x: auto;
 }
 
 .topics_navbar_menu ul {
@@ -104,25 +66,17 @@
   padding: 10px 15px;
   text-decoration: none;
   color: #e0dfdf;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-
-/* Media queries */
-
 
 .topics_navbar_menu li :hover {
   background-color: #2BAF49;
 }
 
-/* Styles for content */
 .main_container {
   position: absolute;
   margin-top: 140px;
 }
-
-
-
-/* styles for chapters menu */
 
 .chapters_content {
   display: flex;
@@ -133,71 +87,47 @@
   color: white;
 }
 
-.hr_style{
-  margin-left:200px;
-  margin-right: 150px;;
-}
-
-.footer_container{
-margin-left: 200px;
-margin-right: 150px;
-background-color: #333;
-height: 230px;
-}
-
-.h3_footer{
-  margin-left: 30px;
-  color: white;
-  padding-left: 50px;
-}
-
-.footerparagraph{
-  margin-left: 20px;
-  font-size: 10px;
-  color: white;
-  padding-left: 30px;
+.hr_style {
+  margin-left: 200px;
+  margin-right: 150px;
+  ;
 }
 
 .menu {
-  width: 210px; /* Lățimea dorită */
-  position: fixed; /* Poziționat fix pe ecran */
+  width: 210px;
+  position: fixed;
   background: #f1f1f1;
   text-align: center;
   top: 0;
-  left: 0; /* Poziționat la stânga paginii */
-  bottom: 0; /* Umple înălțimea întregii pagini */
-  overflow-y: auto; /* Permitere derulare verticală */
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #ccc #f5f5f5;
-  z-index: 999; /* Asigură că este deasupra altor elemente */
+  z-index: 999;
   margin-top: 160px;
 }
 
 .menu::-webkit-scrollbar {
-  width: 6px; /* Set the width of the scrollbar */
+  width: 6px;
 }
 
 .menu::-webkit-scrollbar-track {
-  background: linear-gradient(
-    to bottom,
-    #f5f5f5,
-    #ddd
-  ); /* Add a gradient background */
+  background: linear-gradient(to bottom,
+      #f5f5f5,
+      #ddd);
 }
 
 .menu::-webkit-scrollbar-thumb {
-  background-color: #ccc; /* Set the color of the thumb */
-  border-radius: 10px; /* Add rounded corners to the thumb */
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
-
 .menu_container {
-  /* height: 120%; */
   display: flex;
   align-items: center;
   position: fixed;
-  /* height: 100%; */
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .hamburger_icon {
@@ -213,7 +143,7 @@ height: 230px;
 }
 
 .lessons_menu::-webkit-scrollbar-track {
-  
+
   background-color: #f5f5f5;
 }
 
@@ -224,14 +154,12 @@ height: 230px;
 }
 
 .tree {
-
   list-style: none;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #444;
-
 }
 
 .chapter {
@@ -242,7 +170,7 @@ height: 230px;
   font-weight: bold;
   cursor: pointer;
   width: 200px;
-  font-size:18px;
+  font-size: 18px;
 }
 
 .chapter:hover {
@@ -270,14 +198,13 @@ height: 230px;
   display: none;
 }
 
-.tree .active > ul {
+.tree .active>ul {
   display: block;
 }
 
 .tree a {
   display: block;
   text-decoration: none;
-  /* color: inherit; */
   font-family: Arial, sans-serif;
 
   line-height: 1.5;
@@ -286,11 +213,9 @@ height: 230px;
 .tree li {
   list-style-type: none;
   font-family: Arial, sans-serif;
-
   line-height: 1.5;
 }
 
-/* Default styles for menu */
 .menu_container {
   display: flex;
   align-items: center;
@@ -301,7 +226,7 @@ height: 230px;
 }
 
 .lessons_menu {
-  position:static;
+  position: static;
   width: 100%;
   list-style-type: none;
   margin: 0;
@@ -312,7 +237,6 @@ height: 230px;
   font-weight: bold;
 }
 
-/* Styles for hamburger icon */
 .hamburger_icon {
   display: none;
 }
@@ -343,22 +267,12 @@ a {
 }
 
 .sidenav {
-  /* padding-top: 20px; */
   height: 100%;
 }
 
-footer {
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 150px;
-
-}
-
-
 .content_container {
   margin-top: 109px;
-  margin-left:300px;
-  /* display: flex; */
+  margin-left: 300px;
 }
 
 .left_menu {
@@ -367,26 +281,27 @@ footer {
   position: fixed;
   background: #f1f1f1;
   text-align: center;
-  top: 0; 
+  top: 0;
   transition: top 0.3s;
-  margin-top:490px;
+  margin-top: 490px;
 }
 
 .middle_contant {
-  margin-top:60px;
+  margin-top: 60px;
   width: 70%;
   padding-top: 60px;
 }
 
 .right_ads {
   position: fixed;
-  top: 50px; /* Ajustează această valoare în funcție de înălțimea barei de navigare sau a oricărui alt element fix de deasupra */
+  top: 50px;
   right: 0;
   width: 150px;
   height: 100vh;
-  margin-top: 80px; /* ajustează această valoare pentru a poziționa conținutul mai jos */
+  margin-top: 80px;
   padding-top: 30px;
 }
+
 .home_container {
   margin-top: 100px;
   background: #f1f1f1;
@@ -400,33 +315,34 @@ footer {
 }
 
 .home_title {
-  font-size: 2.5rem; /* Mărește mărimea titlului */
-  margin-bottom: 0.5em; /* Adaugă un spațiu subtitlu */
-  color: #383E42; /* Adaugă o culoare specifică pentru titlu */
-  font-family: 'Arial', sans-serif; /* Schimbă familia de fonturi */
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+  color: #383E42;
+  font-family: 'Arial', sans-serif;
 }
 
 .home_intro {
-  font-size: 1.5rem; /* Ajustează mărimea textului pentru intro */
-  line-height: 2.5; /* Îmbunătățește lizibilitatea prin ajustarea înălțimii liniei */
-  color: #555; /* O culoare mai moale pentru textul introductiv */
-  font-family: 'Georgia', serif; /* Schimbă familia de fonturi pentru un aspect mai elegant */
-  animation: blinkCursor 0.75s step-end infinite; /* Adaugă animație de cursor, dacă dorești */
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #555;
+  font-family: 'Georgia', serif;
+  animation: blinkCursor 0.75s step-end infinite;
 
 }
 
 .home_subtitle {
-  font-size: 2rem; /* Ajustează mărimea fontului pentru subtitlu */
-  color: #333; /* Asigură-te că subtitlul este vizibil */
-  margin-top: 2em; /* Adaugă spațiu deasupra subtitlului pentru separare */
-  font-family: 'Helvetica', sans-serif; /* Schimbă familia de fonturi */
+  font-size: 2rem;
+  color: #333;
+  margin-top: 2em;
+  font-family: 'Helvetica', sans-serif;
 }
 
-.home_info, .home_invite {
-  font-size: 1rem; /* Mărimea standard pentru textul informativ */
-  margin-top: 1em; /* Spațiu deasupra pentru separare */
-  color: #666; /* O culoare discretă pentru informații */
-  font-family: 'Courier New', monospace; /* O familie de fonturi monospace pentru un efect tipografic */
+.home_info,
+.home_invite {
+  font-size: 1rem;
+  margin-top: 1em;
+  color: #666;
+  font-family: 'Courier New', monospace;
 }
 
 .topics_container {
@@ -466,9 +382,6 @@ footer {
 .topic_button:hover h3 {
   font-size: 2.9rem;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 .home_container {
   font-family: 'Roboto', sans-serif;
@@ -522,20 +435,25 @@ footer {
   width: 180px;
   height: 180px;
   margin: 15px;
-  background: linear-gradient(to bottom right, #383E42, #2BAF49); /* Tranziție inițială între gri închis și verde */
-  color: #383E42; /* Menținut pentru contrast; ajustează după nevoie */
+  background: linear-gradient(to bottom right, #383E42, #2BAF49);
+  /* Tranziție inițială între gri închis și verde */
+  color: #383E42;
+  /* Menținut pentru contrast; ajustează după nevoie */
   text-decoration: none;
   border-radius: 10px;
   font-size: 20px;
-  transition: all 0.3s ease-in-out, background 0.5s ease-in-out; /* Include tranziția de fundal pentru hover */
+  transition: all 0.3s ease-in-out, background 0.5s ease-in-out;
+  /* Include tranziția de fundal pentru hover */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .topic_button:hover {
   transform: scale(1.1);
-  background: linear-gradient(to top left, #2BAF49, #E8DE63); /* Tranziție spre galben de la verde pentru hover */
+  background: linear-gradient(to top left, #2BAF49, #E8DE63);
+  /* Tranziție spre galben de la verde pentru hover */
   /* Asigură-te că tranziția de fundal este lină și naturală */
-  transition: transform 0.3s ease-in-out, background 0.5s ease; /* Ajustează timpul de tranziție pentru efectul dorit */
+  transition: transform 0.3s ease-in-out, background 0.5s ease;
+  /* Ajustează timpul de tranziție pentru efectul dorit */
 }
 
 /* styles for hamburger of chapters menu*/
@@ -572,7 +490,7 @@ footer {
   display: none;
 }
 
-.tree .active > ul {
+.tree .active>ul {
   display: block;
 }
 
@@ -617,7 +535,6 @@ footer {
   margin-left: 20px;
 }
 
-/* Styles for hamburger icon */
 .hamburger-icon {
   display: none;
 }
@@ -629,8 +546,6 @@ footer {
   margin: 5px;
   background-color: black;
 }
-
-/* ... Styles for social media component ... */
 
 .social_links_container {
   display: flex;
@@ -654,11 +569,8 @@ footer {
   height: 30px;
 }
 
-
-/* DonationPopup.module.css */
-
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -667,7 +579,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Ensure the overlay is above other content */
+  z-index: 999;
 }
 
 .donationPopup {
@@ -702,19 +614,13 @@ p {
   margin-bottom: 20px;
 }
 
-
-/* styles for problem component */
-/* ProblemList.css */
-
-/* Container styles */
 .problemListContainer {
-  margin-top:150px;
+  margin-top: 150px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Filter styles */
 .filterContainer {
   display: flex;
   flex-wrap: wrap;
@@ -728,7 +634,6 @@ p {
   border-radius: 5px;
 }
 
-/* Table styles */
 .problemTable {
   margin-top: 20px;
   background-color: #fff;
@@ -738,13 +643,11 @@ p {
   background-color: #f0f0f0;
 }
 
-/* Pagination styles */
 .pagination {
   margin-top: 20px;
   justify-content: center;
 }
 
-/* Modal styles */
 .modalHeader {
   background-color: #007bff;
   color: #fff;
@@ -756,80 +659,70 @@ p {
   font-size: 24px;
 }
 
-/* Button styles */
-.modalFooter .btn-secondary {
-  background-color: #ccc;
-  color: #333;
-}
-
 .paginationContainer {
   display: flex;
-  justify-content: center; /* Horizontally center the pagination */
+  justify-content: center;
 }
 
-.sponsorsTd {
-  text-align: left;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* PublicApp.module.css */
-/* PublicApp.module.css */
-
-
-
-/* Adaugă aceste stiluri în PublicApp.module.css */
 .fadeIn {
   animation: fadeInEffect 8s ease-out forwards;
 }
 
 @keyframes fadeInEffect {
-  from { opacity:-1; }
-  to { opacity: 1; }
+  from {
+    opacity: -1;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-.topicActive{
-  background-color: #2BAF49; /* Exemplu de culoare de fundal */
+.topicActive {
+  background-color: #2BAF49;
 }
 
 @media (max-width: 1500px) {
   .chapter {
     font-size: 15px;
   }
+
   .tree a {
     font-size: 13px;
   }
 }
 
 @media (max-width: 1300px) {
-  .content_container{
-    margin-left:40px;
+  .content_container {
+    margin-left: 40px;
   }
 
   .left_menu {
     width: 210px;
-  position: fixed; /* Schimbat din fixed în absolute */
-  background: #f1f1f1;
-  text-align: center;
-  top: 0; 
-  margin-top: 85px;
-  left: 0;
+    position: fixed;
+    background: #f1f1f1;
+    text-align: center;
+    top: 0;
+    margin-top: 85px;
+    left: 0;
   }
 
-  .middle_contant{
+  .middle_contant {
     padding-top: 70px;
-   }
+  }
 
-.right_ads{
-  margin-top: 105px;
-}
+  .right_ads {
+    margin-top: 105px;
+  }
+
   .menu_container {
-    width: 100%;
+    width: 90%;
     align-items: center;
     position: absolute;
   }
 
   .menu {
-    position:absolute;
+    position: absolute;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -846,8 +739,8 @@ p {
   .hamburger_icon {
     display: block;
     cursor: pointer;
-    position: fixed; /* Setăm poziția fixă pentru a rămâne sus în pagină */
-    top: 170px; 
+    position: fixed;
+    top: 170px;
     width: 100%;
     background-color: gray;
     top: 155px;
@@ -855,7 +748,7 @@ p {
 
   .menushow {
     margin-top: -20px;
-    display: flex ;
+    display: flex;
     width: 100%;
   }
 
@@ -884,6 +777,7 @@ p {
   .chapter {
     font-size: 14px;
   }
+
   .tree a {
     font-size: 12px;
   }
@@ -894,46 +788,36 @@ p {
     margin-top: 115px;
     flex-direction: column;
   }
-  .left_menu{
-    margin-top:80px;
+
+  .left_menu {
+    margin-top: 80px;
   }
 
   .left_menu,
   .middle_contant,
   .right_ads {
-    width: 100%;
+    width: 90%;
   }
-  .right_ads{
-    position: relative; /* Schimbăm poziția relativă */
-    display: block; /* Asigurăm afișarea elementului ca bloc */
-    margin-top: 5px; /* Ajustăm spațiul de deasupra */
-    margin-left: auto; /* Plasăm elementul în stânga ecranului */
-    margin-right: auto; /* Plasăm elementul în dreapta ecranului */
+
+  .right_ads {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     background-color: #f9f9f9;
     padding: 10px;
-    max-height: 300px; 
+    max-height: 300px;
   }
 
-  .footer_container{
-    margin-left: 300px;
-    margin-right: 100px;
-    background-color: #333;
-    width: 80%;
-    height: 330px;
-    }
-
-    .footerparagraph{
-      padding-left: 10px;
-      margin-bottom: 20px;
-    }
-   .hamburger_icon{
+  .hamburger_icon {
     top: 160px;
-   }
+  }
 
-   .middle_contant{
+  .middle_contant {
     padding-top: 80px;
-   }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -954,23 +838,24 @@ p {
     margin-bottom: 10px;
     display: block;
   }
-  .middle_contant{
-    padding-top: 100px;
-   }
 
-   .left_menu {
-    width: 210px;
-  position: fixed; /* Schimbat din fixed în absolute */
-  background: #f1f1f1;
-  text-align: center;
-  top: 0; 
-  margin-top: 55px;
-  left: 0;
+  .middle_contant {
+    padding-top: 100px;
   }
 
-   .hamburger_icon{
+  .left_menu {
+    width: 210px;
+    position: fixed;
+    background: #f1f1f1;
+    text-align: center;
+    top: 0;
+    margin-top: 55px;
+    left: 0;
+  }
+
+  .hamburger_icon {
     top: 140px;
-   }
+  }
 
 
   .topics_nav {
@@ -978,9 +863,8 @@ p {
     z-index: 999;
     background-color: rgb(7, 7, 7);
     margin-top: -15px;
-    /* display: flex; */
     position: fixed;
-    margin-top:30px;
+    margin-top: 30px;
     height: 32px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -995,7 +879,7 @@ p {
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     max-height: 400px;
-    overflow: auto; 
+    overflow: auto;
   }
 
   .topics_navbar_menu ul {
@@ -1010,11 +894,11 @@ p {
   }
 
   .topics_navbar_menu:nth-child(odd) {
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
   }
 
   .topics_navbar_menu:nth-child(even) {
-    background-color: #ddd; 
+    background-color: #ddd;
   }
 
   .topics_navbar_menu a {
@@ -1042,7 +926,7 @@ p {
   .left_menu,
   .middle_contant,
   .right_ads {
-    width: 100%;
+    width: 90%;
   }
 
   .sidenav {
@@ -1052,31 +936,5 @@ p {
     width: 100%;
     z-index: 222;
     background-color: #ebe9e9;
-  }
-}
-
-@media (max-width:500px) {
-  .main_nav {
-    padding: 0px;
-  }
-
-  .topics_nav {
-    margin-top: -31px;
-  }
-
-  .sidenav {
-    margin-top: 2px;
-  }
-}
-
-@media (max-width:300px) {
-  .logo__text {
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: fantasy;
-    transition: all 0.2s ease-in-out;
-  margin-top: -24px;
   }
 }

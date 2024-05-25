@@ -1,50 +1,78 @@
-import styles from './PublicApp.module.css'
-import React, { useState } from 'react'
+import styles from './Navigation.module.css'
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import DonationPopup from './DonationPopup'
 
 function PublicNavigation () {
-  const navigate = useNavigate()
-  const [isDonationPopupOpen, setDonationPopupOpen] = useState(false)
+  const navigate = useNavigate();
+  const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
+  const navRef = useRef(null);
 
   const openDonationPopup = () => {
-    setDonationPopupOpen(true)
-  }
+    setDonationPopupOpen(true);
+  };
 
   const closeDonationPopup = () => {
-    setDonationPopupOpen(false)
-  }
+    setDonationPopupOpen(false);
+  };
+
+  const toggleNav = () => {
+    setNavOpen(!isNavOpen);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      closeNav();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div>
+    <div ref={navRef}>
       <div className={styles.main_nav}>
-        <div className={styles.logo}>
-          <Link to='/' className={styles.logo__text}>
-          <img
-          src='../../../images/Logo_color.png'
-          alt='FdC'
-          className={styles.logo}
-        />
+        <div>
+          <Link to='/'>
+            <img
+              src='../../../images/Logo_color.png'
+              alt='FdC'
+              className={styles.logo}
+            />
           </Link>
         </div>
-        <ul className={styles.nav_links}>
+        <div className={styles.hamburger} onClick={toggleNav}>
+          <div />
+          <div />
+          <div />
+        </div>
+        <ul className={`${styles.nav_links} ${isNavOpen ? styles.nav_active : ''}`}>
           <li>
-            <Link to='/'>Acasa</Link>
+            <Link to='/' onClick={closeNav}>Acasa</Link>
           </li>
           <li>
-            <Link to='/problems'>probleme</Link>
+            <Link to='/problems' onClick={closeNav}>Probleme</Link>
           </li>
           <li>
-            <a href='#' onClick={openDonationPopup}>
-              doneaza
+            <a href='#' onClick={() => { openDonationPopup(); closeNav(); }}>
+              Doneaza
             </a>
           </li>
         </ul>
       </div>
       {isDonationPopupOpen && <DonationPopup onClose={closeDonationPopup} />}
     </div>
-  )
+  );
 }
 
 export default PublicNavigation

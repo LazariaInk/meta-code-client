@@ -1,0 +1,14 @@
+.footerContainer {
+    background-color:#333; /* Light gray background */
+   padding-left:20px;
+    transition: margin-left 0.3s ease;
+    color:white;
+  }
+  
+  /* Add left margin for larger screens */
+  @media (min-width: 1300px) {
+    .footerContainer {
+      margin-left: 200px;
+    }
+  }
+  
