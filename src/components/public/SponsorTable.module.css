@@ -1,4 +1,8 @@
-.sponsorsTd {
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-  }
+.sponsorsTd a {
+  color: #2BAF49; /* Set the text color to #2BAF49 */
+  text-decoration: none; /* Remove underline */
+}
+
+.sponsorsTd a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import styles from './SponsorTable.module.css'; // Assuming you have some CSS modules for styling
+import styles from './SponsorTable.module.css';
+import { API_BASE_URL } from '../config/endpoints';
 
-const API_BASE_URL = 'https://fabricadecoduri-bf3f0e9b8b05.herokuapp.com/sponsor/all';
 
 const SponsorTable = () => {
   const [sponsors, setSponsors] = useState([]);
@@ -35,7 +35,12 @@ const SponsorTable = () => {
         {sponsors.map((sponsor) => (
           <tr key={sponsor.sponsorId}>
             <td className={styles.sponsorsTd}>
-              <a href={sponsor.sponsorLink} target="_blank" rel="noopener noreferrer" className={styles.sponsorLink}>
+              <a
+                href={sponsor.sponsorLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.sponsorLink}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
