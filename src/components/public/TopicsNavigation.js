@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from './PublicApp.module.css';
 import './../../App.css';
 import { API_BASE_URL } from '../config/endpoints';
@@ -9,22 +9,23 @@ function TopicsNavigation() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Obținere locație curentă
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleBtnRef = useRef(null);
   const menuRef = useRef(null);
 
   useEffect(() => {
-    fetch(API_BASE_URL +'topic/all', {
-      mode: 'cors'
+    fetch(API_BASE_URL + 'topic/all', {
+      mode: 'cors',
     })
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(
-        result => {
+        (result) => {
           setIsLoaded(true);
           setItems(result);
         },
-        error => {
+        (error) => {
           setIsLoaded(true);
           setError(error);
         }
@@ -48,17 +49,26 @@ function TopicsNavigation() {
     };
   }, [toggleBtnRef, menuRef]);
 
-  const handleLinkClick = () => {
-    setIsMenuOpen(false); // Close the menu when a topic is selected
+  const handleTopicClick = async (topicId) => {
+    try {
+      const response = await fetch(API_BASE_URL + `chapter/${topicId}/all`);
+      const result = await response.json();
+      if (result.length > 0 && result[0].lessons.length > 0) {
+        const firstLessonId = result[0].lessons[0].lessonId;
+        navigate(`/topics/${topicId}/lessons/${firstLessonId}`);
+      }
+    } catch (error) {
+      console.error('Failed to fetch chapters:', error);
+    }
   };
 
-  const currentTopicId = location.pathname.match(/\/topics\/(\d+)/)?.[1]; // Extract the current topic ID safely with optional chaining
+  const currentTopicId = location.pathname.match(/\/topics\/(\d+)/)?.[1];
 
   return (
     <div>
       <div className={styles.topics_nav}>
         <div
-          className={`${styles.topics_nav_toggle}`}
+          className={styles.topics_nav_toggle}
           ref={toggleBtnRef}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -71,13 +81,13 @@ function TopicsNavigation() {
           ref={menuRef}
         >
           <ul>
-            {topics.map(topic => (
-              <li key={topic.topicId} className={`${currentTopicId === topic.topicId.toString() ? styles.topicActive : ''}`}>
-                <Link
-                  className={styles.links}
-                  to={`/topics/${topic.topicId}`}
-                  onClick={handleLinkClick}
-                >
+            {topics.map((topic) => (
+              <li
+                key={topic.topicId}
+                className={currentTopicId === topic.topicId.toString() ? styles.topicActive : ''}
+                onClick={() => handleTopicClick(topic.topicId)}
+              >
+                <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
                   {topic.topicName}
                 </Link>
               </li>

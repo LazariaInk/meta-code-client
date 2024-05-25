@@ -1,63 +1,59 @@
-import React, { useEffect, useState ,useRef} from 'react'
-import { useNavigate } from 'react-router-dom'
-import styles from './PublicApp.module.css'
+import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './PublicApp.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
 const ChapterNavigation = ({ topicId, onLessonClick }) => {
-  const [error, setError] = useState(null)
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [chapters, setChapters] = useState([])
-  const [activeChapter, setActiveChapter] = useState(null)
-  const navigate = useNavigate()
-  const menuRef = useRef(null)
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [chapters, setChapters] = useState([]);
+  const [activeChapter, setActiveChapter] = useState(null);
+  const navigate = useNavigate();
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
-    menuRef.current?.classList.toggle(styles.menushow)
-  }
+    menuRef.current?.classList.toggle(styles.menushow);
+  };
 
   const fetchChapters = async () => {
     try {
-      const response = await fetch(
-        API_BASE_URL +  `chapter/${topicId}/all`
-      )
-      const result = await response.json()
-      setIsLoaded(true)
-      setChapters(result)
+      const response = await fetch(API_BASE_URL + `chapter/${topicId}/all`);
+      const result = await response.json();
+      setIsLoaded(true);
+      setChapters(result);
     } catch (err) {
-      setIsLoaded(true)
-      setError(err)
+      setIsLoaded(true);
+      setError(err);
     }
-  }
+  };
 
   useEffect(() => {
-    if (topicId) fetchChapters()
-  }, [topicId])
+    if (topicId) fetchChapters();
+  }, [topicId]);
 
-  const handleChapterClick = chapterId => {
-    setActiveChapter(prevActiveChapter =>
+  const handleChapterClick = (chapterId) => {
+    setActiveChapter((prevActiveChapter) =>
       prevActiveChapter === chapterId ? null : chapterId
-    )
-  }
+    );
+  };
 
-  const handleLessonClick = lessonId => {
+  const handleLessonClick = (lessonId) => {
     onLessonClick(lessonId);
-    toggleMenu()
-    
-      menuRef.current?.classList.remove(styles.menushow)
-    
+    toggleMenu();
+    menuRef.current?.classList.remove(styles.menushow);
     navigate(`/topics/${topicId}/lessons/${lessonId}`);
   };
 
-  if (topicId === '*') return <h2></h2>
+  if (topicId === '*') return <h2></h2>;
 
-  if (error) return <div>Error: {error.message}</div>
+  if (error) return <div>Error: {error.message}</div>;
 
-  if (!isLoaded) return <div>Loading...</div>
+  if (!isLoaded) return <div>Loading...</div>;
 
   return (
     <div>
       <ul className={`${styles.lessons_menu} ${styles.tree}`}>
-        {chapters.map(chapter => (
+        {chapters.map((chapter) => (
           <li
             key={chapter.chapterId}
             className={`${styles.chapter} ${
@@ -68,16 +64,16 @@ const ChapterNavigation = ({ topicId, onLessonClick }) => {
             {chapter.chapterName}
             <ul
               style={{
-                display: activeChapter === chapter.chapterId ? 'block' : 'none'
+                display: activeChapter === chapter.chapterId ? 'block' : 'none',
               }}
             >
-              {chapter.lessons.map(lesson => (
+              {chapter.lessons.map((lesson) => (
                 <li
                   key={lesson.lessonId}
                   className={styles.lesson}
                   onClick={() => handleLessonClick(lesson.lessonId)}
                 >
-                  <a className={styles.lessonLink} href='#'>
+                  <a className={styles.lessonLink} href="#">
                     {lesson.lessonName}
                   </a>
                 </li>
@@ -87,7 +83,7 @@ const ChapterNavigation = ({ topicId, onLessonClick }) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default ChapterNavigation
+export default ChapterNavigation;
