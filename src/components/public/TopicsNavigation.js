@@ -80,6 +80,19 @@ function TopicsNavigation() {
           className={`${styles.topics_navbar_menu} ${isMenuOpen ? styles.show : ''}`}
           ref={menuRef}
         >
+          <ul className={styles.firstUl}>
+            {topics.map((topic, index) => (
+              <li
+                key={topic.topicId}
+                className={currentTopicId === topic.topicId.toString() ? styles.topicActive : ''}
+                onClick={() => handleTopicClick(topic.topicId)}
+              >
+                <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
+                  {topic.topicName}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <ul>
             {topics.map((topic) => (
               <li

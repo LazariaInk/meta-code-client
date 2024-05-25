@@ -37,7 +37,10 @@
   margin-bottom: 0;
 }
 
+
+
 .topics_navbar_menu {
+  padding-left: 200px;
   position: absolute;
   margin-top: 50px;
   width: 100%;
@@ -436,27 +439,20 @@ a {
   height: 180px;
   margin: 15px;
   background: linear-gradient(to bottom right, #383E42, #2BAF49);
-  /* Tranziție inițială între gri închis și verde */
   color: #383E42;
-  /* Menținut pentru contrast; ajustează după nevoie */
   text-decoration: none;
   border-radius: 10px;
   font-size: 20px;
   transition: all 0.3s ease-in-out, background 0.5s ease-in-out;
-  /* Include tranziția de fundal pentru hover */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .topic_button:hover {
   transform: scale(1.1);
   background: linear-gradient(to top left, #2BAF49, #E8DE63);
-  /* Tranziție spre galben de la verde pentru hover */
-  /* Asigură-te că tranziția de fundal este lină și naturală */
   transition: transform 0.3s ease-in-out, background 0.5s ease;
-  /* Ajustează timpul de tranziție pentru efectul dorit */
 }
 
-/* styles for hamburger of chapters menu*/
 
 .chapter {
   background-color: #f1f1f1;
@@ -509,7 +505,6 @@ a {
   line-height: 1.5;
 }
 
-/* Default styles for menu */
 .menu-container {
   height: 120%;
   display: flex;
@@ -682,16 +677,6 @@ p {
   background-color: #2BAF49;
 }
 
-@media (max-width: 1500px) {
-  .chapter {
-    font-size: 15px;
-  }
-
-  .tree a {
-    font-size: 13px;
-  }
-}
-
 @media (max-width: 1300px) {
   .content_container {
     margin-left: 40px;
@@ -716,7 +701,7 @@ p {
   }
 
   .menu_container {
-    width: 90%;
+    width: 100%;
     align-items: center;
     position: absolute;
   }
@@ -731,7 +716,7 @@ p {
     width: 100%;
     height: 500px;
     background-color: #f5f5f5;
-    z-index: 1;
+    /* z-index: 1; */
     padding: 10px;
     box-sizing: border-box;
   }
@@ -747,7 +732,7 @@ p {
   }
 
   .menushow {
-    margin-top: -20px;
+    margin-top: -35px;
     display: flex;
     width: 100%;
   }
@@ -785,13 +770,9 @@ p {
 
 @media only screen and (max-width: 1000px) {
   .content_container {
-    margin-top: 115px;
     flex-direction: column;
   }
 
-  .left_menu {
-    margin-top: 80px;
-  }
 
   .left_menu,
   .middle_contant,
@@ -810,14 +791,6 @@ p {
     padding: 10px;
     max-height: 300px;
   }
-
-  .hamburger_icon {
-    top: 160px;
-  }
-
-  .middle_contant {
-    padding-top: 80px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -831,110 +804,4 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .topics_nav_toggle {
-    position: fixed;
-    margin-left: 95%;
-    margin-bottom: 10px;
-    display: block;
-  }
 
-  .middle_contant {
-    padding-top: 100px;
-  }
-
-  .left_menu {
-    width: 210px;
-    position: fixed;
-    background: #f1f1f1;
-    text-align: center;
-    top: 0;
-    margin-top: 55px;
-    left: 0;
-  }
-
-  .hamburger_icon {
-    top: 140px;
-  }
-
-
-  .topics_nav {
-    width: 100%;
-    z-index: 999;
-    background-color: rgb(7, 7, 7);
-    margin-top: -15px;
-    position: fixed;
-    margin-top: 30px;
-    height: 32px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .topics_navbar_menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    max-height: 400px;
-    overflow: auto;
-  }
-
-  .topics_navbar_menu ul {
-    flex-direction: column;
-  }
-
-  .topics_navbar_menu li {
-    text-align: center;
-    width: 100%;
-    color: #e0dfdf;
-    margin-left: 0;
-  }
-
-  .topics_navbar_menu:nth-child(odd) {
-    background-color: #f2f2f2;
-  }
-
-  .topics_navbar_menu:nth-child(even) {
-    background-color: #ddd;
-  }
-
-  .topics_navbar_menu a {
-    color: #333;
-  }
-
-  .topics_navbar_menu.show {
-    display: block;
-    position: relative;
-    z-index: 100;
-  }
-
-  .main_container {
-    position: absolute;
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .content_container {
-    margin-top: 80px;
-    flex-direction: column;
-  }
-
-  .left_menu,
-  .middle_contant,
-  .right_ads {
-    width: 90%;
-  }
-
-  .sidenav {
-    height: 34px;
-    margin-top: 19px;
-    position: fixed;
-    width: 100%;
-    z-index: 222;
-    background-color: #ebe9e9;
-  }
-}
