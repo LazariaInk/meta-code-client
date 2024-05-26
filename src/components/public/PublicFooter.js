@@ -1,8 +1,10 @@
+// src/components/PublicFooter.js
 import './../../App.css';
 import React, { useState, useEffect } from 'react';
 import DonationPopup from './DonationPopup';
 import styles from './Footer.module.css';
 import { API_BASE_URL } from '../config/endpoints';
+import { initGA, logPageView } from './../config/analytics';
 
 function PublicFooter() {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
@@ -27,6 +29,23 @@ function PublicFooter() {
           console.log('Error fetching infoHomeInfo:', error);
         }
       );
+  }, []);
+
+  useEffect(() => {
+    initGA();
+    logPageView();
+  }, []);
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      logPageView();
+    };
+
+    window.addEventListener('popstate', handleLocationChange);
+
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+    };
   }, []);
 
   return (
