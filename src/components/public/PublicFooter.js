@@ -4,7 +4,7 @@ import DonationPopup from './DonationPopup';
 import styles from './Footer.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
-function PublicFooter () {
+function PublicFooter() {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
   const [infoHome, setInfoHomeInfo] = useState('');
 
@@ -35,26 +35,26 @@ function PublicFooter () {
         <div className={styles.footer_container}>
           <div className='row'>
             <div className='col-md-4'>
-              <h3>Despre FdC</h3>
-              <p>{infoHome.aboutFooter}</p>
+              <h3 className={styles.footerTitle}>Despre FdC</h3>
+              <p className={styles.footerText}>{infoHome.aboutFooter}</p>
             </div>
             <div className='col-md-4'>
-              <h3>Donează</h3>
-              <p>{infoHome.donateFooterContent}</p>
+              <h3 className={styles.footerTitle}>Donează</h3>
+              <p className={styles.footerText}>{infoHome.donateFooterContent}</p>
               <button className='btn btn-success' onClick={openDonationPopup}>
                 Donează acum!
               </button>
             </div>
             <div className='col-md-4'>
-              <h3>Contact</h3>
-              <p>{infoHome.contactFooterContent}</p>
+              <h3 className={styles.footerTitle}>Contact</h3>
+              <p className={styles.footerText}>{infoHome.contactFooterContent}</p>
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row justify-content-center'>
           <div className='col-md-12 text-center'>
-            <p>{infoHome.ownerInfo}</p>
+            <p className={styles.footerText}>{infoHome.ownerInfo}</p>
           </div>
         </div>
       </footer>

@@ -417,6 +417,7 @@ a {
 }
 
 .home_info {
+  font-size: 1.8em;
   background: white;
   padding: 20px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -426,7 +427,7 @@ a {
 }
 
 .home_invite {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 400;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -825,6 +826,7 @@ p {
     margin-top:100px;
     margin-left: 20px;
     display: flex;
+    
   }
 
   .left_menu {
