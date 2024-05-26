@@ -13,6 +13,7 @@ function ContentNavigation() {
   const { topicId, lessonId } = useParams();
   const hamburgerIconRef = useRef(null);
   const menuRef = useRef(null);
+  const contentRef = useRef(null);
   const [lessonContent, setLessonContent] = useState('');
   const [images, setImages] = useState({});
 
@@ -40,6 +41,35 @@ function ContentNavigation() {
   useEffect(() => {
     if (lessonId) fetchLessonContent(lessonId);
   }, [lessonId]);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      const spans = contentRef.current.querySelectorAll('span');
+      spans.forEach(span => {
+        if (span.querySelector('img')) {
+          // Elimină stilurile inline de pe span-uri
+          span.removeAttribute('style');
+          // Aplică stilurile responsive pentru span-uri
+          span.style.display = 'block';
+          span.style.maxWidth = '100%';
+          span.style.height = 'auto';
+          span.style.margin = '0 auto';
+          span.style.overflow = 'hidden';
+        }
+      });
+
+      const images = contentRef.current.querySelectorAll('img');
+      images.forEach(img => {
+        // Elimină toate stilurile inline
+        img.removeAttribute('style');
+        // Aplică stilurile responsive
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+        img.style.margin = '0 auto';
+      });
+    }
+  }, [lessonContent]);
 
   const renderContent = () => {
     if (!lessonContent) return;
@@ -99,15 +129,21 @@ function ContentNavigation() {
                   <span></span>
                 </div>
                 <div ref={menuRef} className={styles.menu}>
-                  <ChapterNavigation topicId={topicId} onLessonClick={fetchLessonContent} />
+                  <ChapterNavigation topicId={topicId} onLessonClick={fetchLessonContent} menuRef={menuRef} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.middle_contant} dangerouslySetInnerHTML={renderContent()} />
+        <div className={styles.middle_contant}>
+          <div
+            className={styles.lesson_content}
+            ref={contentRef}
+            dangerouslySetInnerHTML={renderContent()}
+          />
+        </div>
         <div className={styles.right_ads}>
-          <div style={{ height: '500px', overflowY: 'scroll' }}>
+          <div style={{ maxHeight: '500px', overflowY: 'scroll' }}>
             <SponsorTable />
           </div>
         </div>

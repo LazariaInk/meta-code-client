@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .img {
   max-width: 400px;
   max-height: 400px;
@@ -37,12 +50,10 @@
   margin-bottom: 0;
 }
 
-
-
 .topics_navbar_menu {
   padding-left: 200px;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 160px;
   width: 100%;
   background-color: #333;
   display: flex;
@@ -274,15 +285,19 @@ a {
 }
 
 .content_container {
-  margin-top: 109px;
-  margin-left: 300px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 0; /* elimină orice marjă care poate cauza probleme */
 }
+
+
 
 .left_menu {
   float: left;
-  width: 210px;
+  /* width: 210px; */
   position: fixed;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   text-align: center;
   top: 0;
   transition: top 0.3s;
@@ -790,6 +805,7 @@ p {
     background-color: #f9f9f9;
     padding: 10px;
     max-height: 300px;
+    margin-bottom: 100px;
   }
 }
 
@@ -802,6 +818,37 @@ p {
   .topic_button {
     width: 90%;
   }
+}
+
+@media (min-width: 1300px) {
+  .content_container {
+    margin-top:100px;
+    margin-left: 20px;
+    display: flex;
+  }
+
+  .left_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: #f1f1f1;
+    z-index: 999;
+  }
+
+  .middle_contant {
+    width: calc(80% - 290px); 
+    margin-left: 250px;
+  }
+
+  .middle_contant img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrare opțională */
+  }
+  
 }
 
 

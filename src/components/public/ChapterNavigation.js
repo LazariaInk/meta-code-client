@@ -1,19 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './PublicApp.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
-const ChapterNavigation = ({ topicId, onLessonClick }) => {
+const ChapterNavigation = ({ topicId, onLessonClick, menuRef }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [chapters, setChapters] = useState([]);
   const [activeChapter, setActiveChapter] = useState(null);
   const navigate = useNavigate();
-  const menuRef = useRef(null);
-
-  const toggleMenu = () => {
-    menuRef.current?.classList.toggle(styles.menushow);
-  };
 
   const fetchChapters = async () => {
     try {
@@ -39,8 +34,9 @@ const ChapterNavigation = ({ topicId, onLessonClick }) => {
 
   const handleLessonClick = (lessonId) => {
     onLessonClick(lessonId);
-    toggleMenu();
-    menuRef.current?.classList.remove(styles.menushow);
+    if (menuRef.current) {
+      menuRef.current.classList.remove(styles.menushow);
+    }
     navigate(`/topics/${topicId}/lessons/${lessonId}`);
   };
 
