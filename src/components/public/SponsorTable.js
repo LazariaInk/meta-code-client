@@ -3,6 +3,23 @@ import { Table } from 'react-bootstrap';
 import styles from './SponsorTable.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
+// Funcția pentru amestecarea array-ului
+const shuffleArray = (array) => {
+  let currentIndex = array.length, randomIndex;
+
+  // În timp ce mai sunt elemente de amestecat
+  while (currentIndex !== 0) {
+    // Alege un element rămas
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // Și schimbă-l cu elementul curent
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+};
 
 const SponsorTable = () => {
   const [sponsors, setSponsors] = useState([]);
@@ -15,7 +32,7 @@ const SponsorTable = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setSponsors(data);
+        setSponsors(shuffleArray(data)); // Amestecăm array-ul de sponsori înainte de a-l seta
       } catch (error) {
         console.error('Error fetching sponsors:', error);
       }
