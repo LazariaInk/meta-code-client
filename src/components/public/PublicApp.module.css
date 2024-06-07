@@ -695,6 +695,7 @@ p {
 
 @media (max-width: 1300px) {
   .content_container {
+    margin-top:100px;
     margin-left: 40px;
   }
 
