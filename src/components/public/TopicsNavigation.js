@@ -96,12 +96,12 @@ function TopicsNavigation() {
           <ul>
             {topics.map((topic) => (
               <li
-                key={topic.topicId}
-                className={currentTopicId === topic.topicId.toString() ? styles.topicActive : ''}
-                onClick={() => handleTopicClick(topic.topicId)}
+                key={topic}
+                className={currentTopicId === topic ? styles.topicActive : ''}
+                onClick={() => handleTopicClick(topic)}
               >
                 <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
-                  {topic.topicName}
+                  {topic}
                 </Link>
               </li>
             ))}
