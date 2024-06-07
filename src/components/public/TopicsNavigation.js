@@ -16,7 +16,7 @@ function TopicsNavigation() {
   const menuRef = useRef(null);
 
   useEffect(() => {
-    fetch(API_BASE_URL + 'topic/all', {
+    fetch(API_BASE_URL + 'gcs/topics', {
       mode: 'cors',
     })
       .then((res) => res.json())
