@@ -54,11 +54,9 @@ function TopicsNavigation() {
 
   const handleTopicClick = async (topicName) => {
     try {
-        console.log(`Fetching chapters for topic: ${topicName}`);
         const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters`);
         const chapters = await chaptersResponse.json();
-        console.log(`Fetched chapters:`, chapters);
-
+      
         if (chapters.length > 0) {
             const firstChapter = chapters[0];
             const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons`);
@@ -67,12 +65,8 @@ function TopicsNavigation() {
                 const firstLesson = lessons[0];
                 setSelectedTopic(topicName);
                 navigate(`/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons/${encodeURIComponent(firstLesson)}`);
-            } else {
-                console.warn(`No lessons found for chapter: ${firstChapter}`);
-            }
-        } else {
-            console.warn(`No chapters found for topic: ${topicName}`);
-        }
+            } 
+        } 
     } catch (error) {
         console.error('Failed to fetch chapters or lessons:', error);
     }

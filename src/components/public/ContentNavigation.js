@@ -10,7 +10,6 @@ import { API_BASE_URL } from '../config/endpoints';
 import SponsorTable from './SponsorTable';
 
 function ContentNavigation() {
-  console.log('sa ajuns aici')
   const { topicName, chapterName, lessonName } = useParams();
   const navigate = useNavigate();
   const hamburgerIconRef = useRef(null);
@@ -24,28 +23,26 @@ function ContentNavigation() {
   };
 
   const fetchLessonContent = (topicName, chapterName, lessonName) => {
-    alert(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(lessonName)}`)
     fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(lessonName)}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Failed to fetch lesson content');
+        }
+        return res.text();
+      })
       .then(
         (result) => {
-          setLessonContent(result.lessonContent);
-          const imagesMap = result.images.reduce((acc, image) => {
-            const cleanBase64Data = image.base64Data.replace(/^data:image\/png;base64,/, '');
-            acc[image.fileName] = `data:image/png;base64,${cleanBase64Data}`;
-            return acc;
-          }, {});
-          setImages(imagesMap);
+          setLessonContent(result);
         },
         (error) => console.error('Failed to fetch lesson content:', error)
       );
   };
+  
 
   useEffect(() => {
     if (lessonName) {
       fetchLessonContent(topicName, chapterName, lessonName);
     } else if (topicName && chapterName) {
-      // Fetch first lesson of the chapter if lessonId is not provided
       fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons`)
         .then((res) => res.json())
         .then(
@@ -65,9 +62,7 @@ function ContentNavigation() {
       const spans = contentRef.current.querySelectorAll('span');
       spans.forEach(span => {
         if (span.querySelector('img')) {
-          // Elimină stilurile inline de pe span-uri
           span.removeAttribute('style');
-          // Aplică stilurile responsive pentru span-uri
           span.style.display = 'block';
           span.style.maxWidth = '100%';
           span.style.height = 'auto';
@@ -78,9 +73,7 @@ function ContentNavigation() {
 
       const images = contentRef.current.querySelectorAll('img');
       images.forEach(img => {
-        // Elimină toate stilurile inline
         img.removeAttribute('style');
-        // Aplică stilurile responsive
         img.style.maxWidth = '100%';
         img.style.height = 'auto';
         img.style.display = 'block';
@@ -91,16 +84,7 @@ function ContentNavigation() {
 
   const renderContent = () => {
     if (!lessonContent) return;
-
     const htmlContent = new DOMParser().parseFromString(lessonContent, 'text/html');
-
-    htmlContent.querySelectorAll('img').forEach((img) => {
-      const imageName = img.getAttribute('src').split('/').pop();
-      if (images[imageName]) {
-        img.src = images[imageName];
-      }
-    });
-
     return { __html: htmlContent.documentElement.innerHTML };
   };
 
