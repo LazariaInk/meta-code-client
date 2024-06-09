@@ -9,19 +9,20 @@ function HomeComponent() {
   const [topics, setTopics] = useState([]);
   const [infoHome, setInfoHomeInfo] = useState('');
   const navigate = useNavigate();
-
   useEffect(() => {
     // Fetch Topics
-    fetch(API_BASE_URL + 'topic/all', { mode: 'cors' })
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setTopics(result);
-        },
-        (error) => {
-          console.log('Error fetching topics:', error);
-        }
-      );
+    fetch(API_BASE_URL + 'gcs/topics', { mode: 'cors' })
+    .then((res) => res.text()) // Obține textul răspunsului
+    .then(
+      (result) => {
+        // Parsează textul răspunsului într-un array de șiruri de caractere
+        const topicsArray = JSON.parse(result);
+        setTopics(topicsArray); // Setează array-ul în starea topics
+      },
+      (error) => {
+        console.log('Error fetching topics:', error);
+      }
+    );
 
     fetch(API_BASE_URL + 'fabrica-de-coduri-info/1', { mode: 'cors' })
       .then((res) => res.json())
@@ -49,18 +50,24 @@ function HomeComponent() {
     }
   }, [infoHome.introHomeMessage]);
 
-  const handleTopicClick = async (topicId) => {
+  const handleTopicClick = async (topic) => {
     try {
-      const response = await fetch(API_BASE_URL + `chapter/${topicId}/all`);
-      const result = await response.json();
-      if (result.length > 0 && result[0].lessons.length > 0) {
-        const firstLessonId = result[0].lessons[0].lessonId;
-        navigate(`/topics/${topicId}/lessons/${firstLessonId}`);
-      }
+        const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topic)}/chapters`);
+        const chapters = await chaptersResponse.json();
+      
+        if (chapters.length > 0) {
+            const firstChapter = chapters[0];
+            const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topic)}/chapters/${encodeURIComponent(firstChapter)}/lessons`);
+            const lessons = await lessonsResponse.json();
+            if (lessons.length > 0) {
+                const firstLesson = lessons[0];
+                navigate(`/topics/${encodeURIComponent(topic)}/chapters/${encodeURIComponent(firstChapter)}/lessons/${encodeURIComponent(firstLesson)}`);
+            } 
+        } 
     } catch (error) {
-      console.error('Failed to fetch chapters:', error);
+        console.error('Failed to fetch chapters or lessons:', error);
     }
-  };
+};
 
   return (
     <div className={styles.home_container}>
@@ -78,11 +85,11 @@ function HomeComponent() {
         <div className={styles.topics_container}>
           {topics.map((topic) => (
             <button
-              key={topic.topicId}
-              onClick={() => handleTopicClick(topic.topicId)}
+              key={topic}
+              onClick={() => handleTopicClick(topic)}
               className={styles.topic_button}
             >
-              {topic.topicName}
+              {topic}
             </button>
           ))}
         </div>
