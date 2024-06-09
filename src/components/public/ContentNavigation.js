@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './../../App.css';
 import TopicsNavigation from './TopicsNavigation';
 import ChapterNavigation from './ChapterNavigation';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './PublicApp.module.css';
 import PublicFooter from './PublicFooter';
@@ -10,7 +10,9 @@ import { API_BASE_URL } from '../config/endpoints';
 import SponsorTable from './SponsorTable';
 
 function ContentNavigation() {
-  const { topicId, lessonId } = useParams();
+  console.log('sa ajuns aici')
+  const { topicName, chapterName, lessonName } = useParams();
+  const navigate = useNavigate();
   const hamburgerIconRef = useRef(null);
   const menuRef = useRef(null);
   const contentRef = useRef(null);
@@ -21,8 +23,9 @@ function ContentNavigation() {
     menuRef.current?.classList.toggle(styles.menushow);
   };
 
-  const fetchLessonContent = (lessonId) => {
-    fetch(API_BASE_URL + `lesson/${lessonId}/content`)
+  const fetchLessonContent = (topicName, chapterName, lessonName) => {
+    alert(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(lessonName)}`)
+    fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(lessonName)}`)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -39,8 +42,23 @@ function ContentNavigation() {
   };
 
   useEffect(() => {
-    if (lessonId) fetchLessonContent(lessonId);
-  }, [lessonId]);
+    if (lessonName) {
+      fetchLessonContent(topicName, chapterName, lessonName);
+    } else if (topicName && chapterName) {
+      // Fetch first lesson of the chapter if lessonId is not provided
+      fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons`)
+        .then((res) => res.json())
+        .then(
+          (lessons) => {
+            if (lessons.length > 0) {
+              const firstLesson = lessons[0];
+              navigate(`/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(firstLesson)}`);
+            }
+          },
+          (error) => console.error('Failed to fetch lessons:', error)
+        );
+    }
+  }, [topicName, chapterName, lessonName]);
 
   useEffect(() => {
     if (contentRef.current) {
@@ -129,7 +147,7 @@ function ContentNavigation() {
                   <span></span>
                 </div>
                 <div ref={menuRef} className={styles.menu}>
-                  <ChapterNavigation topicId={topicId} onLessonClick={fetchLessonContent} menuRef={menuRef} />
+                  <ChapterNavigation topicName={topicName} onLessonClick={fetchLessonContent} menuRef={menuRef} />
                 </div>
               </div>
             </div>

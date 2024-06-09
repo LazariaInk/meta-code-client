@@ -35,17 +35,17 @@ function HomeComponent() {
       );
 
     if (infoHome.introHomeMessage) {
-      setTimeout(() => {
-        const colors = ['#383E42', '#2BAF49', '#e8de63'];
-        const interval = setInterval(() => {
-          const letters = document.querySelectorAll(`.${styles.home_intro} span`);
-          const randomLetterIndex = Math.floor(Math.random() * letters.length);
-          letters[randomLetterIndex].style.color = colors[Math.floor(Math.random() * colors.length)];
-          letters[randomLetterIndex].style.transition = 'color 2s ease';
-        }, 700);
+      // setTimeout(() => {
+      //   const colors = ['#383E42', '#2BAF49', '#e8de63'];
+      //   const interval = setInterval(() => {
+      //     const letters = document.querySelectorAll(`.${styles.home_intro} span`);
+      //     const randomLetterIndex = Math.floor(Math.random() * letters.length);
+      //     letters[randomLetterIndex].style.color = colors[Math.floor(Math.random() * colors.length)];
+      //     letters[randomLetterIndex].style.transition = 'color 2s ease';
+      //   }, 700);
 
-        return () => clearInterval(interval);
-      }, 3000);
+      //   return () => clearInterval(interval);
+      // }, 3000);
     }
   }, [infoHome.introHomeMessage]);
 

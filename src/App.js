@@ -92,10 +92,8 @@ function App () {
           <Route path='/admin' element={<AdminMainPage />} />
           <Route path='/admin/login' element={<LoginPage />} />
           <Route path='/admin/register' element={<RegisterPage />} />
-          <Route
-            path='/topics/:topicId/lessons/:lessonId'
-            element={<ContentNavigation />}
-          />
+          <Route path='/topics/:topicName/chapters/:chapterName/lessons/:lessonName' element={<ContentNavigation />} />
+
           <Route path='/topics/:topicId' element={<ContentNavigation />} />
           <Route path='/' element={<HomeComponent />} />
           <Route path="/problems" element={<ProblemList />} />

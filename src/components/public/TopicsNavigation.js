@@ -9,6 +9,7 @@ function TopicsNavigation() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedTopic, setSelectedTopic] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -35,6 +36,8 @@ function TopicsNavigation() {
   useEffect(() => {
     function handleClickOutside(event) {
       if (
+        toggleBtnRef.current &&
+        menuRef.current &&
         !toggleBtnRef.current.contains(event.target) &&
         !menuRef.current.contains(event.target)
       ) {
@@ -49,20 +52,33 @@ function TopicsNavigation() {
     };
   }, [toggleBtnRef, menuRef]);
 
-  const handleTopicClick = async (topicId) => {
+  const handleTopicClick = async (topicName) => {
     try {
-      const response = await fetch(API_BASE_URL + `chapter/${topicId}/all`);
-      const result = await response.json();
-      if (result.length > 0 && result[0].lessons.length > 0) {
-        const firstLessonId = result[0].lessons[0].lessonId;
-        navigate(`/topics/${topicId}/lessons/${firstLessonId}`);
-      }
-    } catch (error) {
-      console.error('Failed to fetch chapters:', error);
-    }
-  };
+        console.log(`Fetching chapters for topic: ${topicName}`);
+        const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters`);
+        const chapters = await chaptersResponse.json();
+        console.log(`Fetched chapters:`, chapters);
 
-  const currentTopicId = location.pathname.match(/\/topics\/(\d+)/)?.[1];
+        if (chapters.length > 0) {
+            const firstChapter = chapters[0];
+            const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons`);
+            const lessons = await lessonsResponse.json();
+            if (lessons.length > 0) {
+                const firstLesson = lessons[0];
+                setSelectedTopic(topicName);
+                navigate(`/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons/${encodeURIComponent(firstLesson)}`);
+            } else {
+                console.warn(`No lessons found for chapter: ${firstChapter}`);
+            }
+        } else {
+            console.warn(`No chapters found for topic: ${topicName}`);
+        }
+    } catch (error) {
+        console.error('Failed to fetch chapters or lessons:', error);
+    }
+};
+
+  const currentTopicName = location.pathname.match(/\/topics\/([^/]+)/)?.[1];
 
   return (
     <div>
@@ -81,23 +97,10 @@ function TopicsNavigation() {
           ref={menuRef}
         >
           <ul className={styles.firstUl}>
-            {topics.map((topic, index) => (
-              <li
-                key={topic.topicId}
-                className={currentTopicId === topic.topicId.toString() ? styles.topicActive : ''}
-                onClick={() => handleTopicClick(topic.topicId)}
-              >
-                <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
-                  {topic.topicName}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul>
             {topics.map((topic) => (
               <li
                 key={topic}
-                className={currentTopicId === topic ? styles.topicActive : ''}
+                className={currentTopicName === encodeURIComponent(topic) ? styles.topicActive : ''}
                 onClick={() => handleTopicClick(topic)}
               >
                 <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
@@ -108,6 +111,11 @@ function TopicsNavigation() {
           </ul>
         </div>
       </div>
+      {selectedTopic && (
+        <div className={styles.selectedTopic}>
+          URL selectat: /topics/{selectedTopic}
+        </div>
+      )}
     </div>
   );
 }
