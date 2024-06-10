@@ -1,18 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './PublicApp.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
-const ChapterNavigation = ({ topicId, onLessonClick, menuRef }) => {
+const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [chapters, setChapters] = useState([]);
+  const [lessons, setLessons] = useState({});
   const [activeChapter, setActiveChapter] = useState(null);
   const navigate = useNavigate();
 
   const fetchChapters = async () => {
     try {
-      const response = await fetch(API_BASE_URL + `chapter/${topicId}/all`);
+      const response = await fetch(API_BASE_URL + `gcs/topics/${topicName}/chapters`, { mode: 'cors' });
       const result = await response.json();
       setIsLoaded(true);
       setChapters(result);
@@ -22,25 +23,41 @@ const ChapterNavigation = ({ topicId, onLessonClick, menuRef }) => {
     }
   };
 
-  useEffect(() => {
-    if (topicId) fetchChapters();
-  }, [topicId]);
+  const fetchLessons = async (chapterName) => {
+    try {
+      const response = await fetch(API_BASE_URL + `gcs/topics/${topicName}/chapters/${chapterName}/lessons`, { mode: 'cors' });
+      const result = await response.json();
+      setLessons((prevLessons) => ({
+        ...prevLessons,
+        [chapterName]: result
+      }));
+    } catch (err) {
+      setError(err);
+    }
+  };
 
-  const handleChapterClick = (chapterId) => {
+  useEffect(() => {
+    if (topicName) fetchChapters();
+  }, [topicName]);
+
+  const handleChapterClick = (chapterName) => {
+    if (!lessons[chapterName]) {
+      fetchLessons(chapterName);
+    }
     setActiveChapter((prevActiveChapter) =>
-      prevActiveChapter === chapterId ? null : chapterId
+      prevActiveChapter === chapterName ? null : chapterName
     );
   };
 
-  const handleLessonClick = (lessonId) => {
-    onLessonClick(lessonId);
+  const handleLessonClick = (chapterName, lessonName) => {
+    onLessonClick(lessonName);
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
     }
-    navigate(`/topics/${topicId}/lessons/${lessonId}`);
+    navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${lessonName}`);
   };
 
-  if (topicId === '*') return <h2></h2>;
+  if (topicName === '*') return <h2></h2>;
 
   if (error) return <div>Error: {error.message}</div>;
 
@@ -51,26 +68,26 @@ const ChapterNavigation = ({ topicId, onLessonClick, menuRef }) => {
       <ul className={`${styles.lessons_menu} ${styles.tree}`}>
         {chapters.map((chapter) => (
           <li
-            key={chapter.chapterId}
+            key={chapter}
             className={`${styles.chapter} ${
-              activeChapter === chapter.chapterId ? styles.active : ''
+              activeChapter === chapter ? styles.active : ''
             }`}
-            onClick={() => handleChapterClick(chapter.chapterId)}
+            onClick={() => handleChapterClick(chapter)}
           >
-            {chapter.chapterName}
+            {chapter}
             <ul
               style={{
-                display: activeChapter === chapter.chapterId ? 'block' : 'none',
+                display: activeChapter === chapter ? 'block' : 'none',
               }}
             >
-              {chapter.lessons.map((lesson) => (
+              {lessons[chapter] && lessons[chapter].map((lesson) => (
                 <li
-                  key={lesson.lessonId}
+                  key={lesson}
                   className={styles.lesson}
-                  onClick={() => handleLessonClick(lesson.lessonId)}
+                  onClick={() => handleLessonClick(chapter, lesson)}
                 >
                   <a className={styles.lessonLink} href="#">
-                    {lesson.lessonName}
+                    {lesson}
                   </a>
                 </li>
               ))}

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import DonationPopup from './DonationPopup'
 
 function PublicNavigation () {
-  alert("public nav")
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
   const [isNavOpen, setNavOpen] = useState(false);
   const navRef = useRef(null);

@@ -10,14 +10,12 @@ function HomeComponent() {
   const [infoHome, setInfoHomeInfo] = useState('');
   const navigate = useNavigate();
   useEffect(() => {
-    // Fetch Topics
     fetch(API_BASE_URL + 'gcs/topics', { mode: 'cors' })
-    .then((res) => res.text()) // Obține textul răspunsului
+    .then((res) => res.text()) 
     .then(
       (result) => {
-        // Parsează textul răspunsului într-un array de șiruri de caractere
         const topicsArray = JSON.parse(result);
-        setTopics(topicsArray); // Setează array-ul în starea topics
+        setTopics(topicsArray);
       },
       (error) => {
         console.log('Error fetching topics:', error);
@@ -36,17 +34,7 @@ function HomeComponent() {
       );
 
     if (infoHome.introHomeMessage) {
-      // setTimeout(() => {
-      //   const colors = ['#383E42', '#2BAF49', '#e8de63'];
-      //   const interval = setInterval(() => {
-      //     const letters = document.querySelectorAll(`.${styles.home_intro} span`);
-      //     const randomLetterIndex = Math.floor(Math.random() * letters.length);
-      //     letters[randomLetterIndex].style.color = colors[Math.floor(Math.random() * colors.length)];
-      //     letters[randomLetterIndex].style.transition = 'color 2s ease';
-      //   }, 700);
 
-      //   return () => clearInterval(interval);
-      // }, 3000);
     }
   }, [infoHome.introHomeMessage]);
 
