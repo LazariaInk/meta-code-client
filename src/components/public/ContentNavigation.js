@@ -16,7 +16,6 @@ function ContentNavigation() {
   const menuRef = useRef(null);
   const contentRef = useRef(null);
   const [lessonContent, setLessonContent] = useState('');
-  const [images, setImages] = useState({});
 
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
@@ -32,12 +31,25 @@ function ContentNavigation() {
       })
       .then(
         (result) => {
-          setLessonContent(result);
+          console.log('Lesson content fetched:', result);
+          const basePath = `https://storage.googleapis.com/fabricadecoduribucket/${encodeURIComponent(topicName)}/${encodeURIComponent(chapterName)}/${encodeURIComponent(lessonName)}/`;
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(result, 'text/html');
+          const images = doc.querySelectorAll('img');
+          images.forEach(img => {
+            let src = img.getAttribute('src');
+            if (src && !src.startsWith('http')) {
+              const fullSrc = `${basePath}${src}`;
+              console.log(`Image source updated: ${fullSrc}`);
+              img.setAttribute('src', fullSrc);
+            }
+          });
+          setLessonContent(doc.documentElement.innerHTML);
+          console.log('Updated lesson content:', doc.documentElement.innerHTML);
         },
         (error) => console.error('Failed to fetch lesson content:', error)
       );
   };
-  
 
   useEffect(() => {
     if (lessonName) {
