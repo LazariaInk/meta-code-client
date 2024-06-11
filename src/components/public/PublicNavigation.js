@@ -1,8 +1,7 @@
-import styles from './Navigation.module.css'
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import DonationPopup from './DonationPopup'
+import { Link } from 'react-router-dom';
+import DonationPopup from './DonationPopup';
+import styles from './Navigation.module.css';
 
 function PublicNavigation () {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
@@ -44,7 +43,7 @@ function PublicNavigation () {
         <div>
           <Link to='/'>
             <img
-              src='../../../images/Logo_color.png'
+              src={process.env.PUBLIC_URL + '/images/Logo_color.png'}
               alt='FdC'
               className={styles.logo}
             />
@@ -74,4 +73,4 @@ function PublicNavigation () {
   );
 }
 
-export default PublicNavigation
+export default PublicNavigation;
