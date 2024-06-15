@@ -17,12 +17,19 @@ function ContentNavigation() {
   const contentRef = useRef(null);
   const [lessonContent, setLessonContent] = useState('');
 
+  const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
+  const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
+
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
   };
 
-  const fetchLessonContent = (topicName, chapterName, lessonName) => {
-    fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(lessonName)}`)
+  const fetchLessonContent = (chapterName, lessonName) => {
+    const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
+    const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
+    const encodedLessonName = encodeURIComponent(decodeNameFromURL(lessonName));
+
+    fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons/${encodedLessonName}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Failed to fetch lesson content');
@@ -31,8 +38,7 @@ function ContentNavigation() {
       })
       .then(
         (result) => {
-          console.log('Lesson content fetched:', result);
-          const basePath = `https://storage.googleapis.com/fabricadecoduribucket/${encodeURIComponent(topicName)}/${encodeURIComponent(chapterName)}/${encodeURIComponent(lessonName)}/`;
+          const basePath = `https://storage.googleapis.com/fabricadecoduribucket/${encodedTopicName}/${encodedChapterName}/${encodedLessonName}/`;
           const parser = new DOMParser();
           const doc = parser.parseFromString(result, 'text/html');
           const images = doc.querySelectorAll('img');
@@ -40,12 +46,10 @@ function ContentNavigation() {
             let src = img.getAttribute('src');
             if (src && !src.startsWith('http')) {
               const fullSrc = `${basePath}${src}`;
-              console.log(`Image source updated: ${fullSrc}`);
               img.setAttribute('src', fullSrc);
             }
           });
           setLessonContent(doc.documentElement.innerHTML);
-          console.log('Updated lesson content:', doc.documentElement.innerHTML);
         },
         (error) => console.error('Failed to fetch lesson content:', error)
       );
@@ -53,15 +57,18 @@ function ContentNavigation() {
 
   useEffect(() => {
     if (lessonName) {
-      fetchLessonContent(topicName, chapterName, lessonName);
+      fetchLessonContent(chapterName, lessonName);
     } else if (topicName && chapterName) {
-      fetch(`${API_BASE_URL}gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons`)
+      const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
+      const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
+
+      fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
         .then((res) => res.json())
         .then(
           (lessons) => {
             if (lessons.length > 0) {
               const firstLesson = lessons[0];
-              navigate(`/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(chapterName)}/lessons/${encodeURIComponent(firstLesson)}`);
+              navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(firstLesson)}`);
             }
           },
           (error) => console.error('Failed to fetch lessons:', error)

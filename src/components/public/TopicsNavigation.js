@@ -16,10 +16,12 @@ function TopicsNavigation() {
   const toggleBtnRef = useRef(null);
   const menuRef = useRef(null);
 
+  const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
+  const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
+  const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
+
   useEffect(() => {
-    fetch(API_BASE_URL + 'gcs/topics', {
-      mode: 'cors',
-    })
+    fetch(API_BASE_URL + 'gcs/topics', { mode: 'cors' })
       .then((res) => res.json())
       .then(
         (result) => {
@@ -53,26 +55,27 @@ function TopicsNavigation() {
   }, [toggleBtnRef, menuRef]);
 
   const handleTopicClick = async (topicName) => {
+    const encodedTopicNameForBackend = encodeNameForBackend(topicName);
     try {
-        const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters`);
-        const chapters = await chaptersResponse.json();
-      
-        if (chapters.length > 0) {
-            const firstChapter = chapters[0];
-            const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons`);
-            const lessons = await lessonsResponse.json();
-            if (lessons.length > 0) {
-                const firstLesson = lessons[0];
-                setSelectedTopic(topicName);
-                navigate(`/topics/${encodeURIComponent(topicName)}/chapters/${encodeURIComponent(firstChapter)}/lessons/${encodeURIComponent(firstLesson)}`);
-            } 
-        } 
-    } catch (error) {
-        console.error('Failed to fetch chapters or lessons:', error);
-    }
-};
+      const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`);
+      const chapters = await chaptersResponse.json();
 
-  const currentTopicName = location.pathname.match(/\/topics\/([^/]+)/)?.[1];
+      if (chapters.length > 0) {
+        const firstChapter = chapters[0];
+        const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters/${encodeNameForBackend(firstChapter)}/lessons`);
+        const lessons = await lessonsResponse.json();
+        if (lessons.length > 0) {
+          const firstLesson = lessons[0];
+          setSelectedTopic(topicName);
+          navigate(`/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(firstChapter)}/lessons/${encodeNameForURL(firstLesson)}`);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch chapters or lessons:', error);
+    }
+  };
+
+  const currentTopicName = decodeNameFromURL(location.pathname.match(/\/topics\/([^/]+)/)?.[1]);
 
   return (
     <div>
@@ -94,7 +97,7 @@ function TopicsNavigation() {
             {topics.map((topic) => (
               <li
                 key={topic}
-                className={currentTopicName === encodeURIComponent(topic) ? styles.topicActive : ''}
+                className={currentTopicName === encodeNameForURL(topic) ? styles.topicActive : ''}
                 onClick={() => handleTopicClick(topic)}
               >
                 <Link className={styles.links} to="#" onClick={(e) => e.preventDefault()}>
@@ -107,7 +110,7 @@ function TopicsNavigation() {
       </div>
       {selectedTopic && (
         <div className={styles.selectedTopic}>
-          URL selectat: /topics/{selectedTopic}
+          URL selectat: /topics/{encodeNameForURL(selectedTopic)}
         </div>
       )}
     </div>

@@ -11,9 +11,14 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [activeChapter, setActiveChapter] = useState(null);
   const navigate = useNavigate();
 
+  const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
+  const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
+  const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
+
   const fetchChapters = async () => {
+    const encodedTopicNameForBackend = encodeNameForBackend(topicName);
     try {
-      const response = await fetch(API_BASE_URL + `gcs/topics/${topicName}/chapters`, { mode: 'cors' });
+      const response = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`, { mode: 'cors' });
       const result = await response.json();
       setIsLoaded(true);
       setChapters(result);
@@ -24,8 +29,9 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   };
 
   const fetchLessons = async (chapterName) => {
+    const encodedChapterNameForBackend = encodeNameForBackend(chapterName);
     try {
-      const response = await fetch(API_BASE_URL + `gcs/topics/${topicName}/chapters/${chapterName}/lessons`, { mode: 'cors' });
+      const response = await fetch(API_BASE_URL + `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`, { mode: 'cors' });
       const result = await response.json();
       setLessons((prevLessons) => ({
         ...prevLessons,
@@ -50,11 +56,11 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   };
 
   const handleLessonClick = (chapterName, lessonName) => {
-    onLessonClick(lessonName);
+    onLessonClick(chapterName, lessonName);
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
     }
-    navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${lessonName}`);
+    navigate(`/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(chapterName)}/lessons/${encodeNameForURL(lessonName)}`);
   };
 
   if (topicName === '*') return <h2></h2>;
