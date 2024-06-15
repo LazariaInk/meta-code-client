@@ -90,13 +90,15 @@ function HomeComponent() {
         </div>
       </div>
       <div className={styles.about_section}>
-        <h3>Despre Platformă</h3>
+        <h3>Daca vrei sa fii sponsor</h3>
         <p className={styles.home_info}>
-          Fabrica de Coduri este o platformă educațională gratuită în limba română, dedicată tuturor celor care doresc să învețe programare. Oferim cursuri detaliate pentru toate limbajele de programare majore, inclusiv Python, Java, JavaScript, HTML, CSS, MySQL, PHP și multe altele. Fiecare curs este structurat pe lecții și capitole pentru a facilita învățarea progresivă și eficientă.
+        Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă. Fii parte din schimbare!
         </p>
         <p className={styles.home_info}>
-          Pe lângă cursuri, platforma noastră include și exerciții de programare de diferite nivele de dificultate, astfel încât utilizatorii să își poată testa și perfecționa abilitățile într-un mod practic și interactiv.
-        </p>
+  Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! <strong style={{ color: '#006400' }}>Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă.</strong> Fii parte din schimbare!
+</p>
+
+
       </div>
       <div className={styles.invite_section}>
         <h3>Învățați Programarea Gratuit</h3>
