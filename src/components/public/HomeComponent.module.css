@@ -18,7 +18,7 @@ body {
 /* Stiluri pentru secțiunile erou */
 .hero_section {
   margin-top:200px;
-  background-color: #3b7a4a;
+  background-color: #363836;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -45,7 +45,7 @@ body {
 .home_subtitle {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #2BAF49;
+  color: #8b8d8b;
 }
 
 .topics_container {
@@ -56,7 +56,7 @@ body {
 }
 
 .topic_button {
-  background-color: #296b29; /* Verde închis */
+  background-color: #244924; /* Verde închis */
   color: white;
   padding: 50px 70px; /* Butoane mai mari */
   margin: 10px;
@@ -73,7 +73,7 @@ body {
 
 .topic_button::before {
   content: '';
-  background-color: #2BAF49; /* Verde deschis */
+  background-color: #9eb9a4; /* Verde deschis */
   position: absolute;
   top: 0;
   left: -100%;

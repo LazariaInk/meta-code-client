@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import PublicFooter from './PublicFooter';
 import SocialLinks from '../SocialLinks';
 import { API_BASE_URL } from '../config/endpoints';
+import styles2 from './PublicApp.module.css';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
@@ -81,7 +82,7 @@ function HomeComponent() {
             <button
               key={topic}
               onClick={() => handleTopicClick(topic)}
-              className={styles.topic_button}
+              className={styles2.topic_button}
             >
               <span>{topic}</span>
             </button>
