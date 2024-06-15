@@ -798,13 +798,13 @@ p {
   }
 
   .right_ads {
-    position: relative;
+    position: relative; /* Schimbă la relative dacă este absolut */
+    z-index: 1; /* Z-index mai mic pentru a nu suprapune meniul */
     display: block;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-   
     padding: 10px;
     max-height: 300px;
     margin-bottom: 100px;

@@ -42,7 +42,7 @@ const SponsorTable = () => {
   }, []);
 
   return (
-    <Table striped bordered hover size="sm">
+    <Table striped bordered hover size="sm" className={styles.sponsorTable}>
       <thead>
         <tr>
           <th>Sponsori</th>
