@@ -1,12 +1,10 @@
-// src/components/PublicFooter.js
-import './../../App.css';
 import React, { useState, useEffect } from 'react';
 import DonationPopup from './DonationPopup';
 import styles from './Footer.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 import { initGA, logPageView } from './../config/analytics';
 
-function PublicFooter() {
+function PublicFooter({ fullWidth }) {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
   const [infoHome, setInfoHomeInfo] = useState('');
 
@@ -49,7 +47,7 @@ function PublicFooter() {
   }, []);
 
   return (
-    <div className={styles.footerContainer}>
+    <div className={`${styles.footerContainer} ${fullWidth ? styles.fullWidth : ''}`}>
       <footer className='footer'>
         <div className={styles.footer_container}>
           <div className='row'>
@@ -64,15 +62,15 @@ function PublicFooter() {
                 Donează acum!
               </button>
             </div>
-            <div className='col-md-4'>
+            <div className={`col-md-4 ${styles.footerContact}`}>
               <h3 className={styles.footerTitle}>Contact</h3>
               <p className={styles.footerText}>{infoHome.contactFooterContent}</p>
             </div>
           </div>
         </div>
         <hr />
-        <div className='row justify-content-center'>
-          <div className='col-md-12 text-center'>
+        <div className='row'>
+          <div className={`col-md-12 ${styles.footerOwnerInfo}`}>
             <p className={styles.footerText}>{infoHome.ownerInfo}</p>
           </div>
         </div>

@@ -103,7 +103,7 @@ function HomeComponent() {
         <p className={styles.home_invite}>{infoHome.infoHomeMessage}</p>
       </div>
       <SocialLinks />
-      <PublicFooter />
+      <PublicFooter fullWidth={true} />
     </div>
   );
 }

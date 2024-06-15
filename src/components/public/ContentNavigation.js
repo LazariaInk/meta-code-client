@@ -169,7 +169,7 @@ function ContentNavigation() {
           </div>
         </div>
       </div>
-      <PublicFooter />
+      <PublicFooter fullWidth={false} />
     </div>
   );
 }
