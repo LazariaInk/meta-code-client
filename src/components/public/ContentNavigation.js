@@ -32,7 +32,7 @@ function ContentNavigation() {
     fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons/${encodedLessonName}`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Failed to fetch lesson content');
+          throw new Error('Failed to fetch lesson content!');
         }
         return res.text();
       })

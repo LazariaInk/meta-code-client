@@ -67,7 +67,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
 
   if (error) return <div>Error: {error.message}</div>;
 
-  if (!isLoaded) return <div>Loading...</div>;
+  if (!isLoaded) return <div>Se incarca...</div>;
 
   return (
     <div>

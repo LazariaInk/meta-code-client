@@ -71,7 +71,7 @@ function TopicsNavigation() {
         }
       }
     } catch (error) {
-      console.error('Failed to fetch chapters or lessons:', error);
+      console.error('Failed to fetch chapters or lessons, error :', error);
     }
   };
 
