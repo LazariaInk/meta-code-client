@@ -37,16 +37,6 @@ function PublicNavigation () {
     };
   }, []);
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-    script.async = true;
-    script.crossOrigin = 'anonymous';
-    document.head.appendChild(script);
-
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, []);
-
   return (
     <div ref={navRef}>
       <div className={styles.main_nav}>
@@ -79,12 +69,6 @@ function PublicNavigation () {
         </ul>
       </div>
       {isDonationPopupOpen && <DonationPopup onClose={closeDonationPopup} />}
-      <ins className="adsbygoogle"
-           style={{ display: 'block' }}
-           data-ad-client="YOUR_ADSENSE_CLIENT_ID"
-           data-ad-slot="YOUR_AD_SLOT_ID"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
     </div>
   );
 }
