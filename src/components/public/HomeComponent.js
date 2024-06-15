@@ -101,7 +101,7 @@ function HomeComponent() {
 
       </div>
       <div className={styles.invite_section}>
-        <h3>Învățați Programarea Gratuit</h3>
+        <h3>Începe acum</h3>
         <p className={styles.home_invite}>{infoHome.infoHomeMessage}</p>
       </div>
       <SocialLinks />
