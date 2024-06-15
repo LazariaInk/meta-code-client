@@ -1,0 +1,123 @@
+/* Stiluri generale */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #383E42;
+}
+
+.home_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Stiluri pentru secțiunile erou */
+.hero_section {
+  margin-top:200px;
+  background-color: #3b7a4a;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.home_title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.home_intro {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Stiluri pentru secțiunea subiecte */
+.featured_section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.home_subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2BAF49;
+}
+
+.topics_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topic_button {
+  background-color: #296b29; /* Verde închis */
+  color: white;
+  padding: 50px 70px; /* Butoane mai mari */
+  margin: 10px;
+  border: 3px solid #000000; /* Contur negru */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  flex: 1 1 300px; /* Butoane mai mari */
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.topic_button::before {
+  content: '';
+  background-color: #2BAF49; /* Verde deschis */
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.topic_button:hover::before {
+  left: 0;
+}
+
+.topic_button span {
+  position: relative;
+  z-index: 1;
+}
+
+.topic_button:hover {
+  transform: scale(1.05);
+}
+
+/* Stiluri pentru secțiunea despre și invitație */
+.about_section, .invite_section {
+  background-color: white;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about_section h3, .invite_section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2BAF49;
+}
+
+.home_info, .home_invite {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Stiluri pentru footer și linkuri sociale */
+footer, .social_links {
+  text-align: center;
+  margin: 20px 0;
+}

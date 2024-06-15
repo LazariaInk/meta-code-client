@@ -854,4 +854,19 @@ p {
   
 }
 
+.hero_description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 
