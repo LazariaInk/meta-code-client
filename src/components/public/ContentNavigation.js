@@ -85,20 +85,20 @@ function ContentNavigation() {
           span.style.display = 'block';
           span.style.maxWidth = '100%';
           span.style.height = 'auto';
-          span.style.margin = '0 auto';
           span.style.overflow = 'hidden';
         }
       });
-
+    
       const images = contentRef.current.querySelectorAll('img');
       images.forEach(img => {
         img.removeAttribute('style');
         img.style.maxWidth = '100%';
         img.style.height = 'auto';
         img.style.display = 'block';
-        img.style.margin = '0 auto';
+        img.style.margin = '0'; // Elimină centrul prin eliminarea marginilor orizontale
       });
     }
+    
   }, [lessonContent]);
 
   const renderContent = () => {
