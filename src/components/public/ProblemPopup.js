@@ -10,7 +10,6 @@ function ProblemPopup({ problem, onClose }) {
   return (
     <Modal show={!!problem} onHide={onClose} size="lg">
       <Modal.Header closeButton>
-        {console.log("adasdasd")}
         <Modal.Title>Problem Details</Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -24,7 +23,7 @@ function ProblemPopup({ problem, onClose }) {
           <Tab eventKey="problemSolution" title="Problem Solution">
             <div>
               <p>Problem Solution:</p>
-              <div>{problem?.problemSolution}</div>
+              <div dangerouslySetInnerHTML={{ __html: problem?.problemSolution }} />
             </div>
           </Tab>
         </Tabs>
