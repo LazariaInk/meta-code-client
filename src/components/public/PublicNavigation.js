@@ -59,7 +59,7 @@ function PublicNavigation () {
             <Link to='/' onClick={closeNav}>Acasa</Link>
           </li>
           <li>
-            <Link to='/problems' onClick={closeNav}>Probleme</Link>
+            <Link to='/problems' onClick={closeNav}>Exerciții</Link>
           </li>
           <li>
             <a href='#' onClick={() => { openDonationPopup(); closeNav(); }}>
