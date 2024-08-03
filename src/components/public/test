@@ -1,0 +1,298 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=lhDjYqiy3mZ0x6ROQEUoUw);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c13 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #efecf4;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 451.4pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c5 {
+            color: #cf8e6d;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 10pt;
+            font-family: "Courier New";
+            font-style: normal
+        }
+
+        .c10 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c6 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #2a9292;
+            font-weight: 400
+        }
+
+        .c11 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c1 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #955ae7;
+            font-weight: 400
+        }
+
+        .c4 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #aa573c;
+            font-weight: 400
+        }
+
+        .c2 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #576ddb;
+            font-weight: 400
+        }
+
+        .c7 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #655f6d;
+            font-weight: 400
+        }
+
+        .c3 {
+            font-size: 10pt;
+            font-family: "Consolas";
+            color: #585260;
+            font-weight: 400
+        }
+
+        .c0 {
+            background-color: #ffffff;
+            max-width: 451.4pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c12 {
+            height: 0pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c0 doc-content">
+    <p class="c8"><span class="c10"></span></p><a id="t.b575de146d5ee16ea5b055c59c05414955de59a3"></a><a id="t.0"></a>
+    <table class="c11">
+        <tr class="c12">
+            <td class="c13" colspan="1" rowspan="1">
+                <p class="c9"><span class="c1">import</span><span
+                        class="c3">&nbsp;java.util.Scanner;<br><br></span><span class="c1">public</span><span
+                        class="c3">&nbsp;</span><span class="c1">class</span><span class="c3">&nbsp;</span><span
+                        class="c2">FlatlandKing</span><span class="c3">&nbsp;{<br><br> &nbsp; </span><span
+                        class="c1">public</span><span class="c3">&nbsp;</span><span class="c1">static</span><span
+                        class="c3">&nbsp;</span><span class="c1">void</span><span class="c3">&nbsp;</span><span
+                        class="c2">main</span><span class="c4">(String[] args)</span><span class="c3">&nbsp;{<br> &nbsp;
+                        &nbsp; &nbsp; Scanner scanner = </span><span class="c1">new</span><span
+                        class="c3">&nbsp;Scanner(System.in);<br><br> &nbsp; &nbsp; &nbsp; </span><span class="c7">//
+                        Citim valorile lui n &#537;i m</span><span class="c3"><br> &nbsp; &nbsp; &nbsp;
+                        System.out.print(</span><span class="c6">&quot;Introduce&#539;i num&#259;rul total de copaci
+                        (n): &quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">int</span><span class="c3">&nbsp;n = scanner.nextInt();<br> &nbsp; &nbsp; &nbsp;
+                        System.out.print(</span><span class="c6">&quot;Introduce&#539;i num&#259;rul de copaci
+                        r&#259;ma&#537;i (m): &quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">int</span><span class="c3">&nbsp;m = scanner.nextInt();<br><br> &nbsp; &nbsp; &nbsp;
+                    </span><span class="c7">// Calcul&#259;m num&#259;rul de moduri &icirc;n care putem t&#259;ia
+                        copacii</span><span class="c3"><br> &nbsp; &nbsp; &nbsp; </span><span class="c1">int</span><span
+                        class="c3">&nbsp;ways = calculateWays(n, m);<br><br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c7">// Afi&#537;&#259;m rezultatul</span><span class="c3"><br> &nbsp; &nbsp; &nbsp;
+                        System.out.println(</span><span class="c6">&quot;Num&#259;rul de moduri &icirc;n care putem
+                        t&#259;ia copacii este: &quot;</span><span class="c3">&nbsp;+ ways);<br> &nbsp; }<br><br> &nbsp;
+                    </span><span class="c1">public</span><span class="c3">&nbsp;</span><span
+                        class="c1">static</span><span class="c3">&nbsp;</span><span class="c1">int</span><span
+                        class="c3">&nbsp;</span><span class="c2">calculateWays</span><span class="c4">(</span><span
+                        class="c1">int</span><span class="c4">&nbsp;n, </span><span class="c1">int</span><span
+                        class="c4">&nbsp;m)</span><span class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c7">// Verific&#259;m dac&#259; este posibil s&#259; l&#259;s&#259;m exact m
+                        copaci</span><span class="c3"><br> &nbsp; &nbsp; &nbsp; </span><span class="c1">if</span><span
+                        class="c3">&nbsp;(m &gt; n) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">return</span><span class="c3">&nbsp;</span><span class="c4">0</span><span
+                        class="c3">;<br> &nbsp; &nbsp; &nbsp; }<br><br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">int</span><span class="c3">&nbsp;ways = </span><span class="c4">0</span><span
+                        class="c3">;<br><br> &nbsp; &nbsp; &nbsp; </span><span class="c7">// Iter&#259;m prin toate
+                        distan&#539;ele posibile</span><span class="c3"><br> &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">for</span><span class="c3">&nbsp;(</span><span class="c1">int</span><span
+                        class="c3">&nbsp;d = </span><span class="c4">1</span><span class="c3">; d &lt;= (n -
+                    </span><span class="c4">1</span><span class="c3">) / (m - </span><span class="c4">1</span><span
+                        class="c3">); d++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c1">if</span><span class="c3">&nbsp;((n - </span><span class="c4">1</span><span
+                        class="c3">) % (m - </span><span class="c4">1</span><span class="c3">) == </span><span
+                        class="c4">0</span><span class="c3">) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        ways++;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br> &nbsp; &nbsp; &nbsp; }<br><br> &nbsp;
+                        &nbsp; &nbsp; </span><span class="c1">return</span><span class="c3">&nbsp;ways;<br> &nbsp; }<br>}<br></span></p></td></tr></table><p class="c8"><span class="c5"></span></p></body></html>
