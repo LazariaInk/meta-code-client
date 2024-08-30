@@ -38,7 +38,7 @@ function ContentNavigation() {
       })
       .then(
         (result) => {
-          const basePath = `https://storage.googleapis.com/fabricadecoduribucket/${encodedTopicName}/${encodedChapterName}/${encodedLessonName}/`;
+          const basePath = `https://storage.googleapis.com/fabricadecoduri/${encodedTopicName}/${encodedChapterName}/${encodedLessonName}/`;
           const parser = new DOMParser();
           const doc = parser.parseFromString(result, 'text/html');
           const images = doc.querySelectorAll('img');
