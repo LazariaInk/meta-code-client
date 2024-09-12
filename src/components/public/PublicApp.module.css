@@ -869,4 +869,10 @@ p {
 }
 
 
+.activeLesson {
+  background-color: #2baf49;
+  color: white;
+}
+
+
 

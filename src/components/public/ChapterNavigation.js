@@ -9,16 +9,21 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [chapters, setChapters] = useState([]);
   const [lessons, setLessons] = useState({});
   const [activeChapter, setActiveChapter] = useState(null);
+  const [activeLesson, setActiveLesson] = useState(null); // lecția activă
+
   const navigate = useNavigate();
 
-  const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
-  const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
-  const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
+  const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
+  const encodeNameForBackend = (name) => (name ? encodeURIComponent(name) : '');
+  const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
 
   const fetchChapters = async () => {
     const encodedTopicNameForBackend = encodeNameForBackend(topicName);
     try {
-      const response = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`, { mode: 'cors' });
+      const response = await fetch(
+        API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`,
+        { mode: 'cors' }
+      );
       const result = await response.json();
       setIsLoaded(true);
       setChapters(result);
@@ -31,11 +36,15 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const fetchLessons = async (chapterName) => {
     const encodedChapterNameForBackend = encodeNameForBackend(chapterName);
     try {
-      const response = await fetch(API_BASE_URL + `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`, { mode: 'cors' });
+      const response = await fetch(
+        API_BASE_URL +
+          `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`,
+        { mode: 'cors' }
+      );
       const result = await response.json();
       setLessons((prevLessons) => ({
         ...prevLessons,
-        [chapterName]: result
+        [chapterName]: result,
       }));
     } catch (err) {
       setError(err);
@@ -57,10 +66,16 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
 
   const handleLessonClick = (chapterName, lessonName) => {
     onLessonClick(chapterName, lessonName);
+    setActiveLesson(lessonName); // Setează lecția activă
+    setActiveChapter(chapterName); // Setează și capitolul activ
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
     }
-    navigate(`/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(chapterName)}/lessons/${encodeNameForURL(lessonName)}`);
+    navigate(
+      `/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(
+        chapterName
+      )}/lessons/${encodeNameForURL(lessonName)}`
+    );
   };
 
   if (topicName === '*') return <h2></h2>;
@@ -76,27 +91,36 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
           <li
             key={chapter}
             className={`${styles.chapter} ${
-              activeChapter === chapter ? styles.active : ''
+              activeChapter === chapter || 
+              (lessons[chapter] && lessons[chapter].includes(activeLesson)) // Evidențiază capitolul activ sau dacă lecția este activă
+                ? styles.activeChapter // Aplică clasa capitolului activ
+                : ''
             }`}
             onClick={() => handleChapterClick(chapter)}
           >
             {chapter}
             <ul
               style={{
-                display: activeChapter === chapter ? 'block' : 'none',
+                display: activeChapter === chapter || 
+                (lessons[chapter] && lessons[chapter].includes(activeLesson)) 
+                  ? 'block'
+                  : 'none', // Afișează capitolul activ sau dacă lecția este activă
               }}
             >
-              {lessons[chapter] && lessons[chapter].map((lesson) => (
-                <li
-                  key={lesson}
-                  className={styles.lesson}
-                  onClick={() => handleLessonClick(chapter, lesson)}
-                >
-                  <a className={styles.lessonLink} href="#">
-                    {lesson}
-                  </a>
-                </li>
-              ))}
+              {lessons[chapter] &&
+                lessons[chapter].map((lesson) => (
+                  <li
+                    key={lesson}
+                    className={`${styles.lesson} ${
+                      activeLesson === lesson ? styles.activeLesson : ''
+                    }`}
+                    onClick={() => handleLessonClick(chapter, lesson)}
+                  >
+                    <a className={styles.lessonLink} href="#">
+                      {lesson}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </li>
         ))}
