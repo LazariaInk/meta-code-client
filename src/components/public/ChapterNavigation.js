@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom'; // import useParams pentru a prelua parametrii din URL
 import styles from './PublicApp.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
@@ -12,6 +12,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [activeLesson, setActiveLesson] = useState(null); // lecția activă
 
   const navigate = useNavigate();
+  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams(); // Preluăm capitolul și lecția din URL
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
   const encodeNameForBackend = (name) => (name ? encodeURIComponent(name) : '');
@@ -54,6 +55,22 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   useEffect(() => {
     if (topicName) fetchChapters();
   }, [topicName]);
+
+  // La montarea componentei, setează capitolul și lecția activă din URL (dacă sunt prezente)
+  useEffect(() => {
+    if (chapterFromURL && lessonFromURL) {
+      const decodedChapter = decodeNameFromURL(chapterFromURL);
+      const decodedLesson = decodeNameFromURL(lessonFromURL);
+      
+      setActiveChapter(decodedChapter);
+      setActiveLesson(decodedLesson);
+      
+      // Fetch lessons pentru capitolul respectiv dacă nu sunt încă încărcate
+      if (!lessons[decodedChapter]) {
+        fetchLessons(decodedChapter);
+      }
+    }
+  }, [chapterFromURL, lessonFromURL]);
 
   const handleChapterClick = (chapterName) => {
     if (!lessons[chapterName]) {
