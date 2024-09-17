@@ -107,13 +107,33 @@ function ContentNavigation() {
     if (currentLessonIndex !== null && currentLessonIndex < lessons.length - 1) {
       const nextLesson = lessons[currentLessonIndex + 1];
       navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(nextLesson)}`);
+    } else if (currentLessonIndex === lessons.length - 1) {
+      // Dacă suntem la ultima lecție din capitol, trecem la următorul capitol
+      fetch(`${API_BASE_URL}gcs/topics/${topicName}/chapters/${chapterName}/next`)
+        .then((res) => res.text())
+        .then((firstLessonInNextChapter) => {
+          if (firstLessonInNextChapter) {
+            navigate(`/topics/${topicName}/chapters/${encodeNameForURL(firstLessonInNextChapter)}/lessons/${encodeNameForURL(firstLessonInNextChapter)}`);
+          }
+        })
+        .catch((error) => console.error('Failed to fetch next chapter:', error));
     }
   };
-
+  
   const handlePreviousLesson = () => {
     if (currentLessonIndex !== null && currentLessonIndex > 0) {
       const previousLesson = lessons[currentLessonIndex - 1];
       navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(previousLesson)}`);
+    } else if (currentLessonIndex === 0) {
+      // Dacă suntem la prima lecție din capitol, trecem la ultimul lecție din capitolul anterior
+      fetch(`${API_BASE_URL}gcs/topics/${topicName}/chapters/${chapterName}/previous`)
+        .then((res) => res.text())
+        .then((lastLessonInPreviousChapter) => {
+          if (lastLessonInPreviousChapter) {
+            navigate(`/topics/${topicName}/chapters/${encodeNameForURL(lastLessonInPreviousChapter)}/lessons/${encodeNameForURL(lastLessonInPreviousChapter)}`);
+          }
+        })
+        .catch((error) => console.error('Failed to fetch previous chapter:', error));
     }
   };
 
