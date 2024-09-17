@@ -874,5 +874,16 @@ p {
   color: white;
 }
 
+.navigation_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation_buttons button {
+  width: 100px; /* Sau orice lățime dorești */
+}
+
+
 
 

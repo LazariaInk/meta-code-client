@@ -16,8 +16,8 @@ function ContentNavigation() {
   const menuRef = useRef(null);
   const contentRef = useRef(null);
   const [lessonContent, setLessonContent] = useState('');
-  const [lessons, setLessons] = useState([]); // Lista lecțiilor
-  const [currentLessonIndex, setCurrentLessonIndex] = useState(null); // Indexul lecției curente
+  const [lessons, setLessons] = useState([]);
+  const [currentLessonIndex, setCurrentLessonIndex] = useState(null);
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
   const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
@@ -29,7 +29,7 @@ function ContentNavigation() {
     const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
     const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
     const encodedLessonName = encodeURIComponent(decodeNameFromURL(lessonName));
-  
+
     fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons/${encodedLessonName}`)
       .then((res) => {
         if (!res.ok) {
@@ -51,24 +51,21 @@ function ContentNavigation() {
             }
           });
           setLessonContent(doc.documentElement.innerHTML);
-  
-          // Adaugă aici scroll up la începutul paginii
           window.scrollTo({
             top: 0,
-            behavior: 'smooth'  // Scoll-ul va fi lin
+            behavior: 'smooth'
           });
         },
         (error) => console.error('Failed to fetch lesson content:', error)
       );
   };
-
   useEffect(() => {
     if (topicName && chapterName) {
       const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
       const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
-  
-      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`); // Debugging line
-  
+
+      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`);
+
       fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
         .then((res) => {
           if (!res.ok) {
@@ -78,9 +75,10 @@ function ContentNavigation() {
         })
         .then(
           (lessons) => {
-            console.log("Lessons fetched: ", lessons); // Debugging line
-            setLessons(lessons); // Setăm lecțiile din capitol
-            if (lessons.length > 0) {
+            console.log("Lessons fetched: ", lessons);
+            setLessons(lessons);
+
+            if (lessons.length > 0 && !lessonName) {
               const firstLesson = lessons[0];
               navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(firstLesson)}`);
             }
@@ -88,14 +86,13 @@ function ContentNavigation() {
           (error) => console.error('Failed to fetch lessons:', error)
         );
     }
-  }, [topicName, chapterName]);
-  
-  // Apelăm fetchLessonContent ori de câte ori lessonName sau chapterName se schimbă
+  }, [topicName, chapterName, lessonName]);
+
   useEffect(() => {
     if (lessonName && chapterName) {
-      fetchLessonContent(chapterName, lessonName);  
+      fetchLessonContent(chapterName, lessonName);
     }
-  }, [chapterName, lessonName]);  // Adăugăm lessonName și chapterName ca dependențe
+  }, [chapterName, lessonName]);
 
   useEffect(() => {
     if (lessonName && lessons.length > 0) {
@@ -104,17 +101,65 @@ function ContentNavigation() {
     }
   }, [lessons, lessonName]);
 
-  const handleNextLesson = () => {
+  const handleNextLesson = async () => {
     if (currentLessonIndex !== null && currentLessonIndex < lessons.length - 1) {
       const nextLesson = lessons[currentLessonIndex + 1];
       navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(nextLesson)}`);
+    } else if (currentLessonIndex === lessons.length - 1) {
+      const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
+
+      const response = await fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters`);
+      const chapters = await response.json();
+
+      const currentChapterIndex = chapters.findIndex(chapter => encodeNameForURL(chapter) === chapterName);
+
+      if (currentChapterIndex !== -1 && currentChapterIndex < chapters.length - 1) {
+        const nextChapter = chapters[currentChapterIndex + 1];
+        const encodedNextChapterName = encodeURIComponent(nextChapter);
+
+        const lessonsResponse = await fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedNextChapterName}/lessons`);
+        const nextChapterLessons = await lessonsResponse.json();
+
+        if (nextChapterLessons.length > 0) {
+          const firstLesson = nextChapterLessons[0];
+          navigate(`/topics/${topicName}/chapters/${encodeNameForURL(nextChapter)}/lessons/${encodeNameForURL(firstLesson)}`);
+        }
+      } else {
+        console.log("Nu există capitol următor.");
+      }
     }
   };
 
-  const handlePreviousLesson = () => {
+
+
+
+  const handlePreviousLesson = async () => {
     if (currentLessonIndex !== null && currentLessonIndex > 0) {
       const previousLesson = lessons[currentLessonIndex - 1];
       navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(previousLesson)}`);
+    } else if (currentLessonIndex === 0) {
+      const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
+
+      const response = await fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters`);
+      const chapters = await response.json();
+
+      const currentChapterIndex = chapters.findIndex(chapter => encodeNameForURL(chapter) === chapterName);
+
+      if (currentChapterIndex !== -1 && currentChapterIndex > 0) {
+
+        const previousChapter = chapters[currentChapterIndex - 1];
+        const encodedPreviousChapterName = encodeURIComponent(previousChapter);
+
+        const lessonsResponse = await fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedPreviousChapterName}/lessons`);
+        const previousChapterLessons = await lessonsResponse.json();
+
+        if (previousChapterLessons.length > 0) {
+          const lastLesson = previousChapterLessons[previousChapterLessons.length - 1];
+          navigate(`/topics/${topicName}/chapters/${encodeNameForURL(previousChapter)}/lessons/${encodeNameForURL(lastLesson)}`);
+        }
+      } else {
+        console.log("Nu există capitol anterior.");
+      }
     }
   };
 
@@ -143,7 +188,7 @@ function ContentNavigation() {
         img.style.maxWidth = '100%';
         img.style.height = 'auto';
         img.style.display = 'block';
-        img.style.margin = '0'; // Elimină centrul prin eliminarea marginilor orizontale
+        img.style.margin = '0';
       });
     }
   }, [lessonContent]);
@@ -178,21 +223,19 @@ function ContentNavigation() {
             ref={contentRef}
             dangerouslySetInnerHTML={renderContent()}
           />
-          {/* Butoanele Previous și Next */}
           <div className={styles.navigation_buttons}>
             <button
               onClick={handlePreviousLesson}
-              disabled={currentLessonIndex === 0 || currentLessonIndex === null}
-              className="btn btn-primary"
+              className="btn btn-success"
             >
-              Previous
+              Lecția următoarea
             </button>
+
             <button
               onClick={handleNextLesson}
-              disabled={currentLessonIndex === lessons.length - 1 || currentLessonIndex === null}
-              className="btn btn-primary"
+              className="btn btn-success"
             >
-              Next
+              Lecția precedentă
             </button>
           </div>
         </div>
