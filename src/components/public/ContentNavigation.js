@@ -25,12 +25,12 @@ function ContentNavigation() {
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
   };
-
+  
   const fetchLessonContent = (chapterName, lessonName) => {
     const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
     const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
     const encodedLessonName = encodeURIComponent(decodeNameFromURL(lessonName));
-
+  
     fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons/${encodedLessonName}`)
       .then((res) => {
         if (!res.ok) {
@@ -52,6 +52,12 @@ function ContentNavigation() {
             }
           });
           setLessonContent(doc.documentElement.innerHTML);
+  
+          // Adaugă aici scroll up la începutul paginii
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'  // Scoll-ul va fi lin
+          });
         },
         (error) => console.error('Failed to fetch lesson content:', error)
       );
