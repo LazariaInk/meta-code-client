@@ -16,9 +16,11 @@ function ContentNavigation() {
   const menuRef = useRef(null);
   const contentRef = useRef(null);
   const [lessonContent, setLessonContent] = useState('');
+  const [lessons, setLessons] = useState([]); // Lista lecțiilor
+  const [currentLessonIndex, setCurrentLessonIndex] = useState(null); // Indexul lecției curente
 
-  const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
-  const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
+  const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
+  const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
 
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
@@ -42,7 +44,7 @@ function ContentNavigation() {
           const parser = new DOMParser();
           const doc = parser.parseFromString(result, 'text/html');
           const images = doc.querySelectorAll('img');
-          images.forEach(img => {
+          images.forEach((img) => {
             let src = img.getAttribute('src');
             if (src && !src.startsWith('http')) {
               const fullSrc = `${basePath}${src}`;
@@ -56,16 +58,23 @@ function ContentNavigation() {
   };
 
   useEffect(() => {
-    if (lessonName) {
-      fetchLessonContent(chapterName, lessonName);
-    } else if (topicName && chapterName) {
+    if (topicName && chapterName) {
       const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
       const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
-
+  
+      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`); // Debugging line
+  
       fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
-        .then((res) => res.json())
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Failed to fetch lessons');
+          }
+          return res.json();
+        })
         .then(
           (lessons) => {
+            console.log("Lessons fetched: ", lessons); // Debugging line
+            setLessons(lessons); // Setăm lecțiile din capitol
             if (lessons.length > 0) {
               const firstLesson = lessons[0];
               navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(firstLesson)}`);
@@ -74,32 +83,35 @@ function ContentNavigation() {
           (error) => console.error('Failed to fetch lessons:', error)
         );
     }
-  }, [topicName, chapterName, lessonName]);
+  }, [topicName, chapterName]);
+  
+  // Apelăm fetchLessonContent ori de câte ori lessonName sau chapterName se schimbă
+  useEffect(() => {
+    if (lessonName && chapterName) {
+      fetchLessonContent(chapterName, lessonName);  
+    }
+  }, [chapterName, lessonName]);  // Adăugăm lessonName și chapterName ca dependențe
 
   useEffect(() => {
-    if (contentRef.current) {
-      const spans = contentRef.current.querySelectorAll('span');
-      spans.forEach(span => {
-        if (span.querySelector('img')) {
-          span.removeAttribute('style');
-          span.style.display = 'block';
-          span.style.maxWidth = '100%';
-          span.style.height = 'auto';
-          span.style.overflow = 'hidden';
-        }
-      });
-    
-      const images = contentRef.current.querySelectorAll('img');
-      images.forEach(img => {
-        img.removeAttribute('style');
-        img.style.maxWidth = '100%';
-        img.style.height = 'auto';
-        img.style.display = 'block';
-        img.style.margin = '0'; // Elimină centrul prin eliminarea marginilor orizontale
-      });
+    if (lessonName && lessons.length > 0) {
+      const index = lessons.findIndex((lesson) => encodeNameForURL(lesson) === lessonName);
+      setCurrentLessonIndex(index);
     }
-    
-  }, [lessonContent]);
+  }, [lessons, lessonName]);
+
+  const handleNextLesson = () => {
+    if (currentLessonIndex !== null && currentLessonIndex < lessons.length - 1) {
+      const nextLesson = lessons[currentLessonIndex + 1];
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(nextLesson)}`);
+    }
+  };
+
+  const handlePreviousLesson = () => {
+    if (currentLessonIndex !== null && currentLessonIndex > 0) {
+      const previousLesson = lessons[currentLessonIndex - 1];
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(previousLesson)}`);
+    }
+  };
 
   const renderContent = () => {
     if (!lessonContent) return;
@@ -108,29 +120,28 @@ function ContentNavigation() {
   };
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      const isMenuClick = menuRef.current?.contains(event.target);
-      const isHamburgerClick = hamburgerIconRef.current?.contains(event.target);
+    if (contentRef.current) {
+      const spans = contentRef.current.querySelectorAll('span');
+      spans.forEach((span) => {
+        if (span.querySelector('img')) {
+          span.removeAttribute('style');
+          span.style.display = 'block';
+          span.style.maxWidth = '100%';
+          span.style.height = 'auto';
+          span.style.overflow = 'hidden';
+        }
+      });
 
-      if (!isMenuClick && !isHamburgerClick) {
-        menuRef.current?.classList.remove(styles.menushow);
-      }
-    };
-
-    const handleResize = () => {
-      if (window.innerWidth > 1000) {
-        menuRef.current?.classList.remove(styles.menushow);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+      const images = contentRef.current.querySelectorAll('img');
+      images.forEach((img) => {
+        img.removeAttribute('style');
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+        img.style.margin = '0'; // Elimină centrul prin eliminarea marginilor orizontale
+      });
+    }
+  }, [lessonContent]);
 
   return (
     <div className={styles.appContainer}>
@@ -162,6 +173,23 @@ function ContentNavigation() {
             ref={contentRef}
             dangerouslySetInnerHTML={renderContent()}
           />
+          {/* Butoanele Previous și Next */}
+          <div className={styles.navigation_buttons}>
+            <button
+              onClick={handlePreviousLesson}
+              disabled={currentLessonIndex === 0 || currentLessonIndex === null}
+              className="btn btn-primary"
+            >
+              Previous
+            </button>
+            <button
+              onClick={handleNextLesson}
+              disabled={currentLessonIndex === lessons.length - 1 || currentLessonIndex === null}
+              className="btn btn-primary"
+            >
+              Next
+            </button>
+          </div>
         </div>
         <div className={styles.right_ads}>
           <div style={{ maxHeight: '500px', overflowY: 'scroll' }}>
