@@ -25,7 +25,7 @@ function ContentNavigation() {
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
   };
-  
+
   const fetchLessonContent = (chapterName, lessonName) => {
     const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
     const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
@@ -67,8 +67,6 @@ function ContentNavigation() {
     if (topicName && chapterName) {
       const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
       const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
-  
-      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`); // Debugging line
   
       fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
         .then((res) => {
@@ -184,14 +182,14 @@ function ContentNavigation() {
             <button
               onClick={handlePreviousLesson}
               disabled={currentLessonIndex === 0 || currentLessonIndex === null}
-              className="btn btn-primary"
+              className="btn btn-success"
             >
               Previous
             </button>
             <button
               onClick={handleNextLesson}
               disabled={currentLessonIndex === lessons.length - 1 || currentLessonIndex === null}
-              className="btn btn-primary"
+              className="btn btn-success"
             >
               Next
             </button>
