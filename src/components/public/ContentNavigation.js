@@ -228,14 +228,14 @@ function ContentNavigation() {
               onClick={handlePreviousLesson}
               className="btn btn-success"
             >
-              Lecția următoarea
+              Lecția precedentă
             </button>
 
             <button
               onClick={handleNextLesson}
               className="btn btn-success"
             >
-              Lecția precedentă
+              Lecția următoarea
             </button>
           </div>
         </div>
