@@ -15,7 +15,6 @@ import ProblemPage from './components/admin/pages/problems/ProblemPage'
 import LoginPage from './components/admin/pages/authenticate/LoginPage'
 import SponsorsPage from './components/admin/pages/sponsors/SponsorsPage'
 import PublicNavigation from './components/public/PublicNavigation'
-import TopicsNavigation from './components/public/TopicsNavigation'
 import ContentNavigation from './components/public/ContentNavigation'
 import HomeComponent from './components/public/HomeComponent'
 import ProblemList from './components/public/ProblemList'; 
