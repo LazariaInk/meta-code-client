@@ -3,6 +3,7 @@ import styles from './HomeComponent.module.css';
 import { useNavigate } from 'react-router-dom';
 import PublicFooter from './PublicFooter';
 import SocialLinks from '../SocialLinks';
+import { Helmet } from 'react-helmet';
 import { API_BASE_URL } from '../config/endpoints';
 import styles2 from './PublicApp.module.css';
 
