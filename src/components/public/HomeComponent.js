@@ -15,8 +15,9 @@ function HomeComponent() {
   const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
   const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
 
+  // Fetch topics and homepage info from backend
   useEffect(() => {
-    fetch(API_BASE_URL + 'gcs/topics', { mode: 'cors' })
+    fetch(`${API_BASE_URL}gcs/topics`, { mode: 'cors' })
       .then((res) => res.text())
       .then(
         (result) => {
@@ -28,7 +29,7 @@ function HomeComponent() {
         }
       );
 
-    fetch(API_BASE_URL + 'fabrica-de-coduri-info/1', { mode: 'cors' })
+    fetch(`${API_BASE_URL}fabrica-de-coduri-info/1`, { mode: 'cors' })
       .then((res) => res.json())
       .then(
         (result) => {
@@ -38,26 +39,28 @@ function HomeComponent() {
           console.log('Error fetching infoHomeInfo:', error);
         }
       );
-
-    if (infoHome.introHomeMessage) {
-      // Handle introHomeMessage if needed
-    }
-  }, [infoHome.introHomeMessage]);
+  }, []);
 
   const handleTopicClick = async (topic) => {
     const encodedTopicForBackend = encodeNameForBackend(topic);
     try {
-      const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicForBackend}/chapters`);
+      const chaptersResponse = await fetch(
+        `${API_BASE_URL}gcs/topics/${encodedTopicForBackend}/chapters`
+      );
       const chapters = await chaptersResponse.json();
 
       if (chapters.length > 0) {
         const firstChapter = chapters[0];
         const encodedFirstChapterForBackend = encodeNameForBackend(firstChapter);
-        const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicForBackend}/chapters/${encodedFirstChapterForBackend}/lessons`);
+        const lessonsResponse = await fetch(
+          `${API_BASE_URL}gcs/topics/${encodedTopicForBackend}/chapters/${encodedFirstChapterForBackend}/lessons`
+        );
         const lessons = await lessonsResponse.json();
         if (lessons.length > 0) {
           const firstLesson = lessons[0];
-          navigate(`/topics/${encodeNameForURL(topic)}/chapters/${encodeNameForURL(firstChapter)}/lessons/${encodeNameForURL(firstLesson)}`);
+          navigate(
+            `/topics/${encodeNameForURL(topic)}/chapters/${encodeNameForURL(firstChapter)}/lessons/${encodeNameForURL(firstLesson)}`
+          );
         }
       }
     } catch (error) {
@@ -70,7 +73,42 @@ function HomeComponent() {
       <Helmet>
         <title>Cursuri gratuite de programare - Java, Python, și multe altele | Platforma Educațională</title>
         <meta name="description" content="Învață programarea gratis, începe acum să înveți Java, Python, PHP și altele." />
-        <meta property="og:title" content="Cursuri gratuite de programare în limba română - Java, Python și altele" />
+        <meta property="og:description" content="Alătură-te comunității noastre pentru a învăța programare gratuit în limba română. Învață Java, Python, PHP, și multe altele!" />
+        <meta property="og:image" content="https://example.com/image.jpg" />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://example.com/image.jpg" /> {/* Replace with actual image URL */}
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalOccupationalProgram",
+              "name": "Cursuri gratuite de programare",
+              "description": "Portal educațional românesc cu cursuri gratuite de programare în Java, Python, PHP și multe altele.",
+              "provider": {
+                "@type": "Organization",
+                "name": "Platforma Educațională"
+              },
+              "educationalCredentialAwarded": "Certificate",
+              "hasCourse": [
+                {
+                  "@type": "Course",
+                  "name": "Curs Java",
+                  "courseMode": "Online",
+                  "coursePrerequisites": "None"
+                },
+                {
+                  "@type": "Course",
+                  "name": "Curs Python",
+                  "courseMode": "Online",
+                  "coursePrerequisites": "None"
+                }
+              ]
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className={styles.home_container}>
@@ -83,7 +121,7 @@ function HomeComponent() {
         <div className={styles.featured_section}>
           <h2 className={styles.home_subtitle}>Subiectele noastre</h2>
           <div className={styles.topics_container}>
-            {topics.map((topic) => (
+          {topics.map((topic) => (
               <button
                 key={topic}
                 onClick={() => handleTopicClick(topic)}
