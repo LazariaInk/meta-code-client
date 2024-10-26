@@ -65,49 +65,56 @@ function HomeComponent() {
   };
 
   return (
-    <div className={styles.home_container}>
-      <div className={styles.hero_section}>
-        <h1 className={styles.home_title}>{infoHome.titleHome}</h1>
-        <div className={`${styles.home_intro} ${styles.fadeIn}`}>
-          {infoHome.introHomeMessage &&
-            infoHome.introHomeMessage.split('').map((char, index) => (
-              <span key={index}>{char}</span>
+    <>
+      <Helmet>
+        <title>Cursuri gratuite de programare - Java, Python, și multe altele | Platforma Educațională</title>
+        <meta name="description" content="Învață programarea gratis, începe acum să înveți Java, Python, PHP și altele." />
+        <meta property="og:title" content="Cursuri gratuite de programare în limba română - Java, Python și altele" />
+      </Helmet>
+
+      <div className={styles.home_container}>
+        <div className={styles.hero_section}>
+          <h1 className={styles.home_title}>Cursuri gratuite de programare în română</h1>
+          <p className={styles.home_intro}>
+            Alătură-te comunității și învață Java, Python, PHP, JavaScript și multe altele.
+          </p>
+        </div>
+        <div className={styles.featured_section}>
+          <h2 className={styles.home_subtitle}>Subiectele noastre</h2>
+          <div className={styles.topics_container}>
+            {topics.map((topic) => (
+              <button
+                key={topic}
+                onClick={() => handleTopicClick(topic)}
+                className={styles2.topic_button}
+                aria-label={`Curs ${topic}`}
+              >
+                <span>{topic}</span>
+              </button>
             ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.featured_section}>
-        <h2 className={styles.home_subtitle}>Subiectele noastre</h2>
-        <div className={styles.topics_container}>
-          {topics.map((topic) => (
-            <button
-              key={topic}
-              onClick={() => handleTopicClick(topic)}
-              className={styles2.topic_button}
-            >
-              <span>{topic}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className={styles.about_section}>
-        <h3>Daca vrei sa fii sponsor</h3>
-        <p className={styles.home_info}>
-        Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă. Fii parte din schimbare!
-        </p>
-        <p className={styles.home_info}>
-  Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! <strong style={{ color: '#006400' }}>Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă.</strong> Fii parte din schimbare!
-</p>
+        <div className={styles.about_section}>
+          <h3>Daca vrei sa fii sponsor</h3>
+          <p className={styles.home_info}>
+            Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă. Fii parte din schimbare!
+          </p>
+          <p className={styles.home_info}>
+            Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! <strong style={{ color: '#006400' }}>Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă.</strong> Fii parte din schimbare!
+          </p>
 
 
+        </div>
+        <div className={styles.invite_section}>
+          <h3>Începe acum</h3>
+          <p className={styles.home_invite}>{infoHome.infoHomeMessage}</p>
+        </div>
+        <SocialLinks />
+        <PublicFooter fullWidth={true} />
       </div>
-      <div className={styles.invite_section}>
-        <h3>Începe acum</h3>
-        <p className={styles.home_invite}>{infoHome.infoHomeMessage}</p>
-      </div>
-      <SocialLinks />
-      <PublicFooter fullWidth={true} />
-    </div>
+    </>
   );
 }
+
 
 export default HomeComponent;
