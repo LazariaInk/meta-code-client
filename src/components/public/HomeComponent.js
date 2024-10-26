@@ -100,11 +100,6 @@ function HomeComponent() {
           <p className={styles.home_info}>
             Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă. Fii parte din schimbare!
           </p>
-          <p className={styles.home_info}>
-            Contribuie la dezvoltarea portalului nostru dedicat educării programatorilor de toate nivelurile. Donația ta ne ajută să oferim gratuit resurse educaționale în limba română, acoperind diverse limbaje de programare. Fiecare contribuție contează! <strong style={{ color: '#006400' }}>Donează prin Revolut la RO21 BREL 0005 5453 8388 0100 și adaugă în comentariul tranzacției numele contului tău de Instagram. Vei fi inclus în tabela noastră de sponsori și vei avea vizibilitate pe platformă.</strong> Fii parte din schimbare!
-          </p>
-
-
         </div>
         <div className={styles.invite_section}>
           <h3>Începe acum</h3>
