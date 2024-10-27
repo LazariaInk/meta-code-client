@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom'; // import useParams pentru a prelua parametrii din URL
+import { useNavigate, useParams } from 'react-router-dom'; 
 import styles from './PublicApp.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
@@ -9,10 +9,10 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [chapters, setChapters] = useState([]);
   const [lessons, setLessons] = useState({});
   const [activeChapter, setActiveChapter] = useState(null);
-  const [activeLesson, setActiveLesson] = useState(null); // lecția activă
+  const [activeLesson, setActiveLesson] = useState(null);
 
   const navigate = useNavigate();
-  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams(); // Preluăm capitolul și lecția din URL
+  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
   const encodeNameForBackend = (name) => (name ? encodeURIComponent(name) : '');
@@ -56,7 +56,6 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     if (topicName) fetchChapters();
   }, [topicName]);
 
-  // La montarea componentei, setează capitolul și lecția activă din URL (dacă sunt prezente)
   useEffect(() => {
     if (chapterFromURL && lessonFromURL) {
       const decodedChapter = decodeNameFromURL(chapterFromURL);
@@ -65,7 +64,6 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
       setActiveChapter(decodedChapter);
       setActiveLesson(decodedLesson);
 
-      // Fetch lessons pentru capitolul respectiv dacă nu sunt încă încărcate
       if (!lessons[decodedChapter]) {
         fetchLessons(decodedChapter);
       }
@@ -83,8 +81,8 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
 
   const handleLessonClick = (chapterName, lessonName) => {
     onLessonClick(chapterName, lessonName);
-    setActiveLesson(lessonName); // Setează lecția activă
-    setActiveChapter(chapterName); // Setează și capitolul activ
+    setActiveLesson(lessonName);
+    setActiveChapter(chapterName);
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
     }
@@ -95,11 +93,18 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     );
   };
 
-  if (topicName === '*') return <h2></h2>;
+  // Render conditionals and content below
+  if (topicName === '*') {
+    return <h2></h2>;
+  }
 
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
-  if (!isLoaded) return <div>Se incarca...</div>;
+  if (!isLoaded) {
+    return <div>Se incarca...</div>;
+  }
 
   return (
     <div>
@@ -108,8 +113,8 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
           <li
             key={chapter}
             className={`${styles.chapter} ${activeChapter === chapter ||
-                (lessons[chapter] && lessons[chapter].includes(activeLesson)) // Evidențiază capitolul activ sau dacă lecția este activă
-                ? styles.activeChapter // Aplică clasa capitolului activ
+                (lessons[chapter] && lessons[chapter].includes(activeLesson))
+                ? styles.activeChapter
                 : ''
               }`}
             onClick={() => handleChapterClick(chapter)}
