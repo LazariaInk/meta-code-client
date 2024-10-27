@@ -882,3 +882,33 @@ p {
 .navigation_buttons button {
   width: 200px;
 }
+
+@supports (-webkit-appearance: none) {
+  /* Ensure Flex Containers display correctly */
+  .menu, .lessons_menu, .menu-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Force z-index for any fixed elements */
+  .menu, .topics_nav, .overlay {
+    position: fixed;
+    z-index: 1000 !important;
+  }
+
+  /* Adjust transformation scaling on hover */
+  .topic_button:hover {
+    transform: scale(1.05); /* reduce scale slightly for smoother rendering */
+  }
+
+  /* Ensure fonts load correctly */
+  .home_title, .topic_button h3, .home_info {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400; /* Set fallback weight explicitly */
+  }
+  
+  /* Safari-specific fix for elements not displaying */
+  .tree ul {
+    display: block !important; /* Overrides any hiding issues in Safari */
+  }
+}
