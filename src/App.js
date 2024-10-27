@@ -17,12 +17,12 @@ import SponsorsPage from './components/admin/pages/sponsors/SponsorsPage'
 import PublicNavigation from './components/public/PublicNavigation'
 import ContentNavigation from './components/public/ContentNavigation'
 import HomeComponent from './components/public/HomeComponent'
-import ProblemList from './components/public/ProblemList'; 
+import ProblemList from './components/public/ProblemList';
 import FdCInfoPage from './components/admin/FdCInfoPage';
 import RegisterPage from './components/admin/pages/registration/RegisterPage'
 import './App.css'
 
-function App () {
+function App() {
   const location = useLocation()
   const isAdminPage = location.pathname.startsWith('/admin')
   const [selectedTopic, setSelectedTopic] = useState(null)
@@ -96,13 +96,12 @@ function App () {
           <Route path='/' element={<HomeComponent />} />
           <Route path="/problems" element={<ProblemList />} />
         </Routes>
-        {/* <PublicFooter /> */}
       </div>
     </div>
   )
 }
 
-function Main () {
+function Main() {
   return (
     <Router>
       <App />

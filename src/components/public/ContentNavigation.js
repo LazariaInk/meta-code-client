@@ -56,15 +56,13 @@ function ContentNavigation() {
             behavior: 'smooth'
           });
         },
-        (error) => console.error('Failed to fetch lesson content:', error)
+        (error) => alert('Failed to fetch lesson content:', error)
       );
   };
   useEffect(() => {
     if (topicName && chapterName) {
       const encodedTopicName = encodeURIComponent(decodeNameFromURL(topicName));
       const encodedChapterName = encodeURIComponent(decodeNameFromURL(chapterName));
-
-      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`);
 
       fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
         .then((res) => {
@@ -75,15 +73,13 @@ function ContentNavigation() {
         })
         .then(
           (lessons) => {
-            console.log("Lessons fetched: ", lessons);
             setLessons(lessons);
-
             if (lessons.length > 0 && !lessonName) {
               const firstLesson = lessons[0];
               navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(firstLesson)}`);
             }
           },
-          (error) => console.error('Failed to fetch lessons:', error)
+          (error) => alert('Failed to fetch lessons:', error)
         );
     }
   }, [topicName, chapterName, lessonName]);
@@ -124,8 +120,6 @@ function ContentNavigation() {
           const firstLesson = nextChapterLessons[0];
           navigate(`/topics/${topicName}/chapters/${encodeNameForURL(nextChapter)}/lessons/${encodeNameForURL(firstLesson)}`);
         }
-      } else {
-        console.log("Nu există capitol următor.");
       }
     }
   };
@@ -157,8 +151,6 @@ function ContentNavigation() {
           const lastLesson = previousChapterLessons[previousChapterLessons.length - 1];
           navigate(`/topics/${topicName}/chapters/${encodeNameForURL(previousChapter)}/lessons/${encodeNameForURL(lastLesson)}`);
         }
-      } else {
-        console.log("Nu există capitol anterior.");
       }
     }
   };
@@ -218,6 +210,10 @@ function ContentNavigation() {
           </div>
         </div>
         <div className={styles.middle_contant}>
+
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({ });
+          </script>
           <div
             className={styles.lesson_content}
             ref={contentRef}

@@ -15,7 +15,6 @@ function HomeComponent() {
   const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
   const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
 
-  // Fetch topics and homepage info from backend
   useEffect(() => {
     fetch(`${API_BASE_URL}gcs/topics`, { mode: 'cors' })
       .then((res) => res.text())
@@ -25,7 +24,7 @@ function HomeComponent() {
           setTopics(topicsArray);
         },
         (error) => {
-          console.log('Error fetching topics:', error);
+          alert('Error fetching topics:', error);
         }
       );
 
@@ -36,7 +35,7 @@ function HomeComponent() {
           setInfoHomeInfo(result);
         },
         (error) => {
-          console.log('Error fetching infoHomeInfo:', error);
+          alert('Error fetching infoHomeInfo:', error);
         }
       );
   }, []);
@@ -64,7 +63,7 @@ function HomeComponent() {
         }
       }
     } catch (error) {
-      console.error('Failed to fetch chapters or lessons:', error);
+      alert('Failed to fetch chapters or lessons:', error);
     }
   };
 
@@ -121,7 +120,7 @@ function HomeComponent() {
         <div className={styles.featured_section}>
           <h2 className={styles.home_subtitle}>Subiectele noastre</h2>
           <div className={styles.topics_container}>
-          {topics.map((topic) => (
+            {topics.map((topic) => (
               <button
                 key={topic}
                 onClick={() => handleTopicClick(topic)}

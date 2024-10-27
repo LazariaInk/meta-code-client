@@ -1,6 +1,6 @@
 import styles from './public/PublicApp.module.css'
 
-function SocialLinks () {
+function SocialLinks() {
   return (
     <div className={styles.social_links_container}>
       <a

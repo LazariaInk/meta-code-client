@@ -13,7 +13,7 @@ function DonationPopup ({ onClose }) {
           setInfoHomeInfo(result)
         },
         error => {
-          console.log('Error fetching infoHomeInfo:', error)
+          alert('Error fetching infoHomeInfo:', error)
         }
       )
   }, [])

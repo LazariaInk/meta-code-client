@@ -39,7 +39,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     try {
       const response = await fetch(
         API_BASE_URL +
-          `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`,
+        `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`,
         { mode: 'cors' }
       );
       const result = await response.json();
@@ -61,10 +61,10 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     if (chapterFromURL && lessonFromURL) {
       const decodedChapter = decodeNameFromURL(chapterFromURL);
       const decodedLesson = decodeNameFromURL(lessonFromURL);
-      
+
       setActiveChapter(decodedChapter);
       setActiveLesson(decodedLesson);
-      
+
       // Fetch lessons pentru capitolul respectiv dacă nu sunt încă încărcate
       if (!lessons[decodedChapter]) {
         fetchLessons(decodedChapter);
@@ -107,30 +107,28 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
         {chapters.map((chapter) => (
           <li
             key={chapter}
-            className={`${styles.chapter} ${
-              activeChapter === chapter || 
-              (lessons[chapter] && lessons[chapter].includes(activeLesson)) // Evidențiază capitolul activ sau dacă lecția este activă
+            className={`${styles.chapter} ${activeChapter === chapter ||
+                (lessons[chapter] && lessons[chapter].includes(activeLesson)) // Evidențiază capitolul activ sau dacă lecția este activă
                 ? styles.activeChapter // Aplică clasa capitolului activ
                 : ''
-            }`}
+              }`}
             onClick={() => handleChapterClick(chapter)}
           >
             {chapter}
             <ul
               style={{
-                display: activeChapter === chapter || 
-                (lessons[chapter] && lessons[chapter].includes(activeLesson)) 
+                display: activeChapter === chapter ||
+                  (lessons[chapter] && lessons[chapter].includes(activeLesson))
                   ? 'block'
-                  : 'none', // Afișează capitolul activ sau dacă lecția este activă
+                  : 'none',
               }}
             >
               {lessons[chapter] &&
                 lessons[chapter].map((lesson) => (
                   <li
                     key={lesson}
-                    className={`${styles.lesson} ${
-                      activeLesson === lesson ? styles.activeLesson : ''
-                    }`}
+                    className={`${styles.lesson} ${activeLesson === lesson ? styles.activeLesson : ''
+                      }`}
                     onClick={() => handleLessonClick(chapter, lesson)}
                   >
                     <a className={styles.lessonLink} href="#">

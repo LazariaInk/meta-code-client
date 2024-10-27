@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import DonationPopup from './DonationPopup';
 import styles from './Navigation.module.css';
 
-function PublicNavigation () {
+function PublicNavigation() {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
   const [isNavOpen, setNavOpen] = useState(false);
   const navRef = useRef(null);

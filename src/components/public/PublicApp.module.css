@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -288,16 +289,14 @@ a {
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin-top: 0; /* elimină orice marjă care poate cauza probleme */
+  margin-top: 0;
 }
 
 
 
 .left_menu {
   float: left;
-  /* width: 210px; */
   position: fixed;
-  /* background: #f1f1f1; */
   text-align: center;
   top: 0;
   transition: top 0.3s;
@@ -695,7 +694,7 @@ p {
 
 @media (max-width: 1300px) {
   .content_container {
-    margin-top:100px;
+    margin-top: 100px;
     margin-left: 40px;
   }
 
@@ -798,8 +797,8 @@ p {
   }
 
   .right_ads {
-    position: relative; /* Schimbă la relative dacă este absolut */
-    z-index: 1; /* Z-index mai mic pentru a nu suprapune meniul */
+    position: relative;
+    z-index: 1;
     display: block;
     margin-top: 5px;
     margin-left: auto;
@@ -824,10 +823,10 @@ p {
 
 @media (min-width: 1300px) {
   .content_container {
-    margin-top:100px;
+    margin-top: 100px;
     margin-left: 20px;
     display: flex;
-    
+
   }
 
   .left_menu {
@@ -841,7 +840,7 @@ p {
   }
 
   .middle_contant {
-    width: calc(80% - 290px); 
+    width: calc(80% - 290px);
     margin-left: 250px;
   }
 
@@ -849,9 +848,9 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centrare opțională */
+    margin: 0 auto;
   }
-  
+
 }
 
 .hero_description {
@@ -881,9 +880,5 @@ p {
 }
 
 .navigation_buttons button {
-  width: 200px; 
+  width: 200px;
 }
-
-
-
-

@@ -1,4 +1,3 @@
-/* Stiluri generale */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
@@ -15,9 +14,8 @@ body {
   padding: 20px;
 }
 
-/* Stiluri pentru secțiunile erou */
 .hero_section {
-  margin-top:200px;
+  margin-top: 200px;
   background-color: #363836;
   color: white;
   padding: 60px 20px;
@@ -36,7 +34,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Stiluri pentru secțiunea subiecte */
 .featured_section {
   margin: 40px 0;
   text-align: center;
@@ -56,24 +53,24 @@ body {
 }
 
 .topic_button {
-  background-color: #244924; /* Verde închis */
+  background-color: #244924;
   color: white;
-  padding: 50px 70px; /* Butoane mai mari */
+  padding: 50px 70px;
   margin: 10px;
-  border: 3px solid #000000; /* Contur negru */
+  border: 3px solid #000000;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1.5rem;
   overflow: hidden;
   position: relative;
-  flex: 1 1 300px; /* Butoane mai mari */
+  flex: 1 1 300px;
   text-align: center;
   transition: transform 0.5s ease;
 }
 
 .topic_button::before {
   content: '';
-  background-color: #9eb9a4; /* Verde deschis */
+  background-color: #9eb9a4;
   position: absolute;
   top: 0;
   left: -100%;
@@ -96,8 +93,8 @@ body {
   transform: scale(1.05);
 }
 
-/* Stiluri pentru secțiunea despre și invitație */
-.about_section, .invite_section {
+.about_section,
+.invite_section {
   background-color: white;
   padding: 40px;
   margin: 20px 0;
@@ -105,19 +102,21 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about_section h3, .invite_section h3 {
+.about_section h3,
+.invite_section h3 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #2BAF49;
 }
 
-.home_info, .home_invite {
+.home_info,
+.home_invite {
   font-size: 1.2rem;
   line-height: 1.8;
 }
 
-/* Stiluri pentru footer și linkuri sociale */
-footer, .social_links {
+footer,
+.social_links {
   text-align: center;
   margin: 20px 0;
 }

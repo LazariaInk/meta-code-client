@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './PublicApp.module.css'
 import { API_BASE_URL } from '../config/endpoints';
 
-function ProblemList () {
+function ProblemList() {
   const [problems, setProblems] = useState([])
   const [selectedProblem, setSelectedProblem] = useState(null)
   const [isProblemPopupOpen, setIsProblemPopupOpen] = useState(false)
@@ -24,11 +24,11 @@ function ProblemList () {
   }, [currentPage, filterName, filterComplexity, filterTheme])
 
   const fetchProblems = () => {
-  
+
     const currentPageInt = parseInt(currentPage, 10)
 
     if (isNaN(currentPageInt)) {
-      console.error('currentPage is not a valid integer')
+      alert('currentPage is not a valid integer')
       return
     }
 
@@ -46,31 +46,27 @@ function ProblemList () {
       apiUrl += `&problemThemeFilter=${filterTheme}`
     }
 
-    console.log('Fetching problems with URL:', apiUrl)
 
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched problems data:', data)
         setProblems(data)
         setTotalPages(data.totalPages);
       })
       .catch(error => {
-        console.error('Error fetching problems:', error)
+        alert('Error fetching problems:', error)
       })
   }
 
   const openProblemPopup = problemId => {
-    console.log('Opening problem popup for problemId:', problemId)
     fetch(API_BASE_URL + `problems/${problemId}/content`)
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched problem details:', data)
         setSelectedProblem(data)
         setIsProblemPopupOpen(true)
       })
       .catch(error => {
-        console.error('Error fetching problem details:', error)
+        alert('Error fetching problem details:', error)
       })
   }
 
@@ -203,7 +199,7 @@ function ProblemList () {
   )
 }
 
-function ProblemPopup ({ problem, onClose, isOpen }) {
+function ProblemPopup({ problem, onClose, isOpen }) {
   const [activeKey, setActiveKey] = useState('problemContent')
 
   return (

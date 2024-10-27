@@ -1,6 +1,5 @@
-/* src/components/Footer.module.css */
 .footerContainer {
-  margin-top:150px;
+  margin-top: 150px;
   background-color: #333;
   padding-left: 20px;
   transition: margin-left 0.3s ease;
@@ -18,25 +17,22 @@
 
 .footerText {
   color: white;
-  text-align: left; /* Keep the default alignment for other sections */
+  text-align: left;
 }
 
-/* Center-align for the contact section */
 .footerContact .footerTitle,
 .footerContact .footerText {
   text-align: center;
 }
 
-/* Center-align for the ownerInfo section */
 .footerOwnerInfo {
   text-align: center;
 }
 
 .footerOwnerInfo p {
-  text-align: center; /* Ensure the text within p is centered */
+  text-align: center;
 }
 
-/* Add left margin for larger screens */
 @media (min-width: 1300px) {
   .footerContainer {
     margin-left: 200px;

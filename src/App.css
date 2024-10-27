@@ -1,12 +1,18 @@
-.a{
-  color:white;
+.a {
+  color: white;
 }
 
 footer {
   margin-top: 100px;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;

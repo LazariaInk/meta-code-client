@@ -1,13 +1,13 @@
 .sponsorsTd a {
-  color: #2BAF49; /* Set the text color to #2BAF49 */
-  text-decoration: none; /* Remove underline */
+  color: #2BAF49;
+  text-decoration: none;
 }
 
 .sponsorsTd a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
 .sponsorTable {
   position: relative;
-  z-index: 1; /* Asigură-te că acest z-index este mai mic decât cel al meniului */
+  z-index: 1;
 }
