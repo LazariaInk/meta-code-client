@@ -106,7 +106,6 @@ body {
 .menu {
   width: 210px;
   position: fixed;
-  background: #f1f1f1;
   text-align: center;
   top: 0;
   left: 0;
@@ -404,7 +403,6 @@ a {
 
 .menu {
   display: flex;
-  background: #f1f1f1;
 }
 
 .lessons-menu {
@@ -573,7 +571,6 @@ p {
   .left_menu {
     width: 210px;
     position: fixed;
-    background: #f1f1f1;
     text-align: center;
     top: 0;
     margin-top: 85px;
