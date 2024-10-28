@@ -93,11 +93,6 @@ body {
   margin-top: 140px;
 }
 
-.chapters_content {
-  display: flex;
-  color: white;
-}
-
 .sidenav {
   color: white;
 }
@@ -157,45 +152,6 @@ body {
   background-color: black;
 }
 
-.lessons_menu::-webkit-scrollbar-track {
-
-  background-color: #f5f5f5;
-}
-
-.lessons_menu::-webkit-scrollbar-thumb {
-
-  background-color: #ccc;
-  border-radius: 10px;
-}
-
-.tree {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #444;
-}
-
-.chapter {
-  margin: 0;
-  padding: 10px;
-  background-color: #f1f1f1;
-  color: #444;
-  font-weight: bold;
-  cursor: pointer;
-  width: 200px;
-  font-size: 18px;
-}
-
-.chapter:hover {
-  background-color: #ddd;
-}
-
-.chapter.active {
-  background-color: #ddd;
-}
-
 .lesson {
   margin: 0;
   padding: 5px 10px;
@@ -207,30 +163,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.tree ul {
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.tree .active>ul {
-  display: block;
-}
-
-.tree a {
-  display: block;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-
-  line-height: 1.5;
-}
-
-.tree li {
-  list-style-type: none;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
 .menu_container {
   display: flex;
   align-items: center;
@@ -238,18 +170,6 @@ body {
 
 .menu {
   display: flex;
-}
-
-.lessons_menu {
-  position: static;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.chapter {
-  font-weight: bold;
 }
 
 .hamburger_icon {
@@ -468,22 +388,6 @@ a {
   transition: transform 0.3s ease-in-out, background 0.5s ease;
 }
 
-
-.chapter {
-  background-color: #f1f1f1;
-  color: #444;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.chapter:hover {
-  background-color: #ddd;
-}
-
-.chapter.active {
-  background-color: #ddd;
-}
-
 .lesson {
   margin: 0;
   padding: 5px 10px;
@@ -493,31 +397,6 @@ a {
 
 .lesson:hover {
   background-color: #f5f5f5;
-}
-
-.tree ul {
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.tree .active>ul {
-  display: block;
-}
-
-.tree a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-family: Arial, sans-serif;
-
-  line-height: 1.5;
-}
-
-.tree li {
-  font-family: Arial, sans-serif;
-
-  line-height: 1.5;
 }
 
 .menu-container {
@@ -535,10 +414,6 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.chapter {
-  font-weight: bold;
 }
 
 .lesson {
@@ -748,7 +623,7 @@ p {
   }
 
   .menushow {
-    margin-top: -35px;
+    margin-top: -30px;
     display: flex;
     width: 100%;
   }
@@ -758,10 +633,7 @@ p {
     cursor: pointer;
   }
 
-  .chapter {
-    font-weight: normal;
-    padding-bottom: 5px;
-  }
+
 
   .lesson {
     margin-left: 0;
@@ -774,17 +646,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
-  .chapter {
-    font-size: 14px;
-  }
-
-  .tree a {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
   .content_container {
     flex-direction: column;
   }
@@ -867,12 +729,6 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.activeLesson {
-  background-color: #2baf49;
-  color: white;
-}
-
 .navigation_buttons {
   display: flex;
   justify-content: space-between;
@@ -883,33 +739,3 @@ p {
   width: 200px;
 }
 
-/* WebKit-specific adjustments for Safari */
-@media not all and (min-resolution: 0.001dpcm) { 
-  @supports (-webkit-appearance: none) {
-    /* Force flex layouts for Safari */
-    .content_container, .menu, .lessons_menu, .menu-container, .topics_navbar_menu {
-      display: flex !important;
-      flex-direction: column !important;
-    }
-    
-    /* Explicit widths and display to prevent layout issues */
-    .chapter, .lesson, .tree, .menu {
-      display: block !important;
-      position: relative !important;
-      opacity: 1 !important;
-    }
-    
-    /* Adjust position fixed elements for Safari */
-    .menu, .topics_nav {
-      position: -webkit-sticky !important;
-      top: 0 !important;
-      z-index: 1000;
-    }
-    
-    /* Ensure topic button animations are smooth */
-    .topic_button:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-out;
-    }
-  }
-}

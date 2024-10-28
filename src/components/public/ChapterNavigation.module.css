@@ -1,0 +1,104 @@
+.lessons_menu, .lessons_menu * {
+    font-family: Arial, sans-serif !important;
+}
+
+.lessons_menu::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+.lessons_menu::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.lessons_menu {
+    position: static;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tree {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+.tree ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.tree .active > ul {
+    display: block;
+}
+
+.tree li {
+    list-style-type: none;
+    line-height: 1.5;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+.tree a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+
+.chapters_content {
+    display: flex;
+    color: white;
+}
+
+.chapter {
+    margin: 0;
+    padding: 12px;
+    background-color: #f1f1f1;
+    color: #444;
+    font-weight: bold !important;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.chapter:hover {
+    background-color: #ddd;
+}
+
+.chapter.active {
+    background-color: #ddd;
+    font-weight: bold !important;
+}
+
+.activeLesson {
+    background-color: #2baf49;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    .lessons_menu {
+        position: fixed;
+        top: 20;
+        left: 0;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        overflow-y: auto; /* Enable vertical scrolling if needed */
+        z-index: 1000; /* Ensure it appears above other content */
+        background-color: #f1f1f1; /* Optional background color */
+    }
+    
+    .chapter {
+        padding-bottom: 5px;
+        font-size: 16px;
+        font-weight: bold !important;
+    }
+}

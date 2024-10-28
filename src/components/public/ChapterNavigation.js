@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom'; 
-import styles from './PublicApp.module.css';
+import { useNavigate, useParams } from 'react-router-dom';
+import styles from './ChapterNavigation.module.css';
 import { API_BASE_URL } from '../config/endpoints';
 
 const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
@@ -10,9 +10,10 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [lessons, setLessons] = useState({});
   const [activeChapter, setActiveChapter] = useState(null);
   const [activeLesson, setActiveLesson] = useState(null);
+  
 
   const navigate = useNavigate();
-  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
+  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams(); 
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
   const encodeNameForBackend = (name) => (name ? encodeURIComponent(name) : '');
@@ -81,7 +82,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
 
   const handleLessonClick = (chapterName, lessonName) => {
     onLessonClick(chapterName, lessonName);
-    setActiveLesson(lessonName);
+    setActiveLesson(lessonName); 
     setActiveChapter(chapterName);
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
@@ -93,18 +94,11 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     );
   };
 
-  // Render conditionals and content below
-  if (topicName === '*') {
-    return <h2></h2>;
-  }
+  if (topicName === '*') return <h2></h2>;
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
+  if (error) return <div>Error: {error.message}</div>;
 
-  if (!isLoaded) {
-    return <div>Se incarca...</div>;
-  }
+  if (!isLoaded) return <div>Se incarca...</div>;
 
   return (
     <div>
