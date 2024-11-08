@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './../App';
+import './../App.css';
 import TopicsNavigation from './TopicsNavigation';
 import ChapterNavigation from './ChapterNavigation';
 import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../styles/PublicApp.module.css';
+import styles from './../styles/PublicApp.module.css';
 import PublicFooter from './PublicFooter';
-import { API_BASE_URL } from './config/endpoints';
+import { API_BASE_URL } from '../components/config/endpoints';
 import SponsorTable from './SponsorTable';
 
 function ContentNavigation() {
@@ -56,7 +56,7 @@ function ContentNavigation() {
             behavior: 'smooth'
           });
         },
-        (error) => alert('Failed to fetch lesson content:', error)
+       
       );
   };
   useEffect(() => {
@@ -67,7 +67,7 @@ function ContentNavigation() {
       fetch(`${API_BASE_URL}gcs/topics/${encodedTopicName}/chapters/${encodedChapterName}/lessons`)
         .then((res) => {
           if (!res.ok) {
-            throw new Error('Failed to fetch lessons');
+            throw new Error('hello mzk');
           }
           return res.json();
         })
@@ -79,7 +79,7 @@ function ContentNavigation() {
               navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(firstLesson)}`);
             }
           },
-          (error) => alert('Failed to fetch lessons:', error)
+       
         );
     }
   }, [topicName, chapterName, lessonName]);

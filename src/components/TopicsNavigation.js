@@ -2,12 +2,10 @@ import { useEffect, useState, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from '../styles/PublicApp.module.css';
 import './../App.css';
-import { API_BASE_URL } from './config/endpoints';
+import topicsData from '../database/topic.json';
 
 function TopicsNavigation() {
-  const [topics, setItems] = useState([]);
-  const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [topics, setTopics] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedTopic, setSelectedTopic] = useState(null);
   const location = useLocation();
@@ -17,22 +15,10 @@ function TopicsNavigation() {
   const menuRef = useRef(null);
 
   const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
-  const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
   const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
 
   useEffect(() => {
-    fetch(API_BASE_URL + 'gcs/topics', { mode: 'cors' })
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setItems(result);
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      );
+    setTopics(topicsData.topics); // Set topics from local JSON file
   }, []);
 
   useEffect(() => {
@@ -46,32 +32,31 @@ function TopicsNavigation() {
         setIsMenuOpen(false);
       }
     }
-
     document.addEventListener('click', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
+    return () => document.removeEventListener('click', handleClickOutside);
   }, [toggleBtnRef, menuRef]);
 
   const handleTopicClick = async (topicName) => {
-    const encodedTopicNameForBackend = encodeNameForBackend(topicName);
     try {
-      const chaptersResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`);
-      const chapters = await chaptersResponse.json();
+      // Dynamically import JSON data for the selected topic
+      const topicData = await import(`../database/${topicName}.json`);
+      const chapters = Object.keys(topicData.default);
 
       if (chapters.length > 0) {
         const firstChapter = chapters[0];
-        const lessonsResponse = await fetch(API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters/${encodeNameForBackend(firstChapter)}/lessons`);
-        const lessons = await lessonsResponse.json();
-        if (lessons.length > 0) {
+        const lessons = topicData.default[firstChapter];
+
+        if (lessons && lessons.length > 0) {
           const firstLesson = lessons[0];
           setSelectedTopic(topicName);
-          navigate(`/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(firstChapter)}/lessons/${encodeNameForURL(firstLesson)}`);
+          navigate(
+            `/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(firstChapter)}/lessons/${encodeNameForURL(firstLesson)}`,
+            { state: { topicData: topicData.default } }
+          );
         }
       }
     } catch (error) {
-      alert('Failed to fetch chapters or lessons, error :', error);
+      console.error("Error loading topic data:", error);
     }
   };
 
@@ -110,7 +95,7 @@ function TopicsNavigation() {
       </div>
       {selectedTopic && (
         <div className={styles.selectedTopic}>
-          URL selectat: /topics/{encodeNameForURL(selectedTopic)}
+          Selected URL: /topics/{encodeNameForURL(selectedTopic)}
         </div>
       )}
     </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import styles from '../styles/ChapterNavigation.module.css';
-import { API_BASE_URL } from './config/endpoints';
 
 const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [error, setError] = useState(null);
@@ -10,52 +9,34 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const [lessons, setLessons] = useState({});
   const [activeChapter, setActiveChapter] = useState(null);
   const [activeLesson, setActiveLesson] = useState(null);
-  
 
   const navigate = useNavigate();
-  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams(); 
+  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
+  const location = useLocation();
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
-  const encodeNameForBackend = (name) => (name ? encodeURIComponent(name) : '');
   const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
 
-  const fetchChapters = async () => {
-    const encodedTopicNameForBackend = encodeNameForBackend(topicName);
-    try {
-      const response = await fetch(
-        API_BASE_URL + `gcs/topics/${encodedTopicNameForBackend}/chapters`,
-        { mode: 'cors' }
-      );
-      const result = await response.json();
+  useEffect(() => {
+    if (location.state?.topicData) {
+      const topicData = location.state.topicData;
+      setChapters(Object.keys(topicData));
       setIsLoaded(true);
-      setChapters(result);
-    } catch (err) {
+    } else {
+      setError(new Error("Topic data not provided"));
       setIsLoaded(true);
-      setError(err);
     }
-  };
+  }, [location.state]);
 
-  const fetchLessons = async (chapterName) => {
-    const encodedChapterNameForBackend = encodeNameForBackend(chapterName);
-    try {
-      const response = await fetch(
-        API_BASE_URL +
-        `gcs/topics/${encodeNameForBackend(topicName)}/chapters/${encodedChapterNameForBackend}/lessons`,
-        { mode: 'cors' }
-      );
-      const result = await response.json();
+  const fetchLessons = (chapterName) => {
+    const topicData = location.state?.topicData;
+    if (topicData && topicData[chapterName]) {
       setLessons((prevLessons) => ({
         ...prevLessons,
-        [chapterName]: result,
+        [chapterName]: topicData[chapterName],
       }));
-    } catch (err) {
-      setError(err);
     }
   };
-
-  useEffect(() => {
-    if (topicName) fetchChapters();
-  }, [topicName]);
 
   useEffect(() => {
     if (chapterFromURL && lessonFromURL) {
@@ -82,7 +63,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
 
   const handleLessonClick = (chapterName, lessonName) => {
     onLessonClick(chapterName, lessonName);
-    setActiveLesson(lessonName); 
+    setActiveLesson(lessonName);
     setActiveChapter(chapterName);
     if (menuRef.current) {
       menuRef.current.classList.remove(styles.menushow);
@@ -94,11 +75,8 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     );
   };
 
-  if (topicName === '*') return <h2></h2>;
-
   if (error) return <div>Error: {error.message}</div>;
-
-  if (!isLoaded) return <div>Se incarca...</div>;
+  if (!isLoaded) return <div>Loading...</div>;
 
   return (
     <div>
@@ -107,10 +85,10 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
           <li
             key={chapter}
             className={`${styles.chapter} ${activeChapter === chapter ||
-                (lessons[chapter] && lessons[chapter].includes(activeLesson))
-                ? styles.activeChapter
-                : ''
-              }`}
+              (lessons[chapter] && lessons[chapter].includes(activeLesson))
+              ? styles.activeChapter
+              : ''
+            }`}
             onClick={() => handleChapterClick(chapter)}
           >
             {chapter}
@@ -127,7 +105,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
                   <li
                     key={lesson}
                     className={`${styles.lesson} ${activeLesson === lesson ? styles.activeLesson : ''
-                      }`}
+                    }`}
                     onClick={() => handleLessonClick(chapter, lesson)}
                   >
                     <a className={styles.lessonLink} href="#">

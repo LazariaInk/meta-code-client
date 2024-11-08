@@ -28,7 +28,7 @@ function ProblemList() {
     const currentPageInt = parseInt(currentPage, 10)
 
     if (isNaN(currentPageInt)) {
-      alert('currentPage is not a valid integer')
+      
       return
     }
 
@@ -54,7 +54,7 @@ function ProblemList() {
         setTotalPages(data.totalPages);
       })
       .catch(error => {
-        alert('Error fetching problems:', error)
+
       })
   }
 
@@ -66,7 +66,7 @@ function ProblemList() {
         setIsProblemPopupOpen(true)
       })
       .catch(error => {
-        alert('Error fetching problem details:', error)
+        
       })
   }
 

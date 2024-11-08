@@ -29,7 +29,7 @@ const SponsorTable = () => {
         const data = await response.json();
         setSponsors(shuffleArray(data));
       } catch (error) {
-        alert('Error fetching sponsors:', error);
+        
       }
     };
 
