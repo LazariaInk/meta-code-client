@@ -112,7 +112,8 @@ function HomeComponent() {
 
       <div className={styles.home_container}>
         <div className={styles.hero_section}>
-          <h1 className={styles.home_title}>Cursuri gratuite de programare în română</h1>
+          <h1 className={styles.home_title}>!!!   PLATFORMA TEMPORAR NU VA LUCRA   !!!</h1>
+           <h1 className={styles.home_title}!!!   NE PARE RAU PENTRU DISCONFORT    !!!</h1>
           <p className={styles.home_intro}>
             Alătură-te comunității și învață Java, Python, PHP, JavaScript și multe altele.
           </p>
