@@ -1,14 +1,17 @@
+// ChapterNavigation.js
+
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import styles from '../styles/ChapterNavigation.module.css';
 
-const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
+const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [chapters, setChapters] = useState([]);
   const [lessons, setLessons] = useState({});
-  const [activeChapter, setActiveChapter] = useState(null);
-  const [activeLesson, setActiveLesson] = useState(null);
+  const [localActiveChapter, setLocalActiveChapter] = useState(activeChapter || null);
+  const [localActiveLesson, setLocalActiveLesson] = useState(activeLesson || null);
+  const { topicName, chapterName } = useParams();
 
   const navigate = useNavigate();
   const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
@@ -18,23 +21,37 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
   const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
 
   useEffect(() => {
-    if (location.state?.topicData) {
-      const topicData = location.state.topicData;
-      setChapters(Object.keys(topicData));
-      setIsLoaded(true);
-    } else {
-      setError(new Error("Topic data not provided"));
-      setIsLoaded(true);
-    }
-  }, [location.state]);
+    const loadData = async () => {
+      try {
+        const response = await import(`../database/${topicName}.json`);
+        const topicData = response.default;
+        setChapters(Object.keys(topicData));
+        setIsLoaded(true);
+      } catch (error) {
+        console.error("Error loading topic data:", error);
+        setError(new Error("Failed to load topic data"));
+        setIsLoaded(true);
+      }
+    };
 
-  const fetchLessons = (chapterName) => {
-    const topicData = location.state?.topicData;
-    if (topicData && topicData[chapterName]) {
-      setLessons((prevLessons) => ({
-        ...prevLessons,
-        [chapterName]: topicData[chapterName],
-      }));
+    loadData();
+  }, [topicName]);
+
+  const fetchLessons = async (chapterName) => {
+    try {
+      const response = await import(`../database/${topicName}.json`);
+      const topicData = response.default;
+      const chapterLessons = topicData[chapterName];
+      
+      if (chapterLessons) {
+        setLessons((prevLessons) => ({
+          ...prevLessons,
+          [chapterName]: chapterLessons,
+        }));
+      }
+    } catch (error) {
+      console.error("Error loading lessons:", error);
+      setError(new Error("Failed to load lessons"));
     }
   };
 
@@ -43,12 +60,10 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
       const decodedChapter = decodeNameFromURL(chapterFromURL);
       const decodedLesson = decodeNameFromURL(lessonFromURL);
 
-      setActiveChapter(decodedChapter);
-      setActiveLesson(decodedLesson);
+      if (localActiveChapter !== decodedChapter) setLocalActiveChapter(decodedChapter);
+      if (localActiveLesson !== decodedLesson) setLocalActiveLesson(decodedLesson);
 
-      if (!lessons[decodedChapter]) {
-        fetchLessons(decodedChapter);
-      }
+      if (!lessons[decodedChapter]) fetchLessons(decodedChapter);
     }
   }, [chapterFromURL, lessonFromURL]);
 
@@ -56,22 +71,19 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
     if (!lessons[chapterName]) {
       fetchLessons(chapterName);
     }
-    setActiveChapter((prevActiveChapter) =>
-      prevActiveChapter === chapterName ? null : chapterName
-    );
+    setLocalActiveChapter(chapterName);
   };
 
   const handleLessonClick = (chapterName, lessonName) => {
     onLessonClick(chapterName, lessonName);
-    setActiveLesson(lessonName);
-    setActiveChapter(chapterName);
-    if (menuRef.current) {
-      menuRef.current.classList.remove(styles.menushow);
-    }
+    setLocalActiveLesson(lessonName);
+    setLocalActiveChapter(chapterName);
+
     navigate(
       `/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(
         chapterName
-      )}/lessons/${encodeNameForURL(lessonName)}`
+      )}/lessons/${encodeNameForURL(lessonName)}`,
+      { replace: true }
     );
   };
 
@@ -84,18 +96,19 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
         {chapters.map((chapter) => (
           <li
             key={chapter}
-            className={`${styles.chapter} ${activeChapter === chapter ||
-              (lessons[chapter] && lessons[chapter].includes(activeLesson))
-              ? styles.activeChapter
-              : ''
+            className={`${styles.chapter} ${
+              localActiveChapter === chapter ||
+              (lessons[chapter] && lessons[chapter].includes(localActiveLesson))
+                ? styles.activeChapter
+                : ''
             }`}
             onClick={() => handleChapterClick(chapter)}
           >
             {chapter}
             <ul
               style={{
-                display: activeChapter === chapter ||
-                  (lessons[chapter] && lessons[chapter].includes(activeLesson))
+                display: localActiveChapter === chapter ||
+                  (lessons[chapter] && lessons[chapter].includes(localActiveLesson))
                   ? 'block'
                   : 'none',
               }}
@@ -104,7 +117,7 @@ const ChapterNavigation = ({ topicName, onLessonClick, menuRef }) => {
                 lessons[chapter].map((lesson) => (
                   <li
                     key={lesson}
-                    className={`${styles.lesson} ${activeLesson === lesson ? styles.activeLesson : ''
+                    className={`${styles.lesson} ${localActiveLesson === lesson ? styles.activeLesson : ''
                     }`}
                     onClick={() => handleLessonClick(chapter, lesson)}
                   >
