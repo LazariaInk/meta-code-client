@@ -1,0 +1,46 @@
+{
+    "1.Introducere": [
+        "1.Introducere in MySQL",
+        "2.MySQL Command Line Client",
+        "3.Clientul in linia de comanda MySQL Shell",
+        "4.Interfata grafica MySQL Workbench"
+    ],
+    "2.Definirea structurii de date": [
+        "1.Definirea structurii de date",
+        "2.Crearea si stergerea tabelelor",
+        "3.Tipurile de date MySQL",
+        "4.Atributele coloanelor si tabelelor",
+        "5.Cheile externe FOREIGN KEY",
+        "6.Modificarea tabelor si coloanelor"
+    ],
+    "3.Principalele operatiuni cu datele": [
+        "1.Principalele operatiuni cu datele",
+        "2.Comanda SELECT",
+        "3.Filtrarea datelor",
+        "4.Actualizare de date",
+        "5.Stergere de date"
+    ],
+    "4.Cereri": [
+        "1.Cereri",
+        "2.Operatorii de filtrare",
+        "3.Sortarea ORDER BY",
+        "4.Obtinerea unui interval de randuri",
+        "5.Functiile de AGREGARE",
+        "6.Gruparea",
+        "7.Subinterogari",
+        "8.Principalele subinterogari in comenzile SQL",
+        "9.Operatorul EXISTS"
+    ],
+    "5.Unirea Tabelor": [
+        "1.Unirea Tabelor",
+        "2.Inner Join",
+        "3.Outer Join",
+        "4.UNION"
+    ],
+    "6.Functii încorporate": [
+        "1.Functii incorporate",
+        "2.Functii pentru lucrul cu numere",
+        "3.Functii pentru lucrul cu date si timp",
+        "4.FUNCTII CASE, IF, IFNULL, COALESCE"
+    ]
+}

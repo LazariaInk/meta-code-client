@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './../../App.css';
+import './../App';
 import TopicsNavigation from './TopicsNavigation';
 import ChapterNavigation from './ChapterNavigation';
 import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './PublicApp.module.css';
+import styles from '../styles/PublicApp.module.css';
 import PublicFooter from './PublicFooter';
-import { API_BASE_URL } from '../config/endpoints';
+import { API_BASE_URL } from './config/endpoints';
 import SponsorTable from './SponsorTable';
 
 function ContentNavigation() {

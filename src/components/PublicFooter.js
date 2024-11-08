@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import DonationPopup from './DonationPopup';
-import styles from './Footer.module.css';
-import { API_BASE_URL } from '../config/endpoints';
-import { initGA, logPageView } from './../config/analytics';
+import styles from '../styles/Footer.module.css';
+import { initGA, logPageView } from './config/analytics';
 
 function PublicFooter({ fullWidth }) {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
-  const [infoHome, setInfoHomeInfo] = useState('');
 
   const openDonationPopup = () => {
     setDonationPopupOpen(true);
@@ -16,18 +14,6 @@ function PublicFooter({ fullWidth }) {
     setDonationPopupOpen(false);
   };
 
-  useEffect(() => {
-    fetch(API_BASE_URL + 'fabrica-de-coduri-info/1', { mode: 'cors' })
-      .then(res => res.json())
-      .then(
-        result => {
-          setInfoHomeInfo(result);
-        },
-        error => {
-          alert('Error fetching infoHomeInfo:', error);
-        }
-      );
-  }, []);
 
   useEffect(() => {
     initGA();
@@ -53,25 +39,25 @@ function PublicFooter({ fullWidth }) {
           <div className='row'>
             <div className='col-md-4'>
               <h3 className={styles.footerTitle}>Despre FdC</h3>
-              <p className={styles.footerText}>{infoHome.aboutFooter}</p>
+              <p className={styles.footerText}>About footer text</p>
             </div>
             <div className='col-md-4'>
               <h3 className={styles.footerTitle}>Donează</h3>
-              <p className={styles.footerText}>{infoHome.donateFooterContent}</p>
+              <p className={styles.footerText}>Donate footer content</p>
               <button className='btn btn-success' onClick={openDonationPopup}>
                 Donează acum!
               </button>
             </div>
             <div className={`col-md-4 ${styles.footerContact}`}>
               <h3 className={styles.footerTitle}>Contact</h3>
-              <p className={styles.footerText}>{infoHome.contactFooterContent}</p>
+              <p className={styles.footerText}>content footer text</p>
             </div>
           </div>
         </div>
         <hr />
         <div className='row'>
           <div className={`col-md-12 ${styles.footerOwnerInfo}`}>
-            <p className={styles.footerText}>{infoHome.ownerInfo}</p>
+            <p className={styles.footerText}>owner info text</p>
           </div>
         </div>
       </footer>

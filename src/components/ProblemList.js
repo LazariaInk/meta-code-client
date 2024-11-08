@@ -6,8 +6,8 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import Pagination from 'react-bootstrap/Pagination'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import styles from './PublicApp.module.css'
-import { API_BASE_URL } from '../config/endpoints';
+import styles from '../styles/PublicApp.module.css'
+import { API_BASE_URL } from './config/endpoints';
 
 function ProblemList() {
   const [problems, setProblems] = useState([])

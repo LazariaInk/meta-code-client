@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import DonationPopup from './DonationPopup';
-import styles from './Navigation.module.css';
+import styles from '../styles/Navigation.module.css';
 
 function PublicNavigation() {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);

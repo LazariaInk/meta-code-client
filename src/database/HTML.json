@@ -1,0 +1,142 @@
+{
+    "1.Introducere in HTML5": [
+        "1.Introducere in HTML5",
+        "2.Elemente si atribute HTML5",
+        "3.Crearea unui document HTML5",
+        "4.Variante de sintaxa HTML5"
+    ],
+    "2.Elemente in HTML5": [
+        "1.Elemente in HTML5",
+        "2.Elemente de grupare in HTML5",
+        "3.Titluri",
+        "4.Formatarea textului",
+        "5.Lucrul cu imaginile",
+        "6.Liste",
+        "7.Elementul details",
+        "8.Lista de definitii",
+        "9.Tabele",
+        "10.Legaturi",
+        "11.Elementele figure si figcaption",
+        "12.Frame-uri"
+    ],
+    "3.Lucrul cu formularele": [
+        "1.Lucrul cu formularele",
+        "2.Elemente ale formularului",
+        "3.Butoane",
+        "4.Campuri text",
+        "5.Etichete si autofocus",
+        "6.Elemente pentru introducerea numerelor",
+        "7.Casute de selectare si comutatoare",
+        "8.Elemente pentru introducerea culorii, url, email, telefon",
+        "9.Elemente pentru introducerea datei si timpului",
+        "10.Trimiterea fisierelor",
+        "11.Lista select",
+        "12.Textarea",
+        "13.Validarea formularelor",
+        "14.Elementul fieldset si legend"
+    ],
+    "4.Structura semantica a paginii": [
+        "1.Structura semantica a paginii",
+        "2.Elementul section",
+        "3.Elementul nav",
+        "4.Elementele header, footer si address",
+        "5.Elementul aside",
+        "6.Elementul main"
+    ],
+    "5.Fundamentele CSS3. Selectorii": [
+        "1.Fundamentele CSS3. Selectorii",
+        "2.Selectorii",
+        "3.Selectorii de descendenti",
+        "4.Selectorii elementelor copil",
+        "5.Selectoare de elemente de acelasi nivel",
+        "6.Pseudoclase",
+        "7.Pseudoclasele elementelor copil",
+        "8.Pseudoclasele formelor",
+        "9.Pseudoelemente",
+        "10.Selectorii de atribute",
+        "11.Mostenirea stilurilor",
+        "12.Cascadarea stilurilor",
+        "13.Pseudoclasele is() si where()"
+    ],
+    "6.Culoare in CSS": [
+        "1.Culoare in CSS",
+        "2.Stilizarea fonturilor",
+        "3.Fonturi externe",
+        "4.Inaltimea fontului",
+        "5.Formatarea textului",
+        "6.Stilizarea paragrafelor",
+        "7.Stilizarea listelor",
+        "8.Stilizarea tabelului",
+        "9.Modelul de bloc",
+        "10.Marginele exterioare",
+        "11.Marginile interne",
+        "12.Granite",
+        "13.Dimensiuni ale elementelor",
+        "14.Fondul elementului",
+        "15.Crearea unei umbre pentru un element",
+        "16.Contururile elementelor",
+        "17.Conturarea elementelor",
+        "18.Derularea elementelor",
+        "19.Gradient liniar",
+        "20.Gradient radial",
+        "21.Stilizarea elementului details"
+    ],
+    "7.Crearea unui machet de pagina si stilizarea": [
+        "1.Crearea unui machet de pagina si stilizarea",
+        "2.Blocul de stilizare",
+        "3.Blocuri incapsulate flotante",
+        "4.Alinierea coloanelor pe inaltime",
+        "5.Proprietatea display",
+        "6.Crearea unei bare de navigatie",
+        "7.Alinierea elementelor flotante",
+        "8.Crearea unui design simplu de pagina web",
+        "9.Pozitionarea",
+        "10.Pozitionare fixa"
+    ],
+    "8.Transformari, tranzitii și animatii": [
+        "1.Transformari, tranzitii și animatii",
+        "2.Tranzitii",
+        "3.Animatie"
+    ],
+    "9.Design adaptiv": [
+        "1.Design adaptiv",
+        "2.Metatagul Viewport",
+        "3.Media Query in CSS"
+    ],
+    "10.Multimedia": [
+        "1.Multimedia",
+        "2.Audio",
+        "3.Media API"
+    ],
+    "11.Flexbox": [
+        "1.Flexbox",
+        "2.Directia flex-direction",
+        "3.flex-wrap",
+        "4.flex-flow",
+        "5.Alinierea elementelor",
+        "6.Alinierea elementelor",
+        "7.Alinierea randurilor si coloanelor",
+        "8.Gestionarea elementelor",
+        "9.Design cu mai multe coloane in Flexbox",
+        "10.Maketa paginii pe Flexbox"
+    ],
+    "12.Grid Layout": [
+        "1.Grid Layout",
+        "2.Randuri si coloane",
+        "3.Functia repeat si proprietatea grid",
+        "4.Dimensiunile randurilor si coloanelor",
+        "5.Distantele dintre coloane si randuri",
+        "6.Pozitionarea elementelor",
+        "7.Suprapunerea elementelor",
+        "8.Directia si ordinea elementelor",
+        "9.Linii grid denumite",
+        "10.Linii grid denumite si functia repeat",
+        "11.Zonele grid",
+        "12.Layout-ul unei pagini in Grid Layout"
+    ],
+    "13.Variabile in CSS": [
+        "1.Variabilele in CSS",
+        "2.Crearea temelor CSS cu ajutorul variabilelor",
+        "3.Stilurile CSS ca depozit de date"
+    ]
+}

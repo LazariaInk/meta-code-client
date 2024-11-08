@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import styles from './SponsorTable.module.css';
-import { API_BASE_URL } from '../config/endpoints';
+import styles from '../styles/SponsorTable.module.css';
+import { API_BASE_URL } from './config/endpoints';
 
 const shuffleArray = (array) => {
   let currentIndex = array.length, randomIndex;

@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import styles from './PublicApp.module.css';
-import './../../App.css';
-import { API_BASE_URL } from '../config/endpoints';
+import styles from '../styles/PublicApp.module.css';
+import './../App.css';
+import { API_BASE_URL } from './config/endpoints';
 
 function TopicsNavigation() {
   const [topics, setItems] = useState([]);

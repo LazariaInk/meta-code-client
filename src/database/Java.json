@@ -1,0 +1,128 @@
+{
+    "1.Introducere in Java": [
+        "1.Limbajul de programare Java",
+        "2.Instalarea Java",
+        "3.Primul program in Java",
+        "4.Primul program in IntelliJ IDEA"
+    ],
+    "2.Bazele programarii in Java": [
+        "1.Structura programului",
+        "2.Variabile si constante",
+        "3.Tipuri de date",
+        "4.Introducerea si iesirea in consola Java",
+        "5.Operatii aritmetice",
+        "6.Operatii pe biti",
+        "7.Expresiile conditionale",
+        "8.Operatii de atribuire si prioritatea operatiilor",
+        "9.Conversii ale tipurilor de date de baza",
+        "10.Constructii conditionale",
+        "11.Cicluri",
+        "12.Tablouri (Matrice)",
+        "13.Metode",
+        "14.Parametrii metodelor",
+        "15.Operatorul return",
+        "16.Supraincarcarea metodelor",
+        "17.Functii recursive",
+        "18.Introducere in gestionarea exceptiilor"
+    ],
+    "3.Clase. Programare orientata pe obiecte": [
+        "1.Clase si obiecte",
+        "2.Pachete",
+        "3.Modificatori de acces si incapsulare",
+        "4.Membrii statici si modificatorul static",
+        "5.Obiectele ca parametri ai metodelor",
+        "6.Clase interne ai clase inglobate",
+        "7.Mostenirea",
+        "8.Clasele abstracte",
+        "9.Ierarhia mostenirii si conversia tipurilor",
+        "10.Interfete",
+        "11.Interfetele in mecanismul de callback",
+        "12.Enumeratii (enum)",
+        "13.Clasa Object si metodele sale",
+        "14.Generice (Generics)",
+        "15.Limitarile generalizarilor",
+        "16.Mostenirea si generalizarile",
+        "17.Tipurile de referinta si copierea obiectelor",
+        "18.Records in Java"
+    ],
+    "4.Prelucrarea exceptiilor": [
+        "1.Prelucrarea exceptiilor",
+        "2.Clasele de exceptii",
+        "3.Crearea propriilor clase de exceptii"
+    ],
+    "5.Colectii": [
+        "1.Tipuri de colectii",
+        "2.Clasa ArrayList si interfata List",
+        "3.Cozi si clasa ArrayDeque",
+        "4.Clasa LinkedList",
+        "5.Interfata Set si clasa HashSet",
+        "6.SortedSet, NavigableSet, TreeSet",
+        "7.Interfetele Comparable si Comparator",
+        "8.Interfata Map si clasa HashMap",
+        "9.Interfetele SortedMap si NavigableMap",
+        "10.Iteratori"
+    ],
+    "6.Fluxuri de intrare-iesire. Lucrul cu fisiere": [
+        "1.Fluxuri de intrare-iesire",
+        "2.Citirea si scrierea fisierelor",
+        "3.Inchiderea fluxurilor",
+        "4.Clasele ByteArrayInputStream si ByteArrayOutputStream",
+        "5.Fluxuri bufere BufferedInputStream si BufferedOutputStream",
+        "6.Fluxuri formatabile de intrare si iesire. PrintStream si PrintWriter",
+        "7.Clasele DataOutputStream si DataInputStream",
+        "8.Citirea si scrierea fisierelor text",
+        "9.Buferele pentru fluxurile de caractere. BufferedReader si BufferedWriter",
+        "10.Serializarea",
+        "11.Clasa File",
+        "12.Lucrul cu arhive ZIP",
+        "13.Clasa Console"
+    ],
+    "7.Lucrul cu siruri de caractere": [
+        "1.Introducere în siruri",
+        "2.Principalele operatiuni cu siruri de caractere",
+        "3.StringBuffer si StringBuilder",
+        "4.Expresii regulate"
+    ],
+    "8.Expresii lambda": [
+        "1.Introducere in expresiile lambda",
+        "2.Lambda-uri ca parametri si rezultate ale metodelor",
+        "3.Interfete functionale incorporate"
+    ],
+    "9.Programare multithreading": [
+        "1.Clasa Thread",
+        "2.Crearea si executia firelor de executie",
+        "3.Finalizarea si intreruperea unui thread",
+        "4.Sincronizarea thread-urilor",
+        "5.Metodele wait si notify",
+        "6.Semafore",
+        "7.Schimbul de date intre thread-uri",
+        "8.Clasa Phaser",
+        "9.Blocari",
+        "10.Conditii in blocari"
+    ],
+    "10.Stream API": [
+        "1.Introducere in Stream API",
+        "2.Crearea unui flux de date",
+        "3.Filtrare, parcurgerea elementelor si mapare",
+        "4.Sortare",
+        "5.Obtinerea unui subflux si combinarea fluxurilor",
+        "6.Metodele skip si limit",
+        "7.Operatiile de reducere",
+        "8.Metoda reduce",
+        "9.Tipul Optional",
+        "10.Metoda collect",
+        "11.Grupare",
+        "12.Fluxuri paralele",
+        "13.Operatii paralele pe array-uri"
+    ],
+    "11.Modularitatea": [
+        "1.Crearea unui modul",
+        "2.Module dependente",
+        "3.Interactiunea intre module"
+    ],
+    "12.Clase suplimentare": [
+        "1.Calcul matematic si clasa Math",
+        "2.Numere mari. BigInteger si BigDecimal",
+        "3.Lucrul cu datele. LocalDate"
+    ]
+}

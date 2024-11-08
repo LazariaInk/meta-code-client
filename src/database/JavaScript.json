@@ -1,0 +1,242 @@
+{
+    "1.Introducere in JavaScript": [
+        "1.Introducere in JavaScript",
+        "2.Primul program in JavaScript",
+        "3.Executia codului JavaScript",
+        "4.Conectarea unui fisier extern JavaScript",
+        "5.Consola browser-ului si console.log"
+    ],
+    "2.Fundamentele JavaScript": [
+        "1.Fundamentele JavaScript",
+        "2.Tipuri de date",
+        "3.Operatii aritmetice",
+        "4.Operatiile pe biți",
+        "5.Expresii conditionale",
+        "6.Operatori conditionali",
+        "7.Transformarea datelor",
+        "8.Introducere in array-uri",
+        "9.Structuri conditionale",
+        "10.Bucle",
+        "11.Debugging si debugger"
+    ],
+    "3.Programare functionala": [
+        "1.Programare functionala",
+        "2.Parametrii functiei",
+        "3.Rezultatul functiei",
+        "4.Functii sageata",
+        "5.Domeniul de vizibilitate al variabilelor",
+        "6.Inchideri (closures)",
+        "7.Functii IIFE",
+        "8.Functii recursive",
+        "9.Suprascrierea functiilor",
+        "10.Hoisting",
+        "11.Transmiterea parametrilor"
+    ],
+    "4.Programarea orientata pe obiect (OOP)": [
+        "1.Programarea orientată pe obiect (OOP)",
+        "2.Cuvantul cheie this",
+        "3.Obiecte Incorporate si Array-uri în Obiecte",
+        "4.Copierea și Compararea Obiectelor",
+        "5.Verificarea Existentei si Iterarea Prin Metode si Proprietati",
+        "6.Obiecte în functii",
+        "7.Functiile constructor pentru obiecte",
+        "8.Extinderea obiectelor",
+        "9.Functia ca obiect",
+        "10.Functia Object.create",
+        "11.Mostenirea prototipurilor",
+        "12.Mostenirea prototipurilor în cazul constructorilor",
+        "13.Incapsularea proprietatilor",
+        "14.Destructurarea",
+        "14.Operatorul optional",
+        "15.Obiecte constante"
+    ],
+    "5.OOP și clase": [
+        "1.OOP si clase",
+        "2.Campuri si metode private",
+        "3.Campuri și metode statice",
+        "4.Proprietati si metode de acces",
+        "5.Mostenire"
+    ],
+    "6.Array-uri": [
+        "1.Tablouri",
+        "2.Tablouri si operatorul spread",
+        "3.Operatiuni cu tablouri",
+        "4.Mostenire tablouri"
+    ],
+    "7.Siruri de caractere": [
+        "1.Siruri de caractere",
+        "2.Sabloane de siruri",
+        "3.Obiectul RegExp",
+        "4.Sintaxa expresiilor regulate",
+        "5.Cuantificatorii în expresiile regulate",
+        "6.Cautarea în șir",
+        "7.Grupurile in expresiile regulate",
+        "8.Expresiile regulate in metodele String"
+    ],
+    "8.Tratarea erorilor": [
+        "1.Tratarea erorilor",
+        "2.Generarea erorilor si operatorul throw",
+        "3.Tipurile de erori",
+        "4.Procesarea erorilor si stiva apelurilor de functii"
+    ],
+    "9.Obiecte încorporate": [
+        "1.Obiecte incorporate",
+        "2.Obiectul Math",
+        "3.Obiectul Number",
+        "4.Simboluri",
+        "5.Proxy"
+    ],
+    "10.Colectii si iteratori": [
+        "1.Colectii si iteratori",
+        "2.Generatoare",
+        "3.Multimi Set",
+        "4.Map",
+        "5.WeakSet",
+        "6.WeakMap"
+    ],
+    "11.Lucrul cu DOM": [
+        "1.Lucrul cu DOM",
+        "2.Proprietatile obiectului document",
+        "3.Cautarea elementelor pe o pagina web",
+        "4.Obiectul Node",
+        "5.Elementele",
+        "6.Crearea, adaugarea, inlocuirea si stergerea elementelor",
+        "7.Gestionarea atributelor elementelor",
+        "8.Modificarea stilului elementelor",
+        "9.Crearea propriului element HTML"
+    ],
+    "12.Evenimente": [
+        "1.Evenimente",
+        "2.Handlers de evenimente",
+        "3.Transmiterea datelor în gestionarul de evenimente",
+        "4.Raspandirea evenimentelor",
+        "5.Evenimente Mouse",
+        "6.Evenimente Tastatura",
+        "7.Apel programat al Evenimentelor",
+        "8.Definirea Evenimentelor Personalizate"
+    ],
+    "13.Lucrul cu Formulare": [
+        "1.Lucrul cu Formulare",
+        "2.Butoane",
+        "3.Campuri text",
+        "4.Bifari și butoane radio",
+        "5.Lista select",
+        "6.API de validare",
+        "7.Controlul validarii formularelor"
+    ],
+    "14.Lucru cu browserul si BOM": [
+        "1.Lucru cu browserul si BOM",
+        "2.Ferestre de dialog și cautare pe pagina",
+        "3.Deschiderea, inchiderea si pozitionarea ferestrelor",
+        "4.Istoria browserului",
+        "5.Obiectul location",
+        "6.Obiectul navigator",
+        "7.Temporizatoare"
+    ],
+    "15.Formate JSON si XML": [
+        "1.Formate JSON si XML",
+        "2.Lucrul cu XML"
+    ],
+    "16.Stocarea Datelor": [
+        "1.Stocarea Datelor",
+        "2.Web Storage"
+    ],
+    "17.Asincronitate, promise, async si await": [
+        "1.Asincronitate, promise, async si await",
+        "2.Introducere in Promisiuni",
+        "3.Obtinerea rezultatului operatiei intr-un Promise",
+        "4.Tratarea erorilor în Promise",
+        "5.Crearea lanturilor de promise-uri",
+        "6.Functiile Promise",
+        "7.Async si await",
+        "8.Iteratoare Asincrone",
+        "9.Generatoare Asincrone"
+    ],
+    "18.Cereri AJAX si XMLHttpRequest": [
+        "1.Cereri AJAX si XMLHttpRequest",
+        "2.Incarcarea HTML folosind XMLHttpRequest",
+        "3.Incarcarea XML folosind XMLHttpRequest",
+        "4.Incarcarea JSON folosind XMLHttpRequest",
+        "5.Trimiterea datelor intr-o solicitare ajax",
+        "6.Trimiterea formularelor intr-o solicitare ajax",
+        "7.Utilizarea Promise in solicitările Ajax"
+    ],
+    "19.API-ul Fetch": [
+        "1.API-ul Fetch",
+        "2.Primirea raspunsului",
+        "3.Obtinerea datelor din raspuns",
+        "4.Configurarea parametrilor cererii",
+        "5.Crearea unui client pentru REST API"
+    ],
+    "20.Web Socket API si Server-Sent Events": [
+        "1.Web Socket API si Server-Sent Events",
+        "2.Server-Sent Events"
+    ],
+    "21.Localizare": [
+        "1.Localizare",
+        "2.Localizarea listelor si Intl",
+        "3.Localizarea datelor si timpului",
+        "4.Localizarea denumirilor cu Intl",
+        "5.Formatarea numerelor cu Intl",
+        "6.Compararea sirurilor cu Int"
+    ],
+    "22.Module": [
+        "1.Module",
+        "2.Importul modulului",
+        "3.Export si import de componente ale modulelor",
+        "4.Export si import implicit",
+        "5.Utilizarea pseudonimelor la export și import",
+        "6.Incarcarea dinamica a modulelor"
+    ],
+    "23.Canvas API": [
+        "1.Canvas API",
+        "2.Setari de desen",
+        "3.Imagini de fundal",
+        "4.Crearea unui gradient",
+        "5.Desenarea textului",
+        "6.Desenarea formelor",
+        "7.Imagini pe canvas",
+        "8.Adaugarea umbrelor",
+        "9.Editarea pixelilor",
+        "10.Transformari",
+        "11.Desenarea cu mouse-ul",
+        "12.Salvarea si restaurarea starii canvas in JavaScript",
+        "13.Animatia pe canvas"
+    ],
+    "24.IndexDB API": [
+        "1.IndexDB API",
+        "2.Gestionarea bazei de date in IndexedDB",
+        "3.Executarea interogarilor în baza de date",
+        "4.Adaugarea obiectelor în depozit",
+        "5.Obtinerea datelor din IndexDB",
+        "6.Actualizarea obiectelor din depozit",
+        "7.Obtinerea numarului de obiecte",
+        "8.Stergerea datelor din depozit",
+        "9.Cursori"
+    ],
+    "25.API Drag and Drop": [
+        "1.API Drag and Drop",
+        "2.Setarea si obtinerea datelor trasabile cu ajutorul DataTransfer"
+    ],
+    "26.File API": [
+        "1.File API",
+        "2.Citirea fisierelor cu FileReader",
+        "3.Urmarirea procesului de incarcare a fisierului"
+    ],
+    "27.Web Worker API": [
+        "1.Web Worker API",
+        "2.Schimbul de mesaje intre web worker si firul principal"
+    ],
+    "28.Web API Adăugătoare": [
+        "1.Web API Adaugatoare",
+        "2.Battery Status API",
+        "3.API-ul Web Speech pentru Sinteza Vocală",
+        "4.API-ul Web Speech pentru Recunoasterea Vorbirii",
+        "5.Web Animation API"
+    ],
+    "29.Articole suplimentare": [
+        "1.Articole suplimentare",
+        "2.Pattern-ul Modul",
+        "3.JavaScript în CSS"
+    ]
+}

@@ -1,4 +1,4 @@
-import styles from './public/PublicApp.module.css'
+import styles from '../styles/PublicApp.module.css'
 
 function SocialLinks() {
   return (

@@ -1,0 +1,241 @@
+{
+    "1.Introducere in C-sharp": [
+        "1.Introducere in C-sharp",
+        "2.Inceperea lucrului"
+    ],
+    "2.Structura programului": [
+        "1.Executarea programului",
+        "2.Variabile si constante",
+        "3.Literali",
+        "4.Tipuri de date",
+        "5.Intrare-iesire in consola",
+        "6.Operatii aritmetice in C-sharp",
+        "7.Operatii pe biti",
+        "8.Operatii de atribuire",
+        "9.Conversia tipurilor de date de baza",
+        "10.Expresii conditionale",
+        "11.Constructia if..else",
+        "12.Cicluri",
+        "13.Array-uri",
+        "14.Probleme cu array-uri",
+        "15.Metode",
+        "16.Parametri ai metodelor",
+        "17.Returnarea unei valori si operatorul return",
+        "18.Transmisia parametrilor prin valoare si prin referinta",
+        "19.Array de parametri si cuvantul cheie params",
+        "20.Functii recursive",
+        "21.Functii locale",
+        "22.Instructiunea switch",
+        "23.Enumeratii in C-sharp"
+    ],
+    "3.Clase, structuri si spatii de nume in C-sharp": [
+        "1.Clase si obiecte in C-sharp",
+        "2.Constructorii, initializatorii si deconstructorii",
+        "3.Clasa Program si metoda Main",
+        "4.Structuri",
+        "5.Tipuri de valori si tipuri de referinte",
+        "6.Domeniul de vizibilitate (contextul) variabilelor si constantelor",
+        "7.Spatii de nume",
+        "8.Spatii de nume globale",
+        "9.Conectarea implicită a spatiilor de nume",
+        "10.Crearea unei biblioteci de clase in Visual Studio",
+        "11.Crearea unei biblioteci de clase folosind .NET CLI",
+        "12.Modificatori de acces",
+        "13.Proprietati",
+        "14.Suprasarcinarea metodelor",
+        "15.Membri statici si modificatorul static",
+        "16.Instalarea pachetelor Nuget",
+        "17.Constante, campuri si structuri de citire",
+        "18.Null si tipurile de referinta",
+        "19.Null si tipurile valorice",
+        "20.Verificarea pentru null si operatorii",
+        "21.Pseudonime pentru tipuri si import static"
+    ],
+    "4.Programare orientata pe obiecte": [
+        "1.Mostenirea",
+        "2.Conversia tipurilor",
+        "3.Metode si proprietati virtuale",
+        "4.Ascunderea metodelor si proprietatilor",
+        "5.Diferenta intre suprascriere si ascundere a metodelor",
+        "6.Clase abstracte si membrii claselor",
+        "7.Clasa System",
+        "8.Generalizari",
+        "9.Restrictii ale generics",
+        "10.Mostenirea tipurilor generice"
+    ],
+    "5.Tratarea exceptiilor": [
+        "1.Constructia try",
+        "2.Blocul catch si filtrele de exceptii",
+        "3.Tipuri de exceptii",
+        "4.Generarea exceptiilor si operatorul throw",
+        "5.Crearea claselor de exceptii",
+        "6.Cautarea blocului catch la tratarea exceptiilor"
+    ],
+    "6.Delegati, evenimente si lambda": [
+        "1.Delegati",
+        "2.Aplicarea delegatelor",
+        "3.Metode anonime",
+        "4.Lambda",
+        "5.Evenimente",
+        "6.Covarianta si contravarianta in delegati",
+        "7.Delegatii Action, Predicate si Func",
+        "8.Inchideri"
+    ],
+    "7.Interfete": [
+        "1.Interfete",
+        "2.Aplicarea interfetelor",
+        "3.Implementarea explicita a interfetelor",
+        "4.Implementarea interfetelor in clase de baza si derivate",
+        "5.Mostenirea interfetelor",
+        "6.Interfetele in generice",
+        "7.Copierea obiectelor",
+        "8.Sortarea obiectelor",
+        "9.Covarianta si contravarianta interfetelor generice"
+    ],
+    "8.Functionalitati suplimentare ale OOP in C-sharp": [
+        "1.Definirea operatorilor",
+        "2.Supraincarcarea operatiilor de conversie a tipurilor",
+        "3.Indexatori",
+        "4.Variabile de tip referinta si returnarea unei referinte",
+        "5.Metode de extensie",
+        "6.Clase si metode partiale",
+        "7.Tipuri anonime",
+        "8.Tuple-uri",
+        "9.Recorduri"
+    ],
+    "9.Pattern matching": [
+        "1.Pattern de tipuri",
+        "2.Pattern pentru proprietati",
+        "3.Patternuri pentru Tuple-uri",
+        "4.Pattern-ul pozitional",
+        "5.Pattern-uri relationale si logice",
+        "6.Pattern-uri de liste"
+    ],
+    "10.Colectii": [
+        "1.Lista List_T_",
+        "2.Lista dublu inlantuita LinkedList_T_",
+        "3.Coada Queue",
+        "4.Colectia Stack_T_",
+        "5.Colectia Dictionary_K, V_",
+        "6.Clasa ObservableCollection",
+        "7.Interfetele IEnumerable si IEnumerator",
+        "8.Iteratoare si operatorul yield",
+        "9.Clasa Array si Array-urile",
+        "10.Tipul Span",
+        "11.Indecsi si Intervaluri"
+    ],
+    "11.Lucrul cu siruri de caractere": [
+        "1.Siruri si clasa String",
+        "2.Operatii cu siruri de caractere",
+        "3.Formatarea si interpolarea sirurilor de caractere",
+        "4.Clasa StringBuilder",
+        "5.Expresii regulate"
+    ],
+    "12.Lucrul cu timp si date": [
+        "1.Structura DateTime",
+        "2.Formatul datei si timpului",
+        "3.DateOnly si TimeOnly"
+    ],
+    "13.Clase si structuri suplimentare in dot NET": [
+        "1.Initializare intarziata si tipul Lazy",
+        "2.Calcul matematic si clasa Math",
+        "3.Convertirea tipurilor si clasa Convert"
+    ],
+    "14.Multithreading": [
+        "1.Introducere in multithreading",
+        "2.Crearea thread-urilor",
+        "3.Thread-uri cu parametri si ParameterizedThreadStart",
+        "4.Sincronizarea thread-urilor",
+        "5.Monitoare",
+        "6.Clasa AutoResetEvent",
+        "7.Mutex-uri",
+        "8.Semaforele"
+    ],
+    "15.Programare paralela si biblioteca TPL": [
+        "1.Sarcini si clasa Task",
+        "2.Lucrul cu clasa Task",
+        "3.Sarcini de continuare",
+        "4.Clasa Parallel",
+        "5.Anularea sarcinilor si operatiunilor paralele"
+    ],
+    "16.Programarea asincrona": [
+        "1.Metode asincrone, async si await",
+        "2.Returnarea rezultatului din metoda asincrona",
+        "3.Executie secventiala si paralela",
+        "4.Gestionarea erorilor in metodele asincrone",
+        "5.Stream-uri asincrone"
+    ],
+    "17.LINQ": [
+        "1.Elementele de baza ale LINQ",
+        "2.Proiectia datelor",
+        "3.Filtrarea colectiei",
+        "4.Sortare in LINQ",
+        "5.Unirea, intersectarea si diferenta colectiilor",
+        "6.Operatiuni agregate",
+        "7.Metodele Skip si Take in LINQ",
+        "8.Gruparea datelor",
+        "9.Unirea colectiilor",
+        "10.Verificarea existentei si obtinerea elementelor",
+        "11.Amanarea si executia imediata a LINQ",
+        "12.Delegati in interogarile LINQ"
+    ],
+    "18.Parallel LINQ": [
+        "1.Introducere in Parallel LINQ",
+        "2.Metoda AsOrdered",
+        "3.Tratamentul erorilor si anularea operatiunii"
+    ],
+    "19.Reflectie": [
+        "1.Introducere in reflectie",
+        "2.Aplicarea reflectiei si investigarea tipurilor",
+        "3.Cercetarea metodelor si constructorilor folosind reflectia",
+        "4.Cercetarea campurilor si proprietatilor folosind reflectia",
+        "5.Incarcarea dinamica a asamblarilor si legarea tarzie",
+        "6.Atributele in dot NET"
+    ],
+    "20.Dynamic Language Runtime": [
+        "1.Dynamic Language Runtime (DLR) in C-sharp",
+        "2.DynamicObject si ExpandoObject",
+        "3.Utilizarea IronPython in dot NET"
+    ],
+    "21.Gestionarea memoriei, colectarea gunoiului si pointeri": [
+        "1.Colectorul de gunoi in C-sharp",
+        "2.Obiecte Finalizabile",
+        "3.Constructia using",
+        "4.Pointeri",
+        "5.Pointeri catre Structuri, Membri ai Claselor si Tablouri"
+    ],
+    "22.Lucrul cu sistemul de fisiere": [
+        "1.Lucrul cu sistemul de fisiere",
+        "2.Lucrul cu directoarele",
+        "3.Lucrul cu fisiere",
+        "4.FileStream",
+        "5.Citirea si scrierea fisierelor text",
+        "6.Fisiere binare",
+        "7.Arhivarea si comprimarea fisierelor"
+    ],
+    "23.Lucrul cu JSON": [
+        "1.Serializarea in JSON cu JsonSerializer"
+    ],
+    "24.Lucrul cu XML in C sharp": [
+        "1.Documente XML",
+        "2.Lucrul cu XML folosind clasele System",
+        "3.Modificarea documentului XML",
+        "4.XPath",
+        "5.LINQ to XML.Crearea unui document XML",
+        "6.Selectia elementelor in LINQ to XML",
+        "7.Modificarea documentului in LINQ to XML",
+        "8.Serializarea in XML cu XmlSerializer"
+    ],
+    "25.Procese si domenii de aplicatie": [
+        "1.Procese",
+        "2.Domenii de aplicatie",
+        "3.AssemblyLoadContext si incarcarea si descarcarea dinamica a asamblarilor"
+    ],
+    "26.Publicarea aplicatiei": [
+        "1.Native AOT"
+    ],
+    "27.Ce mai e nou": [
+        "1.Noutati in C sharp 11",
+        "2.Noutati in C sharp 12"
+    ]
+}

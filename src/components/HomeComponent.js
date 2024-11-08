@@ -1,50 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import styles from './HomeComponent.module.css';
+import styles from '../styles/HomeComponent.module.css';
 import { useNavigate } from 'react-router-dom';
 import PublicFooter from './PublicFooter';
-import SocialLinks from '../SocialLinks';
+import SocialLinks from './SocialLinks';
 import { Helmet } from 'react-helmet';
-import { API_BASE_URL } from '../config/endpoints';
-import styles2 from './PublicApp.module.css';
+import topicsData from '../database/topic.json'; // Import the topics JSON
+import styles2 from '../styles/PublicApp.module.css';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
-  const [infoHome, setInfoHomeInfo] = useState('');
   const navigate = useNavigate();
 
   const encodeNameForURL = (name) => name ? name.replace(/ /g, '_') : '';
   const encodeNameForBackend = (name) => name ? encodeURIComponent(name) : '';
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}gcs/topics`, { mode: 'cors' })
-      .then((res) => res.text())
-      .then(
-        (result) => {
-          const topicsArray = JSON.parse(result);
-          setTopics(topicsArray);
-        },
-        (error) => {
-          alert('Error fetching topics:', error);
-        }
-      );
-
-    fetch(`${API_BASE_URL}fabrica-de-coduri-info/1`, { mode: 'cors' })
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setInfoHomeInfo(result);
-        },
-        (error) => {
-          alert('Error fetching infoHomeInfo:', error);
-        }
-      );
+    // Set topics directly from the imported JSON
+    setTopics(topicsData.topics);
   }, []);
 
   const handleTopicClick = async (topic) => {
     const encodedTopicForBackend = encodeNameForBackend(topic);
     try {
       const chaptersResponse = await fetch(
-        `${API_BASE_URL}gcs/topics/${encodedTopicForBackend}/chapters`
+        //am nevoie de capitole
       );
       const chapters = await chaptersResponse.json();
 
@@ -52,7 +31,7 @@ function HomeComponent() {
         const firstChapter = chapters[0];
         const encodedFirstChapterForBackend = encodeNameForBackend(firstChapter);
         const lessonsResponse = await fetch(
-          `${API_BASE_URL}gcs/topics/${encodedTopicForBackend}/chapters/${encodedFirstChapterForBackend}/lessons`
+          //aici vor incarca lectiile
         );
         const lessons = await lessonsResponse.json();
         if (lessons.length > 0) {
@@ -140,7 +119,7 @@ function HomeComponent() {
         </div>
         <div className={styles.invite_section}>
           <h3>Începe acum</h3>
-          <p className={styles.home_invite}>{infoHome.infoHomeMessage}</p>
+          <p className={styles.home_invite}>Ceva de adaugat aici frumos</p>
         </div>
         <SocialLinks />
         <PublicFooter fullWidth={true} />
@@ -148,6 +127,5 @@ function HomeComponent() {
     </>
   );
 }
-
 
 export default HomeComponent;

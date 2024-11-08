@@ -1,0 +1,87 @@
+{
+    "1.Introducere in Python": [
+        "1.Introducere in Python",
+        "2.Instalarea si prima aplicatie pe Windows",
+        "3.Python in Visual Studio"
+    ],
+    "2.Bazele Python": [
+        "1.Bazele Python",
+        "2.Variabile si tipuri de date",
+        "3.Introducerea si afisarea in consola",
+        "4.Operatii aritmetice",
+        "5.Expresii conditionale",
+        "6.Constructia conditionala if",
+        "7.Cicluri",
+        "8.Functii",
+        "9.Parametrii functiei",
+        "10.Operatorul return si returnarea rezultatului din functie",
+        "11.Functia ca tip, parametru si rezultat al altei functii",
+        "12.Expresii lambda",
+        "13.Conversia tipurilor",
+        "14.Domeniul de vizibilitate al variabilelor",
+        "15.Inchideri",
+        "16.Decoratori"
+    ],
+    "3.Programare orientata pe obiecte": [
+        "1.Programare orientata pe obiecte",
+        "2.Incapsularea, atributele si proprietatile",
+        "3.Mostenirea",
+        "4.Suprascrierea functionalitatii clasei de baza",
+        "5.Atributele claselor si metodele statice",
+        "6.Clasa object",
+        "7.Supraincarcarea operatorilor",
+        "8.Clase si metode abstracte"
+    ],
+    "4.Tratamentul erorilor si exceptiilor": [
+        "1.Constructia try",
+        "2.except si gestionarea diferitelor tipuri de exceptii",
+        "3.Generarea exceptiilor si crearea propriilor tipuri de exceptii"
+    ],
+    "5.Liste, tupluri si dictionare": [
+        "1.Lista",
+        "2.Tupluri",
+        "3.Intervale",
+        "4.Dictionare",
+        "5.Multimi",
+        "6.List comprehension",
+        "7.Impachetarea si despachetarea",
+        "8.Impachetarea si despachetarea in parametrii functiilor"
+    ],
+    "6.Module": [
+        "1.Definirea si conectarea modulelor",
+        "2.Generarea bytecode-ului modulelor",
+        "3.Modulul random",
+        "4.Functii matematice si modulul math",
+        "5.Modulul locale",
+        "6.Modulul decimal",
+        "7.Modulul dataclass"
+    ],
+    "7.Siruri de caractere": [
+        "1.Lucrul cu sirurile de caractere",
+        "2.Principalele metode ale sirurilor de caractere",
+        "3.Formatare"
+    ],
+    "8.Pattern matching": [
+        "1.Constructia match",
+        "2.Tupluri in pattern matching",
+        "3.Array-uri in pattern matching",
+        "4.Dictionare in pattern matching",
+        "5.Clase in pattern matching",
+        "6.Restrictii ale sabloanelor sau guard-uri",
+        "7.Stabilirea alias-urilor si pattern-ul as"
+    ],
+    "9.Lucrul cu fisiere": [
+        "1.Deschiderea si inchiderea fisierelor",
+        "2.Fisiere text",
+        "3.Fisiere CSV",
+        "4.Fisiere binare",
+        "5.Modulul shelve",
+        "6.Modulul os si lucrul cu sistemul de fisiere",
+        "7.Programa de numarare a cuvintelor",
+        "8.Scrierea si citirea fisierelor de arhiva ZIP"
+    ],
+    "10.Lucrul cu date si ore": [
+        "1.Modulul datetime",
+        "2.Operatii cu date"
+    ]
+}

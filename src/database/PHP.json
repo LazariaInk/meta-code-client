@@ -1,0 +1,69 @@
+{
+    "1.Introducere in PHP": [
+        "1.Introducere in PHP",
+        "2.Instalarea PHP pe Windows",
+        "3.Instalarea serverului web Apache",
+        "4.Instalarea serverului web Apache si PHP pe MacOS",
+        "5.Primul site pe PHP"
+    ],
+    "2.Elemente de baza PHP": [
+        "1.Elemente de baza PHP",
+        "2.Variabile",
+        "3.Tipuri de date",
+        "4.Operatii in PHP",
+        "5.Construcția if",
+        "6.Constructiile switch si match",
+        "7.Cicluri",
+        "8.Arrays",
+        "9.Array-uri asociative",
+        "10.Array-uri multidimensionale",
+        "11.Functii",
+        "12.Parametrii functiei",
+        "13.Returnarea valorilor si operatorul return",
+        "14.Functii anonime",
+        "15.Functii sageata",
+        "16.Generatoare",
+        "17.Referinte",
+        "18.Domeniul de vizibilitate al variabilelor",
+        "19.Constante",
+        "20.Verificarea existentei variabilelor",
+        "21.Obtinerea si setarea tipului variabilei",
+        "22.Operatii cu array-uri"
+    ],
+    "3.Trimiterea datelor pe server": [
+        "2.Instalarea PHP pe Windows",
+        "3.Instalarea serverului web Apache",
+        "4.Instalarea serverului web Apache si PHP pe MacOS",
+        "5.Primul site pe PHP"
+    ],
+    "4.Programare orientata pe obiecte": [
+        "1.Programare orientata pe obiecte",
+        "2.Constructori si destructori",
+        "3.Clase anonime",
+        "4.Mostenirea",
+        "5.Modificatori de acces",
+        "6.Metode si proprietati statice",
+        "7.Interfete",
+        "8.Clase si metode abstracte",
+        "9.Traits",
+        "10.Copierea obiectelor claselor",
+        "11.Proprietati si clase pentru citire"
+    ],
+    "5.Functionalitati de baza ale PHP": [
+        "1.Functionalitati de baza ale PHP",
+        "2.Spatii de nume",
+        "3.Tipizarea datelor",
+        "4.Lucrul cu siruri de caractere",
+        "5.Lucrul cu cookie-uri",
+        "6.Sesiuni"
+    ],
+    "6.Tratarea exceptiilor": [
+        "1.Tratarea exceptiilor",
+        "2.Generarea exceptiilor"
+    ],
+    "7.Lucrul cu sistemul de fisiere": [
+        "1.Lucrul cu sistemul de fisiere",
+        "2.Gestionarea fisierelor si directoarelor",
+        "3.Blocarea fisierului"
+    ]
+}
