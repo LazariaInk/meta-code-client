@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "package.json", "use": "@vercel/static-build" }
+    ],
+    "routes": [
+      { "src": "/static/(.*)", "dest": "build/static/$1" },      // Servește fișierele din /static
+      { "src": "/manifest.json", "dest": "build/manifest.json" }, // Servește manifest.json
+      { "src": "/favicon.ico", "dest": "build/favicon.ico" },     // Servește favicon-ul
+      { "src": "/lessons/(.*)", "dest": "public/lessons/$1" },    // Servește lecțiile
+      { "src": "/(.*)", "dest": "/index.html" }                   // Redirecționează toate celelalte către index.html
+    ]
+  }
+  
