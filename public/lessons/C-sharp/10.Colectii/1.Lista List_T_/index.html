@@ -1,0 +1,818 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c9 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c17 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 15pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c16 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 27pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c14 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c0 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c6 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c7 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c15 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c10 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c4 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c18 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c12 {
+            font-style: italic
+        }
+
+        .c13 {
+            height: 0pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c18 doc-content">
+    <h1 class="c11 c16">Lista List_T_.</h1>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">De&#537;i &icirc;n limbajul C# exist&#259; array-uri care stocheaz&#259; seturi de
+            obiecte de acela&#537;i tip, nu &icirc;ntotdeauna este convenabil s&#259; lucr&#259;m cu ele. De exemplu, un
+            array stocheaz&#259; un num&#259;r fix de obiecte, dar ce facem dac&#259; nu &#537;tim dinainte c&acirc;te
+            obiecte vom avea nevoie. &Icirc;n acest caz, este mult mai convenabil s&#259; folosim </span><span
+            class="c4">colec&#539;ii</span><span class="c10">. Un alt avantaj al colec&#539;iilor este c&#259; unele
+            dintre ele implementeaz&#259; structuri de date standard, precum stiva, coada, dic&#539;ionarul, care pot fi
+            utile pentru rezolvarea diferitelor sarcini speciale. Majoritatea claselor de colec&#539;ii sunt
+            con&#539;inute &icirc;n spa&#539;iul de nume </span><span class="c4">System.Collections.Generic</span><span
+            class="c1">.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">Clasa</span><span class="c10 c12">&nbsp;List&lt;T&gt;</span><span
+            class="c10">&nbsp;din spa&#539;iul de nume </span><span class="c10 c12">System.Collections.Generic
+        </span><span class="c10">reprezint&#259; o list&#259; simpl&#259; de obiecte de acela&#537;i tip. Clasa
+        </span><span class="c10 c12">List </span><span class="c1">este tipizat&#259; cu tipul ale c&#259;rui obiecte vor
+            fi stocate &icirc;n list&#259;.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Putem crea o list&#259; goal&#259;:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.371f726fe955261031c4a47596bb69a3796c4b6b"></a><a id="t.0"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;();</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">&Icirc;n acest caz, obiectul List este tipizat cu tipul </span><span
+            class="c4">string</span><span class="c1">. Asta &icirc;nseamn&#259; c&#259; putem stoca &icirc;n
+            aceast&#259; list&#259; doar &#537;iruri de caractere.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Putem ini&#539;ializa lista cu valori ini&#539;iale chiar la momentul
+            cre&#259;rii:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.d8b0d59420b991f7761a3f46725fbbcee413c3a4"></a><a id="t.1"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;() { </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">&Icirc;n acest caz, &icirc;n list&#259; sunt ad&#259;ugate trei &#537;iruri de
+            caractere.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">De asemenea, putem ini&#539;ializa lista cu elemente dintr-o alt&#259;
+            colec&#539;ie, de exemplu, dintr-o alt&#259; list&#259;:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.678ba741842343069c8e4753cb120a202087675c"></a><a id="t.2"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br></span><span
+                        class="c6">var</span><span class="c2">&nbsp;employees = </span><span class="c6">new</span><span
+                        class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;(people);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Putem combina ambele metode:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.100e5429df11c1d37f814f4c6ba63902e496cce2"></a><a id="t.3"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br></span><span
+                        class="c6">var</span><span class="c2">&nbsp;employees = </span><span class="c6">new</span><span
+                        class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span class="c2">&gt;(people) {
+                    </span><span class="c0">&quot;Mike&quot;</span><span class="c2">&nbsp;};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">&Icirc;n acest caz, lista employees va avea patru elemente </span><span
+            class="c10 c12">({ &quot;Tom&quot;, &quot;Bob&quot;, &quot;Sam&quot;, &quot;Mike&quot; })</span><span
+            class="c1">&nbsp;- trei sunt ad&#259;ugate din lista people &#537;i un element este specificat la
+            ini&#539;ializare.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">&Icirc;ncep&acirc;nd cu versiunea</span><span class="c4">&nbsp;C# 12</span><span
+            class="c1">, pentru definirea listelor se pot folosi expresii de colec&#539;ii, care presupun
+            &icirc;nchiderea elementelor colec&#539;iei &icirc;ntre paranteze drepte:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.c38576f4bf055f823d3ac40b13ea379afabf2b97"></a><a id="t.4"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = [</span><span class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">];<br>List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt; employees = [];</span><span class="c5">//
+                        list&#259; goal&#259;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">&Icirc;n mod similar, putem lucra cu liste de alte tipuri, de exemplu:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.76e893d4b7d7b7ea5b355c9205228ebd62f783c6"></a><a id="t.5"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;Person&gt; people = </span><span class="c6">new</span><span
+                        class="c2">&nbsp;List&lt;Person&gt;() <br>{ <br> &nbsp; &nbsp;</span><span
+                        class="c6">new</span><span class="c2">&nbsp;Person(</span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">),<br> &nbsp; &nbsp;</span><span
+                        class="c6">new</span><span class="c2">&nbsp;Person(</span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">), <br> &nbsp; &nbsp;</span><span
+                        class="c6">new</span><span class="c2">&nbsp;Person(</span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">) <br>};<br><br></span><span
+                        class="c6">class</span><span class="c2">&nbsp;</span><span class="c14">Person</span><span
+                        class="c2"><br>{<br> &nbsp; &nbsp;</span><span class="c6">public</span><span
+                        class="c2">&nbsp;</span><span class="c6">string</span><span class="c2">&nbsp;Name { </span><span
+                        class="c6">get</span><span class="c2">; }<br> &nbsp; &nbsp;</span><span
+                        class="c6">public</span><span class="c2">&nbsp;</span><span class="c14">Person</span><span
+                        class="c2">(</span><span class="c6">string</span><span class="c2">&nbsp;name) =&gt; Name =
+                        name;<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Stabilirea capacit&#259;&#539;ii ini&#539;iale a listei.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Un alt constructor al clasei List prime&#537;te ca parametru capacitatea
+            ini&#539;ial&#259; a listei:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.449ccc82d1ae05a12045889444b9484cb3e8ed10"></a><a id="t.6"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;(</span><span class="c7">16</span><span
+                        class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Stabilirea capacit&#259;&#539;ii ini&#539;iale a listei permite cre&#537;terea
+            performan&#539;ei &#537;i reducerea costurilor de alocare a memoriei la ad&#259;ugarea de elemente. Deoarece
+            ad&#259;ugarea dinamic&#259; &icirc;n list&#259; poate duce la aloc&#259;ri suplimentare de memorie, ceea ce
+            reduce performan&#539;a. Dac&#259; &#537;tim c&#259; lista nu va dep&#259;&#537;i o anumit&#259; dimensiune,
+            putem transmite aceast&#259; dimensiune ca &#537;i capacitate a listei pentru a evita aloc&#259;rile
+            suplimentare de memorie.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">De asemenea, capacitatea ini&#539;ial&#259; poate fi stabilit&#259; utiliz&acirc;nd
+            proprietatea </span><span class="c10 c12">Capacity</span><span class="c10">, care este disponibil&#259;
+            &icirc;n clasa </span><span class="c10 c12">List</span><span class="c1">.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Accesarea elementelor listei.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">La fel ca array-urile, listele suport&#259; indec&#537;i, prin care se poate accesa
+            anumite elemente:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.db3a204c7d596c2ac85ea716035e4fa5013d4d58"></a><a id="t.7"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br><br></span><span
+                        class="c6">string</span><span class="c2">&nbsp;firstPerson = people[</span><span
+                        class="c7">0</span><span class="c2">]; </span><span class="c5">// ob&#539;inem primul
+                        element</span><span class="c2"><br>Console.WriteLine(firstPerson); </span><span class="c5">//
+                        Tom</span><span class="c2"><br>people[</span><span class="c7">0</span><span class="c2">] =
+                    </span><span class="c0">&quot;Mike&quot;</span><span class="c2">; &nbsp; &nbsp; </span><span
+                        class="c5">// modific&#259;m primul element</span><span
+                        class="c2"><br>Console.WriteLine(people[</span><span class="c7">0</span><span class="c2">]);
+                    </span><span class="c5">// Mike</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Lungimea listei.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">Cu ajutorul propriet&#259;&#539;ii </span><span class="c4">Count </span><span
+            class="c1">putem ob&#539;ine lungimea listei:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.7dceb42d806f7943e417df82de8ca44b01f6b2f9"></a><a id="t.8"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br>Console.WriteLine(people.Count);
+                        &nbsp; &nbsp;</span><span class="c5">// 3</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Parcurgerea listei.</span></p>
+    <p class="c8"><span class="c17"></span></p>
+    <p class="c11"><span class="c10">C# permite parcurgerea listei folosind ciclul standard </span><span
+            class="c4">foreach</span><span class="c1">:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.7d5509d63459c86bd30b588a39a6ce60b57721d7"></a><a id="t.9"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br><br></span><span
+                        class="c6">foreach</span><span class="c2">&nbsp;(</span><span class="c6">var</span><span
+                        class="c2">&nbsp;person </span><span class="c6">in</span><span class="c2">&nbsp;people)<br>{<br>
+                        &nbsp; &nbsp;Console.WriteLine(person);<br>}<br></span><span class="c5">// Rezultatul
+                        programului:</span><span class="c2"><br></span><span class="c5">// Tom</span><span
+                        class="c2"><br></span><span class="c5">// Bob</span><span class="c2"><br></span><span
+                        class="c5">// Sam</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">De asemenea, se pot folosi alte tipuri de cicluri &#537;i &icirc;n combina&#539;ie
+            cu indec&#537;ii se pot parcurge listele:</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.cfa7838c1415c5444068032feeabab3d22db852d"></a><a id="t.10"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br><br></span><span
+                        class="c6">for</span><span class="c2">&nbsp;(</span><span class="c6">int</span><span
+                        class="c2">&nbsp;i = </span><span class="c7">0</span><span class="c2">; i &lt; people.Count;
+                        i++)<br>{<br> &nbsp; &nbsp;Console.WriteLine(people[i]);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Metodele listei.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c1">Dintre metodele sale, putem men&#539;iona urm&#259;toarele:</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;void Add(T item)</span><span class="c1">:
+            ad&#259;ugarea unui nou element &icirc;n list&#259;</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void AddRange(IEnumerable&lt;T&gt;
+            collection)</span><span class="c1">: ad&#259;ugarea unei colec&#539;ii sau array &icirc;n list&#259;</span>
+    </p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;int BinarySearch(T item)</span><span class="c1">:
+            c&#259;utare binar&#259; a unui element &icirc;n list&#259;. Dac&#259; elementul este g&#259;sit, metoda
+            returneaz&#259; indexul acestuia &icirc;n colec&#539;ie. Lista trebuie s&#259; fie sortat&#259;.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void CopyTo(T[] array)</span><span class="c1">:
+            copiaz&#259; lista &icirc;n array</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;void CopyTo(int index, T[] array, int arrayIndex,
+            int count)</span><span class="c1">: copiaz&#259; din list&#259; </span></p>
+    <p class="c11"><span class="c1">&icirc;ncep&acirc;nd de la index-ul index elementele al c&#259;ror num&#259;r este
+            egal cu count &#537;i le insereaz&#259; &icirc;n array &icirc;ncep&acirc;nd de la arrayIndex</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;bool Contains(T item)</span><span class="c1">:
+            returneaz&#259; true dac&#259; elementul item exist&#259; &icirc;n list&#259;</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void Clear()</span><span class="c1">: &#537;terge toate
+            elementele din list&#259;</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;bool Exists(Predicate&lt;T&gt; match)</span><span
+            class="c1">: returneaz&#259; true dac&#259; &icirc;n list&#259; exist&#259; un element care corespunde
+            delegatului match</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;T? Find(Predicate&lt;T&gt; match)</span><span
+            class="c1">: returneaz&#259; primul element care corespunde delegatului match. Dac&#259; elementul nu este
+            g&#259;sit, returneaz&#259; null</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">T? FindLast(Predicate&lt;T&gt; match)</span><span
+            class="c1">: returneaz&#259; ultimul element care corespunde delegatului match. Dac&#259; elementul nu este
+            g&#259;sit, returneaz&#259; null</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">List&lt;T&gt; FindAll(Predicate&lt;T&gt;
+            match)</span><span class="c1">: returneaz&#259; o list&#259; de elemente care corespund delegatului
+            match</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">int IndexOf(T item)</span><span class="c1">:
+            returneaz&#259; indexul primei apari&#539;ii a elementului &icirc;n list&#259;</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">int LastIndexOf(T item)</span><span class="c1">:
+            returneaz&#259; indexul ultimei apari&#539;ii a elementului &icirc;n list&#259;</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;List&lt;T&gt; GetRange(int index, int
+            count)</span><span class="c1">: returneaz&#259; o list&#259; de elemente al c&#259;ror num&#259;r este egal
+            cu count, &icirc;ncep&acirc;nd de la indexul index.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;void Insert(int index, T item)</span><span
+            class="c1">: insereaz&#259; elementul item &icirc;n list&#259; la indexul index. Dac&#259; nu exist&#259; un
+            astfel de index &icirc;n list&#259;, se genereaz&#259; o excep&#539;ie</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;void InsertRange(int index, collection)</span><span
+            class="c1">: insereaz&#259; colec&#539;ia de elemente collection &icirc;n lista curent&#259;
+            &icirc;ncep&acirc;nd de la indexul index. Dac&#259; nu exist&#259; un astfel de index &icirc;n list&#259;,
+            se genereaz&#259; o excep&#539;ie</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;bool Remove(T item)</span><span class="c1">:
+            &#537;terge elementul item din list&#259; &#537;i returneaz&#259; true dac&#259; &#537;tergerea a fost
+            efectuat&#259; cu succes. Dac&#259; &icirc;n list&#259; exist&#259; mai multe elemente identice, se
+            &#537;terge doar primul dintre ele</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void RemoveAt(int index)</span><span class="c1">:
+            &#537;terge elementul de la indexul specificat index. Dac&#259; nu exist&#259; un astfel de index &icirc;n
+            list&#259;, se genereaz&#259; o excep&#539;ie</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void RemoveRange(int index, int count)</span><span
+            class="c1">: parametrul index specific&#259; indexul de la care trebuie &#537;terse elementele, iar
+            parametrul count specific&#259; num&#259;rul de elemente care trebuie &#537;terse.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">int RemoveAll((Predicate&lt;T&gt; match))</span><span
+            class="c1">: &#537;terge toate elementele care corespund delegatului match. Returneaz&#259; num&#259;rul de
+            elemente &#537;terse</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void Reverse()</span><span class="c1">: inverseaz&#259;
+            ordinea elementelor</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void Reverse(int index, int count)</span><span
+            class="c1">: inverseaz&#259; ordinea pentru un num&#259;r de elemente egal cu count, &icirc;ncep&acirc;nd de
+            la indexul index</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">-</span><span class="c4">&nbsp;void Sort()</span><span class="c1">: sorteaz&#259;
+            lista</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c10">- </span><span class="c4">void Sort(IComparer&lt;T&gt;? comparer)</span><span
+            class="c1">: sorteaz&#259; lista folosind obiectul comparer, care este transmis ca parametru</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Ad&#259;ugarea &icirc;n list&#259;.</span></p>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.ac45f8459265ce827135caf0e666f6e108d48b0e"></a><a id="t.11"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;() { </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">&nbsp;};<br><br>people.Add(</span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">); </span><span class="c5">// ad&#259;ugarea
+                        unui element</span><span class="c2"><br></span><span class="c5">// people = { &quot;Tom&quot;,
+                        &quot;Bob&quot; };</span><span class="c2"><br><br>people.AddRange(</span><span
+                        class="c6">new</span><span class="c2">[] { </span><span class="c0">&quot;Sam&quot;</span><span
+                        class="c2">, </span><span class="c0">&quot;Alice&quot;</span><span class="c2">&nbsp;}); &nbsp;
+                    </span><span class="c5">// ad&#259;ug&#259;m un array</span><span class="c2"><br></span><span
+                        class="c5">// people = { &quot;Tom&quot;, &quot;Bob&quot;, &quot;Sam&quot;, &quot;Alice&quot;
+                        };</span><span class="c2"><br></span><span class="c5">// am putea ad&#259;uga &#537;i o
+                        alt&#259; list&#259;</span><span class="c2"><br></span><span class="c5">// people.AddRange(new
+                        List&lt;string&gt;(){ &quot;Sam&quot;, &quot;Alice&quot; });</span><span
+                        class="c2"><br><br>people.Insert(</span><span class="c7">0</span><span class="c2">, </span><span
+                        class="c0">&quot;Eugene&quot;</span><span class="c2">); </span><span class="c5">// inser&#259;m
+                        pe prima pozi&#539;ie</span><span class="c2"><br></span><span class="c5">// people = {
+                        &quot;Eugene&quot;, &quot;Tom&quot;, &quot;Bob&quot;, &quot;Sam&quot;, &quot;Alice&quot;
+                        };</span><span class="c2"><br><br>people.InsertRange(</span><span class="c7">1</span><span
+                        class="c2">, </span><span class="c6">new</span><span class="c2">&nbsp;</span><span
+                        class="c6">string</span><span class="c2">[] {</span><span
+                        class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Kate&quot;</span><span class="c2">}); </span><span class="c5">// inser&#259;m
+                        un array de la indexul 1</span><span class="c2"><br></span><span class="c5">// people = {
+                        &quot;Eugene&quot;, &quot;Mike&quot;, &quot;Kate&quot;, &quot;Tom&quot;, &quot;Bob&quot;,
+                        &quot;Sam&quot;, &quot;Alice&quot; };</span><span class="c2"><br><br></span><span class="c5">//
+                        am putea ad&#259;uga &#537;i o alt&#259; list&#259;</span><span class="c2"><br></span><span
+                        class="c5">// people.InsertRange(1, new List&lt;string&gt;(){ &quot;Mike&quot;, &quot;Kate&quot;
+                        });</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">&#536;tergerea din list&#259;.</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.84dd28db8ee91c3e0503dfd2e1a8faf7af3ce6f7"></a><a id="t.12"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Eugene&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Kate&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Alice&quot;</span><span class="c2">&nbsp;};<br><br>people.RemoveAt(</span><span
+                        class="c7">1</span><span class="c2">); </span><span class="c5">// &#537;tergem al doilea
+                        element</span><span class="c2"><br></span><span class="c5">// people = { &quot;Eugene&quot;,
+                        &quot;Kate&quot;, &quot;Tom&quot;, &quot;Bob&quot;, &quot;Sam&quot;, &quot;Tom&quot;,
+                        &quot;Alice&quot; };</span><span class="c2"><br><br>people.Remove(</span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">); </span><span class="c5">// &#537;tergem
+                        elementul &quot;Tom&quot;</span><span class="c2"><br></span><span class="c5">// people = {
+                        &quot;Eugene&quot;, &quot;Kate&quot;, &quot;Bob&quot;, &quot;Sam&quot;, &quot;Tom&quot;,
+                        &quot;Alice&quot; };</span><span class="c2"><br><br></span><span class="c5">// &#537;tergem din
+                        list&#259; toate elementele a c&#259;ror lungime este de 3 caractere</span><span
+                        class="c2"><br>people.RemoveAll(person =&gt; person.Length == </span><span
+                        class="c7">3</span><span class="c2">);<br></span><span class="c5">// people = {
+                        &quot;Eugene&quot;, &quot;Kate&quot;, &quot;Alice&quot; };</span><span
+                        class="c2"><br><br></span><span class="c5">// &#537;tergem din list&#259; 2 elemente
+                        &icirc;ncep&acirc;nd de la indexul 1</span><span class="c2"><br>people.RemoveRange(</span><span
+                        class="c7">1</span><span class="c2">, </span><span class="c7">2</span><span
+                        class="c2">);<br></span><span class="c5">// people = { &quot;Eugene&quot; };</span><span
+                        class="c2"><br><br></span><span class="c5">// &#537;tergem complet lista</span><span
+                        class="c2"><br>people.Clear();<br></span><span class="c5">// people = { &nbsp;};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">C&#259;utarea &#537;i verificarea elementelor.</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.2278eed55b53296fd16e387337d1b389f57d9e6f"></a><a id="t.13"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Eugene&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Kate&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">&nbsp;};<br><br></span><span
+                        class="c6">var</span><span class="c2">&nbsp;containsBob = people.Contains(</span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">); &nbsp; &nbsp; </span><span class="c5">//
+                        &nbsp;true</span><span class="c2"><br></span><span class="c6">var</span><span
+                        class="c2">&nbsp;containsBill = people.Contains(</span><span
+                        class="c0">&quot;Bill&quot;</span><span class="c2">); &nbsp; &nbsp;</span><span class="c5">//
+                        false</span><span class="c2"><br><br></span><span class="c5">// verific&#259;m dac&#259;
+                        &icirc;n list&#259; exist&#259; &#537;iruri de caractere cu lungimea de 3 caractere</span><span
+                        class="c2"><br></span><span class="c6">var</span><span class="c2">&nbsp;existsLength3 =
+                        people.Exists(p =&gt; p.Length == </span><span class="c7">3</span><span class="c2">);
+                        &nbsp;</span><span class="c5">// true</span><span class="c2"><br><br></span><span class="c5">//
+                        verific&#259;m dac&#259; &icirc;n list&#259; exist&#259; &#537;iruri de caractere cu lungimea de
+                        7 caractere</span><span class="c2"><br></span><span class="c6">var</span><span
+                        class="c2">&nbsp;existsLength7 = people.Exists(p =&gt; p.Length == </span><span
+                        class="c7">7</span><span class="c2">); &nbsp;</span><span class="c5">// false</span><span
+                        class="c2"><br><br></span><span class="c5">// ob&#539;inem primul element cu lungimea de 3
+                        caractere</span><span class="c2"><br></span><span class="c6">var</span><span
+                        class="c2">&nbsp;firstWithLength3 = people.Find(p =&gt; p.Length == </span><span
+                        class="c7">3</span><span class="c2">); </span><span class="c5">// Tom</span><span
+                        class="c2"><br><br></span><span class="c5">// ob&#539;inem ultimul element cu lungimea de 3
+                        caractere</span><span class="c2"><br></span><span class="c6">var</span><span
+                        class="c2">&nbsp;lastWithLength3 = people.FindLast(p =&gt; p.Length == </span><span
+                        class="c7">3</span><span class="c2">); &nbsp;</span><span class="c5">// Sam</span><span
+                        class="c2"><br><br></span><span class="c5">// ob&#539;inem toate elementele cu lungimea de 3
+                        caractere sub form&#259; de list&#259;</span><span class="c2"><br>List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt; peopleWithLength3 = people.FindAll(p =&gt;
+                        p.Length == </span><span class="c7">3</span><span class="c2">);<br></span><span class="c5">//
+                        peopleWithLength3 { &quot;Tom&quot;, &quot;Bob&quot;, &quot;Sam&quot;}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Ob&#539;inerea unui interval &#537;i copierea &icirc;ntr-un array.</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.9a77b56155422586630ad6ffbd9876d5828d7994"></a><a id="t.14"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c2">List&lt;</span><span class="c6">string</span><span class="c2">&gt; people
+                        = </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;() {</span><span
+                        class="c0">&quot;Eugene&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">&nbsp;};<br><br></span><span class="c5">//
+                        ob&#539;inem intervalul de la al doilea la al patrulea element</span><span
+                        class="c2"><br></span><span class="c6">var</span><span class="c2">&nbsp;range =
+                        people.GetRange(</span><span class="c7">1</span><span class="c2">, </span><span
+                        class="c7">3</span><span class="c2">);<br></span><span class="c5">// range = { &quot;Tom&quot;,
+                        &quot;Mike&quot;, &quot;Sam&quot; };</span><span class="c2"><br><br></span><span class="c5">//
+                        copiem &icirc;n array primele trei elemente</span><span class="c2"><br></span><span
+                        class="c6">string</span><span class="c2">[] partOfPeople = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;</span><span class="c6">string</span><span
+                        class="c2">[</span><span class="c7">3</span><span class="c2">];<br>people.CopyTo(</span><span
+                        class="c7">0</span><span class="c2">, partOfPeople, </span><span class="c7">0</span><span
+                        class="c2">, </span><span class="c7">3</span><span class="c2">);<br></span><span class="c5">//
+                        partOfPeople = { &quot;Eugene&quot;, &quot;Tom&quot;, &quot;Mike&quot; };</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c11"><span class="c17">Inversarea ordinii elementelor.</span></p>
+    <p class="c8"><span class="c1"></span></p><a id="t.a2fe88876d0eefce8da00fd6a44995109cbef67c"></a><a id="t.15"></a>
+    <table class="c15">
+        <tr class="c13">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c3"><span class="c6">var</span><span class="c2">&nbsp;people = </span><span
+                        class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span class="c6">string</span><span
+                        class="c2">&gt;() { </span><span class="c0">&quot;Eugene&quot;</span><span class="c2">,
+                    </span><span class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">&nbsp;};<br><br></span><span class="c5">//
+                        invers&#259;m &icirc;ntreaga list&#259;</span><span
+                        class="c2"><br>people.Reverse();<br></span><span class="c5">// people = { &quot;Bob&quot;,
+                        &quot;Sam&quot;, &quot;Mike&quot;, &quot;Tom&quot;, &quot;Eugene&quot; };</span><span
+                        class="c2"><br><br></span><span class="c6">var</span><span class="c2">&nbsp;people2 =
+                    </span><span class="c6">new</span><span class="c2">&nbsp;List&lt;</span><span
+                        class="c6">string</span><span class="c2">&gt;() { </span><span
+                        class="c0">&quot;Eugene&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c0">&quot;Bob&quot;</span><span class="c2">&nbsp;};<br></span><span class="c5">//
+                        invers&#259;m doar 3 elemente &icirc;ncep&acirc;nd de la indexul 1</span><span
+                        class="c2"><br>people2.Reverse(</span><span class="c7">1</span><span class="c2">, </span><span
+                        class="c7">3</span><span class="c2">);<br></span><span class="c5">// people2 = {
+                        &quot;Eugene&quot;, &quot;Sam&quot;, &quot;Mike&quot;, &quot;Tom&quot;, &quot;Bob&quot;
+                        };</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c1"></span></p>
+    <p class="c8"><span class="c1"></span></p>
+</body>
+
+</html>

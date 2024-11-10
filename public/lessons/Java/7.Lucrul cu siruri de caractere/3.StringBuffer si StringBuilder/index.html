@@ -1,0 +1,561 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c14 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c2 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c11 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c10 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c9 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c13 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c15 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c1 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c6 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c17 {
+            font-size: 27pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c4 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c8 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c0 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c7 {
+            font-style: italic
+        }
+
+        .c12 {
+            height: 0pt
+        }
+
+        .c3 {
+            height: 11pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c2 c17 ">StringBuffer și StringBuilder.</h1>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Obiectele de tip String sunt imuabile, astfel c&#259; toate opera&#539;iunile care
+            modific&#259; &#537;irurile de caractere conduc, de fapt, la crearea unui nou &#537;ir, ceea ce poate afecta
+            performan&#539;a aplica&#539;iei. Pentru a solu&#539;iona aceast&#259; problem&#259; &#537;i pentru a reduce
+            costurile &icirc;n lucrul cu &#537;iruri, &icirc;n Java au fost ad&#259;ugate clasele </span><span
+            class="c4">StringBuffer </span><span class="c0">&#537;i </span><span class="c4">StringBuilder</span><span
+            class="c1 c0">. Aceste clase sunt, &icirc;n esen&#539;&#259;, &#537;iruri extensibile, care pot fi
+            modificate f&#259;r&#259; a afecta performan&#539;a.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Aceste clase sunt foarte similare, aproape identice, av&acirc;nd aceia&#537;i
+            constructori &#537;i metode, care sunt utilizate &icirc;n mod identic. Singura diferen&#539;&#259; dintre
+            ele const&#259; &icirc;n faptul c&#259; </span><span class="c0 c7">StringBuffer </span><span class="c0">este
+            sincronizat &#537;i sigur pentru utilizarea &icirc;n aplica&#539;ii multi-thread. Astfel, este mai potrivit
+            pentru aplica&#539;iile multi-thread, &icirc;n care obiectul poate fi modificat de mai multe fire de
+            execu&#539;ie. Pe de alt&#259; parte, StringBuilder </span><span class="c4">nu este thread-safe</span><span
+            class="c1 c0">, dar func&#539;ioneaz&#259; mai rapid &icirc;n aplica&#539;iile single-thread.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">StringBuffer define&#537;te patru constructori:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer()<br>StringBuffer(</span><span class="c13">int</span><span
+                        class="c5">&nbsp;capacity)<br>StringBuffer(String str)<br>StringBuffer(CharSequence
+                        chars)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">Constructorii similari sunt defini&#539;i de StringBuilder:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuilder()<br>StringBuilder(</span><span class="c13">int</span><span
+                        class="c5">&nbsp;capacity)<br>StringBuilder(String str)<br>StringBuilder(CharSequence
+                        chars)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">S&#259; analiz&#259;m func&#539;ionalitatea acestor clase folosind
+            StringBuffer.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">&Icirc;n toate opera&#539;iunile cu &#537;iruri, StringBuffer/StringBuilder
+            redistribuie memoria alocat&#259;. Pentru a evita prea frecventele redistribuiri de memorie,
+            StringBuffer/StringBuilder rezerv&#259; ini&#539;ial o anumit&#259; zon&#259; de memorie care poate fi
+            utilizat&#259; ulterior. Constructorul f&#259;r&#259; parametri rezerv&#259; memorie pentru 16 caractere.
+            Dac&#259; dorim ca num&#259;rul de caractere s&#259; fie diferit, putem folosi al doilea constructor, care
+            prime&#537;te num&#259;rul de caractere ca parametru.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">Constructorii al treilea &#537;i al patrulea din ambele clase primesc un &#537;ir
+            sau o secven&#539;&#259; de caractere &#537;i rezerv&#259; memorie suplimentar&#259; pentru &icirc;nc&#259;
+            16 caractere.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Cu metoda</span><span class="c4">&nbsp;capacity() </span><span class="c0">putem
+            ob&#539;ine num&#259;rul de caractere pentru care este rezervat&#259; memoria, iar cu metoda </span><span
+            class="c4">ensureCapacity() </span><span class="c1 c0">putem modifica capacitatea minim&#259; a bufferului
+            de caractere:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">String str = </span><span class="c11">&quot;Java&quot;</span><span
+                        class="c5">;<br>StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(str);<br>System.out.println(</span><span
+                        class="c11">&quot;Capacitate: &quot;</span><span class="c5">&nbsp;+ strBuffer.capacity());
+                    </span><span class="c9">// 20</span><span class="c5"><br>strBuffer.ensureCapacity(</span><span
+                        class="c10">32</span><span class="c5">);<br>System.out.println(</span><span
+                        class="c11">&quot;Capacitate: &quot;</span><span class="c5">&nbsp;+ strBuffer.capacity());
+                    </span><span class="c9">// 42</span><span class="c5"><br>System.out.println(</span><span
+                        class="c11">&quot;Lungime: &quot;</span><span class="c5">&nbsp;+ strBuffer.length());
+                    </span><span class="c9">// 4</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Deoarece StringBuffer este ini&#539;ializat cu &#537;irul &quot;Java&quot;,
+            capacitatea sa este de 4 + 16 = 20 de caractere. Apoi, cre&#537;tem capacitatea bufferului prin apelul la
+        </span><span class="c0 c7">strBuffer.ensureCapacity(32)</span><span class="c1 c0">, ridic&acirc;nd capacitatea
+            minim&#259; la 32 de caractere. Cu toate acestea, capacitatea final&#259; poate fi mai mare, cum este cazul
+            aici, unde capacitatea devine 42 de caractere. Acest lucru se &icirc;nt&acirc;mpl&#259; deoarece Java
+            aloc&#259; memorie suplimentar&#259; pentru a &icirc;mbun&#259;t&#259;&#539;i eficien&#539;a.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Totu&#537;i, indiferent de capacitate, lungimea &#537;irului, care poate fi
+            ob&#539;inut&#259; cu metoda </span><span class="c0 c7">length()</span><span class="c1 c0">,
+            r&#259;m&acirc;ne aceea&#537;i - 4 caractere (deoarece &quot;Java&quot; are 4 caractere).</span></p>
+    <p class="c2 c3"><span class="c0 c1"></span></p>
+    <p class="c2"><span class="c0">Pentru a ob&#539;ine &#537;irul care este stocat &icirc;n StringBuffer, putem folosi
+            metoda standard </span><span class="c0 c7">toString()</span><span class="c1 c0">:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">String str = </span><span class="c11">&quot;Java&quot;</span><span
+                        class="c5">;<br>StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(str);<br>System.out.println(strBuffer.toString()); </span><span
+                        class="c9">// Java</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">&Icirc;n toate opera&#539;iunile sale, StringBuffer &#537;i StringBuilder sunt
+            asem&#259;n&#259;toare cu clasa String.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">Ob&#539;inerea &#537;i setarea caracterelor.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp;</span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">charAt()</span><span class="c0">&nbsp;ob&#539;ine, iar
+            metoda </span><span class="c4">setCharAt() </span><span class="c1 c0">seteaz&#259; un caracter la un index
+            specific:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;Java&quot;</span><span
+                        class="c5">);<br></span><span class="c13">char</span><span class="c5">&nbsp;c =
+                        strBuffer.charAt(</span><span class="c10">0</span><span class="c5">); </span><span class="c9">//
+                        J</span><span class="c5"><br>System.out.println(c);<br>strBuffer.setCharAt(</span><span
+                        class="c10">0</span><span class="c5">, </span><span class="c11">&#39;c&#39;</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">//
+                        cava</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">getChars()</span><span class="c1 c0">&nbsp;ob&#539;ine
+            un set de caractere &icirc;ntre indexurile specificate:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;world&quot;</span><span
+                        class="c5">);<br></span><span class="c13">int</span><span class="c5">&nbsp;startIndex =
+                    </span><span class="c10">1</span><span class="c5">;<br></span><span class="c13">int</span><span
+                        class="c5">&nbsp;endIndex = </span><span class="c10">4</span><span class="c5">;<br></span><span
+                        class="c13">char</span><span class="c5">[] buffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;</span><span class="c13">char</span><span class="c5">[endIndex -
+                        startIndex];<br>strBuffer.getChars(startIndex, endIndex, buffer, </span><span
+                        class="c10">0</span><span class="c5">);<br>System.out.println(buffer); </span><span
+                        class="c9">// orl</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">Ad&#259;ugarea &icirc;n &#537;ir.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">append()</span><span class="c1 c0">&nbsp;adaug&#259;
+            un sub&#537;ir la finalul unui StringBuffer:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;hello&quot;</span><span
+                        class="c5">);<br>strBuffer.append(</span><span class="c11">&quot; world&quot;</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">// hello
+                        world</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">insert() </span><span class="c1 c0">adaug&#259; un
+            &#537;ir sau un caracter la un anumit index &icirc;n StringBuffer:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;word&quot;</span><span
+                        class="c5">);<br>strBuffer.insert(</span><span class="c10">3</span><span class="c5">,
+                    </span><span class="c11">&#39;l&#39;</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">//
+                        world</span><span class="c5"><br><br>strBuffer.insert(</span><span class="c10">0</span><span
+                        class="c5">, </span><span class="c11">&quot;s&quot;</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">//
+                        sworld</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">&#536;tergerea caracterelor.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp;</span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">delete()</span><span class="c0">&nbsp;&#537;terge
+            toate caracterele de la un anumit index p&acirc;n&#259; la o anumit&#259; pozi&#539;ie, iar
+            metoda</span><span class="c4">&nbsp;deleteCharAt()</span><span class="c1 c0">&nbsp;&#537;terge un caracter
+            la un anumit index:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;assembler&quot;</span><span
+                        class="c5">);<br>strBuffer.delete(</span><span class="c10">0</span><span class="c5">,
+                    </span><span class="c10">2</span><span class="c5">);<br>System.out.println(strBuffer.toString());
+                    </span><span class="c9">// sembler</span><span
+                        class="c5"><br><br>strBuffer.deleteCharAt(</span><span class="c10">6</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">//
+                        semble</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">Decuparea &#537;irului.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp; </span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">substring()</span><span class="c1 c0">&nbsp;taie
+            &#537;irul de la un anumit index p&acirc;n&#259; la sf&acirc;r&#537;it sau p&acirc;n&#259; la un anumit
+            index:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;hello java!&quot;</span><span
+                        class="c5">);<br>String str1 = strBuffer.substring(</span><span class="c10">6</span><span
+                        class="c5">); </span><span class="c9">// taie de la caracterul 6 p&acirc;n&#259; la
+                        sf&acirc;r&#537;it</span><span class="c5"><br>System.out.println(str1); </span><span
+                        class="c9">// java!</span><span class="c5"><br><br>String str2 =
+                        strBuffer.substring(</span><span class="c10">3</span><span class="c5">, </span><span
+                        class="c10">9</span><span class="c5">); </span><span class="c9">// taie de la caracterul 3
+                        p&acirc;n&#259; la 9</span><span class="c5"><br>System.out.println(str2); </span><span
+                        class="c9">// lo jav</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">Modificarea lungimii.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp;</span></p>
+    <p class="c2"><span class="c0">Pentru a modifica lungimea unui StringBuffer (nu capacitatea bufferului), se
+            folose&#537;te metoda </span><span class="c4">setLength()</span><span class="c1 c0">. Dac&#259; StringBuffer
+            cre&#537;te, &#537;irul este completat cu caractere goale la sf&acirc;r&#537;it, iar dac&#259; scade,
+            &#537;irul este t&#259;iat:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;hello&quot;</span><span
+                        class="c5">);<br>strBuffer.setLength(</span><span class="c10">10</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">//&quot;hello
+                        &nbsp; &nbsp; &quot;</span><span class="c5"><br><br>strBuffer.setLength(</span><span
+                        class="c10">4</span><span class="c5">);<br>System.out.println(strBuffer.toString());
+                    </span><span class="c9">//&quot;hell&quot;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">&Icirc;nlocuirea &icirc;n &#537;ir.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp;</span></p>
+    <p class="c2"><span class="c0">Pentru a &icirc;nlocui un sub&#537;ir &icirc;ntre anumite pozi&#539;ii &icirc;n
+            StringBuffer cu alt sub&#537;ir, se folose&#537;te metoda </span><span class="c4">replace()</span><span
+            class="c1 c0">:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;hello world!&quot;</span><span
+                        class="c5">);<br>strBuffer.replace(</span><span class="c10">6</span><span class="c5">,
+                    </span><span class="c10">11</span><span class="c5">, </span><span
+                        class="c11">&quot;java&quot;</span><span
+                        class="c5">);<br>System.out.println(strBuffer.toString()); </span><span class="c9">// hello
+                        java!</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c0">Primul parametru al metodei replace() indic&#259; pozi&#539;ia de &icirc;nceput a
+            &icirc;nlocuirii, al doilea parametru indic&#259; pozi&#539;ia de sf&acirc;r&#537;it, iar al treilea
+            parametru indic&#259; sub&#537;irul de &icirc;nlocuire.</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2"><span class="c1 c8">Ordinea invers&#259; a &#537;irului.</span></p>
+    <p class="c2"><span class="c1 c0">&nbsp;</span></p>
+    <p class="c2"><span class="c0">Metoda </span><span class="c4">reverse() </span><span class="c1 c0">inverseaz&#259;
+            ordinea &#537;irului &icirc;n StringBuffer:</span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <table class="c15">
+        <tr class="c12">
+            <td class="c14" colspan="1" rowspan="1">
+                <p class="c6"><span class="c5">StringBuffer strBuffer = </span><span class="c13">new</span><span
+                        class="c5">&nbsp;StringBuffer(</span><span class="c11">&quot;assembler&quot;</span><span
+                        class="c5">);<br>strBuffer.reverse();<br>System.out.println(strBuffer.toString()); </span><span
+                        class="c9">// relbmessa</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+    <p class="c2 c3"><span class="c1 c0"></span></p>
+</body>
+
+</html>

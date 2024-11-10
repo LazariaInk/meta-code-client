@@ -1,0 +1,920 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=cGvuclDC_Z1vE_cnVEU6AQ3B2cQio22zuQYmMduN3_l7ONtQ5a4SPXkjZSXpzESjP2gInyaGnGxV-h1PT8k4ug);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c19 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c10 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 27pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c4 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c3 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c13 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c6 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c5 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c2 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c18 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c11 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ade5fc;
+        font-weight: 400;
+      }
+      .c0 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 700;
+      }
+      .c1 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 400;
+      }
+      .c17 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fc9b9b;
+        font-weight: 400;
+      }
+      .c7 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c12 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal;
+      }
+      .c16 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c21 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c15 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c9 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c20 {
+        height: 0pt;
+      }
+      .c14 {
+        font-style: italic;
+      }
+      .c8 {
+        height: 11pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c15 doc-content">
+    <h1 class="c3c10">Design cu mai multe coloane în Flexbox.</h1>
+    <p class="c3">
+      <span class="c12 c9"
+        >Acum s&#259; vedem cum putem crea machete simple cu mai multe coloane
+        pentru pagin&#259; folosind Flexbox.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3"><span class="c4">Design cu dou&#259; coloane:</span></p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <a id="t.c9771fe6b24e82ffeff0c092155fa8c08cacf8cb"></a><a id="t.0"></a>
+    <table class="c7">
+      <tr class="c20">
+        <td class="c19" colspan="1" rowspan="1">
+          <p class="c16">
+            <span class="c17">&lt;!DOCTYPE html&gt;</span
+            ><span class="c5"><br /></span><span class="c1">&lt;</span
+            ><span class="c0">html</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">head</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">meta</span
+            ><span class="c1">&nbsp;charset=</span
+            ><span class="c6">&quot;utf-8&quot;</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">title</span
+            ><span class="c1">&gt;</span
+            ><span class="c5">Flexbox &icirc;n CSS3</span
+            ><span class="c1">&lt;/</span><span class="c0">title</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">style</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">box-sizing</span
+            ><span class="c5"
+              >: border-box;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">html</span><span class="c5">&nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">0</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">margin</span><span class="c5">: </span
+            ><span class="c13">0</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">font-family</span
+            ><span class="c5"
+              >: verdana, arial, sans-serif;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">display</span
+            ><span class="c5"
+              >: flex;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">flex-direction</span
+            ><span class="c5"
+              >: column;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c11">.item</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">background-color</span><span class="c5">: </span
+            ><span class="c13">#455a64</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">color</span><span class="c5">: </span
+            ><span class="c13">#fff</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">font-size</span><span class="c5">: </span
+            ><span class="c13">1.1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c11">.item</span
+            ><span class="c5"
+              >:nth-child(even) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">background-color</span><span class="c5">: </span
+            ><span class="c13">#607d8b</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;@</span
+            ><span class="c18">media</span
+            ><span class="c5">&nbsp;screen and (min-width: </span
+            ><span class="c13">600px</span
+            ><span class="c5"
+              >) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</span
+            ><span class="c2">flex-direction</span
+            ><span class="c5"
+              >: row;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">style</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">head</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">body</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">div</span
+            ><span class="c1">&nbsp;class=</span
+            ><span class="c6">&quot;item&quot;</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">h2</span
+            ><span class="c1">&gt;</span
+            ><span class="c5">Ce este Lorem Ipsum?</span
+            ><span class="c1">&lt;/</span><span class="c0">h2</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >Lorem Ipsum este un text de umplutur&#259;, des folosit &icirc;n
+              tipar &#537;i design web. Lorem Ipsum este standardul pentru texte
+              &icirc;n latin&#259; &icirc;nc&#259; din secolul al
+              XVI-lea...</span
+            ><span class="c1">&lt;/</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">div</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">div</span
+            ><span class="c1">&nbsp;class=</span
+            ><span class="c6">&quot;item&quot;</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">h2</span
+            ><span class="c1">&gt;</span><span class="c5">De unde provine?</span
+            ><span class="c1">&lt;/</span><span class="c0">h2</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >Mul&#539;i cred c&#259; Lorem Ipsum este un simplu text
+              pseudo-latin, dar nu este chiar a&#537;a. R&#259;d&#259;cinile
+              sale provin dintr-un fragment de latin&#259; clasic&#259; din anul
+              45 &icirc;.Hr...</span
+            ><span class="c1">&lt;/</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">div</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">body</span
+            ><span class="c1">&gt;</span><span class="c5"><br /></span
+            ><span class="c1">&lt;/</span><span class="c0">html</span
+            ><span class="c1">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span class="c12 c9"
+        >Aici, flex-containerul este elementul body. Deoarece pe dispozitivele
+        mobile (&icirc;n special smartphone-uri) dimensiunea ecranului nu este
+        foarte mare, stabilim implicit dispunerea elementelor pe coloane. Cu
+        toate acestea, pentru dispozitivele cu ecran de la 600px &#537;i mai
+        mare, se aplic&#259; regula media-query, care stabile&#537;te dispunerea
+        &icirc;n r&acirc;nduri.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 620px;
+          height: 363px;
+        "
+        ><img
+          alt=""
+          src="images/image2.png"
+          style="
+            width: 620px;
+            height: 363px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span class="c21">Design cu trei coloane</span
+      ><span class="c12 c9">:</span>
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <a id="t.989199796838e3d525dc7e31127951763f7849b2"></a><a id="t.1"></a>
+    <table class="c7">
+      <tr class="c20">
+        <td class="c19" colspan="1" rowspan="1">
+          <p class="c16">
+            <span class="c17">&lt;!DOCTYPE html&gt;</span
+            ><span class="c5"><br /></span><span class="c1">&lt;</span
+            ><span class="c0">html</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">head</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">meta</span
+            ><span class="c1">&nbsp;charset=</span
+            ><span class="c6">&quot;utf-8&quot;</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">title</span
+            ><span class="c1">&gt;</span
+            ><span class="c5">Flexbox &icirc;n CSS3</span
+            ><span class="c1">&lt;/</span><span class="c0">title</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">style</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">box-sizing</span
+            ><span class="c5"
+              >: border-box;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">html</span><span class="c5">&nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">0</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">margin</span><span class="c5">: </span
+            ><span class="c13">0</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">font-family</span
+            ><span class="c5"
+              >: verdana, arial, sans-serif;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">display</span
+            ><span class="c5"
+              >: flex;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">flex-direction</span
+            ><span class="c5"
+              >: column;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c11">.item</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">background-color</span><span class="c5">: </span
+            ><span class="c13">#455a64</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">color</span><span class="c5">: </span
+            ><span class="c13">#fff</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">font-size</span><span class="c5">: </span
+            ><span class="c13">1.1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">padding</span><span class="c5">: </span
+            ><span class="c13">1em</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">flex</span><span class="c5">: </span
+            ><span class="c13">1</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c11">.item</span
+            ><span class="c5"
+              >:nth-child(1) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c2">background-color</span><span class="c5">: </span
+            ><span class="c13">#607d8b</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;@</span
+            ><span class="c18">media</span
+            ><span class="c5">&nbsp;screen and (min-width: </span
+            ><span class="c13">600px</span
+            ><span class="c5"
+              >) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c18">body</span
+            ><span class="c5"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</span
+            ><span class="c2">flex-direction</span
+            ><span class="c5"
+              >: row;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c11">.item</span
+            ><span class="c5"
+              >:nth-child(2) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</span
+            ><span class="c2">order</span><span class="c5">: -</span
+            ><span class="c13">1</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">style</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">head</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">body</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">div</span
+            ><span class="c1">&nbsp;class=</span
+            ><span class="c6">&quot;item&quot;</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">h1</span
+            ><span class="c1">&gt;</span
+            ><span class="c5">Ce este Lorem Ipsum?</span
+            ><span class="c1">&lt;/</span><span class="c0">h1</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >Lorem Ipsum este un text de umplutur&#259;, des folosit &icirc;n
+              tipar &#537;i design web. Lorem Ipsum este standardul pentru texte
+              &icirc;n latin&#259; &icirc;nc&#259; din secolul al XVI-lea.
+              &Icirc;n acea vreme, un tipograf anonim a creat...</span
+            ><span class="c1">&lt;/</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">div</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">div</span
+            ><span class="c1">&nbsp;class=</span
+            ><span class="c6">&quot;item&quot;</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">h3</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >Textul clasic Lorem Ipsum, folosit din secolul al XVI-lea</span
+            ><span class="c1">&lt;/</span><span class="c0">h3</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco</span
+            ><span class="c1">&lt;/</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">div</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">div</span
+            ><span class="c1">&nbsp;class=</span
+            ><span class="c6">&quot;item&quot;</span><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">h3</span
+            ><span class="c1">&gt;</span
+            ><span class="c5">Unde &icirc;l g&#259;se&#537;ti?</span
+            ><span class="c1">&lt;/</span><span class="c0">h3</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              >Exist&#259; multe variante de Lorem Ipsum, dar majoritatea au
+              suferit modific&#259;ri, cum ar fi inser&#539;iile umoristice sau
+              cuvinte care nu au nicio leg&#259;tur&#259; cu latina.</span
+            ><span class="c1">&lt;/</span><span class="c0">p</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">div</span
+            ><span class="c1">&gt;</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c1">&lt;/</span><span class="c0">body</span
+            ><span class="c1">&gt;</span><span class="c5"><br /></span
+            ><span class="c1">&lt;/</span><span class="c0">html</span
+            ><span class="c1">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c9 c12"></span></p>
+    <p class="c3">
+      <span class="c9"
+        >Spre deosebire de exemplul anterior, aici a fost ad&#259;ugat
+        &icirc;nc&#259; un element. Caracteristica acestui exemplu este c&#259;
+        coloanele au dimensiuni egale. Pentru aceasta, li s-a stabilit
+        proprietatea </span
+      ><span class="c9 c14">flex: 1</span
+      ><span class="c12 c9"
+        >, ceea ce &icirc;nseamn&#259; c&#259;, la extinderea sau
+        mic&#537;orarea limitelor containerului, toate elementele vor fi scalate
+        &icirc;n mod egal.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span class="c9"
+        >&Icirc;n plus, la o l&#259;&#539;ime a ecranului mai mare de 600px, al
+        doilea element are setat&#259; proprietatea </span
+      ><span class="c9 c14">order: -1</span
+      ><span class="c12 c9"
+        >, ceea ce face ca acest element s&#259; fie plasat primul.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 616px;
+          height: 568px;
+        "
+        ><img
+          alt=""
+          src="images/image1.png"
+          style="
+            width: 616px;
+            height: 568px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span class="c12 c9"
+        >&Icirc;n mod similar, putem ad&#259;uga &#537;i mai multe coloane.
+        &Icirc;n acest caz, coloanele au implicit aceea&#537;i l&#259;&#539;ime.
+        Dar ce facem dac&#259; una dintre coloane (de obicei cea central&#259;)
+        trebuie s&#259; aib&#259; o l&#259;&#539;ime mai mare dec&acirc;t
+        celelalte? Pentru aceasta, ad&#259;ug&#259;m urm&#259;toarea regul&#259;
+        &icirc;n stilurile paginii:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <a id="t.25b08bdea77615cf9afc3b5ddf2385cae0b78872"></a><a id="t.2"></a>
+    <table class="c7">
+      <tr class="c20">
+        <td class="c19" colspan="1" rowspan="1">
+          <p class="c16">
+            <span class="c11">.item</span
+            ><span class="c5"
+              >:first-child {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c2">flex</span><span class="c5">: </span
+            ><span class="c13">0</span><span class="c5">&nbsp;</span
+            ><span class="c13">0</span><span class="c5">&nbsp;</span
+            ><span class="c13">50%</span><span class="c5">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span class="c12 c9"
+        >&Icirc;n acest caz, primul element va ocupa &icirc;ntotdeauna 50% din
+        spa&#539;iul containerului.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c12 c9"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 624px;
+          height: 509.33px;
+        "
+        ><img
+          alt=""
+          src="images/image3.png"
+          style="
+            width: 624px;
+            height: 509.33px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,572 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c9 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c7 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c12 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c4 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c3 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c6 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c10 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c0 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c1 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c13 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c17 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c14 {
+            font-style: italic
+        }
+
+        .c15 {
+            height: 11pt
+        }
+
+        .c2 {
+            height: 0pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c11 c3 c17">Modulul shelve.</h1>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Pentru lucrul cu fi&#537;iere binare &icirc;n Python, poate fi utilizat &#537;i un
+            alt modul - </span><span class="c0">shelve</span><span class="c3 c1">. Acesta salveaz&#259; obiecte
+            &icirc;ntr-un fi&#537;ier asociindu-le cu o anumit&#259; cheie. Ulterior, obiectele salvate pot fi extrase
+            din fi&#537;ier folosind acea cheie. Procesul de lucru cu datele prin intermediul modulului shelve este
+            similar cu lucrul cu dic&#539;ionare, care de asemenea folosesc chei pentru salvarea &#537;i extragerea
+            obiectelor.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Pentru a deschide un fi&#537;ier, modulul shelve folose&#537;te func&#539;ia
+        </span><span class="c0">open()</span><span class="c3 c1">:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c4">open(calea_c&#259;tre_fi&#537;ier[, flag=</span><span
+                        class="c7">&quot;c&quot;</span><span class="c4">[, protocol=</span><span
+                        class="c5">None</span><span class="c4">[, writeback=</span><span class="c5">False</span><span
+                        class="c4">]]])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Unde parametrul flag poate avea urm&#259;toarele valori:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">- </span><span class="c0">c</span><span class="c3 c1">: fi&#537;ierul se deschide
+            pentru citire &#537;i scriere (valoare implicit&#259;). Dac&#259; fi&#537;ierul nu exist&#259;, acesta este
+            creat.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">- </span><span class="c0">r</span><span class="c3 c1">: fi&#537;ierul se deschide
+            doar pentru citire.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">- </span><span class="c0">w</span><span class="c3 c1">: fi&#537;ierul se deschide
+            pentru scriere.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">- </span><span class="c0">n</span><span class="c3 c1">: fi&#537;ierul se deschide
+            pentru scriere. Dac&#259; fi&#537;ierul nu exist&#259;, acesta este creat. Dac&#259; fi&#537;ierul
+            exist&#259;, acesta este rescris.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Pentru a &icirc;nchide conexiunea la fi&#537;ier, se apeleaz&#259; metoda
+        </span><span class="c0">close()</span><span class="c3 c1">:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">import</span><span class="c4">&nbsp;shelve<br>d =
+                        shelve.open(filename)<br>d.close()</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Alternativ, fi&#537;ierul poate fi deschis cu ajutorul operatorului </span><span
+            class="c0">with</span><span class="c1 c3">. S&#259; salv&#259;m &#537;i s&#259; citim &icirc;n/din
+            fi&#537;ier c&acirc;teva obiecte:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">import</span><span class="c4">&nbsp;shelve<br> <br>FILENAME =
+                    </span><span class="c7">&quot;states2&quot;</span><span class="c4"><br></span><span
+                        class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;London&quot;</span><span class="c4">] = </span><span class="c7">&quot;Great
+                        Britain&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Paris&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;France&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Berlin&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;Germany&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Madrid&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;Spain&quot;</span><span class="c4"><br> <br></span><span
+                        class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;print(states[</span><span
+                        class="c7">&quot;London&quot;</span><span class="c4">])<br> &nbsp;
+                        &nbsp;print(states[</span><span class="c7">&quot;Madrid&quot;</span><span class="c4">])</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Scrierea datelor implic&#259; setarea unei valori pentru o anumit&#259;
+            cheie:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c4">states[</span><span class="c7">&quot;London&quot;</span><span
+                        class="c4">] = </span><span class="c7">&quot;Great Britain&quot;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Citirea din fi&#537;ier este echivalent&#259; cu ob&#539;inerea valorii prin
+            intermediul unei chei:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c4">print(states[</span><span class="c7">&quot;London&quot;</span><span
+                        class="c4">])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Ca &#537;i &icirc;n cazul dic&#539;ionarelor, cheile sunt valori de tip &#537;ir.
+            Ie&#537;irea pe consol&#259; a programului:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c4">Great Britain<br>Spain</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c13">Citirea datelor.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">La citirea datelor, dac&#259; cheia solicitat&#259; nu exist&#259;, se
+            genereaz&#259; o excep&#539;ie. &Icirc;n acest caz, &icirc;nainte de a ob&#539;ine valoarea, putem verifica
+            existen&#539;a cheii folosind operatorul </span><span class="c0">in</span><span class="c3 c1">:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;key = </span><span
+                        class="c7">&quot;Brussels&quot;</span><span class="c4"><br> &nbsp; &nbsp;</span><span
+                        class="c5">if</span><span class="c4">&nbsp;key </span><span class="c5">in</span><span
+                        class="c4">&nbsp;states:<br> &nbsp; &nbsp; &nbsp; &nbsp;print(states[key])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">De asemenea, putem folosi metoda </span><span class="c0">get()</span><span
+            class="c3 c1">. Primul parametru al metodei este cheia prin care dorim s&#259; ob&#539;inem valoarea, iar al
+            doilea parametru este valoarea implicit&#259;, care se returneaz&#259; dac&#259; cheia nu este
+            g&#259;sit&#259;.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;state =
+                        states.get(</span><span class="c7">&quot;Brussels&quot;</span><span class="c4">, </span><span
+                        class="c7">&quot;Undefined&quot;</span><span class="c4">)<br> &nbsp; &nbsp;print(state)</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Folosind o bucl&#259; </span><span class="c1 c14">for</span><span class="c3 c1">,
+            putem parcurge toate valorile din fi&#537;ier:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;</span><span
+                        class="c5">for</span><span class="c4">&nbsp;key </span><span class="c5">in</span><span
+                        class="c4">&nbsp;states:<br> &nbsp; &nbsp; &nbsp; &nbsp;print(key,</span><span class="c7">&quot;
+                        - &quot;</span><span class="c4">, states[key])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Metoda </span><span class="c0">keys()</span><span class="c1">&nbsp;returneaz&#259;
+            toate cheile din fi&#537;ier, iar metoda </span><span class="c0">values()</span><span
+            class="c3 c1">&nbsp;returneaz&#259; toate valorile:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;</span><span
+                        class="c5">for</span><span class="c4">&nbsp;city </span><span class="c5">in</span><span
+                        class="c4">&nbsp;states.keys():<br> &nbsp; &nbsp; &nbsp; &nbsp;print(city, end=</span><span
+                        class="c7">&quot; &quot;</span><span class="c4">) &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c12"># London Paris Berlin Madrid </span><span class="c4"><br> &nbsp; &nbsp;print()<br>
+                        &nbsp; &nbsp;</span><span class="c5">for</span><span class="c4">&nbsp;country </span><span
+                        class="c5">in</span><span class="c4">&nbsp;states.values():<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(country, end=</span><span class="c7">&quot; &quot;</span><span class="c4">) &nbsp;
+                        &nbsp; </span><span class="c12"># Great Britain France Germany Spain </span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">O alt&#259; metod&#259;, </span><span class="c0">items()</span><span class="c3 c1">,
+            returneaz&#259; un set de tuple. Fiecare tuplu con&#539;ine o cheie &#537;i valoarea corespunz&#259;toare
+            acesteia.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;</span><span
+                        class="c5">for</span><span class="c4">&nbsp;state </span><span class="c5">in</span><span
+                        class="c4">&nbsp;states.items():<br> &nbsp; &nbsp; &nbsp; &nbsp;print(state)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Ie&#537;irea pe consol&#259;:</span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c4">(</span><span class="c7">&quot;London&quot;</span><span class="c4">,
+                    </span><span class="c7">&quot;Great Britain&quot;</span><span class="c4">)<br>(</span><span
+                        class="c7">&quot;Paris&quot;</span><span class="c4">, </span><span
+                        class="c7">&quot;France&quot;</span><span class="c4">)<br>(</span><span
+                        class="c7">&quot;Berlin&quot;</span><span class="c4">, </span><span
+                        class="c7">&quot;Germany&quot;</span><span class="c4">)<br>(</span><span
+                        class="c7">&quot;Madrid&quot;</span><span class="c4">, </span><span
+                        class="c7">&quot;Spain&quot;</span><span class="c4">)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c13">Actualizarea datelor.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c1">Pentru a modifica datele, este suficient s&#259; atribuim o nou&#259; valoare
+            unei chei existente, iar pentru a ad&#259;uga date, definim o nou&#259; cheie:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">import</span><span class="c4">&nbsp;shelve<br> <br>FILENAME =
+                    </span><span class="c7">&quot;states2&quot;</span><span class="c4"><br></span><span
+                        class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;London&quot;</span><span class="c4">] = </span><span class="c7">&quot;Great
+                        Britain&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Paris&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;France&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Berlin&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;Germany&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Madrid&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;Spain&quot;</span><span class="c4"><br> <br></span><span
+                        class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;London&quot;</span><span class="c4">] = </span><span class="c7">&quot;United
+                        Kingdom&quot;</span><span class="c4"><br> &nbsp; &nbsp;states[</span><span
+                        class="c7">&quot;Brussels&quot;</span><span class="c4">] = </span><span
+                        class="c7">&quot;Belgium&quot;</span><span class="c4"><br> &nbsp; &nbsp;</span><span
+                        class="c5">for</span><span class="c4">&nbsp;key </span><span class="c5">in</span><span
+                        class="c4">&nbsp;states:<br> &nbsp; &nbsp; &nbsp; &nbsp;print(key, </span><span
+                        class="c7">&quot; - &quot;</span><span class="c4">, states[key])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c3 c13">&#536;tergerea datelor.</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Pentru a &#537;terge un element &#537;i a ob&#539;ine simultan valoarea acestuia,
+            putem folosi func&#539;ia </span><span class="c0">pop()</span><span class="c3 c1">, care prime&#537;te cheia
+            elementului &#537;i o valoare implicit&#259; dac&#259; cheia nu este g&#259;sit&#259;:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;state =
+                        states.pop(</span><span class="c7">&quot;London&quot;</span><span class="c4">, </span><span
+                        class="c7">&quot;NotFound&quot;</span><span class="c4">)<br> &nbsp; &nbsp;print(state)</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">De asemenea, pentru &#537;tergere se poate utiliza operatorul </span><span
+            class="c0">del</span><span class="c3 c1">:</span></p>
+    <table class="c6">
+        <tr class="c2"></tr>
+    </table>
+    <p class="c10 c15"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;</span><span
+                        class="c5">del</span><span class="c4">&nbsp;states[</span><span
+                        class="c7">&quot;Madrid&quot;</span><span class="c4">] &nbsp; &nbsp;</span><span class="c12">#
+                        &#537;tergem obiectul cu cheia Madrid</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c11"><span class="c1">Pentru a &#537;terge toate elementele, se poate folosi metoda</span><span
+            class="c0">&nbsp;clear()</span><span class="c3 c1">:</span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <table class="c6">
+        <tr class="c2">
+            <td class="c9" colspan="1" rowspan="1">
+                <p class="c10"><span class="c5">with</span><span class="c4">&nbsp;shelve.open(FILENAME) </span><span
+                        class="c5">as</span><span class="c4">&nbsp;states:<br> <br> &nbsp; &nbsp;states.clear()</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c8"><span class="c3 c1"></span></p>
+    <p class="c8"><span class="c3 c1"></span></p>
+</body>
+
+</html>

@@ -1,0 +1,927 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=cGvuclDC_Z1vE_cnVEU6AQ3B2cQio22zuQYmMduN3_l7ONtQ5a4SPXkjZSXpzESjP2gInyaGnGxV-h1PT8k4ug);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c12 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c3 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c10 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c13 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fc9b9b;
+        font-weight: 400;
+      }
+      .c7 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 400;
+      }
+      .c1 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c11 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c19 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #888888;
+        font-weight: 400;
+      }
+      .c0 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 700;
+      }
+      .c5 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c6 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal;
+      }
+      .c2 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: italic;
+        font-weight: 400;
+      }
+      .c15 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c14 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c20 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c18 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c4 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c9 {
+        font-weight: 700;
+        font-size: 15pt;
+        font-family: "Open Sans";
+      }
+      .c17 {
+        font-weight: 700;
+        font-size: 27pt;
+        font-family: "Open Sans";
+      }
+      .c22 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+      }
+      .c8 {
+        height: 11pt;
+      }
+      .c21 {
+        font-style: italic;
+      }
+      .c16 {
+        height: 0pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c18 doc-content">
+    <h1 class="c3 c6 c17">Construcția if..else și operatorul ternar.</h1>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Construc&#539;iile condi&#539;ionale permit direc&#539;ionarea
+        execu&#539;iei programului &icirc;n func&#539;ie de o condi&#539;ie pe
+        unul dintre posibilele c&#259;i. Una dintre aceste construc&#539;ii
+        &icirc;n limbajul PHP este construc&#539;ia </span
+      ><span class="c20">if..else</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3"><span class="c6 c9">Construc&#539;ia if..else.</span></p>
+    <p class="c3 c8"><span class="c6 c9"></span></p>
+    <p class="c3">
+      <span class="c4">Construc&#539;ia</span><span class="c2">&nbsp;</span
+      ><span class="c20 c21">if </span><span class="c2">(condi&#539;ie)</span
+      ><span class="c6 c4"
+        >&nbsp;verific&#259; adev&#259;rul unei condi&#539;ii, &#537;i dac&#259;
+        aceasta este adev&#259;rat&#259;, atunci se execut&#259; blocul de
+        instruc&#539;iuni care urmeaz&#259; dup&#259; if. Dac&#259;
+        condi&#539;ia este fals&#259;, adic&#259; este egal&#259; cu false,
+        atunci blocul if nu se execut&#259;. De exemplu:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.2bd069882f93f6f7ab66b92a3bf807c32e467031"></a><a id="t.0"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c1"><br />$a = </span
+            ><span class="c11">4</span><span class="c1">;<br /></span
+            ><span class="c5">if</span><span class="c1">($a &gt; </span
+            ><span class="c11">0</span
+            ><span class="c1"
+              >) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br />}<br /></span><span class="c5">echo</span
+            ><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;&lt;br&gt;sf&acirc;r&#537;itul execu&#539;iei
+              programului&quot;</span
+            ><span class="c1">;<br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c4"
+        >Blocul de instruc&#539;iuni este delimitat de acolade. &#536;i deoarece
+        &icirc;n acest caz condi&#539;ia este adev&#259;rat&#259; (adic&#259;
+        este egal&#259; cu true): valoarea variabilei $a este mai mare
+        dec&acirc;t 0, blocul de instruc&#539;iuni din acolade va fi executat.
+        Dac&#259; valoarea lui $a ar fi fost mai mic&#259; dec&acirc;t 0, blocul
+        if nu s-ar fi executat.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c4"
+        >Dac&#259; blocul if con&#539;ine doar o instruc&#539;iune, atunci
+        acoladele pot fi omise:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.767cbeef9a6be09cd4cea40c9e4c23ac5e982652"></a><a id="t.1"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c1"><br />$a = </span
+            ><span class="c11">4</span><span class="c1">;<br /></span
+            ><span class="c5">if</span><span class="c1">($a &gt; </span
+            ><span class="c11">0</span
+            ><span class="c1"
+              >)<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br /></span><span class="c5">echo</span
+            ><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;&lt;br&gt;sf&acirc;r&#537;itul execu&#539;iei
+              programului&quot;</span
+            ><span class="c1">;<br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c4"
+        >&Icirc;ntreaga construc&#539;ie poate fi plasat&#259; pe o singur&#259;
+        linie:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.d4f419451b22f6680f4fe5371e2a714a5762cb2b"></a><a id="t.2"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c5">if</span><span class="c1">($a &gt; </span
+            ><span class="c11">0</span><span class="c1">) </span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >&Icirc;n acest caz, blocul if con&#539;ine doar instruc&#539;iunea </span
+      ><span class="c2"
+        >echo &quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+      ><span class="c6 c4">;.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3"><span class="c6 c9">else.</span></p>
+    <p class="c3 c8"><span class="c6 c9"></span></p>
+    <p class="c3">
+      <span class="c4">Blocul </span><span class="c20">else </span
+      ><span class="c6 c4"
+        >con&#539;ine instruc&#539;iunile care se execut&#259; dac&#259;
+        condi&#539;ia de dup&#259; if este fals&#259;, adic&#259; egal&#259; cu
+        false:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.cdd18efd5a326ccdf3c06fd1c35e387ddd15f09e"></a><a id="t.3"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c1"><br />$a = </span
+            ><span class="c11">4</span><span class="c1">;<br /></span
+            ><span class="c5">if</span><span class="c1">($a &gt; </span
+            ><span class="c11">0</span
+            ><span class="c1"
+              >) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br />} </span><span class="c5">else</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mic&#259; dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br />}<br /></span><span class="c5">echo</span
+            ><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;&lt;br&gt;sf&acirc;r&#537;itul execu&#539;iei
+              programului&quot;</span
+            ><span class="c1">;<br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Dac&#259; $a este mai mare dec&acirc;t 0, se execut&#259; blocul </span
+      ><span class="c20">if</span
+      ><span class="c4">, altfel se execut&#259; blocul </span
+      ><span class="c20">else</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c4"
+        >Deoarece &icirc;n ambele blocuri este doar o instruc&#539;iune, se pot
+        omite acoladele pentru definirea blocurilor:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.025bedb3c33039950188ff938d8790cc41df3333"></a><a id="t.4"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c5">if</span><span class="c1">($a &gt; </span
+            ><span class="c11">0</span
+            ><span class="c1"
+              >)<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br /></span><span class="c5">else</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mic&#259; dec&acirc;t zero&quot;</span
+            ><span class="c1">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c9"></span></p>
+    <p class="c3"><span class="c6 c9">&nbsp;elseif.</span></p>
+    <p class="c3 c8"><span class="c6 c9"></span></p>
+    <p class="c3">
+      <span class="c4">Construc&#539;ia </span><span class="c20">elseif </span
+      ><span class="c6 c4"
+        >introduce condi&#539;ii suplimentare &icirc;n program:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.83395f5d21235125cb4f0a69577ee0f7cb758999"></a><a id="t.5"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c1">$a = </span><span class="c11">5</span
+            ><span class="c1">;<br /></span><span class="c5">if</span
+            ><span class="c1">($a &gt; </span><span class="c11">0</span
+            ><span class="c1"
+              >) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br />} </span><span class="c5">elseif</span
+            ><span class="c1">($a &lt; </span><span class="c11">0</span
+            ><span class="c1"
+              >) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mic&#259; dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br />} </span><span class="c5">else</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este egal&#259; cu zero&quot;</span
+            ><span class="c1">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4">Se pot ad&#259;uga mai multe blocuri </span
+      ><span class="c2">elseif</span
+      ><span class="c6 c4"
+        >. Dac&#259; niciuna dintre condi&#539;iile din if sau elseif nu se
+        &icirc;ndepline&#537;te, atunci se execut&#259; blocul else.</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3"><span class="c6 c9">&nbsp;Definirea condi&#539;iei.</span></p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Mai sus, ca &#537;i condi&#539;ie, s-au folosit opera&#539;ii de
+        compara&#539;ie. Totu&#537;i, &icirc;n realitate, condi&#539;ia poate fi
+        orice expresie, nu doar una care returneaz&#259; </span
+      ><span class="c2">true </span><span class="c4">sau </span
+      ><span class="c2">false</span
+      ><span class="c4"
+        >. Dac&#259; expresia transmis&#259; este egal&#259; cu 0, aceasta este
+        interpretat&#259; ca </span
+      ><span class="c2">false</span
+      ><span class="c4">. Alte valori sunt considerate </span
+      ><span class="c2">true</span><span class="c6 c4">:</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.535610fd7e2bff50c307108eda37d5e424da5a76"></a><a id="t.6"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c5">if</span><span class="c1">&nbsp;(</span
+            ><span class="c11">0</span
+            ><span class="c1">) {} &nbsp; &nbsp; &nbsp; </span
+            ><span class="c19">// false</span><span class="c1"><br /></span
+            ><span class="c5">if</span><span class="c1">&nbsp;(</span
+            ><span class="c11">-0.0</span
+            ><span class="c1">) {} &nbsp; &nbsp;</span
+            ><span class="c19">// false</span><span class="c1"><br /></span
+            ><span class="c5">if</span><span class="c1">&nbsp;(</span
+            ><span class="c11">-1</span
+            ><span class="c1">) {} &nbsp; &nbsp; &nbsp;</span
+            ><span class="c19">// true </span><span class="c1"><br /></span
+            ><span class="c5">if</span><span class="c1">&nbsp;(</span
+            ><span class="c10">&quot;&quot;</span
+            ><span class="c1">) {} &nbsp; &nbsp; &nbsp;</span
+            ><span class="c19">// false (&#537;ir gol)</span
+            ><span class="c1"><br /></span><span class="c5">if</span
+            ><span class="c1">&nbsp;(</span
+            ><span class="c10">&quot;a&quot;</span
+            ><span class="c1">) {} &nbsp; &nbsp; </span
+            ><span class="c19">// true (&#537;ir ne-gol)</span
+            ><span class="c1"><br /></span><span class="c5">if</span
+            ><span class="c1">&nbsp;(</span><span class="c5">null</span
+            ><span class="c1">) {} &nbsp; &nbsp;</span
+            ><span class="c19">// false (valoare absent&#259;)</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c9">&nbsp;Sintaxa alternativ&#259; if.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >PHP suport&#259; &#537;i sintaxa alternativ&#259; pentru
+        construc&#539;ia </span
+      ><span class="c2">if..else</span
+      ><span class="c4"
+        >, &icirc;n care &icirc;n loc de acolad&#259; deschis&#259; se
+        folose&#537;te dou&#259; puncte, iar la sf&acirc;r&#537;itul
+        &icirc;ntregii construc&#539;ii se folose&#537;te cuv&acirc;ntul cheie </span
+      ><span class="c20">endif</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.2191d7e70374979bee6714aaeaa104c53656eba7"></a><a id="t.7"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c1">$a = </span><span class="c11">5</span
+            ><span class="c1">;<br /></span><span class="c5">if</span
+            ><span class="c1">($a &gt; </span><span class="c11">0</span
+            ><span class="c1"
+              >):<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mare dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br /></span><span class="c5">elseif</span
+            ><span class="c1">($a &lt; </span><span class="c11">0</span
+            ><span class="c1"
+              >):<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este mai mic&#259; dec&acirc;t zero&quot;</span
+            ><span class="c1">;<br /></span><span class="c5">else</span
+            ><span class="c1"
+              >:<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">echo</span><span class="c1">&nbsp;</span
+            ><span class="c10"
+              >&quot;Variabila a este egal&#259; cu zero&quot;</span
+            ><span class="c1">;<br /></span><span class="c5">endif</span
+            ><span class="c1">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c9">&nbsp;Mod combinat HTML &#537;i PHP.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4">De asemenea, putem scrie construc&#539;ia </span
+      ><span class="c2">if..else</span
+      ><span class="c4 c6"
+        >&nbsp;&icirc;n alt mod, altern&acirc;nd &icirc;n cadrul
+        construc&#539;iei cu cod HTML:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.dbe4c65ebe5360916c7c4f9242a0575faa86e0eb"></a><a id="t.8"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;!DOCTYPE html&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">html</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">head</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1">FDC.COM</span><span class="c7">&lt;/</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">meta</span><span class="c7">&nbsp;charset=</span
+            ><span class="c10">&quot;utf-8&quot;</span
+            ><span class="c7">&nbsp;/&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">head</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span
+            ><span class="c1">&nbsp;<br />$a = </span><span class="c11">5</span
+            ><span class="c1">;<br /></span><span class="c13">?&gt;</span
+            ><span class="c1"
+              ><br />
+              <br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">if</span><span class="c1">&nbsp;($a &gt; </span
+            ><span class="c11">0</span><span class="c1">) { </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1">Variabila a este mai mare dec&acirc;t zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;} </span
+            ><span class="c13">?&gt;</span
+            ><span class="c1"
+              ><br />
+              <br /></span
+            ><span class="c7">&lt;/</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">html</span
+            ><span class="c7">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >&Icirc;n acest caz, condi&#539;ia este indicat&#259; &icirc;ntr-un bloc
+        php separat:</span
+      ><span class="c2">&nbsp;&lt;?php if ($a &gt; 0) { ?&gt;</span
+      ><span class="c4"
+        >. Este important c&#259; acest bloc con&#539;ine doar acolada
+        deschis&#259; </span
+      ><span class="c2 c22">&quot;{&quot;. </span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Construc&#539;ia if se &icirc;ncheie cu alt bloc php, care con&#539;ine
+        acolada &icirc;nchis&#259;: </span
+      ><span class="c2">&lt;?php } ?&gt;</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >&Icirc;ntre aceste dou&#259; blocuri php se afl&#259; codul care se
+        afi&#537;eaz&#259; pe pagina html, dac&#259; condi&#539;ia din if este
+        adev&#259;rat&#259;. Acest cod reprezint&#259; efectiv cod HTML, astfel
+        &icirc;nc&acirc;t aici se pot plasa diferite elemente HTML, ca &icirc;n
+        acest caz elementul </span
+      ><span class="c2">&lt;h2&gt;</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Dac&#259; este necesar, se pot ad&#259;uga expresii </span
+      ><span class="c2">else </span><span class="c4">&#537;i </span
+      ><span class="c2">elseif</span><span class="c6 c4">:</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.2cd764d06fe6f2845596e4b8594cd9ba13bc1cea"></a><a id="t.9"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;!DOCTYPE html&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">html</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">head</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1">FDC.COM</span><span class="c7">&lt;/</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">meta</span><span class="c7">&nbsp;charset=</span
+            ><span class="c10">&quot;utf-8&quot;</span
+            ><span class="c7">&nbsp;/&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">head</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1"><br />$a = </span
+            ><span class="c11">-5</span><span class="c1">;<br /></span
+            ><span class="c13">?&gt;</span
+            ><span class="c1"
+              ><br />
+              <br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">if</span><span class="c1">&nbsp;($a &gt; </span
+            ><span class="c11">0</span><span class="c1">) { </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1">Variabila a este mai mare dec&acirc;t zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;} </span
+            ><span class="c5">elseif</span><span class="c1">($a &lt; </span
+            ><span class="c11">0</span><span class="c1">) { </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1"
+              >Variabila a este mai mic&#259; dec&acirc;t zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;} </span
+            ><span class="c5">else</span><span class="c1">&nbsp;{ </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1">Variabila a este egal&#259; cu zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;} </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">html</span
+            ><span class="c7">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c6 c4"
+        >Se poate folosi &#537;i sintaxa alternativ&#259;:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.277126891d401b0d8926ad741b533cf5ff135b0f"></a><a id="t.10"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c1">html<br /></span
+            ><span class="c13">&lt;!DOCTYPE html&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">html</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">head</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1">FDC.COM</span><span class="c7">&lt;/</span
+            ><span class="c0">title</span><span class="c7">&gt;</span
+            ><span class="c1"><br /></span><span class="c7">&lt;</span
+            ><span class="c0">meta</span><span class="c7">&nbsp;charset=</span
+            ><span class="c10">&quot;utf-8&quot;</span
+            ><span class="c7">&nbsp;/&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">head</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1"><br />$a = </span
+            ><span class="c11">0</span><span class="c1">;<br /></span
+            ><span class="c13">?&gt;</span
+            ><span class="c1"
+              ><br />
+              <br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">if</span><span class="c1">&nbsp;($a &gt; </span
+            ><span class="c11">0</span><span class="c1">): </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1">Variabila a este mai mare dec&acirc;t zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">elseif</span><span class="c1">($a &lt; </span
+            ><span class="c11">0</span><span class="c1">): </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1"
+              >Variabila a este mai mic&#259; dec&acirc;t zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">else</span><span class="c1">: </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span
+            ><span class="c1">Variabila a este egal&#259; cu zero</span
+            ><span class="c7">&lt;/</span><span class="c0">h2</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c13">&lt;?php</span><span class="c1">&nbsp;</span
+            ><span class="c5">endif</span><span class="c1">; </span
+            ><span class="c13">?&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">body</span
+            ><span class="c7">&gt;</span><span class="c1"><br /></span
+            ><span class="c7">&lt;/</span><span class="c0">html</span
+            ><span class="c7">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3"><span class="c6 c9">&nbsp;Operatorul ternar.</span></p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Operatorul ternar const&#259; din trei operanzi &#537;i are
+        urm&#259;toarea defini&#539;ie: </span
+      ><span class="c2"
+        >[primul operand - condi&#539;ie] ? [al doilea operand] : [al treilea
+        operand]</span
+      ><span class="c4"
+        >. &Icirc;n func&#539;ie de condi&#539;ie, operatorul ternar
+        returneaz&#259; al doilea sau al treilea operand: dac&#259;
+        condi&#539;ia este </span
+      ><span class="c2">true</span
+      ><span class="c4"
+        >, se returneaz&#259; al doilea operand; dac&#259; condi&#539;ia este </span
+      ><span class="c2">false</span
+      ><span class="c6 c4"
+        >, se returneaz&#259; al treilea operand. De exemplu:</span
+      >
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <a id="t.baa4b422d42877f6df448e97f40cffded3f64b8d"></a><a id="t.11"></a>
+    <table class="c15">
+      <tr class="c16">
+        <td class="c12" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c1">$a = </span><span class="c11">1</span
+            ><span class="c1">;<br />$b = </span><span class="c11">2</span
+            ><span class="c1"
+              >;<br />$z = $a &lt; $b ? $a + $b : $a - $b;<br /></span
+            ><span class="c5">echo</span><span class="c1">&nbsp;$z;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+    <p class="c3">
+      <span class="c4"
+        >Dac&#259; valoarea variabilei $a este mai mic&#259; dec&acirc;t $b
+        &#537;i condi&#539;ia este adev&#259;rat&#259;, atunci variabila $z va
+        fi egal&#259; cu </span
+      ><span class="c2">$a + $b</span
+      ><span class="c4">. Altfel, valoarea lui $z va fi egal&#259; cu</span
+      ><span class="c2">&nbsp;$a - $b</span><span class="c6 c4">.</span>
+    </p>
+    <p class="c3 c8"><span class="c6 c4"></span></p>
+  </body>
+</html>

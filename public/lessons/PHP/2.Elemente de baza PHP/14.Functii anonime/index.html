@@ -1,0 +1,839 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c10 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c4 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt;
+      }
+      .c6 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c15 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #888888;
+        font-weight: 400;
+      }
+      .c8 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c0 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c12 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c13 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fc9b9b;
+        font-weight: 400;
+      }
+      .c9 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c7 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c14 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c5 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal;
+      }
+      .c3 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c18 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c17 {
+        font-weight: 700;
+        font-size: 27pt;
+        font-family: "Open Sans";
+      }
+      .c16 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c1 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c11 {
+        height: 0pt;
+      }
+      .c2 {
+        font-style: italic;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c16 doc-content">
+    <h1 class="c6 c5 c17">Funcții anonime.</h1>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c18">Func&#539;iile anonime</span
+      ><span class="c5 c1"
+        >&nbsp;permit transmiterea altor func&#539;ii ca parametri
+        func&#539;iilor sau atribuirea acestora unor variabile.</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >O func&#539;ie anonim&#259; este definit&#259; ca o func&#539;ie
+        obi&#537;nuit&#259;, cu excep&#539;ia faptului c&#259; nu are un nume.
+        De exemplu:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.87b079ea53332a046fe9406d512b7692d39b6264"></a><a id="t.0"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c0">$hello = </span><span class="c12">function</span
+            ><span class="c0"
+              >($name) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8">&quot;&lt;h2&gt;Hello $name&lt;/h2&gt;&quot;</span
+            ><span class="c0">;<br />};</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">Aici, variabilei </span><span class="c1 c2">$hello</span
+      ><span class="c1"
+        >&nbsp;i se atribuie o func&#539;ie anonim&#259;. Aceast&#259;
+        func&#539;ie este definit&#259; cu ajutorul cuv&acirc;ntului cheie </span
+      ><span class="c18">function</span
+      ><span class="c1"
+        >. De asemenea, accept&#259; parametri - &icirc;n acest caz, parametrul </span
+      ><span class="c1 c2">$name</span
+      ><span class="c5 c1"
+        >. &#536;i con&#539;ine un bloc de instruc&#539;iuni.</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Pentru a apela o astfel de func&#539;ie, se folose&#537;te numele
+        variabilei care o reprezint&#259;:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.db6fc6eb3c24aa4da94c36486b3add1a3ac322e5"></a><a id="t.1"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c0">$hello(</span
+            ><span class="c8">&quot;Tom&quot;</span><span class="c0">);</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Practic, o astfel de variabil&#259; este folosit&#259; ca o
+        func&#539;ie obi&#537;nuit&#259;.</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6"><span class="c5 c1">Codul complet:</span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.20839748d235cdf22b9966d3db5a73ed4e1aa0a2"></a><a id="t.2"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span
+            ><span class="c0"><br />$hello = </span
+            ><span class="c12">function</span
+            ><span class="c0"
+              >($name) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8">&quot;&lt;h2&gt;Hello $name&lt;/h2&gt;&quot;</span
+            ><span class="c0">;<br />};<br /><br />$hello(</span
+            ><span class="c8">&quot;Tom&quot;</span
+            ><span class="c0">);<br />$hello(</span
+            ><span class="c8">&quot;Bob&quot;</span
+            ><span class="c0">);<br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 608px;
+          height: 241px;
+        "
+        ><img
+          alt=""
+          src="images/image1.png"
+          style="
+            width: 608px;
+            height: 241px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Func&#539;iile anonime pot returna &#537;i valori:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.683c98b40e23f45138a0cb4fb96679b7582e1e57"></a><a id="t.3"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span
+            ><span class="c0"><br />$sum = </span
+            ><span class="c12">function</span
+            ><span class="c0"
+              >($a, $b) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">return</span
+            ><span class="c0"
+              >&nbsp;$a + $b;<br />};<br /><br />$number = $sum(</span
+            ><span class="c7">5</span><span class="c0">, </span
+            ><span class="c7">11</span><span class="c0">); &nbsp;</span
+            ><span class="c15">// 16</span><span class="c0"><br /></span
+            ><span class="c12">echo</span
+            ><span class="c0">&nbsp;$number;<br /></span
+            ><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Un caz comun de utilizare a func&#539;iilor anonime este transmiterea
+        acestora ca parametri altor func&#539;ii. Astfel de func&#539;ii anonime
+        sunt denumite func&#539;ii de callback. S&#259; analiz&#259;m un exemplu
+        simplu:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.2f1cc013de0a3e009617cdfee42f0c09f1bdcf5e"></a><a id="t.4"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c12">function</span><span class="c0">&nbsp;</span
+            ><span class="c9">welcome</span
+            ><span class="c0"
+              >($message) {<br />
+              &nbsp; &nbsp;$message();<br />}<br /><br />welcome(</span
+            ><span class="c12">function</span
+            ><span class="c0"
+              >() {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8">&quot;Hello!&quot;</span
+            ><span class="c0">;<br />});<br /></span
+            ><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">&Icirc;n acest caz, func&#539;ia </span
+      ><span class="c1 c2">welcome()</span
+      ><span class="c1">&nbsp;are un parametru </span
+      ><span class="c1 c2">$message</span
+      ><span class="c1"
+        >, care este apelat ca o func&#539;ie &icirc;n interiorul func&#539;iei </span
+      ><span class="c1 c2">$message()</span><span class="c1">.</span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">La apelul func&#539;iei </span
+      ><span class="c1 c2">welcome()</span
+      ><span class="c1">, parametrului </span><span class="c1 c2">$message</span
+      ><span class="c5 c1"
+        >&nbsp;i se transmite o func&#539;ie anonim&#259; care
+        afi&#537;eaz&#259; &#537;irul &quot;Hello!&quot;. &Icirc;n final, la
+        apelul:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.2d4578df770a3403222db6fc633667311f0db997"></a><a id="t.5"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14"><span class="c0">$message();</span></p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6"><span class="c5 c1">Se va executa func&#539;ia:</span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.3a4dbaa855b4525ade625c9f19db92e018a03109"></a><a id="t.6"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c12">function</span
+            ><span class="c0"
+              >() {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8">&quot;Hello!&quot;</span
+            ><span class="c0">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Astfel, putem transmite func&#539;ii anonime diferite aceleia&#537;i
+        func&#539;ii:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.366be668189e66ac889d5406baa962cb918fd503"></a><a id="t.7"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c12">function</span><span class="c0">&nbsp;</span
+            ><span class="c9">welcome</span
+            ><span class="c0"
+              >($message) {<br />
+              &nbsp; &nbsp;$message();<br />}<br /><br />$goodMorning = </span
+            ><span class="c12">function</span><span class="c0">() { </span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8"
+              >&quot;&lt;h3&gt;Good Morning&lt;/h3&gt;&quot;</span
+            ><span class="c0">; };<br />$goodEvening = </span
+            ><span class="c12">function</span><span class="c0">() { </span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8"
+              >&quot;&lt;h3&gt;Good Evening&lt;/h3&gt;&quot;</span
+            ><span class="c0"
+              >; };<br /><br />welcome($goodMorning); &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;</span
+            ><span class="c15">// Good Morning</span
+            ><span class="c0"
+              ><br />welcome($goodEvening); &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</span
+            ><span class="c15">// Good Evening</span
+            ><span class="c0"><br />welcome(</span
+            ><span class="c12">function</span><span class="c0">(){ </span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8">&quot;&lt;h3&gt;Hello&lt;/h3&gt;&quot;</span
+            ><span class="c0">; }); </span><span class="c15">// Hello</span
+            ><span class="c0"><br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 610px;
+          height: 272px;
+        "
+        ><img
+          alt=""
+          src="images/image3.png"
+          style="
+            width: 610px;
+            height: 272px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Utilitatea transmiterii func&#539;iilor anonime ca parametri
+        const&#259; &icirc;n faptul c&#259; putem defini o func&#539;ie, dar la
+        momentul definirii nu &#537;tim exact ce ac&#539;iuni va executa la
+        apelare sau putem face logica func&#539;iei mai flexibil&#259;. De
+        exemplu, s&#259; presupunem c&#259; trebuie s&#259; definim o
+        func&#539;ie care afi&#537;eaz&#259; suma elementelor unui array:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.4fda1d5ba4bcc407e6651e8cc98e03d20d30adb7"></a><a id="t.8"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c12">function</span><span class="c0">&nbsp;</span
+            ><span class="c9">sum</span
+            ><span class="c0"
+              >($numbers) {<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c7">0</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">foreach</span><span class="c0">($numbers </span
+            ><span class="c12">as</span
+            ><span class="c0"
+              >&nbsp;$number) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;$result += $number;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">return</span
+            ><span class="c0"
+              >&nbsp;$result;<br />}<br /><br />$myNumbers = [</span
+            ><span class="c7">-2</span><span class="c0">, </span
+            ><span class="c7">-1</span><span class="c0">, </span
+            ><span class="c7">0</span><span class="c0">, </span
+            ><span class="c7">1</span><span class="c0">, </span
+            ><span class="c7">2</span><span class="c0">, </span
+            ><span class="c7">3</span><span class="c0">, </span
+            ><span class="c7">4</span><span class="c0">, </span
+            ><span class="c7">5</span
+            ><span class="c0">];<br />$numbersSum = sum($myNumbers);<br /></span
+            ><span class="c12">echo</span
+            ><span class="c0">&nbsp;$numbersSum; &nbsp;</span
+            ><span class="c15">// 12</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Dar s&#259; mergem mai departe: s&#259; presupunem c&#259; dorim ca
+        func&#539;ia s&#259; calculeze suma doar a numerelor care
+        &icirc;ndeplinesc o anumit&#259; condi&#539;ie, de exemplu, doar a
+        numerelor pozitive sau doar a numerelor pare. Dar la momentul definirii
+        func&#539;iei, nu &#537;tim ce condi&#539;ie vom dori s&#259; folosim
+        &icirc;n viitor. &Icirc;n acest caz, putem folosi func&#539;ii
+        anonime:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.b0529eabdacf3ddfd3242bb02c3a7cf07edc22c2"></a><a id="t.9"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c13">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c12">function</span><span class="c0">&nbsp;</span
+            ><span class="c9">sum</span
+            ><span class="c0"
+              >($numbers, $condition) {<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c7">0</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">foreach</span><span class="c0">($numbers </span
+            ><span class="c12">as</span
+            ><span class="c0"
+              >&nbsp;$number) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c12">if</span
+            ><span class="c0"
+              >&nbsp;($condition($number)) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$result += $number;
+              <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c12">return</span
+            ><span class="c0">&nbsp;$result;<br />}<br /><br /></span
+            ><span class="c15">// pentru numere pare</span
+            ><span class="c0"><br />$isEvenNumber = </span
+            ><span class="c12">function</span><span class="c0">($n) { </span
+            ><span class="c12">return</span><span class="c0">&nbsp;$n % </span
+            ><span class="c7">2</span><span class="c0">&nbsp;=== </span
+            ><span class="c7">0</span><span class="c0">; };<br /></span
+            ><span class="c15">// pentru numere pozitive</span
+            ><span class="c0"><br />$isPositiveNumber = </span
+            ><span class="c12">function</span><span class="c0">($n) { </span
+            ><span class="c12">return</span
+            ><span class="c0">&nbsp;$n &gt; </span><span class="c7">0</span
+            ><span class="c0">; };<br /><br />$myNumbers = [</span
+            ><span class="c7">-2</span><span class="c0">, </span
+            ><span class="c7">-1</span><span class="c0">, </span
+            ><span class="c7">0</span><span class="c0">, </span
+            ><span class="c7">1</span><span class="c0">, </span
+            ><span class="c7">2</span><span class="c0">, </span
+            ><span class="c7">3</span><span class="c0">, </span
+            ><span class="c7">4</span><span class="c0">, </span
+            ><span class="c7">5</span
+            ><span class="c0"
+              >];<br />$positiveSum = sum($myNumbers, $isPositiveNumber);<br />$evenSum
+              = sum($myNumbers, $isEvenNumber);<br /></span
+            ><span class="c12">echo</span><span class="c0">&nbsp;</span
+            ><span class="c8"
+              >&quot;Suma numerelor pozitive: $positiveSum &lt;br /&gt; Suma
+              numerelor pare: $evenSum&quot;</span
+            ><span class="c0">;<br /></span><span class="c13">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6"><span class="c5 c1">Rezultatul scriptului:</span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 609px;
+          height: 188px;
+        "
+        ><img
+          alt=""
+          src="images/image2.png"
+          style="
+            width: 609px;
+            height: 188px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">Aici, func&#539;ia </span
+      ><span class="c1 c2">sum() </span
+      ><span class="c1">accept&#259; ca al doilea parametru - </span
+      ><span class="c1 c2">$condition </span
+      ><span class="c5 c1"
+        >- o alt&#259; func&#539;ie. &Icirc;n bucl&#259;, la parcurgerea
+        array-ului, verific&#259;m cu ajutorul acestei func&#539;ii dac&#259; un
+        element al array-ului &icirc;ndepline&#537;te condi&#539;ia:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.afc2dfd8f85f1d69582769dc1486ff1e51c090a5"></a><a id="t.10"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c12">if</span
+            ><span class="c0">&nbsp;($condition($number))</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1"
+        >&Icirc;n acest moment, nu &#537;tim ce condi&#539;ie va fi, cum va
+        func&#539;iona exact func&#539;ia </span
+      ><span class="c1 c2">$condition</span
+      ><span class="c1"
+        >. &#536;tim doar c&#259; prime&#537;te un num&#259;r &#537;i
+        returneaz&#259; </span
+      ><span class="c1 c2">true </span
+      ><span class="c1"
+        >dac&#259; num&#259;rul &icirc;ndepline&#537;te condi&#539;ia sau </span
+      ><span class="c1 c2">false </span
+      ><span class="c5 c1">dac&#259; nu &icirc;ndepline&#537;te.</span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1"
+        >Dac&#259; num&#259;rul &icirc;ndepline&#537;te condi&#539;ia, &icirc;l
+        ad&#259;ug&#259;m la rezultatul total:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.772b47d2c85f39e92119d5b300017d3b83af065a"></a><a id="t.11"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14"><span class="c0">$result += $number;</span></p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">La apelul func&#539;iei </span
+      ><span class="c1 c2">sum()</span
+      ><span class="c1"
+        >, se transmit func&#539;ii anonime specifice ca parametru </span
+      ><span class="c1 c2">$condition</span
+      ><span class="c5 c1"
+        >. De exemplu, func&#539;ia care determin&#259; dac&#259; un num&#259;r
+        este par:</span
+      >
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.311d9344847b7af28e6b0ca64a7ae3a571e0efaa"></a><a id="t.12"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c0">$isEvenNumber = </span
+            ><span class="c12">function</span><span class="c0">($n) { </span
+            ><span class="c12">return</span><span class="c0">&nbsp;$n % </span
+            ><span class="c7">2</span><span class="c0">&nbsp;=== </span
+            ><span class="c7">0</span><span class="c0">; };</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1"
+        >Logica func&#539;iei este simpl&#259;: dac&#259; restul
+        &icirc;mp&#259;r&#539;irii num&#259;rului la 2 este 0, num&#259;rul este
+        par &#537;i func&#539;ia returneaz&#259; </span
+      ><span class="c1 c2">true</span><span class="c5 c1">.</span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c5 c1">Apoi, transmitem aceast&#259; func&#539;ie:</span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <a id="t.5f76a7657f45138ab952dfe4fc5ba8eaf411713a"></a><a id="t.13"></a>
+    <table class="c3">
+      <tr class="c11">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c14">
+            <span class="c0">$evenSum = sum($myNumbers, $isEvenNumber);</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c4"><span class="c5 c1"></span></p>
+    <p class="c6">
+      <span class="c1">&Icirc;n final, la apelul </span
+      ><span class="c1 c2">if ($condition($number))</span
+      ><span class="c1">, se va executa efectiv func&#539;ia </span
+      ><span class="c1 c2">$isEvenNumber()</span><span class="c5 c1">.</span>
+    </p>
+    <p class="c4"><span class="c5 c1"></span></p>
+  </body>
+</html>

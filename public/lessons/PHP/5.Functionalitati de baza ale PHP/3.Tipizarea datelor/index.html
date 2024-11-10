@@ -1,0 +1,923 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c11 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c4 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 27pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c14 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 15pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c5 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c0 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt;
+      }
+      .c9 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c7 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c16 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #888888;
+        font-weight: 400;
+      }
+      .c12 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c8 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c2 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c6 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c3 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c1 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c19 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+      }
+      .c17 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c10 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c13 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c15 {
+        font-style: italic;
+      }
+      .c18 {
+        height: 0pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c17 doc-content">
+    <h1 class="c9 c4">Tipizarea datelor.</h1>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c5"
+        >Spre deosebire de alte limbaje de programare, &icirc;n PHP la definirea
+        variabilelor sau a parametrilor func&#539;iilor nu este necesar s&#259;
+        specific&#259;m tipul de date. Cu toate acestea, PHP permite
+        specificarea tipului de date pentru propriet&#259;&#539;ile claselor,
+        parametrii func&#539;iilor &#537;i valorile returnate de func&#539;ii.
+        Specificarea tipului de date ajut&#259; la evitarea situa&#539;iilor
+        &icirc;n care se transmit date de tipuri nea&#537;teptate &icirc;n
+        program.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9"><span class="c5">De exemplu:</span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.8afaf972b9f71de5be6f915c2d7078ae8339edb1"></a><a id="t.0"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">isPositive</span
+            ><span class="c6"
+              >($number)<br />{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">return</span
+            ><span class="c6">&nbsp;$number &gt; </span><span class="c7">0</span
+            ><span class="c6">;<br />}<br />$result = isPositive(</span
+            ><span class="c2">&quot;-Youdontknowwhoiam&quot;</span
+            ><span class="c6">);<br /></span><span class="c8">if</span
+            ><span class="c6">($result) </span><span class="c8">echo</span
+            ><span class="c6">&nbsp;</span
+            ><span class="c2">&quot;pozitiv&quot;</span
+            ><span class="c6">;<br /></span><span class="c8">else</span
+            ><span class="c6">&nbsp;</span><span class="c8">echo</span
+            ><span class="c6">&nbsp;</span
+            ><span class="c2">&quot;negativ sau egal cu zero&quot;</span
+            ><span class="c6">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">&Icirc;n acest caz, func&#539;ia </span
+      ><span class="c13 c15">isPositive() </span
+      ><span class="c5"
+        >a&#537;teapt&#259; evident un num&#259;r ca parametru pentru a stabili
+        dac&#259; este mai mare dec&acirc;t zero. Totu&#537;i, putem transmite o
+        valoare arbitrar&#259; la apelarea func&#539;iei. Pentru a evita astfel
+        de situa&#539;ii, este necesar s&#259; specific&#259;m explicit c&#259;
+        func&#539;ia poate accepta doar numere, adic&#259; s&#259; tipiz&#259;m
+        parametrul func&#539;iei.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9"><span class="c14">Definirea tipului.</span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c5">Ce tipuri de date pot fi utilizate la tipizare:</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">bool</span
+      ><span class="c13">: valorile permise sunt </span
+      ><span class="c13 c15">true </span><span class="c13">&#537;i </span
+      ><span class="c19 c13 c15">false</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">float</span
+      ><span class="c5"
+        >: valoarea trebuie s&#259; fie un num&#259;r cu virgul&#259;
+        mobil&#259;</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">int</span
+      ><span class="c5"
+        >: valoarea trebuie s&#259; fie un num&#259;r &icirc;ntreg</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">string</span
+      ><span class="c5"
+        >: valoarea trebuie s&#259; fie un &#537;ir de caractere</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">mixed</span
+      ><span class="c5">: orice valoare</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">callable</span
+      ><span class="c5">: valoarea trebuie s&#259; fie o func&#539;ie</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">array</span
+      ><span class="c5">: valoarea trebuie s&#259; fie un tablou</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">iterable</span
+      ><span class="c5"
+        >: valoarea trebuie s&#259; fie un tablou sau o clas&#259; care
+        implementeaz&#259;
+      </span>
+    </p>
+    <p class="c9">
+      <span class="c13">interfa&#539;a </span
+      ><span class="c13 c15">Traversable</span
+      ><span class="c13">. Este utilizat &icirc;n bucla </span
+      ><span class="c13 c15 c19">foreach</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">-</span><span class="c10">&nbsp;Numele clasei</span
+      ><span class="c5"
+        >: obiectul trebuie s&#259; reprezinte acea clas&#259; sau o clas&#259;
+        derivat&#259;</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">-</span
+      ><span class="c10">&nbsp;Numele interfe&#539;ei</span
+      ><span class="c5"
+        >: obiectul trebuie s&#259; reprezinte o clas&#259; care
+        implementeaz&#259; acea interfa&#539;&#259;</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">self</span
+      ><span class="c5"
+        >: obiectul trebuie s&#259; reprezinte aceea&#537;i clas&#259; sau o
+        clas&#259; derivat&#259;. Poate fi utilizat doar &icirc;n interiorul
+        clasei.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">- </span><span class="c10">parent</span
+      ><span class="c5"
+        >: obiectul trebuie s&#259; reprezinte clasa p&#259;rinte a clasei
+        respective. Poate fi utilizat doar &icirc;n interiorul clasei.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c14">Tipizarea parametrilor func&#539;iei.</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c5"
+        >La tipizarea parametrilor, tipul se specific&#259; &icirc;naintea
+        numelui parametrului:</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.99f333c299411ee53294474f9dac12cc92985fcf"></a><a id="t.1"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">isPositive</span
+            ><span class="c6"
+              >(int $number)<br />{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">return</span
+            ><span class="c6">&nbsp;$number &gt; </span><span class="c7">0</span
+            ><span class="c6">;<br />}<br />$result1 = isPositive(</span
+            ><span class="c7">25</span
+            ><span class="c6"
+              >); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;</span
+            ><span class="c16">// corect - 25 este un num&#259;r</span
+            ><span class="c6"><br />$result2 = isPositive(</span
+            ><span class="c2">&quot;25&quot;</span
+            ><span class="c6"
+              >); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;</span
+            ><span class="c16"
+              >// corect - PHP poate converti valoarea &icirc;n num&#259;r</span
+            ><span class="c6"><br />$result3 = isPositive(</span
+            ><span class="c2">&quot;-Youdontknowwhoiam&quot;</span
+            ><span class="c6">); &nbsp; &nbsp;</span
+            ><span class="c16">// Eroare TypeError</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">&Icirc;n acest caz, parametrul</span
+      ><span class="c13 c15">&nbsp;$number</span
+      ><span class="c13">&nbsp;trebuie s&#259; fie de tip </span
+      ><span class="c13 c15">int</span
+      ><span class="c5"
+        >, adic&#259; un num&#259;r &icirc;ntreg. Prin urmare, la apelarea
+        func&#539;iei trebuie s&#259; transmitem o valoare &icirc;ntreag&#259;.
+        Dac&#259; se va transmite o valoare de alt tip, PHP va &icirc;ncerca
+        s&#259; o converteasc&#259;. &Icirc;n unele cazuri, aceast&#259;
+        conversie poate avea succes:</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.c8e7e0d5a3a529779fade5d2f5dbca14789ae855"></a><a id="t.2"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c6">$result2 = isPositive(</span
+            ><span class="c2">&quot;25&quot;</span><span class="c6">);</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13"
+        >&Icirc;n alte cazuri, conversia poate e&#537;ua, iar programul se va
+        opri cu o eroare </span
+      ><span class="c10">TypeError</span><span class="c5">:</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.d22ba9b996ca79721296287383728fd4382b244c"></a><a id="t.3"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c6">$result3 = isPositive(</span
+            ><span class="c2">&quot;-Youdontknowwhoiam&quot;</span
+            ><span class="c6">);</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9"><span class="c5">Alt exemplu:</span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.2953f7e94f15f61612b3646f602954110b486792"></a><a id="t.4"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">sum</span
+            ><span class="c6"
+              >(array $numbers, callable $condition)<br />{<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c7">0</span
+            ><span class="c6"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">foreach</span><span class="c6">($numbers </span
+            ><span class="c8">as</span
+            ><span class="c6"
+              >&nbsp;$number){<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">if</span
+            ><span class="c6"
+              >($condition($number))<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$result += $number;
+              <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">return</span
+            ><span class="c6"
+              >&nbsp;$result;<br />}<br /><br />$isPositive = </span
+            ><span class="c8">function</span><span class="c6">($n){ </span
+            ><span class="c8">return</span><span class="c6">&nbsp;$n &gt; </span
+            ><span class="c7">0</span
+            ><span class="c6">;};<br /><br />$myNumbers = [</span
+            ><span class="c7">-2</span><span class="c6">, </span
+            ><span class="c7">-1</span><span class="c6">, </span
+            ><span class="c7">0</span><span class="c6">, </span
+            ><span class="c7">1</span><span class="c6">, </span
+            ><span class="c7">2</span><span class="c6">, </span
+            ><span class="c7">3</span><span class="c6">, </span
+            ><span class="c7">4</span><span class="c6">, </span
+            ><span class="c7">5</span
+            ><span class="c6"
+              >];<br />$positiveSum = sum($myNumbers, $isPositive);<br /></span
+            ><span class="c8">echo</span
+            ><span class="c6">&nbsp;$positiveSum; &nbsp;</span
+            ><span class="c16">// 15</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13"
+        >&Icirc;n acest caz, parametrii func&#539;iei trebuie s&#259; fie un
+        tablou &#537;i o func&#539;ie (tip </span
+      ><span class="c13 c15">callable</span
+      ><span class="c5"
+        >). Ca func&#539;ie, putem transmite o func&#539;ie anonim&#259;.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9"><span class="c14">Tipizarea valorii returnate.</span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13"
+        >Pentru a stabili tipul valorii returnate de func&#539;ie, dup&#259;
+        lista parametrilor se specific&#259; dou&#259; puncte</span
+      ><span class="c10">&nbsp;:</span
+      ><span class="c5">&nbsp;urmate de tipul de date:</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.f75381a2997173d699c9ad7d56900b6f0c16efa4"></a><a id="t.5"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">isPositive</span
+            ><span class="c6">(int $number) : </span
+            ><span class="c12">bool</span
+            ><span class="c6"
+              ><br />{ <br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">return</span
+            ><span class="c6">&nbsp;$number &gt; </span><span class="c7">0</span
+            ><span class="c6">;<br />}<br />$result = isPositive(</span
+            ><span class="c7">34</span><span class="c6">);</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">&Icirc;n acest caz, func&#539;ia </span
+      ><span class="c13 c15">isPositive </span
+      ><span class="c13">trebuie s&#259; returneze o valoare de tip </span
+      ><span class="c13 c15">bool</span><span class="c13">, adic&#259; </span
+      ><span class="c13 c15">true </span><span class="c13">sau </span
+      ><span class="c13 c15">false</span><span class="c5">.</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c5">Alt exemplu - returnarea unei func&#539;ii:</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.9160f3679e023191fc29d94c22a7a4053777ae9d"></a><a id="t.6"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">select</span><span class="c6">($n): </span
+            ><span class="c12">callable</span
+            ><span class="c6"
+              >{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">switch</span
+            ><span class="c6"
+              >($n){<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">case</span><span class="c6">&nbsp;</span
+            ><span class="c7">1</span><span class="c6">: </span
+            ><span class="c8">return</span><span class="c6">&nbsp;</span
+            ><span class="c8">function</span><span class="c6">($a, $b) {</span
+            ><span class="c8">return</span
+            ><span class="c6"
+              >&nbsp;$a + $b;}; <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">case</span><span class="c6">&nbsp;</span
+            ><span class="c7">2</span><span class="c6">: </span
+            ><span class="c8">return</span><span class="c6">&nbsp;</span
+            ><span class="c8">function</span><span class="c6">($a, $b) {</span
+            ><span class="c8">return</span
+            ><span class="c6"
+              >&nbsp;$a - $b;};<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">case</span><span class="c6">&nbsp;</span
+            ><span class="c7">3</span><span class="c6">: </span
+            ><span class="c8">return</span><span class="c6">&nbsp;</span
+            ><span class="c8">function</span><span class="c6">($a, $b) {</span
+            ><span class="c8">return</span
+            ><span class="c6"
+              >&nbsp;$a * $b;};<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">default</span><span class="c6">: </span
+            ><span class="c8">return</span><span class="c6">&nbsp;</span
+            ><span class="c8">function</span><span class="c6">($a, $b) {</span
+            ><span class="c8">return</span><span class="c6">&nbsp;$a . </span
+            ><span class="c2">&quot; &quot;</span
+            ><span class="c6"
+              >&nbsp;. $b;};<br />
+              &nbsp; &nbsp;}<br />}<br />$selection = select(</span
+            ><span class="c7">2</span><span class="c6">);<br /></span
+            ><span class="c8">echo</span
+            ><span class="c6">&nbsp;$selection(</span><span class="c7">4</span
+            ><span class="c6">,</span><span class="c7">5</span
+            ><span class="c6">); &nbsp; </span><span class="c16">// -1</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">Este de men&#539;ionat cuv&acirc;ntul cheie </span
+      ><span class="c13 c15">static</span
+      ><span class="c5"
+        >, ad&#259;ugat &icirc;n PHP 8, care este utilizat pentru a returna din
+        metoda clasei un obiect al acelea&#537;i clase:</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.f1d67c7d17ef33bfb1eeef74e838e22c66a696c9"></a><a id="t.7"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">class</span><span class="c6">&nbsp;</span
+            ><span class="c12">Node</span
+            ><span class="c6"
+              >{<br />
+              &nbsp; &nbsp; <br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">generate</span><span class="c6">() : </span
+            ><span class="c12">static</span
+            ><span class="c6"
+              >{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">return</span><span class="c6">&nbsp;</span
+            ><span class="c8">new</span
+            ><span class="c6"
+              >&nbsp;Node();<br />
+              &nbsp; &nbsp;}<br />}<br />$node1 = </span
+            ><span class="c8">new</span
+            ><span class="c6"
+              >&nbsp;Node();<br />$node2 = $node1-&gt;generate();</span
+            >
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c14">Tipizarea propriet&#259;&#539;ilor.</span>
+    </p>
+    <p class="c9">
+      <span class="c13"
+        >Ca tip pentru propriet&#259;&#539;i poate fi utilizat orice tip
+        &icirc;n afar&#259; de </span
+      ><span class="c13 c15">callable</span><span class="c5">:</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.0233bc0e3c378c164c50d617464d1a01cb5f434f"></a><a id="t.8"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">class</span><span class="c6">&nbsp;</span
+            ><span class="c12">Person</span
+            ><span class="c6"
+              >{<br />
+              &nbsp; &nbsp; <br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">public</span
+            ><span class="c6"
+              >&nbsp;$name;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">public</span
+            ><span class="c6">&nbsp;int $age;<br />}<br />$tom = </span
+            ><span class="c8">new</span
+            ><span class="c6">&nbsp;Person();<br />$tom-&gt;name = </span
+            ><span class="c2">&quot;Tom&quot;</span
+            ><span class="c6">;<br />$tom-&gt;age = </span
+            ><span class="c7">36</span
+            ><span class="c6">; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c16">// valoare corect&#259;</span
+            ><span class="c6"><br /></span><span class="c8">echo</span
+            ><span class="c6">&nbsp;$tom-&gt;age; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c16">// 36</span
+            ><span class="c6"><br />$tom-&gt;age = </span
+            ><span class="c2">&quot;36&quot;</span
+            ><span class="c6">; &nbsp; &nbsp;</span
+            ><span class="c16"
+              >// valoare corect&#259;, deoarece PHP poate converti &icirc;n
+              num&#259;r</span
+            ><span class="c6"><br /></span><span class="c8">echo</span
+            ><span class="c6">&nbsp;$tom-&gt;age; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c16">// 36</span
+            ><span class="c6"><br />$tom-&gt;age = </span
+            ><span class="c2">&quot;thirty-eight&quot;</span
+            ><span class="c6">; &nbsp;</span
+            ><span class="c16"
+              >// valoare incorect&#259;, apare eroarea TypeError</span
+            ><span class="c6"><br /></span><span class="c8">echo</span
+            ><span class="c6">&nbsp;$tom-&gt;age;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13"
+        >&Icirc;n acest caz, este specificat explicit c&#259; proprietatea</span
+      ><span class="c13 c15">&nbsp;$age</span
+      ><span class="c13">&nbsp;reprezint&#259; tipul </span
+      ><span class="c13 c15">int</span
+      ><span class="c5"
+        >, adic&#259; un num&#259;r &icirc;ntreg. Prin urmare, acestei
+        propriet&#259;&#539;i &icirc;i putem atribui doar valori
+        &icirc;ntregi.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13"
+        >Trebuie men&#539;ionat c&#259; o proprietate pentru care nu este
+        specificat tipul de date are implicit valoarea </span
+      ><span class="c13 c15">null</span
+      ><span class="c5"
+        >. &Icirc;n schimb, o proprietate pentru care este specificat tipul nu
+        este ini&#539;ializat&#259;, adic&#259; nu are o valoare
+        specific&#259;.</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.3e4dfa2ba7cb2854320195f7f5062fd154448a2b"></a><a id="t.9"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">class</span><span class="c6">&nbsp;</span
+            ><span class="c12">Person</span
+            ><span class="c6"
+              >{<br />
+              &nbsp; &nbsp; <br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">public</span
+            ><span class="c6">&nbsp;$name; &nbsp; &nbsp; &nbsp; </span
+            ><span class="c16">// egal cu null</span
+            ><span class="c6"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">public</span
+            ><span class="c6">&nbsp;int $age; &nbsp; &nbsp;</span
+            ><span class="c16">// neini&#539;ializat&#259;</span
+            ><span class="c6"><br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c5"
+        >Astfel, dac&#259; o proprietate netipizat&#259; o putem utiliza,
+        &icirc;ncercarea de a accesa o proprietate tipizat&#259; dar
+        neini&#539;ializat&#259; va duce la o eroare:</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.00ed53aa88e253896d0209264c2874f509d21ed6"></a><a id="t.10"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c6">$tom = </span><span class="c8">new</span
+            ><span class="c6">&nbsp;Person();<br /></span
+            ><span class="c8">echo</span
+            ><span class="c6">&nbsp;$tom-&gt;name; &nbsp; &nbsp; </span
+            ><span class="c16">// ok - null</span><span class="c6"><br /></span
+            ><span class="c8">echo</span
+            ><span class="c6">&nbsp;$tom-&gt;age; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c16"
+              >// eroare - proprietatea nu este ini&#539;ializat&#259;</span
+            >
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9"><span class="c14">Tipul union.</span></p>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">&Icirc;n PHP 8 a fost ad&#259;ugat tipul </span
+      ><span class="c10">union </span
+      ><span class="c13"
+        >sau de unire, care reprezint&#259; unirea tipurilor, separate prin
+        linia vertical&#259; |. De exemplu, dorim s&#259; scriem o func&#539;ie
+        de adunare a numerelor &#537;i s&#259; permitem func&#539;iei s&#259;
+        accepte doar numere. Totu&#537;i, numerele &icirc;n PHP sunt
+        reprezentate prin dou&#259; tipuri - </span
+      ><span class="c13 c15">int </span><span class="c13">&#537;i </span
+      ><span class="c13 c15">float</span
+      ><span class="c5"
+        >. Pentru a nu crea c&acirc;te o func&#539;ie pentru fiecare tip,
+        folosim unirea:</span
+      >
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+    <a id="t.5b4b7023d0cfa5de1475f57286224a688d491d12"></a><a id="t.11"></a>
+    <table class="c3">
+      <tr class="c18">
+        <td class="c11" colspan="1" rowspan="1">
+          <p class="c1">
+            <span class="c8">function</span><span class="c6">&nbsp;</span
+            ><span class="c12">sum</span
+            ><span class="c6">(int|float $n1, int|float $n2): </span
+            ><span class="c12">int</span><span class="c6">|</span
+            ><span class="c12">float</span
+            ><span class="c6"
+              ><br />{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c8">return</span
+            ><span class="c6">&nbsp;$n1 + $n2;<br />}<br /></span
+            ><span class="c8">echo</span><span class="c6">&nbsp;sum(</span
+            ><span class="c7">4</span><span class="c6">, </span
+            ><span class="c7">5</span
+            ><span class="c6">); &nbsp; &nbsp; &nbsp; &nbsp; </span
+            ><span class="c16">// 9</span><span class="c6"><br /></span
+            ><span class="c8">echo</span><span class="c6">&nbsp;</span
+            ><span class="c2">&quot;&lt;br&gt;&quot;</span
+            ><span class="c6">;<br /></span><span class="c8">echo</span
+            ><span class="c6">&nbsp;sum(</span><span class="c7">2.5</span
+            ><span class="c6">, </span><span class="c7">3.7</span
+            ><span class="c6">); &nbsp; &nbsp; </span
+            ><span class="c16">// 6.2</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c0"><span class="c5"></span></p>
+    <p class="c9">
+      <span class="c13">&Icirc;n acest caz, spunem c&#259; parametrii</span
+      ><span class="c13 c15">&nbsp;$n1 </span><span class="c13">&#537;i</span
+      ><span class="c13 c15">&nbsp;$n2</span
+      ><span class="c13">&nbsp;pot reprezenta at&acirc;t tipul </span
+      ><span class="c13 c15">int</span
+      ><span class="c13">, c&acirc;t &#537;i tipul </span
+      ><span class="c13 c15">float</span
+      ><span class="c13"
+        >. &Icirc;n mod similar, valoarea returnat&#259; poate fi fie </span
+      ><span class="c13 c15">int</span><span class="c13">, fie </span
+      ><span class="c13 c15">float</span><span class="c5">.</span>
+    </p>
+    <p class="c0"><span class="c5"></span></p>
+  </body>
+</html>

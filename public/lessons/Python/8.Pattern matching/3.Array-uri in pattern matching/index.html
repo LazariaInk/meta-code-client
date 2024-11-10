@@ -1,0 +1,536 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c8 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c16 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 15pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 27pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c5 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c6 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c12 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c3 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c7 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c11 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c4 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c13 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c14 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c10 {
+            height: 0pt
+        }
+
+        .c15 {
+            font-style: italic
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c14 doc-content">
+    <h1 class="c6 c0">Array-uri în pattern matching.</h1>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">&Icirc;n construc&#539;ia pattern matching, array-urile (sau listele) pot fi
+            utilizate ca &#537;abloane. Aceste &#537;abloane pot con&#539;ine fie valori specifice, fie variabile
+            &icirc;n care sunt stocate elementele array-urilor, fie simbolul underscore _, dac&#259; un element al
+            array-ului nu este important:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;default people&quot;</span><span class="c2">)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, second, _]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print(</span><span
+                        class="c3">f&quot;Second Person: {second}&quot;</span><span class="c2">)<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;case [first, second, third]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">f&quot;{first}, {second}, {third}&quot;</span><span
+                        class="c2">)<br> <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># default people</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Mike&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c11"># Second Person: Mike</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Alice&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bill&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Kate&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        Alice, Bill, Kate</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Kate&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; </span><span class="c11"># nu corespunde niciunui &#537;ablon</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">&Icirc;n acest caz, func&#539;ia print_people prime&#537;te un array care, se
+            presupune, este compus din trei elemente.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Primul &#537;ablon presupune c&#259; elementele array-ului au valori
+            specifice:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c2">case [</span><span class="c3">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]:<br> &nbsp; &nbsp;print(</span><span
+                        class="c3">&quot;default people&quot;</span><span class="c2">)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Aici, primul element al array-ului trebuie s&#259; fie &#537;irul &quot;Tom&quot;, al
+            doilea - &#537;irul &quot;Sam&quot;, &#537;i al treilea - &#537;irul &quot;Bob&quot;.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Al doilea &#537;ablon presupune c&#259; primul element al array-ului trebuie s&#259;
+            fie &#537;irul &quot;Tom&quot;, iar celelalte dou&#259; elemente pot avea valori arbitrare:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c2">case [</span><span class="c3">&quot;Tom&quot;</span><span class="c2">,
+                        second, _]:<br> &nbsp; &nbsp;print(</span><span class="c3">f&quot;Second Person:
+                        {second}&quot;</span><span class="c2">)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Valoarea celui de-al doilea element este atribuit&#259; variabilei second, iar
+            valoarea celui de-al treilea element nu este important&#259;, astfel c&#259; se utilizeaz&#259; simbolul
+            underscore _ &icirc;n locul s&#259;u.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Al treilea &#537;ablon corespunde oric&#259;rui array de trei elemente. Elementele
+            acestuia sunt atribuite variabilelor first, second, &#537;i third:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c2">case [first, second, third]:<br> &nbsp; &nbsp;print(</span><span
+                        class="c3">f&quot;{first}, {second}, {third}&quot;</span><span class="c2">)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">&Icirc;n acest caz, pentru a corespunde oric&#259;rui &#537;ablon, array-ul trebuie
+            s&#259; aib&#259; trei elemente. Totu&#537;i, se pot defini &#537;abloane &#537;i pentru array-uri de
+            diferite lungimi:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [_]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;Array de un element&quot;</span><span class="c2">)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [_, _]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;Array de dou&#259; elemente&quot;</span><span
+                        class="c2">)<br> &nbsp; &nbsp; &nbsp; &nbsp;case [_, _, _]:<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;print(</span><span class="c3">&quot;Array de trei elemente&quot;</span><span
+                        class="c2">)<br> &nbsp; &nbsp; &nbsp; &nbsp;case _:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;Neclar&quot;</span><span class="c2">)<br>
+                        <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span class="c2">]) &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c11"># Array de un
+                        element</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c11"># Array de dou&#259; elemente</span><span
+                        class="c2"><br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        Array de trei elemente</span><span class="c2"><br>print_people(</span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c11"># Neclar</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c16">Array-uri cu lungime nedefinit&#259;.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Dac&#259; este necesar s&#259; se compare o expresie cu un array de lungime
+            nedefinit&#259;, pot fi definite valori/variabile doar pentru elementele obligatorii ale array-ului, iar
+            pentru cele neobligatorii se poate folosi simbolul * (stea):</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [first, *other]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">f&quot;First: {first} &nbsp;Other: {other}&quot;</span><span
+                        class="c2">)<br> <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># First: Tom &nbsp;Other: []</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c11"># First: Tom &nbsp;Other: [&quot;Sam&quot;]</span><span
+                        class="c2"><br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span class="c2">,
+                    </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        First: Tom &nbsp;Other: [&quot;Sam&quot;, &quot;Bob&quot;]</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c13">&Icirc;n exemplul de mai sus, se folose&#537;te parametrul</span><span
+            class="c13 c15">&nbsp;*other</span><span class="c13">, care corespunde tuturor celorlalte elemente. Astfel,
+            &#537;ablonul</span><span class="c13 c15">&nbsp;[first, *other] </span><span class="c1">corespunde
+            oric&#259;rui array care are cel pu&#539;in un element, iar acest element va fi atribuit variabilei first.
+            Toate celelalte elemente vor fi atribuite variabilei other, care reprezint&#259; un array de valori.</span>
+    </p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Dac&#259; parametrul cu simbolul * (other) nu este important, dar dorim ca
+            &#537;ablonul s&#259; corespund&#259; unui array cu unul sau mai multe elemente, putem folosi
+            sub-&#537;ablonul *_:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [first, *_]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">f&quot;First: {first}&quot;</span><span class="c2">)<br>
+                        <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span class="c2">]) &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c11"># First:
+                        Tom</span><span class="c2"><br>print_people([</span><span class="c3">&quot;Sam&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Tom&quot;</span><span class="c2">]) &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c11"># First: Sam</span><span
+                        class="c2"><br>print_people([</span><span class="c3">&quot;Bob&quot;</span><span class="c2">,
+                    </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Tom&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        First: Bob</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c16">Valori alternative.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">Dac&#259; este necesar ca un element al array-ului s&#259; corespund&#259; unui set
+            de valori, aceste valori pot fi enumerate folosind o bar&#259; vertical&#259;:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">&nbsp;| </span><span class="c3">&quot;Tomas&quot;</span><span class="c2">&nbsp;|
+                    </span><span class="c3">&quot;Tommy&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;default people&quot;</span><span class="c2">)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [first, second, third]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">f&quot;{first}, {second}, {third}&quot;</span><span
+                        class="c2">)<br> <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># default people</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tomas&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># default people</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Alice&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bill&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Kate&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        Alice, Bill, Kate</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">&Icirc;n acest caz, primul &#537;ablon corespunde unui array de trei elemente, unde
+            primul element este fie &quot;Tom&quot;, fie &quot;Tomas&quot;, fie &quot;Tommy&quot;.</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">De asemenea, pot fi definite valori alternative at&acirc;t pentru elemente
+            individuale, c&acirc;t &#537;i pentru array-uri alternative:</span></p>
+    <p class="c5"><span class="c1"></span></p>
+    <table class="c4">
+        <tr class="c10">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c9"><span class="c12">def</span><span class="c2">&nbsp;</span><span
+                        class="c7">print_people</span><span class="c2">(people):<br> &nbsp; &nbsp;match people:<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">] | [</span><span
+                        class="c3">&quot;Tomas&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">&quot;Tom/Tomas, Sam, Bob&quot;</span><span class="c2">)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;case [first, second, third]:<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;print(</span><span class="c3">f&quot;{first}, {second}, {third}&quot;</span><span
+                        class="c2">)<br> <br>print_people([</span><span class="c3">&quot;Tom&quot;</span><span
+                        class="c2">, </span><span class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># Tom/Tomas, Sam, Bob</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Tomas&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Sam&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bob&quot;</span><span class="c2">]) &nbsp; &nbsp; &nbsp; </span><span
+                        class="c11"># Tom/Tomas, Sam, Bob</span><span class="c2"><br>print_people([</span><span
+                        class="c3">&quot;Alice&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Bill&quot;</span><span class="c2">, </span><span
+                        class="c3">&quot;Kate&quot;</span><span class="c2">]) &nbsp; &nbsp; </span><span class="c11">#
+                        Alice, Bill, Kate</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5"><span class="c1"></span></p>
+    <p class="c6"><span class="c1">&Icirc;n acest caz, primul &#537;ablon va corespunde la dou&#259; array-uri:
+            [&quot;Tom&quot;, &quot;Sam&quot;, &quot;Bob&quot;] &#537;i [&quot;Tomas&quot;, &quot;Sam&quot;,
+            &quot;Bob&quot;].</span></p>
+    <p class="c5"><span class="c1"></span></p>
+</body>
+
+</html>

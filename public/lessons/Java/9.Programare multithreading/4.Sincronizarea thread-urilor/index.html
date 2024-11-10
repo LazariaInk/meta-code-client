@@ -1,0 +1,533 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c3 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c4 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c6 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c8 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c1 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c13 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c7 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c12 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c0 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c14 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c10 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c16 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c9 {
+            height: 0pt
+        }
+
+        .c15 {
+            font-style: italic
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c10 doc-content">
+    <h1 class="c6 c7 c16">Sincronizarea thread-urilor. Operatorul synchronized.</h1>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">&Icirc;n activitatea thread-urilor, acestea apeleaz&#259; deseori la anumite
+            resurse comune, care sunt definite &icirc;n afara thread-ului, de exemplu, accesarea unui fi&#537;ier.
+            Dac&#259; mai multe thread-uri acceseaz&#259; simultan o resurs&#259; comun&#259;, rezultatele
+            execu&#539;iei programului pot fi nea&#537;teptate &#537;i chiar imprevizibile. De exemplu, s&#259; definim
+            urm&#259;torul cod:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">public</span><span class="c2">&nbsp;</span><span
+                        class="c8">class</span><span class="c2">&nbsp;</span><span class="c1">Program</span><span
+                        class="c2">&nbsp;{<br><br> &nbsp; &nbsp;</span><span class="c8">public</span><span
+                        class="c2">&nbsp;</span><span class="c8">static</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">main</span><span
+                        class="c2">(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;CommonResource commonResource = </span><span class="c8">new</span><span
+                        class="c2">&nbsp;CommonResource();<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">for</span><span class="c2">&nbsp;(</span><span class="c8">int</span><span
+                        class="c2">&nbsp;i = </span><span class="c5">1</span><span class="c2">; i &lt; </span><span
+                        class="c5">6</span><span class="c2">; i++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thread t = </span><span class="c8">new</span><span
+                        class="c2">&nbsp;Thread(</span><span class="c8">new</span><span
+                        class="c2">&nbsp;CountThread(commonResource));<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;t.setName(</span><span class="c13">&quot;Thread &quot;</span><span class="c2">&nbsp;+
+                        i);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.start();<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;}<br>}<br><br></span><span class="c8">class</span><span
+                        class="c2">&nbsp;</span><span class="c1">CommonResource</span><span class="c2">&nbsp;{<br>
+                        &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span class="c8">int</span><span class="c2">&nbsp;x =
+                    </span><span class="c5">0</span><span class="c2">;<br>}<br><br></span><span
+                        class="c8">class</span><span class="c2">&nbsp;</span><span class="c1">CountThread</span><span
+                        class="c2">&nbsp;</span><span class="c8">implements</span><span class="c2">&nbsp;</span><span
+                        class="c1">Runnable</span><span class="c2">&nbsp;{<br><br> &nbsp; &nbsp;CommonResource res;<br>
+                        &nbsp; &nbsp;CountThread(CommonResource res) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">this</span><span class="c2">.res = res;<br> &nbsp; &nbsp;}<br> &nbsp;
+                        &nbsp;</span><span class="c8">public</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">run</span><span
+                        class="c2">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;res.x = </span><span class="c5">1</span><span
+                        class="c2">;<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c8">for</span><span
+                        class="c2">&nbsp;(</span><span class="c8">int</span><span class="c2">&nbsp;i = </span><span
+                        class="c5">1</span><span class="c2">; i &lt; </span><span class="c5">5</span><span class="c2">;
+                        i++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;System.out.printf(</span><span
+                        class="c13">&quot;%s %d \n&quot;</span><span class="c2">, Thread.currentThread().getName(),
+                        res.x);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;res.x++;<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;</span><span class="c8">try</span><span class="c2">&nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thread.sleep(</span><span class="c5">100</span><span
+                        class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} </span><span
+                        class="c8">catch</span><span class="c2">&nbsp;(InterruptedException e) {}<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">Aici este definit&#259; clasa </span><span class="c0 c15">CommonResource</span><span
+            class="c7 c0">, care reprezint&#259; o resurs&#259; comun&#259; &#537;i &icirc;n care este definit un
+            c&acirc;mp &icirc;ntreg x.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">Aceast&#259; resurs&#259; este utilizat&#259; de clasa thread-ului CountThread.
+            Clasa cre&#537;te pur &#537;i simplu &icirc;n ciclu valoarea x cu 1. La intrarea &icirc;n thread, valoarea x
+            este setat&#259; la 1:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c2">res.x = </span><span class="c5">1</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">Prin urmare, ne a&#537;tept&#259;m ca, dup&#259; executarea ciclului, res.x
+            s&#259; fie egal cu 4.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">&Icirc;n clasa principal&#259; a programului, se lanseaz&#259; cinci thread-uri.
+            Ne a&#537;tept&#259;m ca fiecare thread s&#259; creasc&#259; valoarea lui res.x de la 1 la 4, &#537;i asta
+            de cinci ori. Cu toate acestea, rezultatul execu&#539;iei programului va fi diferit:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c2">Thread </span><span class="c5">1</span><span
+                        class="c2">&nbsp;</span><span class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">2</span><span class="c2">&nbsp;</span><span class="c5">1</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">3</span><span class="c2">&nbsp;</span><span
+                        class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">5</span><span
+                        class="c2">&nbsp;</span><span class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">4</span><span class="c2">&nbsp;</span><span class="c5">1</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">5</span><span class="c2">&nbsp;</span><span
+                        class="c5">6</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">2</span><span
+                        class="c2">&nbsp;</span><span class="c5">6</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">1</span><span class="c2">&nbsp;</span><span class="c5">6</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">3</span><span class="c2">&nbsp;</span><span
+                        class="c5">6</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">4</span><span
+                        class="c2">&nbsp;</span><span class="c5">6</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">4</span><span class="c2">&nbsp;</span><span class="c5">11</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">2</span><span class="c2">&nbsp;</span><span
+                        class="c5">11</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">5</span><span
+                        class="c2">&nbsp;</span><span class="c5">11</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">3</span><span class="c2">&nbsp;</span><span class="c5">11</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">1</span><span class="c2">&nbsp;</span><span
+                        class="c5">11</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">4</span><span
+                        class="c2">&nbsp;</span><span class="c5">16</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">1</span><span class="c2">&nbsp;</span><span class="c5">16</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">3</span><span class="c2">&nbsp;</span><span
+                        class="c5">16</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">5</span><span
+                        class="c2">&nbsp;</span><span class="c5">16</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">2</span><span class="c2">&nbsp;</span><span class="c5">16</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">Observ&#259;m c&#259;, &icirc;nainte ca un thread s&#259; termine de lucrat cu
+            c&acirc;mpul res.x, un alt thread &icirc;ncepe s&#259; lucreze cu el.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">Pentru a evita aceast&#259; situa&#539;ie, trebuie s&#259; sincroniz&#259;m
+            thread-urile. Una dintre metodele de sincronizare este utilizarea cuv&acirc;ntului cheie </span><span
+            class="c14">synchronized</span><span class="c7 c0">. Acest operator precede blocul de cod sau metoda care
+            trebuie sincronizat&#259;. Pentru aplicare, vom modifica clasa CountThread:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">class</span><span class="c2">&nbsp;</span><span
+                        class="c1">CountThread</span><span class="c2">&nbsp;</span><span
+                        class="c8">implements</span><span class="c2">&nbsp;</span><span class="c1">Runnable</span><span
+                        class="c2">&nbsp;{<br><br> &nbsp; &nbsp;CommonResource res;<br> &nbsp;
+                        &nbsp;CountThread(CommonResource res) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">this</span><span class="c2">.res = res;<br> &nbsp; &nbsp;}<br> &nbsp;
+                        &nbsp;</span><span class="c8">public</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">run</span><span
+                        class="c2">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c8">synchronized</span><span
+                        class="c2">&nbsp;(res) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;res.x = </span><span
+                        class="c5">1</span><span class="c2">;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">for</span><span class="c2">&nbsp;(</span><span class="c8">int</span><span
+                        class="c2">&nbsp;i = </span><span class="c5">1</span><span class="c2">; i &lt; </span><span
+                        class="c5">5</span><span class="c2">; i++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;System.out.printf(</span><span class="c13">&quot;%s %d \n&quot;</span><span
+                        class="c2">, Thread.currentThread().getName(), res.x);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;res.x++;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c8">try</span><span class="c2">&nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thread.sleep(</span><span class="c5">100</span><span
+                        class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} </span><span
+                        class="c8">catch</span><span class="c2">&nbsp;(InterruptedException e) {}<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">Atunci c&acirc;nd cre&#259;m un bloc de cod sincronizat, dup&#259; operatorul
+        </span><span class="c0 c15">synchronized </span><span class="c0">urmeaz&#259; un obiect: </span><span
+            class="c0 c15">synchronized(res)</span><span class="c7 c0">. Acest obiect poate fi doar un obiect de
+            clas&#259;, nu un tip primitiv.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">Fiecare obiect &icirc;n Java are asociat un </span><span
+            class="c14">monitor</span><span class="c7 c0">. Monitorul reprezint&#259; un fel de instrument pentru
+            gestionarea accesului la obiect. C&acirc;nd execu&#539;ia codului ajunge la operatorul synchronized,
+            monitorul obiectului res este blocat, iar pe durata bloc&#259;rii sale, accesul la blocul de cod este
+            monopolizat de un singur thread, cel care a realizat blocarea. Dup&#259; finalizarea blocului de cod,
+            monitorul obiectului res este eliberat &#537;i devine disponibil pentru alte thread-uri.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c7 c0">Dup&#259; eliberarea monitorului, un alt thread &icirc;l poate prelua, iar restul
+            thread-urilor continu&#259; s&#259; a&#537;tepte eliberarea lui.</span></p>
+    <p class="c4"><span class="c0 c7"></span></p>
+    <p class="c6"><span class="c7 c0">Rezultatul &icirc;n consol&#259; va fi acum diferit:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c2">Thread </span><span class="c5">1</span><span
+                        class="c2">&nbsp;</span><span class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">1</span><span class="c2">&nbsp;</span><span class="c5">2</span><span
+                        class="c2"><br>Thread </span><span class="c5">1</span><span class="c2">&nbsp;</span><span
+                        class="c5">3</span><span class="c2"><br>Thread </span><span class="c5">1</span><span
+                        class="c2">&nbsp;</span><span class="c5">4</span><span class="c2"><br>Thread </span><span
+                        class="c5">3</span><span class="c2">&nbsp;</span><span class="c5">1</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">3</span><span class="c2">&nbsp;</span><span
+                        class="c5">2</span><span class="c2"><br>Thread </span><span class="c5">3</span><span
+                        class="c2">&nbsp;</span><span class="c5">3</span><span class="c2"><br>Thread </span><span
+                        class="c5">3</span><span class="c2">&nbsp;</span><span class="c5">4</span><span
+                        class="c2"><br>Thread </span><span class="c5">5</span><span class="c2">&nbsp;</span><span
+                        class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span class="c5">5</span><span
+                        class="c2">&nbsp;</span><span class="c5">2</span><span class="c2"><br>Thread </span><span
+                        class="c5">5</span><span class="c2">&nbsp;</span><span class="c5">3</span><span
+                        class="c2"><br>Thread </span><span class="c5">5</span><span class="c2">&nbsp;</span><span
+                        class="c5">4</span><span class="c2"><br>Thread </span><span class="c5">4</span><span
+                        class="c2">&nbsp;</span><span class="c5">1</span><span class="c2">&nbsp;<br>Thread </span><span
+                        class="c5">4</span><span class="c2">&nbsp;</span><span class="c5">2</span><span
+                        class="c2"><br>Thread </span><span class="c5">4</span><span class="c2">&nbsp;</span><span
+                        class="c5">3</span><span class="c2"><br>Thread </span><span class="c5">4</span><span
+                        class="c2">&nbsp;</span><span class="c5">4</span><span class="c2"><br>Thread </span><span
+                        class="c5">2</span><span class="c2">&nbsp;</span><span class="c5">1</span><span
+                        class="c2">&nbsp;<br>Thread </span><span class="c5">2</span><span class="c2">&nbsp;</span><span
+                        class="c5">2</span><span class="c2"><br>Thread </span><span class="c5">2</span><span
+                        class="c2">&nbsp;</span><span class="c5">3</span><span class="c2"><br>Thread </span><span
+                        class="c5">2</span><span class="c2">&nbsp;</span><span class="c5">4</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">C&acirc;nd se aplic&#259; operatorul </span><span class="c0 c15">synchronized
+        </span><span class="c7 c0">la o metod&#259;, p&acirc;n&#259; c&acirc;nd metoda nu &icirc;&#537;i
+            finalizeaz&#259; execu&#539;ia, accesul este monopolizat doar de un singur thread &ndash; primul care a
+            &icirc;nceput s&#259; o execute. Pentru aplicarea synchronized la o metod&#259;, modific&#259;m clasele din
+            program:</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <table class="c12">
+        <tr class="c9">
+            <td class="c3" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">public</span><span class="c2">&nbsp;</span><span
+                        class="c8">class</span><span class="c2">&nbsp;</span><span class="c1">Program</span><span
+                        class="c2">&nbsp;{<br><br> &nbsp; &nbsp;</span><span class="c8">public</span><span
+                        class="c2">&nbsp;</span><span class="c8">static</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">main</span><span
+                        class="c2">(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;CommonResource commonResource = </span><span class="c8">new</span><span
+                        class="c2">&nbsp;CommonResource();<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">for</span><span class="c2">&nbsp;(</span><span class="c8">int</span><span
+                        class="c2">&nbsp;i = </span><span class="c5">1</span><span class="c2">; i &lt; </span><span
+                        class="c5">6</span><span class="c2">; i++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thread t = </span><span class="c8">new</span><span
+                        class="c2">&nbsp;Thread(</span><span class="c8">new</span><span
+                        class="c2">&nbsp;CountThread(commonResource));<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;t.setName(</span><span class="c13">&quot;Thread &quot;</span><span class="c2">&nbsp;+
+                        i);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.start();<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;}<br>}<br><br></span><span class="c8">class</span><span
+                        class="c2">&nbsp;</span><span class="c1">CommonResource</span><span class="c2">&nbsp;{<br><br>
+                        &nbsp; &nbsp;</span><span class="c8">int</span><span class="c2">&nbsp;x;<br> &nbsp;
+                        &nbsp;</span><span class="c8">synchronized</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">increment</span><span
+                        class="c2">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;x = </span><span class="c5">1</span><span
+                        class="c2">;<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c8">for</span><span
+                        class="c2">&nbsp;(</span><span class="c8">int</span><span class="c2">&nbsp;i = </span><span
+                        class="c5">1</span><span class="c2">; i &lt; </span><span class="c5">5</span><span class="c2">;
+                        i++) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;System.out.printf(</span><span
+                        class="c13">&quot;%s %d \n&quot;</span><span class="c2">, Thread.currentThread().getName(),
+                        x);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x++;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c8">try</span><span class="c2">&nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;Thread.sleep(</span><span class="c5">100</span><span
+                        class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} </span><span
+                        class="c8">catch</span><span class="c2">&nbsp;(InterruptedException e) {}<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}<br><br></span><span class="c8">class</span><span
+                        class="c2">&nbsp;</span><span class="c1">CountThread</span><span class="c2">&nbsp;</span><span
+                        class="c8">implements</span><span class="c2">&nbsp;</span><span class="c1">Runnable</span><span
+                        class="c2">&nbsp;{<br><br> &nbsp; &nbsp;CommonResource res;<br> &nbsp;
+                        &nbsp;CountThread(CommonResource res) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c8">this</span><span class="c2">.res = res;<br> &nbsp; &nbsp;}<br> &nbsp; &nbsp;<br>
+                        &nbsp; &nbsp;</span><span class="c8">public</span><span class="c2">&nbsp;</span><span
+                        class="c8">void</span><span class="c2">&nbsp;</span><span class="c1">run</span><span
+                        class="c2">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;res.increment();<br> &nbsp; &nbsp;}<br>}</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c4"><span class="c7 c0"></span></p>
+    <p class="c6"><span class="c0">Rezultatul &icirc;n acest caz va fi similar cu cel din exemplul anterior, cu blocul
+            synchronized. Din nou, monitorul obiectului CommonResource intr&#259; &icirc;n joc &ndash; acesta este
+            obiectul comun pentru toate thread-urile. De aceea, nu metoda</span><span class="c0 c15">&nbsp;run()
+        </span><span class="c0">din clasa CountThread este sincronizat&#259;, ci metoda </span><span
+            class="c0 c15">increment </span><span class="c7 c0">din clasa CommonResource. C&acirc;nd primul thread
+            &icirc;ncepe s&#259; execute metoda increment, el captureaz&#259; monitorul obiectului CommonResource. Iar
+            restul thread-urilor continu&#259; s&#259; a&#537;tepte eliberarea acestuia.</span></p>
+    <p class="c4"><span class="c7 c0"></span></p>
+</body>
+
+</html>

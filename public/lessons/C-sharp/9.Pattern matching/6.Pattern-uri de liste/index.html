@@ -1,0 +1,694 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c17 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c0 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c3 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c10 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fc9b9b;
+            font-weight: 400
+        }
+
+        .c12 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c1 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c8 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c7 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c6 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c15 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c18 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c4 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c11 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c14 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c13 {
+            height: 0pt
+        }
+
+        .c9 {
+            height: 11pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c0 c6 c18">Pattern-uri de liste.</h1>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c14">Pattern-urile de liste</span><span class="c6 c4">&nbsp;permit potrivirea expresiilor
+            cu liste &#537;i array-uri. Acest pattern este disponibil &icirc;ncep&acirc;nd cu versiunea C# 11.</span>
+    </p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">Potrivire complet&#259; cu un array/list&#259;:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.adbf6fb7c83fc8409b740f594e6fe53b0915c21b"></a><a
+        id="t.0"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">, </span><span class="c8">5</span><span
+                        class="c1">&nbsp;})); &nbsp;</span><span class="c3">// 1</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c3">//
+                        3</span><span class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">&nbsp;</span><span class="c5">int</span><span class="c1">[] {})); &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c3">// 4</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// 5</span><span class="c1"><br><br></span><span
+                        class="c5">int</span><span class="c1">&nbsp;</span><span class="c12">GetNumber</span><span
+                        class="c1">(</span><span class="c5">int</span><span class="c1">[] values) =&gt; values
+                    </span><span class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span
+                        class="c10">1, 2, 3, 4, 5</span><span class="c1">] =&gt; </span><span class="c8">1</span><span
+                        class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">1, 2, 3</span><span class="c1">] =&gt;
+                    </span><span class="c8">2</span><span class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">1,
+                        2</span><span class="c1">] =&gt; </span><span class="c8">3</span><span class="c1">,<br> &nbsp;
+                        &nbsp;[] =&gt; </span><span class="c8">4</span><span class="c1">,<br> &nbsp; &nbsp;_ =&gt;
+                    </span><span class="c8">5</span><span class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">&Icirc;n mod similar, &icirc;n loc de array-uri se pot folosi liste:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.cde0e7dfc18c50fc023ad3dd0aaddaceac4d00ec"></a><a
+        id="t.1"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">List&lt;</span><span class="c5">int</span><span class="c1">&gt; numbers
+                        = </span><span class="c5">new</span><span class="c1">&nbsp;List&lt;</span><span
+                        class="c5">int</span><span class="c1">&gt; { </span><span class="c8">1</span><span class="c1">,
+                    </span><span class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span
+                        class="c1">&nbsp;};<br><br>Console.WriteLine(GetNumber(numbers)); &nbsp;</span><span
+                        class="c3">// 2</span><span class="c1"><br><br></span><span class="c5">int</span><span
+                        class="c1">&nbsp;</span><span class="c12">GetNumber</span><span class="c1">(List&lt;</span><span
+                        class="c5">int</span><span class="c1">&gt; values) =&gt; values </span><span
+                        class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span class="c10">1, 2,
+                        3, 4, 5</span><span class="c1">] =&gt; </span><span class="c8">1</span><span class="c1">,<br>
+                        &nbsp; &nbsp;[</span><span class="c10">1, 2, 3</span><span class="c1">] =&gt; </span><span
+                        class="c8">2</span><span class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">1,
+                        2</span><span class="c1">] =&gt; </span><span class="c8">3</span><span class="c1">,<br> &nbsp;
+                        &nbsp;[] =&gt; </span><span class="c8">4</span><span class="c1">,<br> &nbsp; &nbsp;_ =&gt;
+                    </span><span class="c8">5</span><span class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">De asemenea, pattern-urile de liste pot fi folosite &icirc;n construc&#539;ia
+        </span><span class="c14">if</span><span class="c6 c4">:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.f1f62931333ca7790cac6de2b369dd670e42a5cd"></a><a
+        id="t.2"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c5">int</span><span class="c1">[] numbers = { </span><span
+                        class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span class="c1">,
+                    </span><span class="c8">3</span><span class="c1">, </span><span class="c8">4</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;};<br></span><span
+                        class="c5">if</span><span class="c1">&nbsp;(numbers </span><span class="c5">is</span><span
+                        class="c1">&nbsp;[</span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">, </span><span class="c8">5</span><span
+                        class="c1">])<br>{<br> &nbsp; &nbsp;Console.WriteLine(</span><span class="c2">&quot;[1, 2, 3, 4,
+                        5]&quot;</span><span class="c1">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c11">Substitu&#539;ia _</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">Cu ajutorul pattern-ului </span><span class="c14">_ </span><span class="c4">se poate
+            desemna un element unic care are orice valoare. De exemplu, pattern-ul </span><span class="c14">[2, _,
+            5]</span><span class="c4">&nbsp;corespunde oric&#259;rui array de trei elemente &icirc;n care &icirc;ntre 2
+            &#537;i 5 se afl&#259; o valoare arbitrar&#259;. Iar array-ul </span><span class="c14">[_, _] </span><span
+            class="c6 c4">corespunde oric&#259;rui array de dou&#259; elemente arbitrare.</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">C&acirc;teva exemple:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.bc6249752a94536d093569dd5dd54b07259b20c9"></a><a
+        id="t.3"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">2</span><span class="c1">, </span><span
+                        class="c8">3</span><span class="c1">, </span><span class="c8">5</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;</span><span class="c3">// 1</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">2</span><span class="c1">, </span><span class="c8">4</span><span
+                        class="c1">, </span><span class="c8">6</span><span class="c1">&nbsp;})); &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// 2</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// 3</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">, </span><span class="c8">3</span><span class="c1">&nbsp;})); &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// 4</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">&nbsp;</span><span class="c5">int</span><span class="c1">[] { })); &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;</span><span class="c3">// 5</span><span class="c1"><br><br></span><span
+                        class="c5">int</span><span class="c1">&nbsp;</span><span class="c12">GetNumber</span><span
+                        class="c1">(</span><span class="c5">int</span><span class="c1">[] values) =&gt; values
+                    </span><span class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span
+                        class="c10">2, _, 5</span><span class="c1">] =&gt; </span><span class="c8">1</span><span
+                        class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">2, _, _</span><span class="c1">] =&gt;
+                    </span><span class="c8">2</span><span class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">_, _,
+                        5</span><span class="c1">] =&gt; </span><span class="c8">3</span><span class="c1">,<br> &nbsp;
+                        &nbsp;[</span><span class="c10">_, _, _</span><span class="c1">] =&gt; </span><span
+                        class="c8">4</span><span class="c1">,<br> &nbsp; &nbsp;_ =&gt; </span><span
+                        class="c8">5</span><span class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c11">Pattern-ul slice.</span></p>
+    <p class="c0 c9"><span class="c6 c11"></span></p>
+    <p class="c0"><span class="c4">Pentru a transmite un num&#259;r arbitrar de elemente din array/list&#259;, se
+            folose&#537;te pattern-ul slice </span><span class="c14">... </span><span class="c4">De exemplu, pattern-ul
+        </span><span class="c14">[1, 2, .., 5]</span><span class="c4">&nbsp;corespunde unui array care &icirc;ncepe cu
+            1, urmat de 2, iar ultimul element din array este 5. &Icirc;ntre 2 &#537;i 5 poate exista orice num&#259;r
+            de valori &icirc;ntregi. Adic&#259;, pattern-ul </span><span class="c14">[1, 2, .., 5]</span><span
+            class="c6 c4">&nbsp;va corespunde unor array-uri precum:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.7cf9115607bfa987afcfe7016d644f4730b65e74"></a><a
+        id="t.4"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c5">int</span><span class="c1">[] arr1 = { </span><span
+                        class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span class="c1">,
+                    </span><span class="c8">3</span><span class="c1">, </span><span class="c8">4</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;};<br></span><span
+                        class="c5">int</span><span class="c1">[] arr2 = { </span><span class="c8">1</span><span
+                        class="c1">, </span><span class="c8">2</span><span class="c1">, </span><span
+                        class="c8">5</span><span class="c1">&nbsp;};<br></span><span class="c5">int</span><span
+                        class="c1">[] arr3 = { </span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">66</span><span class="c1">,
+                    </span><span class="c8">77</span><span class="c1">, </span><span class="c8">88</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">Cu ajutorul pattern-ului .. se poate desemna un num&#259;r arbitrar de elemente
+            at&acirc;t la &icirc;nceput, c&acirc;t &#537;i la sf&acirc;r&#537;itul array-ului/listei. De exemplu,
+            pattern-ul </span><span class="c14">[2, ..] </span><span class="c4">reprezint&#259; un array care
+            &icirc;ncepe cu 2. Iar pattern-ul</span><span class="c14">&nbsp;[.., 5] </span><span
+            class="c4">reprezint&#259; un array care se termin&#259; cu elementul 5. Pattern-ul </span><span
+            class="c14">[..]</span><span class="c6 c4">&nbsp;reprezint&#259; un array care con&#539;ine un num&#259;r
+            arbitrar de elemente. De exemplu:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.fec4ce1b7f06326c523023828c7cfbb08787bfeb"></a><a
+        id="t.5"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">2</span><span class="c1">, </span><span
+                        class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c3">// 1</span><span class="c1"><br>Console.WriteLine(GetNumber(</span><span
+                        class="c5">new</span><span class="c1">[] { </span><span class="c8">2</span><span class="c1">,
+                    </span><span class="c8">3</span><span class="c1">, </span><span class="c8">4</span><span
+                        class="c1">, </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp;
+                        &nbsp;</span><span class="c3">// 1</span><span
+                        class="c1"><br><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">2</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; </span><span class="c3">// 2</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span
+                        class="c1">, </span><span class="c8">4</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                    </span><span class="c3">// 2</span><span class="c1"><br><br>Console.WriteLine(GetNumber(</span><span
+                        class="c5">new</span><span class="c1">[] { </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">, </span><span class="c8">5</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; </span><span class="c3">// 3</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; </span><span class="c3">// 3</span><span
+                        class="c1"><br><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">&nbsp;</span><span class="c5">int</span><span class="c1">[] { })); &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; </span><span class="c3">// 4</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; </span><span class="c3">// 4</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">, </span><span class="c8">3</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                    </span><span class="c3">// 4</span><span class="c1"><br><br></span><span class="c5">int</span><span
+                        class="c1">&nbsp;</span><span class="c12">GetNumber</span><span class="c1">(</span><span
+                        class="c5">int</span><span class="c1">[] values) =&gt; values </span><span
+                        class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span class="c10">2, ..,
+                        5</span><span class="c1">] =&gt; </span><span class="c8">1</span><span class="c1">, &nbsp;
+                        &nbsp;</span><span class="c3">// dac&#259; primul element este 2, iar ultimul este 5</span><span
+                        class="c1"><br> &nbsp; &nbsp;[</span><span class="c10">2, ..</span><span class="c1">] =&gt;
+                    </span><span class="c8">2</span><span class="c1">, &nbsp; &nbsp; &nbsp; </span><span class="c3">//
+                        dac&#259; primul element este 2</span><span class="c1"><br> &nbsp; &nbsp;[</span><span
+                        class="c10">.., 5</span><span class="c1">] =&gt; </span><span class="c8">3</span><span
+                        class="c1">, &nbsp; &nbsp; &nbsp; </span><span class="c3">// dac&#259; ultimul element este
+                        5</span><span class="c1"><br> &nbsp; &nbsp;[</span><span class="c10">..</span><span class="c1">]
+                        =&gt; </span><span class="c8">4</span><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// num&#259;r arbitrar de elemente</span><span
+                        class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">Pattern-ul slice poate fi combinat cu simboluri de substitu&#539;ie </span><span
+            class="c14">_</span><span class="c6 c4">, de exemplu:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.121dd524216d0eaa7b33ff5d211021924e2d5766"></a><a
+        id="t.6"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c5">int</span><span class="c1">&nbsp;</span><span
+                        class="c12">GetNumber</span><span class="c1">(</span><span class="c5">int</span><span
+                        class="c1">[] values) =&gt; values </span><span class="c5">switch</span><span
+                        class="c1"><br>{<br> &nbsp; &nbsp;[</span><span class="c10">_, .., _</span><span class="c1">]
+                        =&gt; </span><span class="c8">1</span><span class="c1">,<br> &nbsp; &nbsp;[</span><span
+                        class="c10">..</span><span class="c1">] =&gt; </span><span class="c8">2</span><span
+                        class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">&Icirc;n acest caz, pattern-ul </span><span class="c14">[_, .., _] </span><span
+            class="c4 c6">presupune un array format din cel pu&#539;in dou&#259; elemente arbitrare, iar &icirc;ntre
+            primul &#537;i ultimul element poate exista un num&#259;r arbitrar de alte elemente:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.a3d1e731ee3fa174b63b25189d417b920cdf22c8"></a><a
+        id="t.7"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">&nbsp;})); &nbsp; </span><span class="c3">//
+                        1</span><span class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;</span><span class="c3">// 1</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c3">// 1</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span class="c1">[]
+                        { </span><span class="c8">1</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c3">// 2</span><span
+                        class="c1"><br>Console.WriteLine(GetNumber(</span><span class="c5">new</span><span
+                        class="c1">&nbsp;</span><span class="c5">int</span><span class="c1">[] { })); &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;</span><span class="c3">// 2</span><span class="c1"><br><br></span><span
+                        class="c5">int</span><span class="c1">&nbsp;</span><span class="c12">GetNumber</span><span
+                        class="c1">(</span><span class="c5">int</span><span class="c1">[] values) =&gt; values
+                    </span><span class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span
+                        class="c10">_, .., _</span><span class="c1">] =&gt; </span><span class="c8">1</span><span
+                        class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">..</span><span class="c1">] =&gt;
+                    </span><span class="c8">2</span><span class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c11">Ob&#539;inerea elementelor &icirc;n variabile.</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">Valorile individuale din array/list&#259; pot fi ob&#539;inute &icirc;n variabile,
+            de exemplu:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.8251fb1fec3a2ac10b9328f68a29c97bae5ed655"></a><a
+        id="t.8"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c5">int</span><span class="c1">[] numbers = { </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">5</span><span class="c1">&nbsp;};<br></span><span class="c5">if</span><span
+                        class="c1">&nbsp;(numbers </span><span class="c5">is</span><span class="c1">&nbsp;[</span><span
+                        class="c5">var</span><span class="c1">&nbsp;first, </span><span class="c5">var</span><span
+                        class="c1">&nbsp;second, .., </span><span class="c5">var</span><span
+                        class="c1">&nbsp;last])<br>{<br> &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c2">$&quot;first: {first}, second: {second} &nbsp;last: {last}&quot;</span><span
+                        class="c1">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">&Icirc;n acest caz, ob&#539;inem primul element al array-ului &icirc;n variabila
+            first, al doilea element &icirc;n variabila second, iar ultimul element &icirc;n variabila last.</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">Exemplu cu diferite array-uri:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.244e6b301310df9bd4fbb1530d7edba05bb122b0"></a><a
+        id="t.9"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetData(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c3">// First: 1
+                        &nbsp;Second: 2 &nbsp;Last: 3</span><span class="c1"><br>Console.WriteLine(GetData(</span><span
+                        class="c5">new</span><span class="c1">[] { </span><span class="c8">2</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">, </span><span class="c8">6</span><span
+                        class="c1">, </span><span class="c8">8</span><span class="c1">&nbsp;})); &nbsp; &nbsp;
+                    </span><span class="c3">// First: 2 &nbsp;Second: 4 &nbsp;Last: 8</span><span
+                        class="c1"><br>Console.WriteLine(GetData(</span><span class="c5">new</span><span class="c1">[] {
+                    </span><span class="c8">1</span><span class="c1">, </span><span class="c8">2</span><span
+                        class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c3">// Array has
+                        less than 3 elements</span><span class="c1"><br><br></span><span class="c5">string</span><span
+                        class="c1">&nbsp;</span><span class="c12">GetData</span><span class="c1">(</span><span
+                        class="c5">int</span><span class="c1">[] values) =&gt; values </span><span
+                        class="c5">switch</span><span class="c1"><br>{<br> &nbsp; &nbsp;[</span><span class="c10">var
+                        first, var second, .., var last</span><span class="c1">] =&gt; </span><span
+                        class="c2">$&quot;First: {first} &nbsp;Second: {second} &nbsp;Last: {last}&quot;</span><span
+                        class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">..</span><span class="c1">] =&gt;
+                    </span><span class="c2">&quot;Array has less than 3 elements&quot;</span><span
+                        class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">&Icirc;n acest caz, ob&#539;inem primul element al array-ului &icirc;n variabila
+            first, al doilea element &icirc;n variabila second, iar ultimul element &icirc;n variabila last.</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c4">&Icirc;n acela&#537;i timp, valorile proiectate pe pattern-ul .. pot fi, de asemenea,
+            ob&#539;inute &icirc;ntr-o variabil&#259;. De exemplu, &icirc;n pattern-ul </span><span class="c14">[2, ..
+            var middle, 5] </span><span class="c4">elementele proiectate pe </span><span class="c14">.. </span><span
+            class="c6 c4">pot fi transmise &icirc;n variabila middle. C&acirc;teva exemple:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.190314b21bfc9f29d8ee117a5d0ef9566f9d1b86"></a><a
+        id="t.10"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Console.WriteLine(GetSlice(</span><span class="c5">new</span><span
+                        class="c1">[] { </span><span class="c8">2</span><span class="c1">, </span><span
+                        class="c8">3</span><span class="c1">, </span><span class="c8">4</span><span class="c1">,
+                    </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; </span><span
+                        class="c3">// Middle: 3, 4</span><span class="c1"><br>Console.WriteLine(GetSlice(</span><span
+                        class="c5">new</span><span class="c1">[] { </span><span class="c8">2</span><span class="c1">,
+                    </span><span class="c8">4</span><span class="c1">, </span><span class="c8">6</span><span
+                        class="c1">, </span><span class="c8">8</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                    </span><span class="c3">// End: 4, 6, 8</span><span
+                        class="c1"><br>Console.WriteLine(GetSlice(</span><span class="c5">new</span><span class="c1">[]
+                        { <br><br></span><span class="c8">1</span><span class="c1">, </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">5</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp; </span><span
+                        class="c3">// Start: 1, 2, 3</span><span class="c1"><br>Console.WriteLine(GetSlice(</span><span
+                        class="c5">new</span><span class="c1">[] { </span><span class="c8">1</span><span class="c1">,
+                    </span><span class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span
+                        class="c1">, </span><span class="c8">4</span><span class="c1">&nbsp;})); &nbsp; &nbsp; &nbsp;
+                    </span><span class="c3">// All: 1, 2, 3, 4</span><span
+                        class="c1"><br>Console.WriteLine(GetSlice(</span><span class="c5">new</span><span
+                        class="c1">&nbsp;</span><span class="c5">int</span><span class="c1">[] { })); &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c3">// All: </span><span
+                        class="c1"><br><br></span><span class="c5">string</span><span class="c1">&nbsp;</span><span
+                        class="c12">GetSlice</span><span class="c1">(</span><span class="c5">int</span><span
+                        class="c1">[] values) =&gt; values </span><span class="c5">switch</span><span
+                        class="c1"><br>{<br> &nbsp; &nbsp;[</span><span class="c10">2, .. var middle, 5</span><span
+                        class="c1">] =&gt; </span><span class="c2">$&quot;Middle: {</span><span
+                        class="c5">string</span><span class="c2">.Join(&quot;, &quot;, middle)}&quot;</span><span
+                        class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">2, .. var end</span><span class="c1">]
+                        =&gt; </span><span class="c2">$&quot;End: {</span><span class="c5">string</span><span
+                        class="c2">.Join(&quot;, &quot;, end)}&quot;</span><span class="c1">,<br> &nbsp;
+                        &nbsp;[</span><span class="c10">.. var start, 5</span><span class="c1">] =&gt; </span><span
+                        class="c2">$&quot;Start: {</span><span class="c5">string</span><span class="c2">.Join(&quot;,
+                        &quot;, start)}&quot;</span><span class="c1">,<br> &nbsp; &nbsp;[</span><span class="c10">.. var
+                        all</span><span class="c1">] =&gt; </span><span class="c2">$&quot;All: {</span><span
+                        class="c5">string</span><span class="c2">.Join(&quot;, &quot;, all)}&quot;</span><span
+                        class="c1"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c11">Propriet&#259;&#539;i ale colec&#539;iilor.</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0"><span class="c6 c4">Este de men&#539;ionat c&#259;, deoarece array-urile &#537;i listele sunt clase C#
+            obi&#537;nuite care au propriet&#259;&#539;i, putem aplica pentru ele &#537;i pattern-ul de
+            propriet&#259;&#539;i. Combinarea pattern-ului de propriet&#259;&#539;i &#537;i pattern-ului de liste
+            permite simplificarea rezolv&#259;rii unor sarcini. De exemplu, avem o sarcin&#259;: dac&#259; array-ul are
+            trei elemente, s&#259; &icirc;l descompunem &icirc;n trei variabile:</span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p><a id="t.22e41d52a62610753c21c7e9ccfbc176f732c74f"></a><a
+        id="t.11"></a>
+    <table class="c7">
+        <tr class="c13">
+            <td class="c17" colspan="1" rowspan="1">
+                <p class="c15"><span class="c5">int</span><span class="c1">[] numbers = { </span><span
+                        class="c8">2</span><span class="c1">, </span><span class="c8">3</span><span class="c1">,
+                    </span><span class="c8">5</span><span class="c1">&nbsp;};<br></span><span class="c5">if</span><span
+                        class="c1">&nbsp;(numbers </span><span class="c5">is</span><span class="c1">&nbsp;{ Length:
+                    </span><span class="c8">3</span><span class="c1">&nbsp;} and [</span><span
+                        class="c5">var</span><span class="c1">&nbsp;first, </span><span class="c5">var</span><span
+                        class="c1">&nbsp;second, </span><span class="c5">var</span><span
+                        class="c1">&nbsp;third])<br>{<br> &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c2">$&quot;first: {first}, second: {second} &nbsp;third: {third}&quot;</span><span
+                        class="c1">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+    <p class="c0 c9"><span class="c6 c4"></span></p>
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c12 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c0 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c13 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c9 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c6 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c3 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c8 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c7 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c2 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c4 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c15 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c1 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c14 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c5 {
+            height: 11pt
+        }
+
+        .c10 {
+            height: 0pt
+        }
+
+        .c17 {
+            font-style: italic
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c0 c2 c14">Operații cu date.</h1>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c15">Formatarea datelor &#537;i timpului.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">Pentru formatarea obiectelor de tip date &#537;i time, &icirc;n ambele clase este
+            prev&#259;zut&#259; metoda</span><span class="c4">&nbsp;strftime(format)</span><span class="c2 c1">.
+            Aceast&#259; metod&#259; prime&#537;te un singur parametru, care indic&#259; formatul &icirc;n care trebuie
+            convertit&#259; data sau ora.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Pentru definirea formatului, putem folosi unul dintre urm&#259;toarele coduri de
+            formatare:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%a</span><span class="c2 c1">: abrevierea zilei
+            s&#259;pt&#259;m&acirc;nii. De exemplu, Wed pentru Wednesday (implicit, se folosesc denumirile &icirc;n
+            limba englez&#259;).</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%A</span><span class="c2 c1">: denumirea complet&#259; a
+            zilei s&#259;pt&#259;m&acirc;nii, de exemplu, Wednesday.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%b</span><span class="c2 c1">: abrevierea denumirii lunii.
+            De exemplu, Oct (abreviere pentru October).</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%B</span><span class="c2 c1">: denumirea complet&#259; a
+            lunii, de exemplu, October.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%d</span><span class="c2 c1">: ziua lunii, completat&#259;
+            cu zero, de exemplu, 01.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%m</span><span class="c2 c1">: num&#259;rul lunii,
+            completat cu zero, de exemplu, 05.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%y</span><span class="c2 c1">: anul reprezentat prin
+            dou&#259; cifre.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%Y</span><span class="c2 c1">: anul reprezentat prin patru
+            cifre.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%H</span><span class="c2 c1">: ora &icirc;n format de 24 de
+            ore, de exemplu, 13.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%I</span><span class="c2 c1">: ora &icirc;n format de 12
+            ore, de exemplu, 01.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%M</span><span class="c2 c1">: minutul.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%S</span><span class="c2 c1">: secunda.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%f</span><span class="c2 c1">: microsecunda.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%p</span><span class="c2 c1">: indicator AM/PM.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%c</span><span class="c2 c1">: data &#537;i ora formatate
+            conform localei curente.</span></p>
+    <p class="c0 c5"><span class="c1 c2"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%x</span><span class="c2 c1">: data formatat&#259; conform
+            localei curente.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">%X</span><span class="c2 c1">: ora formatat&#259; conform
+            localei curente.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Exemplu de utilizare a diferitelor formate:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;datetime<br><br>now =
+                        datetime.now()<br>print(now.strftime(</span><span class="c9">&quot;%Y-%m-%d&quot;</span><span
+                        class="c3">)) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c13">#
+                        2017-05-03</span><span class="c3"><br>print(now.strftime(</span><span
+                        class="c9">&quot;%d/%m/%Y&quot;</span><span class="c3">)) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; </span><span class="c13"># 03/05/2017</span><span
+                        class="c3"><br>print(now.strftime(</span><span class="c9">&quot;%d/%m/%y&quot;</span><span
+                        class="c3">)) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c13">#
+                        03/05/17</span><span class="c3"><br>print(now.strftime(</span><span class="c9">&quot;%d %B %Y
+                        (%A)&quot;</span><span class="c3">)) &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c13"># 03
+                        May 2017 (Wednesday)</span><span class="c3"><br>print(now.strftime(</span><span
+                        class="c9">&quot;%d/%m/%y %I:%M %p&quot;</span><span class="c3">)) &nbsp; &nbsp;</span><span
+                        class="c13"># 03/05/17 01:36 PM</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">Implicit, la afi&#537;area denumirilor lunilor &#537;i zilelor
+            s&#259;pt&#259;m&acirc;nii, se folosesc denumirile &icirc;n limba englez&#259;. Dac&#259; dorim s&#259;
+            utiliz&#259;m denumirile &icirc;n func&#539;ie de locala curent&#259;, putem seta localizarea cu ajutorul
+            modulului </span><span class="c1 c17">locale</span><span class="c2 c1">:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;datetime<br></span><span
+                        class="c8">import</span><span class="c3">&nbsp;locale<br><br>locale.setlocale(locale.LC_ALL,
+                    </span><span class="c9">&quot;&quot;</span><span class="c3">)<br><br>now =
+                        datetime.now()<br>print(now.strftime(</span><span class="c9">&quot;%d %B %Y
+                        (%A)&quot;</span><span class="c3">)) &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c13"># 03
+                        Mai 2017 (miercuri)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c15">Adunarea &#537;i sc&#259;derea datelor &#537;i timpului.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">Adesea, &icirc;n lucrul cu datele, apare necesitatea de a ad&#259;uga la o dat&#259;
+            un anumit interval de timp sau, dimpotriv&#259;, de a sc&#259;dea o anumit&#259; perioad&#259;. &Icirc;n mod
+            special pentru aceste opera&#539;ii, &icirc;n modulul datetime este definit&#259; clasa </span><span
+            class="c4">timedelta</span><span class="c2 c1">. Aceast&#259; clas&#259; define&#537;te un anumit interval
+            de timp.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Pentru a defini un interval de timp, putem folosi constructorul timedelta:</span>
+    </p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c3">timedelta([days] [, seconds] [, microseconds] [, milliseconds] [,
+                        minutes] [, hours] [, weeks])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">&Icirc;n constructor, putem transmite succesiv zile, secunde, microsecunde,
+            milisecunde, minute, ore &#537;i s&#259;pt&#259;m&acirc;ni.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Exemplu de definire a unor intervale de timp:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;timedelta<br><br>three_hours =
+                        timedelta(hours=</span><span class="c6">3</span><span class="c3">)<br>print(three_hours)
+                        &nbsp;</span><span class="c13"># 3:00:00</span><span
+                        class="c3"><br><br>three_hours_thirty_minutes = timedelta(hours=</span><span
+                        class="c6">3</span><span class="c3">, minutes=</span><span class="c6">30</span><span
+                        class="c3">)<br>print(three_hours_thirty_minutes) &nbsp;</span><span class="c13">#
+                        3:30:00</span><span class="c3"><br><br>two_days = timedelta(days=</span><span
+                        class="c6">2</span><span class="c3">)<br>print(two_days) &nbsp;</span><span class="c13"># 2
+                        days, 0:00:00</span><span class="c3"><br><br>two_days_three_hours_thirty_minutes =
+                        timedelta(days=</span><span class="c6">2</span><span class="c3">, hours=</span><span
+                        class="c6">3</span><span class="c3">, minutes=</span><span class="c6">30</span><span
+                        class="c3">)<br>print(two_days_three_hours_thirty_minutes) &nbsp;</span><span class="c13"># 2
+                        days, 3:30:00</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Folosind timedelta, putem aduna sau sc&#259;dea date. De exemplu, s&#259;
+            ob&#539;inem data care va fi peste dou&#259; zile:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;timedelta, datetime<br><br>now =
+                        datetime.now()<br>print(now) &nbsp;</span><span class="c13"># 2017-05-03
+                        17:46:44.558754</span><span class="c3"><br><br>two_days = timedelta(days=</span><span
+                        class="c6">2</span><span class="c3">)<br>in_two_days = now + two_days<br>print(in_two_days)
+                        &nbsp;</span><span class="c13"># 2017-05-05 17:46:44.558754</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Sau s&#259; afl&#259;m c&acirc;t timp a trecut cu 10 ore &#537;i 15 minute
+            &icirc;n urm&#259;, adic&#259; s&#259; sc&#259;dem din timpul curent 10 ore &#537;i 15 minute:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;timedelta, datetime<br><br>now =
+                        datetime.now()<br>till_ten_hours_fifteen_minutes = now - timedelta(hours=</span><span
+                        class="c6">10</span><span class="c3">, minutes=</span><span class="c6">15</span><span
+                        class="c3">)<br>print(till_ten_hours_fifteen_minutes)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c15">Propriet&#259;&#539;ile clasei timedelta.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Clasa timedelta are c&acirc;teva propriet&#259;&#539;i prin care putem ob&#539;ine
+            intervalul de timp:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">days</span><span class="c2 c1">: returneaz&#259;
+            num&#259;rul de zile.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">seconds</span><span class="c2 c1">: returneaz&#259;
+            num&#259;rul de secunde.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">- </span><span class="c4">microseconds</span><span class="c2 c1">: returneaz&#259;
+            num&#259;rul de microsecunde.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c1">&Icirc;n plus, metoda </span><span class="c4">total_seconds() </span><span
+            class="c2 c1">returneaz&#259; num&#259;rul total de secunde, care include zilele, secundele &#537;i
+            microsecundele.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">De exemplu, s&#259; afl&#259;m care este intervalul de timp &icirc;ntre dou&#259;
+            date:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;timedelta, datetime<br><br>now =
+                        datetime.now()<br>twenty_two_may = datetime(</span><span class="c6">2017</span><span
+                        class="c3">, </span><span class="c6">5</span><span class="c3">, </span><span
+                        class="c6">22</span><span class="c3">)<br>period = twenty_two_may - now<br>print(</span><span
+                        class="c9">&quot;{} zile &nbsp;{} secunde &nbsp; {} microsecunde&quot;</span><span
+                        class="c3">.format(period.days, period.seconds, period.microseconds))<br></span><span
+                        class="c13"># 18 zile &nbsp;17537 secunde &nbsp; 72765 microsecunde</span><span
+                        class="c3"><br><br>print(</span><span class="c9">&quot;Total: {} secunde&quot;</span><span
+                        class="c3">.format(period.total_seconds()))<br></span><span class="c13"># Total: 1572737.072765
+                        secunde</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c15">Compararea datelor.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Asemenea &#537;irurilor &#537;i numerelor, datele pot fi comparate folosind
+            operatorii de compara&#539;ie standard:</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <table class="c7">
+        <tr class="c10">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c11"><span class="c8">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c8">import</span><span class="c3">&nbsp;datetime<br><br>now = datetime.now()<br>deadline
+                        = datetime(</span><span class="c6">2017</span><span class="c3">, </span><span
+                        class="c6">5</span><span class="c3">, </span><span class="c6">22</span><span
+                        class="c3">)<br><br></span><span class="c8">if</span><span class="c3">&nbsp;now &gt;
+                        deadline:<br> &nbsp; &nbsp;print(</span><span class="c9">&quot;Termenul limit&#259; pentru
+                        proiect a trecut&quot;</span><span class="c3">)<br></span><span class="c8">elif</span><span
+                        class="c3">&nbsp;now.day == deadline.day </span><span class="c8">and</span><span
+                        class="c3">&nbsp;now.month == deadline.month </span><span class="c8">and</span><span
+                        class="c3">&nbsp;now.year == deadline.year:<br> &nbsp; &nbsp;print(</span><span
+                        class="c9">&quot;Termenul limit&#259; pentru proiect este ast&#259;zi&quot;</span><span
+                        class="c3">)<br></span><span class="c8">else</span><span class="c3">:<br> &nbsp; &nbsp;period =
+                        deadline - now<br> &nbsp; &nbsp;print(</span><span class="c9">&quot;Au r&#259;mas {}
+                        zile&quot;</span><span class="c3">.format(period.days))</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+    <p class="c0"><span class="c2 c1">Aceste func&#539;ii ofer&#259; flexibilitate &icirc;n gestionarea &#537;i
+            manipularea datelor &#537;i timpului &icirc;n Python, permi&#539;&acirc;nd efectuarea de opera&#539;ii
+            complexe cu u&#537;urin&#539;&#259;.</span></p>
+    <p class="c0 c5"><span class="c2 c1"></span></p>
+</body>
+
+</html>

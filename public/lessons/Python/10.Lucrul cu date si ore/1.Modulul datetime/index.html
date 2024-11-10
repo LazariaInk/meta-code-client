@@ -1,0 +1,484 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c12 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c5 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c14 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c4 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c10 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c3 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c11 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c7 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c6 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c2 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c0 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c16 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c1 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c17 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c9 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c15 {
+            font-style: italic
+        }
+
+        .c13 {
+            height: 0pt
+        }
+
+        .c8 {
+            height: 11pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c17 doc-content">
+    <h1 class="c5 c6 c9">Modulul datetime.</h1>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Func&#539;ionalitatea principal&#259; pentru lucrul cu date &#537;i ore este
+            concentrat&#259; &icirc;n modulul </span><span class="c1">datetime</span><span class="c6 c0">, care include
+            urm&#259;toarele clase:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c1">- date</span></p>
+    <p class="c5 c8"><span class="c6 c1"></span></p>
+    <p class="c5"><span class="c6 c1">- time</span></p>
+    <p class="c5 c8"><span class="c6 c1"></span></p>
+    <p class="c5"><span class="c6 c1">- datetime</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c16">Clasa date.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Pentru lucrul cu date, putem utiliza clasa </span><span class="c1">date</span><span
+            class="c0">, care este definit&#259; &icirc;n modulul datetime. Pentru a crea un obiect de tip date, putem
+            folosi constructorul </span><span class="c1">date</span><span class="c6 c0">, care prime&#537;te trei
+            parametri: anul, luna &#537;i ziua.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c3">date(year, month, day)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">De exemplu, s&#259; cre&#259;m o dat&#259; specific&#259;:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">import</span><span class="c3">&nbsp;datetime<br> <br>yesterday =
+                        datetime.date(</span><span class="c14">2017</span><span class="c3">, </span><span
+                        class="c14">5</span><span class="c3">, </span><span class="c14">2</span><span
+                        class="c3">)<br>print(yesterday) &nbsp;</span><span class="c11"># 2017-05-02</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Dac&#259; dorim s&#259; ob&#539;inem data curent&#259;, putem folosi metoda
+        </span><span class="c1">today()</span><span class="c6 c0">:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c10">import</span><span class="c3">&nbsp;date<br> <br>today =
+                        date.today()<br>print(today) &nbsp;</span><span class="c11"># 2017-05-03</span><span
+                        class="c3"><br>print(</span><span class="c4">&quot;{}.{}.{}&quot;</span><span
+                        class="c3">.format(today.day, today.month, today.year)) &nbsp;</span><span class="c11">#
+                        3.5.2017</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Prin intermediul propriet&#259;&#539;ilor day, month, year putem ob&#539;ine ziua,
+            luna &#537;i anul respectiv.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c16">Clasa time.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Clasa </span><span class="c1">time </span><span class="c6 c0">se ocup&#259; de lucrul
+            cu orele. Folosind constructorul s&#259;u, putem crea un obiect de tip time:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c3">time([hour] [, min] [, sec] [, microsec])</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Constructorul prime&#537;te, &icirc;n ordine, orele, minutele, secundele &#537;i
+            microsecundele. To&#539;i parametrii sunt op&#539;ionali, iar dac&#259; nu specific&#259;m un parametru,
+            valoarea corespunz&#259;toare va fi ini&#539;ializat&#259; cu zero.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c10">import</span><span class="c3">&nbsp;time<br> <br>current_time =
+                        time()<br>print(current_time) &nbsp;</span><span class="c11"># 00:00:00</span><span
+                        class="c3"><br> <br>current_time = time(</span><span class="c14">16</span><span class="c3">,
+                    </span><span class="c14">25</span><span class="c3">)<br>print(current_time) &nbsp;</span><span
+                        class="c11"># 16:25:00</span><span class="c3"><br> <br>current_time = time(</span><span
+                        class="c14">16</span><span class="c3">, </span><span class="c14">25</span><span class="c3">,
+                    </span><span class="c14">45</span><span class="c3">)<br>print(current_time) &nbsp;</span><span
+                        class="c11"># 16:25:45</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c16">Clasa datetime.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Clasa </span><span class="c1">datetime </span><span class="c6 c0">din modulul omonim
+            combin&#259; func&#539;ionalitatea de lucru cu datele &#537;i orele. Pentru a crea un obiect de tip
+            datetime, putem folosi urm&#259;torul constructor:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c3">datetime(year, month, day [, hour] [, min] [, sec] [, microsec])</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Primii trei parametri, care reprezint&#259; anul, luna &#537;i ziua, sunt
+            obligatorii. Ceilal&#539;i sunt op&#539;ionali, iar dac&#259; nu le specific&#259;m, vor fi
+            ini&#539;ializa&#539;i cu zero.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c10">import</span><span class="c3">&nbsp;datetime<br> <br>deadline =
+                        datetime(</span><span class="c14">2017</span><span class="c3">, </span><span
+                        class="c14">5</span><span class="c3">, </span><span class="c14">10</span><span
+                        class="c3">)<br>print(deadline) &nbsp;</span><span class="c11"># 2017-05-10 00:00:00</span><span
+                        class="c3"><br> <br>deadline = datetime(</span><span class="c14">2017</span><span class="c3">,
+                    </span><span class="c14">5</span><span class="c3">, </span><span class="c14">10</span><span
+                        class="c3">, </span><span class="c14">4</span><span class="c3">, </span><span
+                        class="c14">30</span><span class="c3">)<br>print(deadline) &nbsp;</span><span class="c11">#
+                        2017-05-10 04:30:00</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Pentru a ob&#539;ine data &#537;i ora curent&#259;, putem apela metoda </span><span
+            class="c1">now()</span><span class="c6 c0">:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c10">import</span><span class="c3">&nbsp;datetime<br> <br>now =
+                        datetime.now()<br>print(now) &nbsp;</span><span class="c11"># 2017-05-03
+                        11:18:56.239443</span><span class="c3"><br> <br>print(</span><span class="c4">&quot;{}.{}.{}
+                        &nbsp;{}:{}&quot;</span><span class="c3">.format(now.day, now.month, now.year, now.hour,
+                        now.minute)) &nbsp;</span><span class="c11"># 3.5.2017 11:21</span><span class="c3"><br>
+                        <br>print(now.date())<br>print(now.time())</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">Prin intermediul propriet&#259;&#539;ilor day, month, year, hour, minute, second
+            putem ob&#539;ine valori individuale pentru dat&#259; &#537;i or&#259;. De asemenea, metodele </span><span
+            class="c0 c15">date() </span><span class="c0">&#537;i </span><span class="c0 c15">time() </span><span
+            class="c6 c0">permit ob&#539;inerea separat&#259; a datei &#537;i a orei.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c16">Conversia din &#537;ir &icirc;n dat&#259;.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">O func&#539;ionalitate important&#259; a clasei datetime este metoda </span><span
+            class="c1">strptime()</span><span class="c6 c0">, care permite parsarea unui &#537;ir &#537;i conversia
+            acestuia &icirc;ntr-o dat&#259;. Aceast&#259; metod&#259; accept&#259; doi parametri:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c3">strptime(str, format)</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Primul parametru, str, reprezint&#259; &#537;irul care con&#539;ine data &#537;i
+            ora, iar al doilea parametru, format, define&#537;te modul &icirc;n care diferitele p&#259;r&#539;i ale
+            datei &#537;i orei sunt aranjate &icirc;n acel &#537;ir.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Pentru definirea formatului, putem utiliza urm&#259;toarele coduri:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%d</span><span class="c6 c0">: ziua lunii ca
+            num&#259;r.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%m</span><span class="c6 c0">: num&#259;rul lunii.</span>
+    </p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%y</span><span class="c6 c0">: anul ca num&#259;r de
+            dou&#259; cifre.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%Y</span><span class="c6 c0">: anul ca num&#259;r de patru
+            cifre.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%H</span><span class="c6 c0">: ora &icirc;n format de 24 de
+            ore.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%M</span><span class="c6 c0">: minutul.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c0">- </span><span class="c1">%S</span><span class="c6 c0">: secunda.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">S&#259; aplic&#259;m diverse formate:</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <table class="c2">
+        <tr class="c13">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c7"><span class="c10">from</span><span class="c3">&nbsp;datetime </span><span
+                        class="c10">import</span><span class="c3">&nbsp;datetime<br><br>deadline =
+                        datetime.strptime(</span><span class="c4">&quot;22/05/2017&quot;</span><span class="c3">,
+                    </span><span class="c4">&quot;%d/%m/%Y&quot;</span><span class="c3">)<br>print(deadline)
+                        &nbsp;</span><span class="c11"># 2017-05-22 00:00:00</span><span class="c3"><br> <br>deadline =
+                        datetime.strptime(</span><span class="c4">&quot;22/05/2017 12:30&quot;</span><span class="c3">,
+                    </span><span class="c4">&quot;%d/%m/%Y %H:%M&quot;</span><span class="c3">)<br>print(deadline)
+                        &nbsp;</span><span class="c11"># 2017-05-22 12:30:00</span><span class="c3"><br> <br>deadline =
+                        datetime.strptime(</span><span class="c4">&quot;05-22-2017 12:30&quot;</span><span class="c3">,
+                    </span><span class="c4">&quot;%m-%d-%Y %H:%M&quot;</span><span class="c3">)<br>print(deadline)
+                        &nbsp;</span><span class="c11"># 2017-05-22 12:30:00</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+    <p class="c5"><span class="c6 c0">Acest modul ofer&#259; o gam&#259; larg&#259; de func&#539;ionalit&#259;&#539;i
+            pentru gestionarea &#537;i manipularea datelor &#537;i orelor &icirc;n Python, permi&#539;&acirc;nd crearea,
+            manipularea &#537;i conversia &icirc;ntre diferite formate de timp &#537;i dat&#259;.</span></p>
+    <p class="c5 c8"><span class="c6 c0"></span></p>
+</body>
+
+</html>

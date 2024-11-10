@@ -1,0 +1,902 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c8 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c5 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c0 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c15 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fc9b9b;
+        font-weight: 400;
+      }
+      .c9 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c12 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c11 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c3 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c17 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #888888;
+        font-weight: 400;
+      }
+      .c10 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal;
+      }
+      .c7 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c13 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c16 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c2 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c18 {
+        font-weight: 700;
+        font-size: 27pt;
+        font-family: "Open Sans";
+      }
+      .c1 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c14 {
+        height: 0pt;
+      }
+      .c6 {
+        height: 11pt;
+      }
+      .c4 {
+        font-style: italic;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c1 doc-content">
+    <h1 class="c5 c10 c18">Metodeși proprietăți statice.</h1>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >Pe l&acirc;ng&#259; metodele &#537;i propriet&#259;&#539;ile
+        obi&#537;nuite cu diferi&#539;i modificatori de acces, o clas&#259;
+        poate con&#539;ine metode &#537;i propriet&#259;&#539;i statice. Aceste
+        metode &#537;i propriet&#259;&#539;i sunt marcate cu cuv&acirc;ntul
+        cheie </span
+      ><span class="c16">static</span
+      ><span class="c10 c2"
+        >. Metodele &#537;i propriet&#259;&#539;ile statice sunt create o
+        singur&#259; dat&#259; pentru &icirc;ntreaga clas&#259; &#537;i
+        apar&#539;in &icirc;ntregii clase, &icirc;n timp ce pentru
+        propriet&#259;&#539;ile &#537;i metodele nestatice este creat&#259; o
+        copie separat&#259; pentru fiecare obiect.</span
+      >
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.7515ef9da324d4aa9915a71d7d33ea6711e84afe"></a><a id="t.0"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c15">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c9">class</span><span class="c0">&nbsp;</span
+            ><span class="c3">Person</span
+            ><span class="c0"
+              ><br />{ <br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">public</span
+            ><span class="c0"
+              >&nbsp;$name, $age;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span
+            ><span class="c0">&nbsp;$retirementAge = </span
+            ><span class="c11">65</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">__construct</span
+            ><span class="c0"
+              >($name, $age)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;name = $name;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;age = $age;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">sayHello</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Salut, m&#259; numesc $this-&gt;name&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">printPerson</span
+            ><span class="c0"
+              >($person)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Nume: $person-&gt;name V&acirc;rst&#259;:
+              $person-&gt;age&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />}<br /></span
+            ><span class="c15">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2">Aici este definit&#259; o proprietate static&#259; </span
+      ><span class="c2 c4">retirementAge</span
+      ><span class="c2"
+        >, care stocheaz&#259; v&acirc;rsta de pensionare. Dac&#259;
+        v&acirc;rsta este un indicator specific unei persoane &#537;i poate fi
+        diferit pentru diferite persoane, v&acirc;rsta de pensionare este de
+        obicei stabilit&#259; la un nivel general pentru to&#539;i. Prin urmare,
+        aceast&#259; proprietate poate fi f&#259;cut&#259; static&#259; - ea
+        apar&#539;ine &icirc;ntregii clase Person, nu este setat&#259; separat
+        pentru fiecare obiect. Pentru a declara o proprietate static&#259;,
+        &icirc;nainte de numele acesteia se pune modificatorul </span
+      ><span class="c16">static</span><span class="c10 c2">:</span>
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.ae01faba94411764406e39bb9062c2c822666e38"></a><a id="t.1"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c9">static</span
+            ><span class="c0">&nbsp;$retirementAge = </span
+            ><span class="c11">65</span><span class="c0">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >De asemenea, &icirc;n clas&#259; este definit&#259; o metod&#259;
+        static&#259; </span
+      ><span class="c2 c4">printPerson()</span
+      ><span class="c2"
+        >, care afi&#537;eaz&#259; informa&#539;ii despre persoana care este
+        transmis&#259; ca parametru metodei. Aceast&#259; metod&#259; nu depinde
+        de un anumit obiect al clasei Person, ci apar&#539;ine &icirc;ntregii
+        clase Person. Pentru a declara o metod&#259; static&#259;, &icirc;nainte
+        de cuv&acirc;ntul </span
+      ><span class="c2 c4">function </span
+      ><span class="c2">se pune modificatorul </span
+      ><span class="c16">static</span><span class="c10 c2">:</span>
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.555faad620026887aa8ced4322cb07da483800a7"></a><a id="t.2"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">printPerson</span
+            ><span class="c0"
+              >($person)<br />{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Nume: $person-&gt;name V&acirc;rst&#259;:
+              $person-&gt;age&lt;br&gt;&quot;</span
+            ><span class="c0">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >C&acirc;nd apel&#259;m metode &#537;i propriet&#259;&#539;i statice,
+        folosim numele clasei &#537;i operatorul</span
+      ><span class="c16">&nbsp;::</span
+      ><span class="c2">, &icirc;n locul operatorului de acces </span
+      ><span class="c16">-&gt;</span
+      ><span class="c10 c2"
+        >, deoarece metoda static&#259; apar&#539;ine &icirc;ntregii clase, nu
+        unui anumit obiect al acestei clase.</span
+      >
+    </p>
+    <a id="t.41bd92fc27988e16cf30681f2cfb696c37ec9fcc"></a><a id="t.3"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c15">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c9">class</span><span class="c0">&nbsp;</span
+            ><span class="c3">Person</span
+            ><span class="c0"
+              ><br />{ <br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">public</span
+            ><span class="c0"
+              >&nbsp;$name, $age;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span
+            ><span class="c0">&nbsp;$retirementAge = </span
+            ><span class="c11">65</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">__construct</span
+            ><span class="c0"
+              >($name, $age)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;name = $name;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;age = $age;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">sayHello</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Salut, m&#259; numesc $this-&gt;name&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">printPerson</span
+            ><span class="c0"
+              >($person)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Nume: $person-&gt;name V&acirc;rst&#259;:
+              $person-&gt;age&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />}<br />$tom = </span
+            ><span class="c9">new</span><span class="c0">&nbsp;Person(</span
+            ><span class="c12">&quot;Tom&quot;</span><span class="c0">, </span
+            ><span class="c11">36</span><span class="c0">);<br /></span
+            ><span class="c17">// apelarea metodei nestatice</span
+            ><span class="c0"
+              ><br />$tom-&gt;sayHello();<br />
+              <br /></span
+            ><span class="c17">// apelarea metodei statice</span
+            ><span class="c0"><br />Person::printPerson($tom);<br /></span
+            ><span class="c17">// accesarea propriet&#259;&#539;ii statice</span
+            ><span class="c0"><br /></span><span class="c9">echo</span
+            ><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;V&acirc;rsta de pensionare: &quot;</span
+            ><span class="c0">&nbsp;. Person::$retirementAge . </span
+            ><span class="c12">&quot;&lt;br&gt;&quot;</span
+            ><span class="c0">;<br /></span><span class="c15">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5"><span class="c10 c2">Rezultatul programului:</span></p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.92d74f84e3c8810ac26e05ccc790f13cdc819958"></a><a id="t.4"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c0"
+              >Salut, m&#259; numesc Tom<br />Nume: Tom V&acirc;rst&#259;: </span
+            ><span class="c11">36</span
+            ><span class="c0"><br />V&acirc;rsta de pensionare: </span
+            ><span class="c11">65</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >Pentru a accesa propriet&#259;&#539;ile &#537;i metodele statice din
+        interiorul clasei, &icirc;n locul numelui clasei poate fi folosit
+        cuv&acirc;ntul cheie </span
+      ><span class="c16">self</span
+      ><span class="c10 c2"
+        >. De exemplu, ad&#259;ug&#259;m &icirc;n clasa Person o metod&#259;
+        care va calcula c&acirc;t mai are o persoan&#259; p&acirc;n&#259; la
+        pensionare:</span
+      >
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.d5ac444707197e24eea1dbdc7bad542983f66d68"></a><a id="t.5"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c15">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c9">class</span><span class="c0">&nbsp;</span
+            ><span class="c3">Person</span
+            ><span class="c0"
+              ><br />{ <br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">public</span
+            ><span class="c0"
+              >&nbsp;$name, $age;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span
+            ><span class="c0">&nbsp;$retirementAge = </span
+            ><span class="c11">65</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">__construct</span
+            ><span class="c0"
+              >($name, $age)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;name = $name;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;age = $age;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">sayHello</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Salut, m&#259; numesc $this-&gt;name&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">printPerson</span
+            ><span class="c0"
+              >($person)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Nume: $person-&gt;name V&acirc;rst&#259;:
+              $person-&gt;age&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">checkAge</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">if</span><span class="c0">(</span
+            ><span class="c9">$this</span><span class="c0">-&gt;age &gt;= </span
+            ><span class="c9">self</span
+            ><span class="c0"
+              >::$retirementAge)<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Este timpul pentru pensionare&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">else</span
+            ><span class="c0"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;Mai sunt &quot;</span
+            ><span class="c0">&nbsp;. (Person::$retirementAge - </span
+            ><span class="c9">$this</span><span class="c0">-&gt;age) . </span
+            ><span class="c12"
+              >&quot; ani p&acirc;n&#259; la pensionare&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;}<br />}<br />$tom = </span
+            ><span class="c9">new</span><span class="c0">&nbsp;Person(</span
+            ><span class="c12">&quot;Tom&quot;</span><span class="c0">, </span
+            ><span class="c11">36</span
+            ><span class="c0">);<br />$tom-&gt;checkAge();<br /></span
+            ><span class="c15">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5"><span class="c10 c2">Rezultatul programului:</span></p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.2a07f7f1ba9d9616f02c92781fa1997c9f1c345b"></a><a id="t.6"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c0">Mai sunt </span><span class="c11">29</span
+            ><span class="c0">&nbsp;ani p&acirc;n&#259; la pensionare</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >Este de men&#539;ionat c&#259; &icirc;n metodele statice putem accesa
+        doar propriet&#259;&#539;i &#537;i metode statice. Nu putem accesa
+        propriet&#259;&#539;i &#537;i metode nestatice prin</span
+      ><span class="c2 c4">&nbsp;$this</span
+      ><span class="c10 c2">. De exemplu:</span>
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.53d4ee39ee8056564a1b1ae86b72bcaa196587c2"></a><a id="t.7"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">printPerson</span
+            ><span class="c0"
+              >($person)<br />{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Nume: $person-&gt;name V&acirc;rst&#259;:
+              $person-&gt;age&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c17"
+              >// &icirc;n metodele statice putem accesa metode &#537;i
+              propriet&#259;&#539;i statice</span
+            ><span class="c0"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;V&acirc;rsta de pensionare: &quot;</span
+            ><span class="c0">&nbsp;. </span><span class="c9">self</span
+            ><span class="c0">::$retirementAge . </span
+            ><span class="c12">&quot;&lt;br&gt;&quot;</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c17"
+              >// dar nu putem accesa metode &#537;i propriet&#259;&#539;i
+              nestatice</span
+            ><span class="c0"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c17"
+              >// echo &quot;Nume: &quot; . $this-&gt;name .
+              &quot;&lt;br&gt;&quot;; &nbsp; &nbsp;// nu este permis</span
+            ><span class="c0"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c17"
+              >// $this-&gt;sayHello(); &nbsp; &nbsp;// nu este permis</span
+            ><span class="c0"><br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2">Aici, &icirc;n metoda static&#259; </span
+      ><span class="c2 c4">printPerson(),</span
+      ><span class="c2">&nbsp;putem accesa variabila static&#259; </span
+      ><span class="c2 c4">retirementAge</span><span class="c10 c2">:</span>
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.9aa1d5674c90cab9a763bd941e6e905d4a3ccf0b"></a><a id="t.8"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c9">echo</span><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;V&acirc;rsta de pensionare: &quot;</span
+            ><span class="c0">&nbsp;. </span><span class="c9">self</span
+            ><span class="c0">::$retirementAge . </span
+            ><span class="c12">&quot;&lt;br&gt;&quot;</span
+            ><span class="c0">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c10 c2"
+        >Dar nu putem accesa propriet&#259;&#539;i &#537;i metode
+        nestatice:</span
+      >
+    </p>
+    <p class="c5 c6"><span class="c2 c10"></span></p>
+    <a id="t.6af311b32de0430ed58ae237fef5d2e877b9ff63"></a><a id="t.9"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c17"
+              >// echo &quot;Nume: &quot; . $this-&gt;name .
+              &quot;&lt;br&gt;&quot;; &nbsp; &nbsp;// nu este permis</span
+            ><span class="c0"><br /></span
+            ><span class="c17"
+              >// $this-&gt;sayHello(); &nbsp; &nbsp;// nu este permis</span
+            >
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c10 c2"
+        >&Icirc;n acela&#537;i timp, metodele &#537;i propriet&#259;&#539;ile
+        statice pot avea &#537;i modificatori de acces. De exemplu, s&#259;
+        modific&#259;m clasa Person astfel:</span
+      >
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.73ec05342ec9dc2eb26ff036031a41db72944051"></a><a id="t.10"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c15">&lt;?php</span><span class="c0"><br /></span
+            ><span class="c9">class</span><span class="c0">&nbsp;</span
+            ><span class="c3">Person</span
+            ><span class="c0"
+              ><br />{ <br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">public</span
+            ><span class="c0"
+              >&nbsp;$name;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">private</span
+            ><span class="c0"
+              >&nbsp;$id;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">private</span><span class="c0">&nbsp;</span
+            ><span class="c9">static</span
+            ><span class="c0">&nbsp;$counter = </span><span class="c11">0</span
+            ><span class="c0"
+              >;<br />
+              &nbsp; &nbsp; &nbsp;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">__construct</span
+            ><span class="c0"
+              >($name)<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">self</span
+            ><span class="c0"
+              >::$counter++;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span><span class="c0">-&gt;id = </span
+            ><span class="c9">self</span
+            ><span class="c0"
+              >::$counter;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;name = $name;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; <br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">static</span><span class="c0">&nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">getCounter</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">return</span><span class="c0">&nbsp;</span
+            ><span class="c9">self</span
+            ><span class="c0"
+              >::$counter;<br />
+              &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp;</span
+            ><span class="c9">function</span><span class="c0">&nbsp;</span
+            ><span class="c3">getId</span
+            ><span class="c0"
+              >()<br />
+              &nbsp; &nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c9">return</span><span class="c0">&nbsp;</span
+            ><span class="c9">$this</span
+            ><span class="c0"
+              >-&gt;id;<br />
+              &nbsp; &nbsp;}<br />}<br />$tom = </span
+            ><span class="c9">new</span><span class="c0">&nbsp;Person(</span
+            ><span class="c12">&quot;Tom&quot;</span
+            ><span class="c0">);<br />$bob = </span><span class="c9">new</span
+            ><span class="c0">&nbsp;Person(</span
+            ><span class="c12">&quot;Bob&quot;</span
+            ><span class="c0">);<br /></span><span class="c9">echo</span
+            ><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;$tom-&gt;name are id: &quot;</span
+            ><span class="c0">&nbsp;. $tom-&gt;getId() . </span
+            ><span class="c12">&quot;&lt;br&gt;&quot;</span
+            ><span class="c0">;<br /></span><span class="c9">echo</span
+            ><span class="c0">&nbsp;</span
+            ><span class="c12">&quot;$bob-&gt;name are id: &quot;</span
+            ><span class="c0">&nbsp;. $bob-&gt;getId() . </span
+            ><span class="c12">&quot;&lt;br&gt;&quot;</span
+            ><span class="c0">;<br /></span><span class="c9">echo</span
+            ><span class="c0">&nbsp;</span
+            ><span class="c12"
+              >&quot;Num&#259;r total de utilizatori: &quot;</span
+            ><span class="c0">&nbsp;. &nbsp;Person::getCounter();<br /></span
+            ><span class="c15">?&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >&Icirc;n clasa Person este definit&#259; proprietatea </span
+      ><span class="c2 c4">$id</span
+      ><span class="c2"
+        >, care reprezint&#259; identificatorul utilizatorului. De asemenea,
+        este definit&#259; o proprietate static&#259; privat&#259;</span
+      ><span class="c2 c4">&nbsp;$counter</span
+      ><span class="c10 c2"
+        >, care stocheaz&#259; num&#259;rul total de utilizatori crea&#539;i.
+        &Icirc;n constructor, m&#259;rim variabila static&#259; cu o unitate
+        &#537;i apoi set&#259;m valoarea acesteia pentru proprietatea $id.</span
+      >
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5">
+      <span class="c2"
+        >Num&#259;rul total de utilizatori crea&#539;i este un atribut general
+        pentru &icirc;ntreaga clas&#259;, care nu depinde de un anumit obiect.
+        Totu&#537;i, nu este de dorit ca aceast&#259; valoare s&#259; poat&#259;
+        fi modificat&#259; din exterior. De aceea, proprietatea $counter este
+        definit&#259; ca privat&#259;. Pentru a vedea valoarea acesteia, este
+        definit&#259; metoda static&#259;</span
+      ><span class="c2 c4">&nbsp;getCounter()</span
+      ><span class="c10 c2">.</span>
+    </p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5"><span class="c10 c2">Rezultatul programului:</span></p>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <a id="t.fca74994861eec9d132586ff2c5276be6ee8d722"></a><a id="t.11"></a>
+    <table class="c13">
+      <tr class="c14">
+        <td class="c8" colspan="1" rowspan="1">
+          <p class="c7">
+            <span class="c0">Tom are id: </span><span class="c11">1</span
+            ><span class="c0"><br />Bob are id: </span><span class="c11">2</span
+            ><span class="c0"><br />Num&#259;r total de utilizatori: </span
+            ><span class="c11">2</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c5 c6"><span class="c10 c2"></span></p>
+    <p class="c5 c6"><span class="c10 c16"></span></p>
+  </body>
+</html>

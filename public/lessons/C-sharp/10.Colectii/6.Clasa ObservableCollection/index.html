@@ -1,0 +1,647 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c8 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c16 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 15pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c18 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 27pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c1 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c9 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c4 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c6 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c13 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c7 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c12 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c2 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c10 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c17 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c11 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c15 {
+            height: 0pt
+        }
+
+        .c14 {
+            font-style: italic
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c17 doc-content">
+    <h1 class="c3 c18">Clasa ObservableCollection.</h1>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">Pe l&acirc;ng&#259; clasele de colec&#539;ii standard, cum ar fi listele, cozile,
+            dic&#539;ionarele &#537;i stivele, .NET ofer&#259; &#537;i o clas&#259; special&#259; numit&#259;
+        </span><span class="c11">ObservableCollection&lt;T&gt;</span><span class="c10">. Spre deosebire de
+            colec&#539;iile discutate anterior, aceast&#259; clas&#259; este definit&#259; &icirc;n spa&#539;iul de nume
+        </span><span class="c11">System.Collections.ObjectModel</span><span class="c10">. Func&#539;ionalitatea
+            colec&#539;iei ObservableCollection este similar&#259; cu cea a listei </span><span
+            class="c10 c14">List</span><span class="c0">, cu excep&#539;ia faptului c&#259; permite notificarea
+            obiectelor externe atunci c&acirc;nd colec&#539;ia este modificat&#259;.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c16">Crearea &#537;i ini&#539;ializarea ObservableCollection.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Pentru a crea un obiect, clasa ObservableCollection ofer&#259; mai mul&#539;i
+            constructori. &Icirc;n primul r&acirc;nd, putem crea o colec&#539;ie goal&#259;:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.edbb3c7a069da628fadfcf3e9f8533184a2c317b"></a><a id="t.0"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">using</span><span
+                        class="c6">&nbsp;System.Collections.ObjectModel;<br><br>ObservableCollection&lt;</span><span
+                        class="c5">string</span><span class="c6">&gt; people = </span><span class="c5">new</span><span
+                        class="c6">&nbsp;ObservableCollection&lt;</span><span class="c5">string</span><span
+                        class="c6">&gt;();</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">&Icirc;n acest caz, colec&#539;ia people este tipizat&#259; cu tipul </span><span
+            class="c11">string</span><span class="c0">, deci poate stoca doar &#537;iruri de caractere.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">O alt&#259; versiune a constructorului permite transmiterea &icirc;n
+            ObservableCollection a obiectelor dintr-o alt&#259; colec&#539;ie sau array:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.489dc3ba295415223483f43dca8b54d333ee1e3c"></a><a id="t.1"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">var</span><span class="c6">&nbsp;people = </span><span
+                        class="c5">new</span><span class="c6">&nbsp;ObservableCollection&lt;</span><span
+                        class="c5">string</span><span class="c6">&gt;( </span><span class="c5">new</span><span
+                        class="c6">&nbsp;</span><span class="c5">string</span><span class="c6">[] {</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Bob&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6">});</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Pentru ini&#539;ializare, putem transmite valori printr-un ini&#539;ializator
+            &icirc;ntre acolade:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.d01fc9a10d8ac34cbdde9880301064405c3c1d42"></a><a id="t.2"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">var</span><span class="c6">&nbsp;people = </span><span
+                        class="c5">new</span><span class="c6">&nbsp;ObservableCollection&lt;</span><span
+                        class="c5">string</span><span class="c6">&gt;<br>{<br> &nbsp; &nbsp;</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Bob&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">De asemenea, putem combina cele dou&#259; metode anterioare:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.8705ff2588455d4c4203aab8f2092ddd3a886e51"></a><a id="t.3"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">var</span><span class="c6">&nbsp;people = </span><span
+                        class="c5">new</span><span class="c6">&nbsp;ObservableCollection&lt;</span><span
+                        class="c5">string</span><span class="c6">&gt;( </span><span class="c5">new</span><span
+                        class="c6">&nbsp;</span><span class="c5">string</span><span class="c6">[] {</span><span
+                        class="c4">&quot;Mike&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Alice&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Kate&quot;</span><span class="c6">&nbsp;})<br>{<br> &nbsp; &nbsp;</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Bob&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6"><br>};</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c16">Accesarea elementelor colec&#539;iei.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Pentru a accesa elementele ObservableCollection, putem folosi indec&#537;i similar cu
+            array-urile sau listele List:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.fa4742904b078c15ae040d265e863247ecacf5f3"></a><a id="t.4"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">var</span><span class="c6">&nbsp;people = </span><span
+                        class="c5">new</span><span class="c6">&nbsp;ObservableCollection&lt;</span><span
+                        class="c5">string</span><span class="c6">&gt;<br>{<br> &nbsp; &nbsp;</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Bob&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6"><br>};<br><br></span><span class="c7">//
+                        ob&#539;inem primul element</span><span class="c6"><br>Console.WriteLine(people[</span><span
+                        class="c13">0</span><span class="c6">]); &nbsp; </span><span class="c7">// Tom</span><span
+                        class="c6"><br></span><span class="c7">// modific&#259;m primul element</span><span
+                        class="c6"><br>people[</span><span class="c13">0</span><span class="c6">] = </span><span
+                        class="c4">&quot;Tomas&quot;</span><span class="c6">;<br>Console.WriteLine(people[</span><span
+                        class="c13">0</span><span class="c6">]); &nbsp; </span><span class="c7">// Tomas</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c16">Parcurgerea colec&#539;iei.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Pentru a parcurge colec&#539;ia, putem folosi cicluri standard:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.7ff4227fd353652d56584b84c5af9774aabf547b"></a><a id="t.5"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">using</span><span
+                        class="c6">&nbsp;System.Collections.ObjectModel;<br><br></span><span class="c5">var</span><span
+                        class="c6">&nbsp;people = </span><span class="c5">new</span><span
+                        class="c6">&nbsp;ObservableCollection&lt;</span><span class="c5">string</span><span
+                        class="c6">&gt;<br>{<br> &nbsp; &nbsp;</span><span class="c4">&quot;Tom&quot;</span><span
+                        class="c6">, </span><span class="c4">&quot;Bob&quot;</span><span class="c6">, </span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6"><br>};<br><br></span><span
+                        class="c5">foreach</span><span class="c6">(</span><span class="c5">var</span><span
+                        class="c6">&nbsp;person </span><span class="c5">in</span><span class="c6">&nbsp;people)<br>{<br>
+                        &nbsp; &nbsp;Console.WriteLine(person);<br>}<br><br></span><span class="c5">for</span><span
+                        class="c6">&nbsp;(</span><span class="c5">int</span><span class="c6">&nbsp;i =</span><span
+                        class="c13">0</span><span class="c6">; i &lt; people.Count; i++)<br>{<br> &nbsp;
+                        &nbsp;Console.WriteLine(people[i]);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">Cu ajutorul propriet&#259;&#539;ii </span><span class="c11">Count</span><span
+            class="c0">, putem ob&#539;ine num&#259;rul de elemente din colec&#539;ie.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c16">Metodele ObservableCollection.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Dintre metodele clasei ObservableCollection, men&#539;ion&#259;m
+            urm&#259;toarele:</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span class="c11">&nbsp;void Add(T item)</span><span class="c0">:
+            adaug&#259; un nou element &icirc;n colec&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">void CopyTo(T[] array, int index)</span><span
+            class="c0">: copiaz&#259; &icirc;n array elementele din colec&#539;ie &icirc;ncep&acirc;nd de la indexul
+            specificat</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">bool Contains(T item)</span><span class="c10">:
+            returneaz&#259; </span><span class="c10 c14">true </span><span class="c0">dac&#259; elementul item
+            exist&#259; &icirc;n colec&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span class="c11">&nbsp;void Clear()</span><span class="c0">: &#537;terge
+            toate elementele din colec&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span class="c11">&nbsp;int IndexOf(T item)</span><span class="c0">:
+            returneaz&#259; indexul primei apari&#539;ii a elementului &icirc;n colec&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">void Insert(int index, T item)</span><span class="c0">:
+            insereaz&#259; elementul item &icirc;n colec&#539;ie la indexul </span></p>
+    <p class="c3"><span class="c0">specificat. Dac&#259; nu exist&#259; un astfel de index &icirc;n colec&#539;ie, se
+            genereaz&#259; o excep&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">bool Remove(T item)</span><span class="c10">: &#537;terge
+            elementul item din colec&#539;ie &#537;i returneaz&#259; </span><span class="c10 c14">true </span><span
+            class="c0">dac&#259; &#537;tergerea a avut succes. Dac&#259; &icirc;n colec&#539;ie exist&#259; mai multe
+            elemente identice, se &#537;terge doar primul dintre ele</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">void RemoveAt(int index)</span><span class="c0">:
+            &#537;terge elementul de la indexul specificat. Dac&#259; nu exist&#259; un astfel de index &icirc;n
+            colec&#539;ie, se genereaz&#259; o excep&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c11">void Move(int oldIndex, int newIndex)</span><span
+            class="c0">: mut&#259; elementul de la indexul oldIndex la pozi&#539;ia specificat&#259; de newIndex</span>
+    </p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Aplicarea metodelor:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.e89742bfdae8ac915a36d0b8347ce846ff5b3fd6"></a><a id="t.6"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">using</span><span
+                        class="c6">&nbsp;System.Collections.ObjectModel;<br><br></span><span class="c5">var</span><span
+                        class="c6">&nbsp;people = </span><span class="c5">new</span><span
+                        class="c6">&nbsp;ObservableCollection&lt;</span><span class="c5">string</span><span
+                        class="c6">&gt;();<br><br></span><span class="c7">// ad&#259;ug&#259;m un element</span><span
+                        class="c6"><br>people.Add(</span><span class="c4">&quot;Bob&quot;</span><span
+                        class="c6">);<br></span><span class="c7">// inser&#259;m un element la indexul 0</span><span
+                        class="c6"><br>people.Insert(</span><span class="c13">0</span><span class="c6">, </span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">);<br><br></span><span class="c7">//
+                        verificarea existen&#539;ei elementului </span><span class="c6"><br></span><span
+                        class="c5">bool</span><span class="c6">&nbsp;bobExists = people.Contains(</span><span
+                        class="c4">&quot;Bob&quot;</span><span class="c6">); &nbsp; &nbsp; </span><span class="c7">//
+                        true</span><span class="c6"><br>Console.WriteLine(</span><span class="c4">$&quot;Bob exists:
+                        {bobExists}&quot;</span><span class="c6">);<br></span><span class="c5">bool</span><span
+                        class="c6">&nbsp;mikeExists = people.Contains(</span><span
+                        class="c4">&quot;Mike&quot;</span><span class="c6">); &nbsp; </span><span class="c7">//
+                        false</span><span class="c6"><br>Console.WriteLine(</span><span class="c4">$&quot;Mike exists:
+                        {mikeExists}&quot;</span><span class="c6">);<br><br></span><span class="c7">// &#537;tergerea
+                        unui element</span><span class="c6"><br>people.Remove(</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">);<br></span><span class="c7">//
+                        &#537;tergerea unui element de la indexul 0</span><span
+                        class="c6"><br>people.RemoveAt(</span><span class="c13">0</span><span class="c6">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c16">Notificarea modific&#259;rii colec&#539;iei.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">Clasa ObservableCollection define&#537;te evenimentul </span><span
+            class="c11">CollectionChanged</span><span class="c10">, la care ne putem abona pentru a gestiona orice
+            modific&#259;ri ale colec&#539;iei. Acest eveniment este reprezentat de delegatul </span><span
+            class="c11">NotifyCollectionChangedEventHandler</span><span class="c0">:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.8098c1d7085d53a67067cd581a30ac34f395344d"></a><a id="t.7"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">void</span><span class="c6">&nbsp;</span><span
+                        class="c9">NotifyCollectionChangedEventHandler</span><span class="c6">(</span><span
+                        class="c5">object</span><span class="c6">? sender, NotifyCollectionChangedEventArgs e);</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">Al doilea parametru al delegatului - obiectul </span><span
+            class="c11">NotifyCollectionChangedEventArgs </span><span class="c10">- stocheaz&#259; toate
+            informa&#539;iile despre eveniment. &Icirc;n special, proprietatea sa </span><span class="c10 c14">Action
+        </span><span class="c10">permite aflarea naturii modific&#259;rilor. Aceasta stocheaz&#259; una dintre valorile
+            din enumerarea </span><span class="c11">NotifyCollectionChangedAction</span><span class="c0">:</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c10 c14">NotifyCollectionChangedAction.Add</span><span
+            class="c0">: ad&#259;ugare</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">- </span><span class="c10 c14">NotifyCollectionChangedAction.Remove</span><span
+            class="c0">: &#537;tergere</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span
+            class="c10 c14">&nbsp;NotifyCollectionChangedAction.Replace</span><span class="c0">: &icirc;nlocuire</span>
+    </p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span class="c10 c14">&nbsp;NotifyCollectionChangedAction.Move</span><span
+            class="c0">: mutarea obiectului &icirc;n cadrul colec&#539;iei la o nou&#259; pozi&#539;ie</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">-</span><span class="c10 c14">&nbsp;NotifyCollectionChangedAction.Reset</span><span
+            class="c0">: resetarea con&#539;inutului colec&#539;iei (de exemplu, la &#537;tergerea colec&#539;iei cu
+            metoda Clear())</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">&Icirc;n plus, propriet&#259;&#539;ile </span><span class="c10 c14">NewItems
+        </span><span class="c10">&#537;i </span><span class="c10 c14">OldItems </span><span class="c0">permit
+            ob&#539;inerea respectiv a obiectelor ad&#259;ugate &#537;i &#537;terse. Astfel, avem control deplin asupra
+            gestion&#259;rii ad&#259;ug&#259;rii, &#537;tergerii &#537;i &icirc;nlocuirii obiectelor din
+            colec&#539;ie.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">S&#259; presupunem c&#259; avem urm&#259;toarea clas&#259; Person, care
+            reprezint&#259; un utilizator:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.24fe400bdee5d651f4849855e06e38a40f96d4f4"></a><a id="t.8"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">class</span><span class="c6">&nbsp;</span><span
+                        class="c9">Person</span><span class="c6"><br>{<br> &nbsp; &nbsp;</span><span
+                        class="c5">public</span><span class="c6">&nbsp;</span><span class="c5">string</span><span
+                        class="c6">&nbsp;Name { </span><span class="c5">get</span><span class="c6">; }<br> &nbsp;
+                        &nbsp;</span><span class="c5">public</span><span class="c6">&nbsp;</span><span
+                        class="c9">Person</span><span class="c6">(</span><span class="c5">string</span><span
+                        class="c6">&nbsp;name) =&gt; Name = name;<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c0">Pentru a gestiona colec&#539;ia de obiecte Person, definim urm&#259;torul
+            program:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.41c00bde9f620a4d2b24c583bfae06db898b7644"></a><a id="t.9"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c5">using</span><span
+                        class="c6">&nbsp;System.Collections.ObjectModel;<br></span><span class="c5">using</span><span
+                        class="c6">&nbsp;System.Collections.Specialized;<br><br></span><span class="c5">var</span><span
+                        class="c6">&nbsp;people = </span><span class="c5">new</span><span
+                        class="c6">&nbsp;ObservableCollection&lt;Person&gt;() <br>{ <br> &nbsp; &nbsp;</span><span
+                        class="c5">new</span><span class="c6">&nbsp;Person(</span><span
+                        class="c4">&quot;Tom&quot;</span><span class="c6">), <br> &nbsp; &nbsp;</span><span
+                        class="c5">new</span><span class="c6">&nbsp;Person(</span><span
+                        class="c4">&quot;Sam&quot;</span><span class="c6">) <br>};<br></span><span class="c7">// ne
+                        abon&#259;m la evenimentul de modificare a colec&#539;iei</span><span
+                        class="c6"><br>people.CollectionChanged +=
+                        People_CollectionChanged;<br><br>people.Add(</span><span class="c5">new</span><span
+                        class="c6">&nbsp;Person(</span><span class="c4">&quot;Bob&quot;</span><span class="c6">));
+                        &nbsp;</span><span class="c7">// ad&#259;ug&#259;m un nou element</span><span
+                        class="c6"><br><br>people.RemoveAt(</span><span class="c13">1</span><span class="c6">); &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c7">// &#537;tergem un
+                        element</span><span class="c6"><br>people[</span><span class="c13">0</span><span class="c6">] =
+                    </span><span class="c5">new</span><span class="c6">&nbsp;Person(</span><span
+                        class="c4">&quot;Eugene&quot;</span><span class="c6">); &nbsp; </span><span class="c7">//
+                        &icirc;nlocuim un element</span><span class="c6"><br><br>Console.WriteLine(</span><span
+                        class="c4">&quot;\nLista utilizatorilor:&quot;</span><span class="c6">);<br></span><span
+                        class="c5">foreach</span><span class="c6">&nbsp;(</span><span class="c5">var</span><span
+                        class="c6">&nbsp;person </span><span class="c5">in</span><span class="c6">&nbsp;people)<br>{<br>
+                        &nbsp; &nbsp;Console.WriteLine(person.Name);<br>}<br><br></span><span class="c7">// handler
+                        pentru modificarea colec&#539;iei</span><span class="c6"><br></span><span
+                        class="c5">void</span><span class="c6">&nbsp;</span><span
+                        class="c9">People_CollectionChanged</span><span class="c6">(</span><span
+                        class="c5">object</span><span class="c6">? sender, NotifyCollectionChangedEventArgs e)<br>{<br>
+                        &nbsp; &nbsp;</span><span class="c5">switch</span><span class="c6">&nbsp;(e.Action)<br> &nbsp;
+                        &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c5">case</span><span
+                        class="c6">&nbsp;NotifyCollectionChangedAction.Add: </span><span class="c7">// dac&#259; este
+                        ad&#259;ugare</span><span class="c6"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c5">if</span><span class="c6">(e.NewItems?[</span><span class="c13">0</span><span
+                        class="c6">] </span><span class="c5">is</span><span class="c6">&nbsp;Person newPerson)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c4">$&quot;Ad&#259;ugat obiect nou: {newPerson.Name}&quot;</span><span class="c6">);<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c5">break</span><span
+                        class="c6">;<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c5">case</span><span
+                        class="c6">&nbsp;NotifyCollectionChangedAction.Remove: </span><span class="c7">// dac&#259; este
+                        &#537;tergere</span><span class="c6"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c5">if</span><span class="c6">&nbsp;(e.OldItems?[</span><span class="c13">0</span><span
+                        class="c6">] </span><span class="c5">is</span><span class="c6">&nbsp;Person oldPerson)<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c4">$&quot;&#536;ters obiect: {oldPerson.Name}&quot;</span><span class="c6">);<br> &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c5">break</span><span class="c6">;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c5">case</span><span
+                        class="c6">&nbsp;NotifyCollectionChangedAction.Replace: </span><span class="c7">// dac&#259;
+                        este &icirc;nlocuire</span><span class="c6"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c5">if</span><span class="c6">&nbsp;((e.NewItems?[</span><span
+                        class="c13">0</span><span class="c6">] </span><span class="c5">is</span><span
+                        class="c6">&nbsp;Person replacingPerson) &nbsp;&amp;&amp; <br> &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;(e.OldItems?[</span><span class="c13">0</span><span class="c6">]
+                    </span><span class="c5">is</span><span class="c6">&nbsp;Person replacedPerson))<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c4">$&quot;Obiectul {replacedPerson.Name} a fost &icirc;nlocuit cu obiectul
+                        {replacingPerson.Name}&quot;</span><span class="c6">);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c5">break</span><span class="c6">;<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c3"><span class="c10">Aici, metoda </span><span class="c10 c14">People_CollectionChanged </span><span
+            class="c0">ac&#539;ioneaz&#259; ca un handler pentru modific&#259;rile colec&#539;iei, iar cu ajutorul
+            parametrului NotifyCollectionChangedEventArgs ob&#539;inem informa&#539;ii despre modificare. Rezultatul
+            &icirc;n consol&#259; al programului:</span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.61ada44745ea2c35ae6d6ddfad9ce7782c5706e6"></a><a id="t.10"></a>
+    <table class="c12">
+        <tr class="c15">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c2"><span class="c6">Ad&#259;ugat obiect nou: Bob<br>&#536;ters obiect: Sam<br>Obiectul Tom a
+                        fost &icirc;nlocuit cu obiectul Eugene<br><br>Lista utilizatorilor:<br>Eugene<br>Bob</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+</body>
+
+</html>

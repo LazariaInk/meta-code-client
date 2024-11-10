@@ -1,0 +1,966 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c10 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c6 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 15pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c16 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 27pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c2 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt;
+      }
+      .c0 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c7 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c1 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c4 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c3 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c8 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ade5fc;
+        font-weight: 400;
+      }
+      .c5 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c13 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c12 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c14 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c15 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c11 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c9 {
+        height: 0pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c11 doc-content">
+    <h1 class="c7 c16">Dimensiunile rândurilor și coloanelor.</h1>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7"><span class="c6">Dimensiuni fixe.</span></p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c15"
+        >&Icirc;n exemplele prezentate &icirc;n articolele anterioare,
+        l&#259;&#539;imea coloanelor &#537;i &icirc;n&#259;l&#539;imea
+        r&acirc;ndurilor erau setate pe baza valorilor fixe, care erau transmise
+        propriet&#259;&#539;ilor </span
+      ><span class="c14">grid-template-columns </span
+      ><span class="c15">&#537;i</span
+      ><span class="c14">&nbsp;grid-template-rows</span
+      ><span class="c0"
+        >. Pentru a defini dimensiunile, putem folosi diverse unit&#259;&#539;i
+        de m&#259;sur&#259; disponibile &icirc;n CSS (px, em, rem, pt, %), de
+        exemplu:</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.4fcaea8dbaab221b82d52b5795132c263b07fbfe"></a><a id="t.0"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c8">.grid-container</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">border</span><span class="c1">: solid </span
+            ><span class="c5">2px</span><span class="c1">&nbsp;</span
+            ><span class="c5">#000</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">display</span
+            ><span class="c1"
+              >: grid;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-columns</span
+            ><span class="c1">: </span><span class="c3">repeat</span
+            ><span class="c1"
+              >(3, 200px);<br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-rows</span><span class="c1">: </span
+            ><span class="c3">repeat</span
+            ><span class="c1">(3, 4.5em);<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7"><span class="c6">Dimensiuni automate.</span></p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c15"
+        >Pe l&acirc;ng&#259; dimensiunile exacte, putem seta dimensiuni automate
+        folosind cuv&acirc;ntul </span
+      ><span class="c14">auto</span
+      ><span class="c0"
+        >. &Icirc;n acest caz, l&#259;&#539;imea coloanelor &#537;i
+        &icirc;n&#259;l&#539;imea r&acirc;ndurilor sunt calculate &icirc;n
+        func&#539;ie de dimensiunile con&#539;inutului:</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.b894f289b8eb95281770b144a3646b50a8d75196"></a><a id="t.1"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c1">&lt;!</span><span class="c4">DOCTYPE</span
+            ><span class="c1">&nbsp;</span><span class="c4">html</span
+            ><span class="c1">&gt;<br />&lt;</span><span class="c4">html</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;</span
+            ><span class="c4">head</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">meta</span><span class="c1">&nbsp;</span
+            ><span class="c4">charset</span><span class="c1">=&quot;</span
+            ><span class="c4">utf-8</span
+            ><span class="c1"
+              >&quot;&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">meta</span><span class="c1">&nbsp;</span
+            ><span class="c4">name</span><span class="c1">=&quot;</span
+            ><span class="c4">viewport</span><span class="c1">&quot; </span
+            ><span class="c4">content</span><span class="c1">=&quot;</span
+            ><span class="c4">width</span><span class="c1">=</span
+            ><span class="c4">device-width</span
+            ><span class="c1"
+              >&quot; /&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">title</span><span class="c1">&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Layout</span><span class="c1">&nbsp;&icirc;</span
+            ><span class="c4">n</span><span class="c1">&nbsp;</span
+            ><span class="c4">CSS3</span><span class="c1">&lt;/</span
+            ><span class="c4">title</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">style</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.grid-container</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">border</span><span class="c1">: solid </span
+            ><span class="c5">2px</span><span class="c1">&nbsp;</span
+            ><span class="c5">#000</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">display</span
+            ><span class="c1"
+              >: grid;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-columns</span
+            ><span class="c1">: </span><span class="c5">8em</span
+            ><span class="c1"
+              >&nbsp;auto auto;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-rows</span
+            ><span class="c1">: auto </span><span class="c5">4.5em</span
+            ><span class="c1"
+              >&nbsp;auto;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.grid-item</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">text-align</span
+            ><span class="c1"
+              >: center;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">font-size</span><span class="c1">: </span
+            ><span class="c5">1.1em</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">padding</span><span class="c1">: </span
+            ><span class="c5">1.5em</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">color</span
+            ><span class="c1"
+              >: white;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color1</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#675BA7</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color2</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#9BC850</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color3</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#A62E5C</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color4</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#2A9FBC</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color5</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#4e342e</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">style</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">head</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;</span
+            ><span class="c4">body</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-container</span
+            ><span class="c1"
+              >&quot;&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color1</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;1&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color2</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;2&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color3</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;3&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color4</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;4&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color5</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;5&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color1</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;6&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color2</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;7&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">body</span><span class="c1">&gt;<br />&lt;/</span
+            ><span class="c4">html</span><span class="c1">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >Aici sunt setate trei r&acirc;nduri &#537;i trei coloane. Prima
+        coloan&#259; are o l&#259;&#539;ime fix&#259; de 8em, iar a doua &#537;i
+        a treia coloan&#259; au l&#259;&#539;ime automat&#259;. De asemenea,
+        primul &#537;i al treilea r&acirc;nd au &icirc;n&#259;l&#539;ime
+        automat&#259;, iar al doilea r&acirc;nd are o &icirc;n&#259;l&#539;ime
+        fix&#259;.</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 621px;
+          height: 370px;
+        "
+        ><img
+          alt=""
+          src="images/image2.png"
+          style="
+            width: 621px;
+            height: 370px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7"><span class="c6">Dimensiuni propor&#539;ionale.</span></p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c15"
+        >Pentru a seta dimensiuni propor&#539;ionale, se folose&#537;te unitatea
+        special&#259; de m&#259;sur&#259; </span
+      ><span class="c14">fr</span
+      ><span class="c0"
+        >. Aceasta reprezint&#259; o parte din spa&#539;iul (fraction) alocat
+        pentru coloana sau r&acirc;ndul respectiv. Valoarea fr este numit&#259;
+        &#537;i factor de flexare (flex factor).</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >Calcularea dimensiunilor propor&#539;ionale se face conform
+        formulei:</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.2fa1d55c7d1677ca0fe81cc96f555f181216c57f"></a><a id="t.2"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c4">flex</span><span class="c1">&nbsp;</span
+            ><span class="c4">factor</span><span class="c1">&nbsp;* </span
+            ><span class="c4">spa</span><span class="c1">&#539;</span
+            ><span class="c4">iu</span><span class="c1">&nbsp;</span
+            ><span class="c4">disponibil</span><span class="c1">&nbsp;/ </span
+            ><span class="c4">suma</span><span class="c1">&nbsp;</span
+            ><span class="c4">tuturor</span><span class="c1">&nbsp;</span
+            ><span class="c4">factorilor</span><span class="c1">&nbsp;</span
+            ><span class="c4">de</span><span class="c1">&nbsp;</span
+            ><span class="c4">flexare</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >Prin spa&#539;iu disponibil se &icirc;n&#539;elege tot spa&#539;iul
+        containerului grid, except&acirc;nd valorile fixe ale r&acirc;ndurilor
+        &#537;i coloanelor.</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.e4920ee5cd1cac39925577c8b81aa5b667773c61"></a><a id="t.3"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c1">&lt;!</span><span class="c4">DOCTYPE</span
+            ><span class="c1">&nbsp;</span><span class="c4">html</span
+            ><span class="c1">&gt;<br />&lt;</span><span class="c4">html</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;</span
+            ><span class="c4">head</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">meta</span><span class="c1">&nbsp;</span
+            ><span class="c4">charset</span><span class="c1">=&quot;</span
+            ><span class="c4">utf-8</span
+            ><span class="c1"
+              >&quot;&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">meta</span><span class="c1">&nbsp;</span
+            ><span class="c4">name</span><span class="c1">=&quot;</span
+            ><span class="c4">viewport</span><span class="c1">&quot; </span
+            ><span class="c4">content</span><span class="c1">=&quot;</span
+            ><span class="c4">width</span><span class="c1">=</span
+            ><span class="c4">device-width</span
+            ><span class="c1"
+              >&quot; /&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">title</span><span class="c1">&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Layout</span><span class="c1">&nbsp;&icirc;</span
+            ><span class="c4">n</span><span class="c1">&nbsp;</span
+            ><span class="c4">CSS3</span><span class="c1">&lt;/</span
+            ><span class="c4">title</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">style</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">box-sizing</span
+            ><span class="c1"
+              >: border-box;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c4">html</span><span class="c1">, </span
+            ><span class="c4">body</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">margin</span><span class="c1">: </span
+            ><span class="c5">0</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">padding</span><span class="c1">: </span
+            ><span class="c5">0</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.grid-container</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">height</span><span class="c1">: </span
+            ><span class="c5">100vh</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">border</span><span class="c1">: solid </span
+            ><span class="c5">2px</span><span class="c1">&nbsp;</span
+            ><span class="c5">#000</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">display</span
+            ><span class="c1"
+              >: grid;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-columns</span
+            ><span class="c1">: </span><span class="c5">8em</span
+            ><span class="c1">&nbsp;</span><span class="c5">2</span
+            ><span class="c1">fr </span><span class="c5">1</span
+            ><span class="c1"
+              >fr;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">grid-template-rows</span><span class="c1">: </span
+            ><span class="c5">1</span><span class="c1">fr </span
+            ><span class="c5">4.5em</span><span class="c1">&nbsp;</span
+            ><span class="c5">1</span
+            ><span class="c1"
+              >fr;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.grid-item</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">text-align</span
+            ><span class="c1"
+              >: center;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">font-size</span><span class="c1">: </span
+            ><span class="c5">1.1em</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">padding</span><span class="c1">: </span
+            ><span class="c5">1.5em</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">color</span
+            ><span class="c1"
+              >: white;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color1</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#675BA7</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color2</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#9BC850</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color3</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#A62E5C</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color4</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#2A9FBC</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c8">.color5</span><span class="c1">&nbsp;{</span
+            ><span class="c3">background-color</span><span class="c1">: </span
+            ><span class="c5">#4e342e</span
+            ><span class="c1"
+              >;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">style</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">head</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;</span
+            ><span class="c4">body</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-container</span
+            ><span class="c1"
+              >&quot;&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color1</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;1&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color2</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;2&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color3</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;3&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color4</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;4&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color5</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;5&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color1</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;6&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span
+            ><span class="c4">div</span><span class="c1">&nbsp;</span
+            ><span class="c4">class</span><span class="c1">=&quot;</span
+            ><span class="c4">grid-item</span><span class="c1">&nbsp;</span
+            ><span class="c4">color2</span><span class="c1">&quot;&gt;</span
+            ><span class="c4">Grid</span><span class="c1">&nbsp;</span
+            ><span class="c4">Item</span><span class="c1">&nbsp;7&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">div</span
+            ><span class="c1"
+              >&gt;<br />
+              &nbsp; &nbsp;&lt;/</span
+            ><span class="c4">body</span><span class="c1">&gt;<br />&lt;/</span
+            ><span class="c4">html</span><span class="c1">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 619px;
+          height: 496px;
+        "
+        ><img
+          alt=""
+          src="images/image1.png"
+          style="
+            width: 619px;
+            height: 496px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >&Icirc;n acest caz, exist&#259; trei coloane cu l&#259;&#539;imi 2fr,
+        8em, 1fr. Prin urmare, l&#259;&#539;imea celei de-a doua coloane va fi
+        calculat&#259; conform formulei:</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.fa79288e96f6260e1480152305e0fdb259b6c453"></a><a id="t.4"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c1">2 * (</span><span class="c4">l</span
+            ><span class="c1">&#259;&#539;</span><span class="c4">imea</span
+            ><span class="c1">&nbsp;</span><span class="c4">gridului</span
+            ><span class="c1">&nbsp;</span><span class="c4">-</span
+            ><span class="c1">&nbsp;8</span><span class="c4">em</span
+            ><span class="c1">) / (2 + 1)</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >L&#259;&#539;imea celei de-a treia coloane va fi calculat&#259; conform
+        formulei:</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <a id="t.49d218ac0c96a622ad251fec7a4e3e6421404554"></a><a id="t.5"></a>
+    <table class="c12">
+      <tr class="c9">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c13">
+            <span class="c1">1 * (</span><span class="c4">l</span
+            ><span class="c1">&#259;&#539;</span><span class="c4">imea</span
+            ><span class="c1">&nbsp;</span><span class="c4">gridului</span
+            ><span class="c1">&nbsp;</span><span class="c4">-</span
+            ><span class="c1">&nbsp;8</span><span class="c4">em</span
+            ><span class="c1">) / (2 + 1)</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >&#536;i dac&#259; prima coloan&#259; are o l&#259;&#539;ime fix&#259;
+        de 8em, l&#259;&#539;imea celei de-a doua &#537;i a treia coloane va
+        depinde de l&#259;&#539;imea containerului &#537;i va fi scalat&#259;
+        automat la modificarea acesteia.</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+    <p class="c7">
+      <span class="c0"
+        >&Icirc;n ceea ce prive&#537;te r&acirc;ndurile, principiul este
+        acela&#537;i.</span
+      >
+    </p>
+    <p class="c2"><span class="c0"></span></p>
+  </body>
+</html>

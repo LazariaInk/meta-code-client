@@ -1,0 +1,681 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c8 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c10 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c14 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c11 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c13 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c7 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c12 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c15 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c1 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c9 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c0 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c17 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c5 {
+            font-style: italic
+        }
+
+        .c4 {
+            height: 11pt
+        }
+
+        .c6 {
+            height: 0pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c3 c7 c17">Tipuri de date.</h1>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">La fel ca &icirc;n multe limbaje de programare, C# are propriul s&#259;u sistem de
+            tipuri de date, care este utilizat pentru crearea variabilelor. Tipul de date define&#537;te reprezentarea
+            intern&#259; a datelor, mul&#539;imea valorilor pe care le poate lua un obiect, precum &#537;i
+            ac&#539;iunile permise asupra obiectului.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">&Icirc;n limbajul C# exist&#259; urm&#259;toarele tipuri de date de
+            baz&#259;:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;bool.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; valoarea </span><span class="c1 c5">true </span><span class="c1">sau
+        </span><span class="c1 c5">false </span><span class="c1">(literali logici). Reprezentat de tipul sistemului
+        </span><span class="c1 c5">System.Boolean</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.520a499c9d013109bb19b1e03e752ae35bc5840c"></a><a
+        id="t.0"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">bool</span><span class="c2">&nbsp;alive = </span><span
+                        class="c10">true</span><span class="c2">;<br></span><span class="c10">bool</span><span
+                        class="c2">&nbsp;isDead = </span><span class="c10">false</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;byte.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la 0 la 255 &#537;i ocup&#259; 1 octet.
+            Reprezentat de tipul sistemului</span><span class="c1 c5">&nbsp;System.Byte</span><span
+            class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.d1a978fdc30066253a062e4e7c04fdb2c27988e0"></a><a
+        id="t.1"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">byte</span><span class="c2">&nbsp;bit1 = </span><span
+                        class="c14">1</span><span class="c2">;<br></span><span class="c10">byte</span><span
+                        class="c2">&nbsp;bit2 = </span><span class="c14">102</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;sbyte.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la -128 la 127 &#537;i ocup&#259; 1
+            octet. Reprezentat de tipul sistemului </span><span class="c1 c5">System.SByte</span><span
+            class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.bf1bf5ae7f2031decdd8cde017ffffc107ce59f6"></a><a
+        id="t.2"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">sbyte</span><span class="c2">&nbsp;bit1 = </span><span
+                        class="c14">-101</span><span class="c2">;<br></span><span class="c10">sbyte</span><span
+                        class="c2">&nbsp;bit2 = </span><span class="c14">102</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;short.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la -32768 la 32767 &#537;i ocup&#259; 2
+            octe&#539;i. Reprezentat de tipul sistemului</span><span class="c1 c5">&nbsp;System.Int16</span><span
+            class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.7da1d2d94d98a4b3417da300c32fb0f843ae49d6"></a><a
+        id="t.3"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">short</span><span class="c2">&nbsp;n1 = </span><span
+                        class="c14">1</span><span class="c2">;<br></span><span class="c10">short</span><span
+                        class="c2">&nbsp;n2 = </span><span class="c14">102</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;ushort.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la 0 la 65535 &#537;i ocup&#259; 2
+            octe&#539;i. Reprezentat de tipul sistemului </span><span class="c1 c5">System.UInt16</span><span
+            class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.d07fc0d04ce850aca2ad03f892db180c9720a512"></a><a
+        id="t.4"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">ushort</span><span class="c2">&nbsp;n1 = </span><span
+                        class="c14">1</span><span class="c2">;<br></span><span class="c10">ushort</span><span
+                        class="c2">&nbsp;n2 = </span><span class="c14">102</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;int.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la -2147483648 la 2147483647 &#537;i
+            ocup&#259; 4 octe&#539;i. Reprezentat de tipul sistemului</span><span
+            class="c1 c5">&nbsp;System.Int32</span><span class="c1">. To&#539;i literalii &icirc;ntregi, implicit,
+            reprezint&#259; valori de tip </span><span class="c0">int</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.b91d74a2be749dbeb2bdf4e1f49adc78133e7177"></a><a
+        id="t.5"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">int</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">10</span><span class="c2">;<br></span><span class="c10">int</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">0</span><span class="c2">b101; &nbsp;</span><span
+                        class="c11">// form&#259; binar&#259; b = 5</span><span class="c2"><br></span><span
+                        class="c10">int</span><span class="c2">&nbsp;c = </span><span class="c14">0xFF</span><span
+                        class="c2">; &nbsp; </span><span class="c11">// form&#259; hexazecimal&#259; c = 255</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">&nbsp;</span><span class="c7 c9">uint.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la 0 la 4294967295 &#537;i ocup&#259; 4
+            octe&#539;i. Reprezentat de tipul sistemului </span><span class="c1 c5">System.UInt32</span><span
+            class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.cba061d2dca9a89928a477254d6ea5de7b6ecd33"></a><a
+        id="t.6"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">uint</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">10</span><span class="c2">;<br></span><span class="c10">uint</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">0</span><span class="c2">b101;<br></span><span
+                        class="c10">uint</span><span class="c2">&nbsp;c = </span><span class="c14">0xFF</span><span
+                        class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;long.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la &ndash;9 223 372 036 854 775 808 la 9
+            223 372 036 854 775 807 &#537;i ocup&#259; 8 octe&#539;i. Reprezentat de tipul sistemului</span><span
+            class="c1 c5">&nbsp;System.Int64</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.c7994ffa0bbb4b494b6daa5c2b99d34fd6c23693"></a><a
+        id="t.7"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">long</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">-10</span><span class="c2">;<br></span><span class="c10">long</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">0</span><span class="c2">b101;<br></span><span
+                        class="c10">long</span><span class="c2">&nbsp;c = </span><span class="c14">0xFF</span><span
+                        class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;ulong.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r &icirc;ntreg de la 0 la 18 446 744 073 709 551 615
+            &#537;i ocup&#259; 8 octe&#539;i. Reprezentat de tipul sistemului</span><span
+            class="c1 c5">&nbsp;System.UInt64</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.1011ce4feb4bf062f7044827ac632f534a4d2320"></a><a
+        id="t.8"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">ulong</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">10</span><span class="c2">;<br></span><span class="c10">ulong</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">0</span><span class="c2">b101;<br></span><span
+                        class="c10">ulong</span><span class="c2">&nbsp;c = </span><span class="c14">0xFF</span><span
+                        class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;float.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r cu virgul&#259; mobil&#259; de la -3.4*10^38 la
+            3.4*10^38 &#537;i ocup&#259; 4 octe&#539;i. Reprezentat de tipul sistemului </span><span
+            class="c1 c5">System.Single</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;double.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r cu virgul&#259; mobil&#259; de la &plusmn;5.0*10^-324 la
+            &plusmn;1.7*10^308 &#537;i ocup&#259; 8 octe&#539;i. Reprezentat de tipul sistemului </span><span
+            class="c1 c5">System.Double</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;decimal.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un num&#259;r frac&#539;ionar zecimal. Dac&#259; este utilizat
+            f&#259;r&#259; punct zecimal, are valoarea de la &plusmn;1.0*10^-28 la &plusmn;7.9228*10^28, poate stoca 28
+            de cifre dup&#259; punctul zecimal &#537;i ocup&#259; 16 octe&#539;i. Reprezentat de tipul sistemului
+        </span><span class="c1 c5">System.Decimal</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;char.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un caracter unic &icirc;n codificarea Unicode &#537;i ocup&#259; 2
+            octe&#539;i. Reprezentat de tipul sistemului </span><span class="c1 c5">System.Char</span><span
+            class="c7 c1">. Acest tip corespunde literalilor de tip caracter:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.d25599ad6e0764284fee61dc4457080da3777738"></a><a
+        id="t.9"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">char</span><span class="c2">&nbsp;a = </span><span
+                        class="c13">&#39;A&#39;</span><span class="c2">;<br></span><span class="c10">char</span><span
+                        class="c2">&nbsp;b = </span><span class="c13">&#39;\x5A&#39;</span><span
+                        class="c2">;<br></span><span class="c10">char</span><span class="c2">&nbsp;c = </span><span
+                        class="c13">&#39;\u0420&#39;</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;string.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Stocheaz&#259; un set de caractere Unicode. Reprezentat de tipul sistemului
+        </span><span class="c1 c5">System.String</span><span class="c7 c1">. Acest tip corespunde literalilor de tip
+            &#537;ir.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.0503d34d294c3603f129f1c58ca8d4d52cb664d9"></a><a
+        id="t.10"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">string</span><span class="c2">&nbsp;hello = </span><span
+                        class="c13">&quot;Hello&quot;</span><span class="c2">;<br></span><span
+                        class="c10">string</span><span class="c2">&nbsp;word = </span><span
+                        class="c13">&quot;world&quot;</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;object.</span></p>
+    <p class="c3 c4"><span class="c7 c9"></span></p>
+    <p class="c3"><span class="c1">Poate stoca o valoare de orice tip de date &#537;i ocup&#259; 4 octe&#539;i pe
+            platforme pe 32 de bi&#539;i &#537;i 8 octe&#539;i pe platforme pe 64 de bi&#539;i. Reprezentat de tipul
+            sistemului </span><span class="c1 c5">System.Object</span><span class="c7 c1">, care este de baz&#259;
+            pentru toate celelalte tipuri &#537;i clase .NET.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.ebe0932bcd0fc635d2349869a477f575b787b808"></a><a
+        id="t.11"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">object</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">22</span><span class="c2">;<br></span><span class="c10">object</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">3.14</span><span class="c2">;<br></span><span
+                        class="c10">object</span><span class="c2">&nbsp;c = </span><span class="c13">&quot;hello
+                        code&quot;</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">De exemplu, s&#259; definim c&acirc;teva variabile de tipuri diferite &#537;i
+            s&#259; afi&#537;&#259;m valorile lor pe consol&#259;:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.067223ea24670d4dfa015f8a0b96f64b25a9b453"></a><a
+        id="t.12"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">string</span><span class="c2">&nbsp;name = </span><span
+                        class="c13">&quot;Tom&quot;</span><span class="c2">;<br></span><span class="c10">int</span><span
+                        class="c2">&nbsp;age = </span><span class="c14">33</span><span class="c2">;<br></span><span
+                        class="c10">bool</span><span class="c2">&nbsp;isEmployed = </span><span
+                        class="c10">false</span><span class="c2">;<br></span><span class="c10">double</span><span
+                        class="c2">&nbsp;weight = </span><span class="c14">78.65</span><span
+                        class="c2">;<br><br>Console.WriteLine(</span><span class="c13">$&quot;Nume:
+                        {name}&quot;</span><span class="c2">);<br>Console.WriteLine(</span><span
+                        class="c13">$&quot;V&acirc;rst&#259;: {age}&quot;</span><span
+                        class="c2">);<br>Console.WriteLine(</span><span class="c13">$&quot;Greutate:
+                        {weight}&quot;</span><span class="c2">);<br>Console.WriteLine(</span><span
+                        class="c13">$&quot;Angajat: {isEmployed}&quot;</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">&nbsp;Ie&#537;irea pe consol&#259; a programului:</span></p>
+    <p class="c3 c4"><span class="c1 c7"></span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 234.00px; height: 90.00px;"><img
+                alt="" src="images/image1.png"
+                style="width: 234.00px; height: 90.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;Utilizarea sufixelor.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">La atribuirea valorilor, trebuie s&#259; &#539;inem cont de urm&#259;torul aspect:
+            to&#539;i literalii cu virgul&#259; mobil&#259; (numere frac&#539;ionare) sunt considera&#539;i valori de
+            tip </span><span class="c0">double</span><span class="c1">. &#536;i pentru a indica faptul c&#259; un
+            num&#259;r frac&#539;ionar reprezint&#259; tipul </span><span class="c0">float </span><span class="c1">sau
+        </span><span class="c0">decimal</span><span class="c1">, trebuie s&#259; ad&#259;ug&#259;m un sufix la literal:
+        </span><span class="c0">F/f </span><span class="c1">- pentru float &#537;i </span><span
+            class="c0">M/m</span><span class="c7 c1">&nbsp;- pentru decimal.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.4615db13ff555d1510de052a5ec2cef2e55b44c2"></a><a
+        id="t.13"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">float</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">3.14</span><span class="c2">F;<br></span><span class="c10">float</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">30.6</span><span class="c2">f;<br><br></span><span
+                        class="c10">decimal</span><span class="c2">&nbsp;c = </span><span class="c14">1005.8</span><span
+                        class="c2">M;<br></span><span class="c10">decimal</span><span class="c2">&nbsp;d = </span><span
+                        class="c14">334.8</span><span class="c2">m;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">&Icirc;n mod similar, to&#539;i literalii &icirc;ntregi sunt considera&#539;i valori
+            de tip </span><span class="c0">int</span><span class="c1">. Pentru a indica explicit c&#259; un literal
+            &icirc;ntreg reprezint&#259; valoarea de tip uint, trebuie s&#259; utiliz&#259;m sufixul </span><span
+            class="c0">U/u</span><span class="c1">, pentru tipul long - sufixul </span><span class="c0">L/l</span><span
+            class="c1">, iar pentru tipul </span><span class="c0">ulong </span><span class="c1">- sufixul </span><span
+            class="c0">UL/ul</span><span class="c7 c1">:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.1bfb4b08fb099bbda53dcda0d379ea7e76795c83"></a><a
+        id="t.14"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">uint</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">10</span><span class="c2">U;<br></span><span class="c10">long</span><span
+                        class="c2">&nbsp;b = </span><span class="c14">20</span><span class="c2">L;<br></span><span
+                        class="c10">ulong</span><span class="c2">&nbsp;c = </span><span class="c14">30</span><span
+                        class="c2">UL;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;Utilizarea tipurilor sistemice.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">Mai sus, la enumerarea tuturor tipurilor de date de baz&#259;, pentru fiecare s-a
+            men&#539;ionat tipul sistemului. Acest lucru se datoreaz&#259; faptului c&#259; denumirea tipului
+            &icirc;ncorporat reprezint&#259;, &icirc;n esen&#539;&#259;, o abreviere a tipului sistemului. De exemplu,
+            urm&#259;toarele variabile vor fi echivalente ca tip:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.1757590424ac33ed2c97875a97f1045a1d0242ce"></a><a
+        id="t.15"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">int</span><span class="c2">&nbsp;a = </span><span
+                        class="c14">4</span><span class="c2">;<br>System.Int32 b = </span><span
+                        class="c14">4</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c9">&nbsp;Tipizarea implicit&#259;.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Anterior, am indicat explicit tipul variabilelor, de exemplu,</span><span
+            class="c1 c5">&nbsp;int x</span><span class="c7 c1">;. &#536;i compilatorul &#537;tia deja la rulare c&#259;
+            x stocheaz&#259; o valoare &icirc;ntreag&#259;.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">Cu toate acestea, putem folosi &#537;i modelul de tipizare implicit&#259;:</span>
+    </p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.f5087106bf74a72c4c5cb15e1a245534e2c9a17f"></a><a
+        id="t.16"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c10">var</span><span class="c2">&nbsp;hello = </span><span
+                        class="c13">&quot;Hello to World&quot;</span><span class="c2">;<br></span><span
+                        class="c10">var</span><span class="c2">&nbsp;c = </span><span class="c14">20</span><span
+                        class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c1">Pentru tipizarea implicit&#259;, &icirc;n locul denumirii tipului de date se
+            folose&#537;te cuv&acirc;ntul cheie </span><span class="c0">var</span><span class="c1">. Apoi, la compilare,
+            compilatorul deduce tipul de date pe baza valorii atribuite. Deoarece implicit toate valorile &icirc;ntregi
+            sunt considerate valori de tip </span><span class="c0">int</span><span class="c1">, variabila c va avea
+            tipul </span><span class="c0">int</span><span class="c1">. &Icirc;n mod similar, variabilei </span><span
+            class="c1 c5">hello </span><span class="c1">i se atribuie un &#537;ir de caractere, astfel c&#259; aceasta
+            va avea tipul </span><span class="c0">string</span><span class="c7 c1">.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">Aceste variabile sunt similare celor obi&#537;nuite, dar au unele
+            restric&#539;ii.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">&Icirc;n primul r&acirc;nd, nu putem declara o variabil&#259; tipizat&#259;
+            implicit mai &icirc;nt&acirc;i &#537;i apoi s&#259; o ini&#539;ializ&#259;m:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.95183eb62a05d860feeecaebf12d75f50da92ac3"></a><a
+        id="t.17"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c11">// acest cod func&#539;ioneaz&#259;</span><span
+                        class="c2"><br></span><span class="c10">int</span><span class="c2">&nbsp;a;<br>a = </span><span
+                        class="c14">20</span><span class="c2">;<br><br></span><span class="c11">// acest cod nu
+                        func&#539;ioneaz&#259;</span><span class="c2"><br></span><span class="c10">var</span><span
+                        class="c2">&nbsp;c;<br>c = </span><span class="c14">20</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">&Icirc;n al doilea r&acirc;nd, nu putem indica valoarea null pentru o
+            variabil&#259; tipizat&#259; implicit:</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p><a id="t.ce99ddd292ba1a4f4b9dc6028ea8ee734a5119db"></a><a
+        id="t.18"></a>
+    <table class="c12">
+        <tr class="c6">
+            <td class="c8" colspan="1" rowspan="1">
+                <p class="c15"><span class="c11">// acest cod nu func&#539;ioneaz&#259;</span><span
+                        class="c2"><br></span><span class="c10">var</span><span class="c2">&nbsp;c = </span><span
+                        class="c10">null</span><span class="c2">;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+    <p class="c3"><span class="c7 c1">Deoarece valoarea null nu ofer&#259; suficient&#259; informa&#539;ie
+            compilatorului pentru a deduce tipul de date.</span></p>
+    <p class="c3 c4"><span class="c7 c1"></span></p>
+</body>
+
+</html>

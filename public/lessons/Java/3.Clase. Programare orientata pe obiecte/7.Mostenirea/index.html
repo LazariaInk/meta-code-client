@@ -1,0 +1,658 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c7 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c6 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c14 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fc9b9b;
+            font-weight: 400
+        }
+
+        .c4 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c0 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c5 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c3 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c11 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c10 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c2 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c1 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c15 {
+            font-weight: 700;
+            font-size: 15pt;
+            font-family: "Open Sans"
+        }
+
+        .c13 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c18 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c16 {
+            font-weight: 700;
+            font-size: 27pt;
+            font-family: "Open Sans"
+        }
+
+        .c17 {
+            height: 0pt
+        }
+
+        .c9 {
+            font-style: italic
+        }
+
+        .c12 {
+            height: 11pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c18 doc-content">
+    <h1 class="c6 c2 c16">Moștenirea.</h1>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Unul dintre aspectele cheie ale program&#259;rii orientate pe obiecte este
+        </span><span class="c13">mo&#537;tenirea</span><span class="c2 c1">. Prin mo&#537;tenire, se poate extinde
+            func&#539;ionalitatea claselor deja existente prin ad&#259;ugarea de noi func&#539;ionalit&#259;&#539;i sau
+            modificarea celor vechi. De exemplu, avem urm&#259;toarea clas&#259; Person, care descrie o
+            persoan&#259;:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp;
+                        &nbsp;String name;<br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;String </span><span class="c4">getName</span><span class="c3">() { </span><span
+                        class="c0">return</span><span class="c3">&nbsp;name; }<br> &nbsp; &nbsp; <br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c0">this</span><span class="c3">.name = name;<br> &nbsp; &nbsp;}<br>
+                        &nbsp; <br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">display</span><span class="c3">() {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;System.out.println(</span><span class="c11">&quot;Name: &quot;</span><span
+                        class="c3">&nbsp;+ name);<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">S&#259; presupunem c&#259; dorim s&#259; ad&#259;ug&#259;m o clas&#259; care
+            descrie un angajat - clasa Employee. Deoarece aceast&#259; clas&#259; implementeaz&#259;
+            func&#539;ionalit&#259;&#539;i similare cu cele din clasa Person, ar fi ra&#539;ional s&#259; facem clasa
+            Employee un derivat (subclas&#259;) al clasei Person, care devine clasa de baz&#259; (sau
+            superclasa).</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">&nbsp;</span><span class="c0">extends</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c0">super</span><span class="c3">(name); &nbsp; &nbsp;</span><span
+                        class="c5">// dac&#259; clasa de baz&#259; define&#537;te un constructor</span><span
+                        class="c3"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c5">// atunci clasa derivat&#259; trebuie s&#259;-l
+                        apeleze</span><span class="c3"><br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Pentru a declara o clas&#259; ca mo&#537;tenind de la alta, folosim cuv&acirc;ntul
+            cheie </span><span class="c13">extends </span><span class="c2 c1">dup&#259; numele clasei derivate, urmat de
+            numele clasei de baz&#259;. &Icirc;n acest caz, clasa Employee mo&#537;tene&#537;te toate c&acirc;mpurile
+            &#537;i metodele din clasa Person.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Dac&#259; clasa de baz&#259; define&#537;te un constructor, constructorul din clasa
+            derivat&#259; trebuie s&#259;-l apeleze folosind cuv&acirc;ntul cheie </span><span
+            class="c13">super</span><span class="c1">. De exemplu, clasa Person are un constructor care prime&#537;te un
+            parametru, astfel c&#259; &icirc;n constructorul clasei Employee, trebuie s&#259; apel&#259;m constructorul
+            clasei Person prin </span><span class="c1 c9">super(name)</span><span class="c2 c1">.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Utilizarea claselor:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Program</span><span
+                        class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c0">static</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">main</span><span class="c3">(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp;Person
+                        tom = </span><span class="c0">new</span><span class="c3">&nbsp;Person(</span><span
+                        class="c11">&quot;Tom&quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;tom.display();<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;Employee sam
+                        = </span><span class="c0">new</span><span class="c3">&nbsp;Employee(</span><span
+                        class="c11">&quot;Sam&quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;sam.display();<br> &nbsp; &nbsp;}<br>}<br><br></span><span class="c0">class</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp; &nbsp;
+                        &nbsp;<br> &nbsp; &nbsp;String name;<br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;String </span><span class="c4">getName</span><span class="c3">() { </span><span
+                        class="c0">return</span><span class="c3">&nbsp;name; }<br> &nbsp; &nbsp; &nbsp;<br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c0">this</span><span class="c3">.name = name;<br> &nbsp; &nbsp;}<br>
+                        &nbsp; <br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">display</span><span class="c3">() {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;System.out.println(</span><span class="c11">&quot;Name: &quot;</span><span
+                        class="c3">&nbsp;+ name);<br> &nbsp; &nbsp;}<br>}<br><br></span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">&nbsp;</span><span class="c0">extends</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c0">super</span><span class="c3">(name); &nbsp;</span><span class="c5">// apel&#259;m
+                        constructorul clasei de baz&#259;</span><span class="c3"><br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Clasa derivat&#259; are acces la toate metodele &#537;i c&acirc;mpurile din clasa de
+            baz&#259;, cu excep&#539;ia celor definite cu modificatorul </span><span class="c13">private</span><span
+            class="c2 c1">. De asemenea, clasa derivat&#259; poate ad&#259;uga propriile c&acirc;mpuri &#537;i
+            metode:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Program</span><span
+                        class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c0">static</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">main</span><span class="c3">(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp;Employee
+                        sam = </span><span class="c0">new</span><span class="c3">&nbsp;Employee(</span><span
+                        class="c11">&quot;Sam&quot;</span><span class="c3">, </span><span
+                        class="c11">&quot;Microsoft&quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;sam.display(); &nbsp;</span><span class="c5">// Sam</span><span class="c3"><br> &nbsp;
+                        &nbsp; &nbsp; &nbsp;sam.work(); &nbsp; &nbsp; </span><span class="c5">// Sam works in
+                        Microsoft</span><span class="c3"><br> &nbsp; &nbsp;}<br>}<br><br></span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Person</span><span
+                        class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;String name;<br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;String </span><span
+                        class="c4">getName</span><span class="c3">() { </span><span class="c0">return</span><span
+                        class="c3">&nbsp;name; }<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c4">Person</span><span
+                        class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c0">this</span><span class="c3">.name = name;<br> &nbsp; &nbsp;}<br> &nbsp; <br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">void</span><span class="c3">&nbsp;</span><span class="c4">display</span><span
+                        class="c3">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;System.out.println(</span><span
+                        class="c11">&quot;Name: &quot;</span><span class="c3">&nbsp;+ name);<br> &nbsp;
+                        &nbsp;}<br>}<br><br></span><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">&nbsp;</span><span class="c0">extends</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp;<br>
+                        &nbsp; &nbsp;String company;<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">(String name, String company) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c0">super</span><span class="c3">(name);<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c0">this</span><span class="c3">.company = company;<br> &nbsp; &nbsp;}<br><br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">void</span><span class="c3">&nbsp;</span><span class="c4">work</span><span
+                        class="c3">() {<br> &nbsp; &nbsp; &nbsp; &nbsp;System.out.printf(</span><span
+                        class="c11">&quot;%s works in %s \n&quot;</span><span class="c3">, getName(), company);<br>
+                        &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">&Icirc;n acest caz, clasa Employee adaug&#259; c&acirc;mpul company, care
+            stocheaz&#259; locul de munc&#259; al angajatului, &#537;i metoda work.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c15">Suprascrierea metodelor.</span></p>
+    <p class="c6"><span class="c2 c1">&nbsp; </span></p>
+    <p class="c6"><span class="c2 c1">Clasa derivat&#259; poate defini propriile metode sau poate suprascrie metodele
+            mo&#537;tenite din clasa de baz&#259;. De exemplu, putem suprascrie metoda display din clasa
+            Employee:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Program</span><span
+                        class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c0">static</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">main</span><span class="c3">(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp;Employee
+                        sam = </span><span class="c0">new</span><span class="c3">&nbsp;Employee(</span><span
+                        class="c11">&quot;Sam&quot;</span><span class="c3">, </span><span
+                        class="c11">&quot;Microsoft&quot;</span><span class="c3">);<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;sam.display(); &nbsp;</span><span class="c5">// Sam</span><span class="c3"><br> &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c5">// Works in Microsoft</span><span class="c3"><br> &nbsp;
+                        &nbsp;}<br>}<br><br></span><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp; &nbsp; &nbsp;<br> &nbsp;
+                        &nbsp;String name;<br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;String </span><span class="c4">getName</span><span class="c3">() { </span><span
+                        class="c0">return</span><span class="c3">&nbsp;name; }<br> &nbsp; &nbsp; &nbsp;<br> &nbsp;
+                        &nbsp;</span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">(String name) {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c0">this</span><span class="c3">.name = name;<br> &nbsp; &nbsp;}<br>
+                        &nbsp; <br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;</span><span class="c0">void</span><span class="c3">&nbsp;</span><span
+                        class="c4">display</span><span class="c3">() {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;System.out.println(</span><span class="c11">&quot;Name: &quot;</span><span
+                        class="c3">&nbsp;+ name);<br> &nbsp; &nbsp;}<br>}<br><br></span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">&nbsp;</span><span class="c0">extends</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">&nbsp;{<br> &nbsp;<br> &nbsp; &nbsp;String company;<br>
+                        &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;</span><span class="c0">public</span><span
+                        class="c3">&nbsp;</span><span class="c4">Employee</span><span class="c3">(String name, String
+                        company) {<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c0">super</span><span
+                        class="c3">(name);<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c0">this</span><span
+                        class="c3">.company = company;<br> &nbsp; &nbsp;}<br><br> &nbsp; &nbsp;</span><span
+                        class="c14">@Override</span><span class="c3"><br> &nbsp; &nbsp;</span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c0">void</span><span
+                        class="c3">&nbsp;</span><span class="c4">display</span><span class="c3">() {<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;System.out.printf(</span><span class="c11">&quot;Name: %s \n&quot;</span><span
+                        class="c3">, getName());<br> &nbsp; &nbsp; &nbsp; &nbsp;System.out.printf(</span><span
+                        class="c11">&quot;Works in %s \n&quot;</span><span class="c3">, company);<br> &nbsp;
+                        &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Anotarea </span><span class="c13">@Override</span><span class="c2 c1">&nbsp;este
+            plasat&#259; &icirc;naintea metodei suprascrise. Aceast&#259; anotare, &icirc;n principiu, nu este
+            obligatorie.</span></p>
+    <p class="c6 c12"><span class="c1 c2"></span></p>
+    <p class="c6"><span class="c2 c1">La suprascrierea unei metode, aceasta trebuie s&#259; aib&#259; un nivel de
+            accesibilitate cel pu&#539;in la fel de mare ca cel din clasa de baz&#259;. De exemplu, dac&#259; &icirc;n
+            clasa de baz&#259; metoda are modificatorul public, atunci &#537;i &icirc;n clasa derivat&#259; metoda
+            trebuie s&#259; aib&#259; modificatorul public.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Totu&#537;i, &icirc;n acest caz observ&#259;m c&#259; o parte din metoda display
+            din Employee repet&#259; ac&#539;iunile metodei display din clasa de baz&#259;. Prin urmare, putem
+            simplifica clasa Employee:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">&nbsp;</span><span class="c0">extends</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">{<br><br>String
+                        company;<br><br></span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">(String name, String company) {<br><br></span><span
+                        class="c0">super</span><span class="c3">(name);<br></span><span class="c0">this</span><span
+                        class="c3">.company = company;<br>}<br></span><span class="c14">@Override</span><span
+                        class="c3"><br></span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">void</span><span class="c3">&nbsp;</span><span class="c4">display</span><span
+                        class="c3">(){<br><br></span><span class="c0">super</span><span
+                        class="c3">.display();<br>System.out.printf(</span><span class="c11">&quot;Works in %s
+                        \n&quot;</span><span class="c3">, company);<br>}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Cu ajutorul cuv&acirc;ntului cheie </span><span class="c13">super </span><span
+            class="c2 c1">putem, de asemenea, s&#259; acces&#259;m implement&#259;rile metodelor din clasa de
+            baz&#259;.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c15">Interzicerea mo&#537;tenirii.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">De&#537;i mo&#537;tenirea este un mecanism foarte interesant &#537;i eficient,
+            &icirc;n unele situa&#539;ii utilizarea acesteia poate fi nedorit&#259;. &Icirc;n acest caz, putem interzice
+            mo&#537;tenirea cu ajutorul cuv&acirc;ntului cheie </span><span class="c13">final</span><span
+            class="c2 c1">. De exemplu:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">final</span><span class="c3">&nbsp;</span><span class="c0">class</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">&nbsp;{<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Dac&#259; clasa Person ar fi definit&#259; astfel, urm&#259;torul cod ar fi eronat
+            &#537;i nu ar func&#539;iona, deoarece am interzis mo&#537;tenirea:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">class</span><span class="c3">&nbsp;</span><span
+                        class="c4">Employee</span><span class="c3">&nbsp;</span><span class="c0">extends</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">{<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">Pe l&acirc;ng&#259; interzicerea mo&#537;tenirii, putem, de asemenea, s&#259;
+            interzicem suprascrierea unor metode individuale. De exemplu, &icirc;n exemplul de mai sus, metoda
+        </span><span class="c1 c9">display()</span><span class="c2 c1">&nbsp;a fost suprascris&#259;; putem interzice
+            suprascrierea ei:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Person</span><span
+                        class="c3">&nbsp;{<br><br></span><span class="c5">//........................</span><span
+                        class="c3"><br> <br></span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">final</span><span class="c3">&nbsp;</span><span class="c0">void</span><span
+                        class="c3">&nbsp;</span><span class="c4">display</span><span
+                        class="c3">(){<br><br>System.out.println(</span><span class="c11">&quot;Nume: &quot;</span><span
+                        class="c3">&nbsp;+ name);<br>}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">&Icirc;n acest caz, clasa Employee nu va putea suprascrie metoda display.</span>
+    </p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c15">Dispecerizarea dinamic&#259; a metodelor.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Mo&#537;tenirea &#537;i posibilitatea suprascrierii metodelor ne ofer&#259;
+            oportunit&#259;&#539;i vaste. &Icirc;n primul r&acirc;nd, putem atribui unei variabile de tip
+            superclas&#259; o referin&#539;&#259; c&#259;tre un obiect de tip subclas&#259;:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c3">Person sam = </span><span class="c0">new</span><span
+                        class="c3">&nbsp;Employee(</span><span class="c11">&quot;Sam&quot;</span><span class="c3">,
+                    </span><span class="c11">&quot;Oracle&quot;</span><span class="c3">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Deoarece Employee mo&#537;tene&#537;te de la Person, obiectul Employee este,
+            &icirc;n acela&#537;i timp, &#537;i un obiect de tip Person. &Icirc;n termeni simpli, orice angajat al unei
+            companii este &#537;i o persoan&#259;.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Totu&#537;i, de&#537;i variabila reprezint&#259; un obiect de tip Person,
+            ma&#537;ina virtual&#259; observ&#259; c&#259;, &icirc;n realitate, ea indic&#259; un obiect de tip
+            Employee. Prin urmare, la apelarea metodelor acestui obiect, se va apela versiunea metodei definit&#259;
+            &icirc;n clasa Employee &#537;i nu &icirc;n Person. De exemplu:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Program</span><span
+                        class="c3">{<br><br></span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">static</span><span class="c3">&nbsp;</span><span class="c0">void</span><span
+                        class="c3">&nbsp;</span><span class="c4">main</span><span class="c3">(String[] args)
+                        {<br><br>Person tom = </span><span class="c0">new</span><span
+                        class="c3">&nbsp;Person(</span><span class="c11">&quot;Tom&quot;</span><span
+                        class="c3">);<br>tom.display();<br>Person sam = </span><span class="c0">new</span><span
+                        class="c3">&nbsp;Employee(</span><span class="c11">&quot;Sam&quot;</span><span class="c3">,
+                    </span><span class="c11">&quot;Oracle&quot;</span><span
+                        class="c3">);<br>sam.display();<br>}<br>}<br></span><span class="c0">class</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">&nbsp;{<br><br>String
+                        name;<br><br></span><span class="c0">public</span><span class="c3">&nbsp;String </span><span
+                        class="c4">getName</span><span class="c3">() { </span><span class="c0">return</span><span
+                        class="c3">&nbsp;name; }<br><br></span><span class="c0">public</span><span
+                        class="c3">&nbsp;</span><span class="c4">Person</span><span class="c3">(String
+                        name){<br><br></span><span class="c0">this</span><span class="c3">.name =
+                        name;<br>}<br><br></span><span class="c0">public</span><span class="c3">&nbsp;</span><span
+                        class="c0">void</span><span class="c3">&nbsp;</span><span class="c4">display</span><span
+                        class="c3">(){<br><br>System.out.printf(</span><span class="c11">&quot;Person %s
+                        \n&quot;</span><span class="c3">, name);<br>}<br>}<br><br></span><span
+                        class="c0">class</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">&nbsp;</span><span class="c0">extends</span><span class="c3">&nbsp;</span><span
+                        class="c4">Person</span><span class="c3">{<br><br>String company;<br><br></span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c4">Employee</span><span
+                        class="c3">(String name, String company) {<br><br></span><span class="c0">super</span><span
+                        class="c3">(name);<br></span><span class="c0">this</span><span class="c3">.company =
+                        company;<br>}<br></span><span class="c14">@Override</span><span class="c3"><br></span><span
+                        class="c0">public</span><span class="c3">&nbsp;</span><span class="c0">void</span><span
+                        class="c3">&nbsp;</span><span class="c4">display</span><span
+                        class="c3">(){<br><br>System.out.printf(</span><span class="c11">&quot;Employee %s works in %s
+                        \n&quot;</span><span class="c3">, </span><span class="c0">super</span><span
+                        class="c3">.getName(), company);<br>}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c2 c1">Rezultatul afi&#537;at &icirc;n consol&#259; al acestui program:</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <table class="c10">
+        <tr class="c17">
+            <td class="c7" colspan="1" rowspan="1">
+                <p class="c8"><span class="c3">Person Tom<br>Employee Sam works in Oracle</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6"><span class="c1">La apelarea unei metode suprascrise, ma&#537;ina virtual&#259; identific&#259;
+            &#537;i apeleaz&#259; &icirc;n mod dinamic versiunea metodei definit&#259; &icirc;n subclas&#259;. Acest
+            proces mai este cunoscut &#537;i sub numele de </span><span class="c13">dynamic method lookup</span><span
+            class="c2 c1">&nbsp;sau c&#259;utare dinamic&#259; a metodei, sau dispecerizare dinamic&#259; a
+            metodelor.</span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+    <p class="c6 c12"><span class="c2 c1"></span></p>
+</body>
+
+</html>

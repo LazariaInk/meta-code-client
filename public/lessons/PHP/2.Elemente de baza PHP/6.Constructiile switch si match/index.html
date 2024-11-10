@@ -1,0 +1,989 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c1 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c8 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt;
+      }
+      .c15 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 27pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c2 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c11 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c4 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c6 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c0 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c5 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c13 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #888888;
+        font-weight: 400;
+      }
+      .c17 {
+        font-weight: 700;
+        font-size: 15pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c7 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c3 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c18 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c9 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c16 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+      }
+      .c12 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+      .c14 {
+        font-style: italic;
+      }
+      .c10 {
+        height: 0pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c18 doc-content">
+    <h1 class="c11 c15">Construcțiile switch și match.</h1>
+    <p class="c11">
+      <span class="c17 c16">&nbsp;Construc&#539;ia switch..case.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Construc&#539;ia</span
+      ><span class="c12">&nbsp;switch..case</span
+      ><span class="c9"
+        >&nbsp;este o alternativ&#259; la utilizarea construc&#539;iei</span
+      ><span class="c9 c14">&nbsp;if..elseif..else</span
+      ><span class="c9">. Operatorul </span><span class="c12">switch </span
+      ><span class="c2"
+        >prime&#537;te o expresie &#537;i o compar&#259; cu un set de
+        valori:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.b99212ae5722024b5e5618f24246aa84a4fe54d1"></a><a id="t.0"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0">switch</span
+            ><span class="c5"
+              >&nbsp;(expresie) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span
+            ><span class="c5">&nbsp;valoare1: ac&#539;iuni; </span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span
+            ><span class="c5">&nbsp;valoare2: ac&#539;iuni; </span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c13">//...........................</span
+            ><span class="c5"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span
+            ><span class="c5">&nbsp;valoareN: ac&#539;iuni; </span
+            ><span class="c0">break</span><span class="c5">;}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Dup&#259; cuv&acirc;ntul cheie </span
+      ><span class="c12">switch</span
+      ><span class="c9"
+        >, &icirc;n paranteze urmeaz&#259; expresia care va fi comparat&#259;.
+        Valoarea acestei expresii este comparat&#259; secven&#539;ial cu
+        valorile plasate dup&#259; operatorii </span
+      ><span class="c12">case</span
+      ><span class="c2"
+        >. Dac&#259; se g&#259;se&#537;te o potrivire, se execut&#259; blocul
+        case respectiv.</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >Construc&#539;ia switch poate con&#539;ine un num&#259;r arbitrar de
+        operatori case. La sf&acirc;r&#537;itul fiec&#259;rui bloc </span
+      ><span class="c12">case </span
+      ><span class="c9">se plaseaz&#259; operatorul </span
+      ><span class="c12">break </span
+      ><span class="c2">pentru a evita executarea altor blocuri.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">&Icirc;ntregul bloc </span
+      ><span class="c12">switch </span
+      ><span class="c9"
+        >este delimitat de acolade, &icirc;ns&#259; blocul fiec&#259;rui
+        operator </span
+      ><span class="c12">case </span
+      ><span class="c2">NU este delimitat de acolade.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >De exemplu, s&#259; lu&#259;m urm&#259;toarea construc&#539;ie</span
+      ><span class="c9 c14 c16">&nbsp;if..elseif..else:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.2d9d440db3d772c17ee51d764cafdfc8aad41291"></a><a id="t.1"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">3</span
+            ><span class="c5">;<br /></span><span class="c0">if</span
+            ><span class="c5">($a == </span><span class="c4">1</span
+            ><span class="c5">) </span><span class="c0">echo</span
+            ><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5">;<br /></span><span class="c0">elseif</span
+            ><span class="c5">($a == </span><span class="c4">2</span
+            ><span class="c5">) </span><span class="c0">echo</span
+            ><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5">;<br /></span><span class="c0">elseif</span
+            ><span class="c5">($a == </span><span class="c4">3</span
+            ><span class="c5">) </span><span class="c0">echo</span
+            ><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;&icirc;nmul&#539;ire&quot;</span
+            ><span class="c5">;<br /></span><span class="c0">elseif</span
+            ><span class="c5">($a == </span><span class="c4">4</span
+            ><span class="c5">) </span><span class="c0">echo</span
+            ><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;&icirc;mp&#259;r&#539;ire&quot;</span
+            ><span class="c5">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Acum s&#259; o rescriem folosind construc&#539;ia</span
+      ><span class="c9 c14">&nbsp;switch..case</span><span class="c2">:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.acd32ddb4419915c916dd864514a2d0729358d89"></a><a id="t.2"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">3</span
+            ><span class="c5">;<br /></span><span class="c0">switch</span
+            ><span class="c5"
+              >($a) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">1</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">2</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">3</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;&icirc;nmul&#539;ire&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">4</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;&icirc;mp&#259;r&#539;ire&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >Astfel, construc&#539;ia switch prime&#537;te variabila </span
+      ><span class="c9 c14">$a</span
+      ><span class="c9"
+        >, iar valoarea acesteia este comparat&#259; secven&#539;ial cu valorile
+        specificate dup&#259; operatorii case. &Icirc;n acest caz,
+        variabila</span
+      ><span class="c9 c14">&nbsp;$a</span
+      ><span class="c2"
+        >&nbsp;este egal&#259; cu 3, astfel se va executa blocul:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.d37de85b4be4055f16dafb54bf39e63022d03971"></a><a id="t.3"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">3</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;&icirc;nmul&#539;ire&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >Dac&#259; dorim s&#259; trat&#259;m &#537;i situa&#539;ia &icirc;n care
+        nu se g&#259;se&#537;te nicio potrivire, putem ad&#259;uga blocul </span
+      ><span class="c12">default</span><span class="c2">:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.010710ba6ac4bb03847e0893fff5c8ab665a8547"></a><a id="t.4"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">3</span
+            ><span class="c5">;<br /></span><span class="c0">switch</span
+            ><span class="c5"
+              >($a) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">1</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">2</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">default</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;ac&#539;iune implicit&#259;&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Construc&#539;ia </span
+      ><span class="c9 c14">switch..case</span
+      ><span class="c9"
+        >&nbsp;suport&#259; &#537;i sintaxa alternativ&#259;, &icirc;n care
+        &icirc;n loc de acolad&#259; deschis&#259; se folose&#537;te dou&#259;
+        puncte, iar &icirc;n loc de acolad&#259; &icirc;nchis&#259; se
+        folose&#537;te cuv&acirc;ntul cheie </span
+      ><span class="c12">endswitch</span><span class="c2">:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.5ee6dd45e2bf6beacb936a46e98c64fcb60d1153"></a><a id="t.5"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">3</span
+            ><span class="c5">;<br /></span><span class="c0">switch</span
+            ><span class="c5"
+              >($a):<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">1</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">2</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">default</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">echo</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;ac&#539;iune implicit&#259;&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;<br /></span
+            ><span class="c0">endswitch</span><span class="c5">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c17 c16">&nbsp;Construc&#539;ia match.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >&Icirc;ncep&acirc;nd cu versiunea 8.0, PHP a ad&#259;ugat suportul
+        pentru o alt&#259; construc&#539;ie similar&#259; - </span
+      ><span class="c12">match</span
+      ><span class="c9">. Aceasta permite optimizarea construc&#539;iei </span
+      ><span class="c9 c14">switch</span
+      ><span class="c9">. Construc&#539;ia </span><span class="c12">match </span
+      ><span class="c2"
+        >prime&#537;te &#537;i ea o expresie &#537;i o compar&#259; cu un set de
+        valori.</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2">De exemplu, s&#259; lu&#259;m urm&#259;torul cod:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.096e25931620bf903eabb5baaeb41b31d76a8fdc"></a><a id="t.6"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">2</span
+            ><span class="c5">;<br /></span><span class="c0">switch</span
+            ><span class="c5"
+              >($a) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">1</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;$operation = </span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">2</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;$operation = </span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">default</span
+            ><span class="c5"
+              >: <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;$operation = </span
+            ><span class="c6">&quot;ac&#539;iune implicit&#259;&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;<br />}<br /></span
+            ><span class="c0">echo</span
+            ><span class="c5">&nbsp;$operation;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Rescriem acest exemplu folosind </span
+      ><span class="c12">match</span><span class="c2">:</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.5f443d9e068486cc6ad49c95adf5dbf67551659f"></a><a id="t.7"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">2</span
+            ><span class="c5"
+              >;<br />$operation = match($a) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c4">1</span><span class="c5">&nbsp;=&gt; </span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >,<br />
+              &nbsp; &nbsp;</span
+            ><span class="c4">2</span><span class="c5">&nbsp;=&gt; </span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >,<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">default</span><span class="c5">&nbsp;=&gt; </span
+            ><span class="c6">&quot;ac&#539;iune implicit&#259;&quot;</span
+            ><span class="c5">,<br />};<br /></span><span class="c0">echo</span
+            ><span class="c5">&nbsp;$operation;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Construc&#539;ia </span><span class="c12">match </span
+      ><span class="c2"
+        >prime&#537;te &icirc;n paranteze o expresie (&icirc;n acest caz
+        variabila $a). Blocul de cod match este, de asemenea, delimitat de
+        acolade, dar dup&#259; acolada &icirc;nchis&#259; este necesar s&#259;
+        punem punct &#537;i virgul&#259;. &Icirc;n loc de operatorii case, doar
+        se specific&#259; valorile cu care se compar&#259; expresia.</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Dar, spre deosebire de </span
+      ><span class="c9 c14">switch</span
+      ><span class="c9">, construc&#539;ia </span><span class="c12">match </span
+      ><span class="c9"
+        >returneaz&#259; un rezultat. De aceea, dup&#259; fiecare valoare
+        comparat&#259; se plaseaz&#259; operatorul</span
+      ><span class="c12">&nbsp;=&gt;</span
+      ><span class="c2">, urmat de rezultatul returnat.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Astfel, &icirc;n acest caz, variabila</span
+      ><span class="c9 c14">&nbsp;$a</span
+      ><span class="c2"
+        >&nbsp;este egal&#259; cu 2, astfel &icirc;n construc&#539;ia match se
+        va executa blocul:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.803f4c76949670859ab2d8147da29451d0d7b79c"></a><a id="t.8"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c4">2</span><span class="c5">&nbsp;=&gt; </span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5">,</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2"
+        >Acest bloc va seta ca rezultat returnat &#537;irul
+        &quot;sc&#259;dere&quot;.</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2"
+        >Deoarece construc&#539;ia match returneaz&#259; un rezultat, acest
+        rezultat poate fi atribuit unei alte variabile:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.ab09ebf13ee985fb1deddd72fb9ec0fe1850921b"></a><a id="t.9"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5"
+              >$operation = match($a){<br />
+              &nbsp; &nbsp;</span
+            ><span class="c13">//.................</span
+            ><span class="c5"><br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">&Icirc;n final, &icirc;n variabila </span
+      ><span class="c9 c14">$operation</span
+      ><span class="c9">&nbsp;se va stoca &#537;irul &quot;</span
+      ><span class="c9 c14">sc&#259;dere</span><span class="c2">&quot;.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2"
+        >De asemenea, putem rescrie exemplul anterior astfel:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.860c714dcb0656b16a79e16b4098dceaaf0ae4a6"></a><a id="t.10"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">$a = </span><span class="c4">2</span
+            ><span class="c5"
+              >;<br />match($a) {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c4">1</span
+            ><span class="c5">&nbsp;=&gt; $operation = </span
+            ><span class="c6">&quot;adunare&quot;</span
+            ><span class="c5"
+              >,<br />
+              &nbsp; &nbsp;</span
+            ><span class="c4">2</span
+            ><span class="c5">&nbsp;=&gt; $operation = </span
+            ><span class="c6">&quot;sc&#259;dere&quot;</span
+            ><span class="c5"
+              >,<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">default</span
+            ><span class="c5">&nbsp;=&gt; $operation = </span
+            ><span class="c6">&quot;ac&#539;iune implicit&#259;&quot;</span
+            ><span class="c5">,<br />};<br /></span><span class="c0">echo</span
+            ><span class="c5">&nbsp;$operation;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c16 c17">&nbsp;Compararea valorilor &#537;i tipurilor.</span>
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9"
+        >Este important de men&#539;ionat o diferen&#539;&#259; important&#259;
+        &icirc;ntre construc&#539;iile </span
+      ><span class="c12">switch </span><span class="c9">&#537;i </span
+      ><span class="c12">match</span><span class="c9">: </span
+      ><span class="c12">switch </span
+      ><span class="c9"
+        >compar&#259; doar valoarea, f&#259;r&#259; a &#539;ine cont de tipul
+        expresiei. &Icirc;n schimb, </span
+      ><span class="c12">match </span
+      ><span class="c2"
+        >&#539;ine cont &#537;i de tipul expresiei comparate. S&#259;
+        analiz&#259;m diferen&#539;a pe un exemplu. S&#259; consider&#259;m
+        urm&#259;toarea construc&#539;ie switch:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.bba4350b1569fa8db011ea14f976d9f818459263"></a><a id="t.11"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0">switch</span><span class="c5">&nbsp;(</span
+            ><span class="c4">8.0</span
+            ><span class="c5"
+              >) {<br />
+              &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;8.0&quot;</span
+            ><span class="c5"
+              >:<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c6">&quot;&#537;ir&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">break</span
+            ><span class="c5"
+              >;<br />
+              &nbsp;</span
+            ><span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c4">8.0</span
+            ><span class="c5"
+              >:<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c6">&quot;num&#259;r&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;<br />}<br /></span
+            ><span class="c0">echo</span><span class="c5">&nbsp;$result; </span
+            ><span class="c13">// &#537;ir</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2"
+        >Construc&#539;ia switch prime&#537;te ca expresie num&#259;rul 8.0, dar
+        din punctul de vedere al logicii interne a construc&#539;iei switch,
+        aceast&#259; expresie corespunde &#537;i &#537;irului &quot;8.0&quot;.
+        Prin urmare, &icirc;n acest caz se va executa blocul:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.a57516193d9311053fbf87bba6b21952b35b9f7e"></a><a id="t.12"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0">case</span><span class="c5">&nbsp;</span
+            ><span class="c6">&quot;8.0&quot;</span
+            ><span class="c5"
+              >:<br />
+              &nbsp; &nbsp;$result = </span
+            ><span class="c6">&quot;&#537;ir&quot;</span
+            ><span class="c5"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c0">break</span><span class="c5">;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c2"
+        >Acum s&#259; vedem ce se &icirc;nt&acirc;mpl&#259; &icirc;ntr-un
+        exemplu similar cu match:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.19fba45e771b32aa4df860ca10d0210464856f2c"></a><a id="t.13"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c5">match (</span><span class="c4">8.0</span
+            ><span class="c5"
+              >) {<br />
+              &nbsp;</span
+            ><span class="c6">&quot;8.0&quot;</span
+            ><span class="c5">&nbsp;=&gt; $result = </span
+            ><span class="c6">&quot;&#537;ir&quot;</span
+            ><span class="c5"
+              >,<br />
+              &nbsp;</span
+            ><span class="c4">8.0</span
+            ><span class="c5">&nbsp;=&gt; $result = </span
+            ><span class="c6">&quot;num&#259;r&quot;</span
+            ><span class="c5"><br />};<br /></span><span class="c0">echo</span
+            ><span class="c5">&nbsp;$result; </span
+            ><span class="c13">// num&#259;r</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c11">
+      <span class="c9">Construc&#539;ia </span><span class="c12">match </span
+      ><span class="c2"
+        >&#539;ine cont &#537;i de tipul expresiei, iar tipul &icirc;n acest caz
+        este float, prin urmare se va executa blocul:</span
+      >
+    </p>
+    <p class="c8"><span class="c2"></span></p>
+    <a id="t.ed26dc4892ded0c009844b96372f3fd852329955"></a><a id="t.14"></a>
+    <table class="c7">
+      <tr class="c10">
+        <td class="c1" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c4">8.0</span
+            ><span class="c5">&nbsp;=&gt; $result = </span
+            ><span class="c6">&quot;num&#259;r&quot;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c8"><span class="c2"></span></p>
+    <p class="c8"><span class="c2"></span></p>
+  </body>
+</html>

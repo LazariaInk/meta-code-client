@@ -1,0 +1,939 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=chteh0fSOiSrmusp8u43YLibRAUGyvCIyNwOfYj8c_aH4gUIUjZTH34PuvJkbTJT);
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c6 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #333333;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            width: 468pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c13 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 15pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c17 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 27pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-style: normal
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c8 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #d36363;
+            font-weight: 400
+        }
+
+        .c2 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffff;
+            font-weight: 400
+        }
+
+        .c7 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #a2fca2;
+            font-weight: 400
+        }
+
+        .c10 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #888888;
+            font-weight: 400
+        }
+
+        .c1 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #fcc28c;
+            font-weight: 400
+        }
+
+        .c4 {
+            background-color: #333333;
+            font-size: 12pt;
+            font-family: "Consolas";
+            color: #ffffaa;
+            font-weight: 400
+        }
+
+        .c11 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c12 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            text-align: left
+        }
+
+        .c14 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 400
+        }
+
+        .c15 {
+            font-size: 12pt;
+            font-family: "Open Sans";
+            font-weight: 700
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c5 {
+            height: 0pt
+        }
+
+        .c18 {
+            font-style: italic
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c16 doc-content">
+    <h1 class="c9 c17">Evenimente.</h1>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c15">Evenimentele </span><span class="c0">semnalizeaz&#259; sistemului c&#259; a avut loc
+            o anumit&#259; ac&#539;iune. &#536;i dac&#259; trebuie s&#259; urm&#259;rim aceste ac&#539;iuni, putem
+            folosi evenimentele.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">De exemplu, s&#259; lu&#259;m urm&#259;toarea clas&#259; care descrie un cont
+            bancar:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.ee285b6e8c80a4db47fd207e3cf3d5de749d6514"></a><a id="t.0"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">class</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2"><br>{<br> &nbsp; &nbsp;</span><span class="c10">//
+                        suma din cont</span><span class="c2"><br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">int</span><span
+                        class="c2">&nbsp;Sum { </span><span class="c1">get</span><span class="c2">; </span><span
+                        class="c1">private</span><span class="c2">&nbsp;</span><span class="c1">set</span><span
+                        class="c2">; }<br> &nbsp; &nbsp;</span><span class="c10">// &icirc;n constructor se
+                        stabile&#537;te suma ini&#539;ial&#259; din cont</span><span class="c2"><br> &nbsp;
+                        &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2">(</span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum) =&gt; Sum = sum;<br> &nbsp; &nbsp;</span><span class="c10">//
+                        ad&#259;ugarea de fonduri &icirc;n cont</span><span class="c2"><br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">void</span><span
+                        class="c2">&nbsp;</span><span class="c4">Put</span><span class="c2">(</span><span
+                        class="c1">int</span><span class="c2">&nbsp;sum) =&gt; Sum += sum;<br> &nbsp; &nbsp;</span><span
+                        class="c10">// retragerea de fonduri din cont</span><span class="c2"><br> &nbsp;
+                        &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">void</span><span class="c2">&nbsp;</span><span class="c4">Take</span><span
+                        class="c2">(</span><span class="c1">int</span><span class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c1">if</span><span class="c2">&nbsp;(Sum &gt;=
+                        sum)<br> &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sum -=
+                        sum;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">&Icirc;n constructor se stabile&#537;te suma ini&#539;ial&#259;, care este
+            p&#259;strat&#259; &icirc;n proprietatea Sum. Cu ajutorul metodei Put putem ad&#259;uga fonduri &icirc;n
+            cont, iar cu ajutorul metodei Take, dimpotriv&#259;, retragem bani din cont. S&#259; &icirc;ncerc&#259;m
+            s&#259; folosim clasa &icirc;n program - s&#259; cre&#259;m un cont, s&#259; depunem &#537;i s&#259;
+            retragem bani din el:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.a01d93993cd76f205221f8ab59f679e2d09e852f"></a><a id="t.1"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account account = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span
+                        class="c2">);<br>account.Put(</span><span class="c8">20</span><span class="c2">); &nbsp;
+                        &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont 20</span><span
+                        class="c2"><br>Console.WriteLine(</span><span class="c7">$&quot;Suma &icirc;n cont:
+                        {account.Sum}&quot;</span><span class="c2">);<br>account.Take(</span><span
+                        class="c8">70</span><span class="c2">); &nbsp; </span><span class="c10">// &icirc;ncerc&#259;m
+                        s&#259; retragem din cont 70</span><span class="c2"><br>Console.WriteLine(</span><span
+                        class="c7">$&quot;Suma &icirc;n cont: {account.Sum}&quot;</span><span
+                        class="c2">);<br>account.Take(</span><span class="c8">180</span><span class="c2">);
+                        &nbsp;</span><span class="c10">// &icirc;ncerc&#259;m s&#259; retragem din cont 180</span><span
+                        class="c2"><br>Console.WriteLine(</span><span class="c7">$&quot;Suma &icirc;n cont:
+                        {account.Sum}&quot;</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Ie&#537;irea &icirc;n consol&#259;:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.052507c2bdbc8d8f99d221087b29b876317519a8"></a><a id="t.2"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Suma &icirc;n cont: </span><span class="c8">120</span><span
+                        class="c2"><br>Suma &icirc;n cont: </span><span class="c8">50</span><span class="c2"><br>Suma
+                        &icirc;n cont: </span><span class="c8">50</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Toate opera&#539;iunile func&#539;ioneaz&#259; a&#537;a cum ar trebui. Dar ce se
+            &icirc;nt&acirc;mpl&#259; dac&#259; dorim s&#259; notific&#259;m utilizatorul despre rezultatele
+            opera&#539;iunilor sale? Am putea, de exemplu, s&#259; modific&#259;m metoda Put astfel:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.65a8358a2345b0c763cacbcbdb1fe0511cd10628"></a><a id="t.3"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">void</span><span class="c2">&nbsp;</span><span class="c4">Put</span><span
+                        class="c2">(</span><span class="c1">int</span><span class="c2">&nbsp;sum) &nbsp; &nbsp;<br>{<br>
+                        &nbsp; &nbsp;Sum += sum;<br> &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c7">$&quot;&Icirc;n cont s-a depus: {sum}&quot;</span><span class="c2">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum vom fi notifica&#539;i despre opera&#539;iune, v&#259;z&acirc;nd mesajul
+            corespunz&#259;tor &icirc;n consol&#259;. Dar exist&#259; c&acirc;teva observa&#539;ii. &Icirc;n momentul
+            definirii clasei, este posibil s&#259; nu &#537;tim exact ce ac&#539;iune dorim s&#259; realiz&#259;m
+            &icirc;n metoda Put ca r&#259;spuns la ad&#259;ugarea de bani. Poate fi afi&#537;are &icirc;n consol&#259;,
+            sau poate dorim s&#259; notific&#259;m utilizatorul prin email sau sms. Mai mult, putem crea o
+            bibliotec&#259; separat&#259; de clase care s&#259; con&#539;in&#259; aceast&#259; clas&#259; &#537;i
+            s&#259; o ad&#259;ug&#259;m &icirc;n alte proiecte. &#536;i deja din aceste proiecte s&#259; decidem ce
+            ac&#539;iune trebuie realizat&#259;. Poate dorim s&#259; folosim clasa Account &icirc;ntr-o aplica&#539;ie
+            grafic&#259; &#537;i s&#259; afi&#537;&#259;m la ad&#259;ugarea &icirc;n cont &icirc;ntr-un mesaj grafic, nu
+            &icirc;n consol&#259;. Sau biblioteca noastr&#259; de clase va fi utilizat&#259; de un alt dezvoltator, care
+            are propria opinie despre ce trebuie s&#259; fac&#259; la ad&#259;ugarea &icirc;n cont. Toate aceste
+            &icirc;ntreb&#259;ri le putem rezolva utiliz&acirc;nd evenimentele.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c13">Definirea &#537;i apelarea evenimentelor.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Evenimentele sunt declarate &icirc;n clas&#259; cu ajutorul cuv&acirc;ntului cheie
+        </span><span class="c15">event</span><span class="c0">, dup&#259; care se specific&#259; tipul delegatului care
+            reprezint&#259; evenimentul:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.ab503bfeff992a8e23d4fa62c8dee62afc8373e1"></a><a id="t.4"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">delegate</span><span class="c2">&nbsp;</span><span
+                        class="c1">void</span><span class="c2">&nbsp;</span><span class="c4">AccountHandler</span><span
+                        class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message);<br></span><span class="c1">event</span><span
+                        class="c2">&nbsp;AccountHandler Notify;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">&Icirc;n acest caz, mai &icirc;nt&acirc;i se define&#537;te delegatul
+            AccountHandler, care prime&#537;te un parametru de tip string. Apoi, cu ajutorul cuv&acirc;ntului cheie
+        </span><span class="c15">event</span><span class="c0">, se define&#537;te evenimentul cu numele Notify, care
+            reprezint&#259; delegatul AccountHandler. Numele pentru eveniment poate fi arbitrar, dar &icirc;n orice caz
+            trebuie s&#259; reprezinte un delegat.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Definind evenimentul, &icirc;l putem apela &icirc;n program ca o metod&#259;,
+            folosind numele evenimentului:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.babd22659d1ff4364fedee09b7fb533d920bbfa8"></a><a id="t.5"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Notify(</span><span class="c7">&quot;A avut loc o
+                        ac&#539;iune&quot;</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Deoarece evenimentul Notify reprezint&#259; delegatul AccountHandler, care
+            prime&#537;te un parametru de tip string, la apelarea evenimentului trebuie s&#259; transmitem o valoare de
+            tip string.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Cu toate acestea, la apelarea evenimentelor, ne putem confrunta cu faptul c&#259;
+            evenimentul este null &icirc;n cazul &icirc;n care nu este definit un handler. Prin urmare, la apelarea
+            evenimentului, este mai bine s&#259; &icirc;l verific&#259;m &icirc;ntotdeauna pentru null. De exemplu,
+            astfel:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.f31b03cf63be542115687fcf9f671455a81bef5c"></a><a id="t.6"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">if</span><span class="c2">(Notify != </span><span
+                        class="c1">null</span><span class="c2">) Notify(</span><span class="c7">&quot;A avut loc o
+                        ac&#539;iune&quot;</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Sau astfel:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.fc5b0294a83cdcdbab3fb525146dc7474e565ae6"></a><a id="t.7"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Notify?.Invoke(</span><span class="c7">&quot;A avut loc o
+                        ac&#539;iune&quot;</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">&Icirc;n acest caz, deoarece evenimentul reprezint&#259; un delegat, &icirc;l putem
+            apela folosind metoda</span><span class="c15">&nbsp;Invoke()</span><span class="c0">, transmi&#539;&acirc;nd
+            valorile necesare pentru parametri.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">S&#259; combin&#259;m totul &#537;i s&#259; cre&#259;m &#537;i s&#259; apel&#259;m un
+            eveniment:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.452e45a0ed0c43a2cee9956e88852d8851b8e323"></a><a id="t.8"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">class</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2"><br>{<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">delegate</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">AccountHandler</span><span class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message);<br> &nbsp; &nbsp;</span><span class="c1">public</span><span
+                        class="c2">&nbsp;</span><span class="c1">event</span><span class="c2">&nbsp;AccountHandler?
+                        Notify; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c10">// 1.Definirea
+                        evenimentului</span><span class="c2"><br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c4">Account</span><span
+                        class="c2">(</span><span class="c1">int</span><span class="c2">&nbsp;sum) =&gt; Sum = sum;<br>
+                        &nbsp; &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">int</span><span class="c2">&nbsp;Sum { </span><span class="c1">get</span><span
+                        class="c2">; </span><span class="c1">private</span><span class="c2">&nbsp;</span><span
+                        class="c1">set</span><span class="c2">; }<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">void</span><span
+                        class="c2">&nbsp;</span><span class="c4">Put</span><span class="c2">(</span><span
+                        class="c1">int</span><span class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;Sum += sum;<br> &nbsp; &nbsp; &nbsp; &nbsp;Notify?.Invoke(</span><span
+                        class="c7">$&quot;&Icirc;n cont s-a depus: {sum}&quot;</span><span class="c2">); &nbsp;
+                    </span><span class="c10">// 2.Apelarea evenimentului </span><span class="c2"><br> &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">void</span><span class="c2">&nbsp;</span><span class="c4">Take</span><span
+                        class="c2">(</span><span class="c1">int</span><span class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c1">if</span><span class="c2">&nbsp;(Sum &gt;=
+                        sum)<br> &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sum -=
+                        sum;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Notify?.Invoke(</span><span
+                        class="c7">$&quot;Din cont s-a retras: {sum}&quot;</span><span class="c2">); &nbsp; </span><span
+                        class="c10">// 2.Apelarea evenimentului</span><span class="c2"><br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c1">else</span><span class="c2"><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;Notify?.Invoke(</span><span class="c7">$&quot;Nu sunt suficien&#539;i bani &icirc;n cont.
+                        Sold curent: {Sum}&quot;</span><span class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp;
+                        &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum, cu ajutorul evenimentului Notify, notific&#259;m sistemul c&#259; au fost
+            ad&#259;ugate fonduri &#537;i c&#259; fondurile au fost retrase din cont sau c&#259; nu sunt suficiente
+            fonduri &icirc;n cont.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c13">Ad&#259;ugarea handler-ului de eveniment.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Cu evenimentul poate fi asociat unul sau mai mul&#539;i </span><span
+            class="c15">handler</span><span class="c14">-i. Handler-ii de eveniment sunt exact ceea ce se execut&#259;
+            la apelarea evenimentelor. De multe ori, ca handler-i de eveniment se folosesc </span><span
+            class="c15">metode</span><span class="c14">. Fiecare handler de eveniment, dup&#259; lista de parametri
+            &#537;i tipul de returnare, trebuie s&#259; corespund&#259; delegatului care reprezint&#259; evenimentul.
+            Pentru ad&#259;ugarea unui handler de eveniment se folose&#537;te opera&#539;ia </span><span
+            class="c15">+=</span><span class="c0">:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.8730b826be9e7adc61f8eb12ff7cf854cc13e7b6"></a><a id="t.9"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Notify += handler de eveniment;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">S&#259; definim handler-i pentru evenimentul Notify pentru a primi notific&#259;rile
+            dorite &icirc;n program:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.b95d908fe220b9b5555595ce6187e9775ee7c60a"></a><a id="t.10"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account account = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>account.Notify
+                        += DisplayMessage; &nbsp; </span><span class="c10">// Ad&#259;ug&#259;m handler pentru
+                        evenimentul Notify</span><span class="c2"><br>account.Put(</span><span class="c8">20</span><span
+                        class="c2">); &nbsp; &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont
+                        20</span><span class="c2"><br>Console.WriteLine(</span><span class="c7">$&quot;Suma &icirc;n
+                        cont: {account.Sum}&quot;</span><span class="c2">);<br>account.Take(</span><span
+                        class="c8">70</span><span class="c2">); &nbsp; </span><span class="c10">// &icirc;ncerc&#259;m
+                        s&#259; retragem din cont 70</span><span class="c2"><br>Console.WriteLine(</span><span
+                        class="c7">$&quot;Suma &icirc;n cont: {account.Sum}&quot;</span><span
+                        class="c2">);<br>account.Take(</span><span class="c8">180</span><span class="c2">);
+                        &nbsp;</span><span class="c10">// &icirc;ncerc&#259;m s&#259; retragem din cont 180</span><span
+                        class="c2"><br>Console.WriteLine(</span><span class="c7">$&quot;Suma &icirc;n cont:
+                        {account.Sum}&quot;</span><span class="c2">);<br><br></span><span class="c1">void</span><span
+                        class="c2">&nbsp;</span><span class="c4">DisplayMessage</span><span class="c2">(</span><span
+                        class="c1">string</span><span class="c2">&nbsp;message) =&gt; Console.WriteLine(message);</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">&Icirc;n acest caz, ca handler se folose&#537;te metoda DisplayMessage, care
+            corespunde dup&#259; lista de parametri &#537;i tipul de returnare delegatului AccountHandler. &Icirc;n
+            final, la apelarea evenimentului</span><span class="c14 c18">&nbsp;Notify?.Invoke()</span><span
+            class="c14">&nbsp;se va apela metoda DisplayMessage, c&#259;reia pentru parametrul message i se va transmite
+            &#537;irul transmis la</span><span class="c14 c18">&nbsp;Notify?.Invoke()</span><span class="c0">. &Icirc;n
+            DisplayMessage, pur &#537;i simplu afi&#537;&#259;m mesajul primit de la eveniment, dar am putea defini
+            orice logic&#259;.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Dac&#259; &icirc;n acest caz handler-ul nu ar fi fost setat, atunci la apelarea
+            evenimentului </span><span class="c14 c18">Notify?.Invoke() </span><span class="c0">nu s-ar fi
+            &icirc;nt&acirc;mplat nimic, deoarece evenimentul Notify ar fi fost egal cu null.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Ie&#537;irea &icirc;n consol&#259; a programului:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.87e069305857d4d4ff9feab8ac5b8e34e5923917"></a><a id="t.11"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">&Icirc;n cont s-a depus: </span><span class="c8">20</span><span
+                        class="c2"><br>Suma &icirc;n cont: </span><span class="c8">120</span><span class="c2"><br>Din
+                        cont s-a retras: </span><span class="c8">70</span><span class="c2"><br>Suma &icirc;n cont:
+                    </span><span class="c8">50</span><span class="c2"><br>Nu sunt suficien&#539;i bani &icirc;n cont.
+                        Sold curent: </span><span class="c8">50</span><span class="c2"><br>Suma &icirc;n cont:
+                    </span><span class="c8">50</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum putem s&#259; eviden&#539;iem clasa Account &icirc;ntr-o bibliotec&#259;
+            separat&#259; de clase &#537;i s&#259; o ad&#259;ug&#259;m &icirc;n orice proiect.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c13">Ad&#259;ugarea &#537;i eliminarea handler-ilor.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Pentru un eveniment se pot seta mai mul&#539;i handler-i &#537;i apoi, &icirc;n
+            orice moment, se pot elimina. Pentru eliminarea handler-ilor se folose&#537;te opera&#539;ia</span><span
+            class="c15">&nbsp;-=</span><span class="c0">. De exemplu:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.52fc7f9cc8df50c982e46eeaa414a522c4d88820"></a><a id="t.12"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account account = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>account.Notify
+                        += DisplayMessage; &nbsp; &nbsp; &nbsp; </span><span class="c10">// ad&#259;ug&#259;m handler-ul
+                        DisplayMessage</span><span class="c2"><br>account.Notify += DisplayRedMessage; &nbsp;
+                        &nbsp;</span><span class="c10">// ad&#259;ug&#259;m handler-ul Display</span><span
+                        class="c2"><br><br>RedMessage<br>account.Put(</span><span class="c8">20</span><span
+                        class="c2">); &nbsp; &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont
+                        20</span><span class="c2"><br>account.Notify -= DisplayRedMessage; &nbsp; &nbsp; </span><span
+                        class="c10">// elimin&#259;m handler-ul DisplayRedMessage</span><span
+                        class="c2"><br>account.Put(</span><span class="c8">50</span><span class="c2">); &nbsp;
+                        &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont 50</span><span
+                        class="c2"><br><br></span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">DisplayMessage</span><span class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message) =&gt; Console.WriteLine(message);<br></span><span
+                        class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">DisplayRedMessage</span><span class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message)<br>{<br> &nbsp; &nbsp;</span><span class="c10">// Set&#259;m culoarea
+                        ro&#537;ie pentru caractere</span><span class="c2"><br> &nbsp; &nbsp;Console.ForegroundColor =
+                        ConsoleColor.Red;<br> &nbsp; &nbsp;Console.WriteLine(message);<br> &nbsp; &nbsp;</span><span
+                        class="c10">// Reset&#259;m set&#259;rile de culoare</span><span class="c2"><br> &nbsp;
+                        &nbsp;Console.ResetColor();<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Ie&#537;irea &icirc;n consol&#259;:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.c81ecdc916d6a8aa6d385b70d5b30a8f9779fb0b"></a><a id="t.13"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">&Icirc;n cont s-a depus: </span><span class="c8">20</span><span
+                        class="c2"><br>&Icirc;n cont s-a depus: </span><span class="c8">20</span><span
+                        class="c2"><br>&Icirc;n cont s-a depus: </span><span class="c8">50</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Ca handler-i se pot folosi nu doar metode obi&#537;nuite, ci &#537;i delega&#539;i,
+            metode anonime &#537;i lambda-uri. Utilizarea delega&#539;ilor &#537;i metodelor:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.f35010173a702c9d432f125e3a1941f88ab39343"></a><a id="t.14"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account acc = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br></span><span
+                        class="c10">// setarea delegatului, care indic&#259; spre metoda DisplayMessage</span><span
+                        class="c2"><br>acc.Notify += </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account.AccountHandler(DisplayMessage);<br></span><span class="c10">// setarea
+                        metodei DisplayMessage ca handler</span><span class="c2"><br>acc.Notify += DisplayMessage;
+                        &nbsp; &nbsp; &nbsp; </span><span class="c10">// ad&#259;ug&#259;m handler-ul
+                        DisplayMessage</span><span class="c2"><br><br>acc.Put(</span><span class="c8">20</span><span
+                        class="c2">); &nbsp; &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont
+                        20</span><span class="c2"><br><br></span><span class="c1">void</span><span
+                        class="c2">&nbsp;</span><span class="c4">DisplayMessage</span><span class="c2">(</span><span
+                        class="c1">string</span><span class="c2">&nbsp;message) =&gt; Console.WriteLine(message);</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">&Icirc;n acest caz, nu va exista nicio diferen&#539;&#259; &icirc;ntre cei doi
+            handler-i.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Setarea unei metode anonime ca handler:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.1c0592a0738ff2bc6fa7d856c27e10bbf34517d0"></a><a id="t.15"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account acc = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>acc.Notify +=
+                    </span><span class="c1">delegate</span><span class="c2">&nbsp;(</span><span
+                        class="c1">string</span><span class="c2">&nbsp;mes)<br>{<br> &nbsp;
+                        &nbsp;Console.WriteLine(mes);<br>};<br>acc.Put(</span><span class="c8">20</span><span
+                        class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Setarea unei lambda ca handler:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.6f036acd43748dac1a4bf63827a617e184ee359b"></a><a id="t.16"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account account = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>account.Notify
+                        += message =&gt; Console.WriteLine(message);<br>account.Put(</span><span
+                        class="c8">20</span><span class="c2">);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c13">Gestionarea handler-ilor.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Cu ajutorul accesoriilor speciale </span><span class="c15">add/remove</span><span
+            class="c0">, putem gestiona ad&#259;ugarea &#537;i eliminarea handler-ilor. De obicei, aceast&#259;
+            func&#539;ionalitate este rar necesar&#259;, dar totu&#537;i o putem folosi. De exemplu:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.177bdc4d318d14de97f9a0144388aebab0ac481b"></a><a id="t.17"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">class</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2"><br>{<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">delegate</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">AccountHandler</span><span class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message);<br> &nbsp; &nbsp;AccountHandler? notify;<br> &nbsp;
+                        &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">event</span><span class="c2">&nbsp;AccountHandler Notify<br> &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c1">add</span><span class="c2"><br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;notify += </span><span
+                        class="c1">value</span><span class="c2">;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;Console.WriteLine(</span><span class="c7">$&quot;{</span><span
+                        class="c1">value</span><span class="c7">.Method.Name} ad&#259;ugat&quot;</span><span
+                        class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c1">remove</span><span class="c2"><br> &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;notify -= </span><span class="c1">value</span><span class="c2">;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c7">$&quot;{</span><span class="c1">value</span><span class="c7">.Method.Name}
+                        eliminat&quot;</span><span class="c2">);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2">(</span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum) =&gt; Sum = sum;<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">int</span><span
+                        class="c2">&nbsp;Sum { </span><span class="c1">get</span><span class="c2">; </span><span
+                        class="c1">private</span><span class="c2">&nbsp;</span><span class="c1">set</span><span
+                        class="c2">; }<br> &nbsp; &nbsp;</span><span class="c1">public</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">Put</span><span class="c2">(</span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;Sum += sum;<br> &nbsp;
+                        &nbsp; &nbsp; &nbsp;notify?.Invoke(</span><span class="c7">$&quot;&Icirc;n cont s-a depus:
+                        {sum}&quot;</span><span class="c2">); &nbsp; </span><span class="c10">// 2.Apelarea
+                        evenimentului </span><span class="c2"><br> &nbsp; &nbsp;}<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">void</span><span
+                        class="c2">&nbsp;</span><span class="c4">Take</span><span class="c2">(</span><span
+                        class="c1">int</span><span class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c1">if</span><span class="c2">&nbsp;(Sum &gt;= sum)<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sum -= sum;<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;notify?.Invoke(</span><span class="c7">$&quot;Din cont s-a retras:
+                        {sum}&quot;</span><span class="c2">); &nbsp; </span><span class="c10">// 2.Apelarea
+                        evenimentului</span><span class="c2"><br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span><span class="c1">else</span><span class="c2"><br> &nbsp; &nbsp; &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;notify?.Invoke(</span><span class="c7">$&quot;Nu sunt
+                        suficien&#539;i bani &icirc;n cont. Sold curent: {Sum}&quot;</span><span class="c2">);<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum definirea evenimentului se &icirc;mparte &icirc;n dou&#259; p&#259;r&#539;i. Mai
+            &icirc;nt&acirc;i se define&#537;te o variabil&#259; delegat prin care putem apela handler-ii
+            asocia&#539;i:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.8f6273500ec1501985399acf2160d0418fb3c823"></a><a id="t.18"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">AccountHandler notify;</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">&Icirc;n a doua parte, definim accesoriile </span><span class="c15">add </span><span
+            class="c14">&#537;i </span><span class="c15">remove</span><span class="c14">. Accesoriul </span><span
+            class="c15">add </span><span class="c14">este apelat la ad&#259;ugarea unui handler, adic&#259; la
+            opera&#539;ia +=. Handler-ul ad&#259;ugat este accesibil prin cuv&acirc;ntul cheie </span><span
+            class="c15">value</span><span class="c0">. Aici putem ob&#539;ine informa&#539;ii despre handler (de
+            exemplu, numele metodei prin value.Method.Name) &#537;i defini o anumit&#259; logic&#259;. &Icirc;n acest
+            caz, pentru simplitate, doar afi&#537;&#259;m un mesaj &icirc;n consol&#259;:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.0c1d8243bc165a93248b5b953cd1d78fde4e5559"></a><a id="t.19"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">add</span><span class="c2"><br>{<br> &nbsp; &nbsp;notify += </span><span
+                        class="c1">value</span><span class="c2">;<br> &nbsp; &nbsp;Console.WriteLine(</span><span
+                        class="c7">$&quot;{</span><span class="c1">value</span><span class="c7">.Method.Name}
+                        ad&#259;ugat&quot;</span><span class="c2">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Blocul </span><span class="c15">remove </span><span class="c0">este apelat la
+            eliminarea unui handler. &Icirc;n mod similar, putem defini o logic&#259; suplimentar&#259;:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.3fce6d7fc838c1bb9368550c3269a72105de7245"></a><a id="t.20"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">remove</span><span class="c2"><br>{<br> &nbsp; &nbsp;notify -=
+                    </span><span class="c1">value</span><span class="c2">;<br> &nbsp;
+                        &nbsp;Console.WriteLine(</span><span class="c7">$&quot;{</span><span
+                        class="c1">value</span><span class="c7">.Method.Name} eliminat&quot;</span><span
+                        class="c2">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">&Icirc;n interiorul clasei, evenimentul este apelat tot prin variabila notify. Dar
+            pentru ad&#259;ugarea &#537;i eliminarea handler-ilor &icirc;n program se folose&#537;te chiar
+            Notify:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.a4d742d811b80dad93951eee67d29401fc6c63a9"></a><a id="t.21"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account acc = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>acc.Notify +=
+                        DisplayMessage; &nbsp; &nbsp; &nbsp; </span><span class="c10">// ad&#259;ug&#259;m handler-ul
+                        DisplayMessage</span><span class="c2"><br>acc.Put(</span><span class="c8">20</span><span
+                        class="c2">); &nbsp; &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont
+                        20</span><span class="c2"><br>acc.Notify -= DisplayMessage; &nbsp; &nbsp; </span><span
+                        class="c10">// elimin&#259;m handler-ul DisplayMessage</span><span
+                        class="c2"><br>acc.Put(</span><span class="c8">20</span><span class="c2">); &nbsp;
+                        &nbsp;</span><span class="c10">// ad&#259;ug&#259;m &icirc;n cont 20</span><span
+                        class="c2"><br><br></span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">DisplayMessage</span><span class="c2">(</span><span class="c1">string</span><span
+                        class="c2">&nbsp;message) =&gt; Console.WriteLine(message);</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Ie&#537;irea &icirc;n consol&#259; a programului:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.4181bdf7dfad3d26c82d77b8aab8fc33a5fb0013"></a><a id="t.22"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">DisplayMessage ad&#259;ugat<br>&Icirc;n cont s-a depus: </span><span
+                        class="c8">20</span><span class="c2"><br>DisplayMessage eliminat</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c13">Transmiterea datelor evenimentului.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c14">Adesea, la apari&#539;ia unui eveniment, handler-ului evenimentului i se cere
+            s&#259; transmit&#259; anumite informa&#539;ii despre eveniment. De exemplu, s&#259; ad&#259;ug&#259;m
+            &icirc;n programul nostru o nou&#259; clas&#259; </span><span class="c15">AccountEventArgs </span><span
+            class="c0">cu urm&#259;torul cod:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.d96683d9f5f6448142a4960f3d0943bb5b95217e"></a><a id="t.23"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">class</span><span class="c2">&nbsp;</span><span
+                        class="c4">AccountEventArgs</span><span class="c2"><br>{<br> &nbsp; &nbsp;</span><span
+                        class="c10">// Mesaj</span><span class="c2"><br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">string</span><span
+                        class="c2">&nbsp;Message { </span><span class="c1">get</span><span class="c2">; }<br> &nbsp;
+                        &nbsp;</span><span class="c10">// Suma cu care s-a modificat contul</span><span class="c2"><br>
+                        &nbsp; &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">int</span><span class="c2">&nbsp;Sum { </span><span class="c1">get</span><span
+                        class="c2">; }<br> &nbsp; &nbsp;</span><span class="c1">public</span><span
+                        class="c2">&nbsp;</span><span class="c4">AccountEventArgs</span><span class="c2">(</span><span
+                        class="c1">string</span><span class="c2">&nbsp;message, </span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;Message = message;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;Sum = sum;<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Aceast&#259; clas&#259; are dou&#259; propriet&#259;&#539;i: Message - pentru a stoca
+            mesajul afi&#537;at &#537;i Sum - pentru a stoca suma cu care s-a modificat contul.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum folosim clasa AccountEventArgs, modific&acirc;nd clasa Account astfel:</span>
+    </p>
+    <p class="c3"><span class="c0"></span></p><a id="t.34e412699952a160bbf99eb06ebed542ec7e745a"></a><a id="t.24"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c1">class</span><span class="c2">&nbsp;</span><span
+                        class="c4">Account</span><span class="c2"><br>{<br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c1">delegate</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">AccountHandler</span><span class="c2">(Account sender, AccountEventArgs e);<br>
+                        &nbsp; &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">event</span><span class="c2">&nbsp;AccountHandler? Notify;<br><br> &nbsp;
+                        &nbsp;</span><span class="c1">public</span><span class="c2">&nbsp;</span><span
+                        class="c1">int</span><span class="c2">&nbsp;Sum { </span><span class="c1">get</span><span
+                        class="c2">; </span><span class="c1">private</span><span class="c2">&nbsp;</span><span
+                        class="c1">set</span><span class="c2">; }<br><br> &nbsp; &nbsp;</span><span
+                        class="c1">public</span><span class="c2">&nbsp;</span><span class="c4">Account</span><span
+                        class="c2">(</span><span class="c1">int</span><span class="c2">&nbsp;sum) =&gt; Sum =
+                        sum;<br><br> &nbsp; &nbsp;</span><span class="c1">public</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">Put</span><span class="c2">(</span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;Sum += sum;<br> &nbsp;
+                        &nbsp; &nbsp; &nbsp;Notify?.Invoke(</span><span class="c1">this</span><span class="c2">,
+                    </span><span class="c1">new</span><span class="c2">&nbsp;AccountEventArgs(</span><span
+                        class="c7">$&quot;&Icirc;n cont s-a depus {sum}&quot;</span><span class="c2">, sum));<br> &nbsp;
+                        &nbsp;}<br> &nbsp; &nbsp;</span><span class="c1">public</span><span
+                        class="c2">&nbsp;</span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">Take</span><span class="c2">(</span><span class="c1">int</span><span
+                        class="c2">&nbsp;sum)<br> &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                        class="c1">if</span><span class="c2">&nbsp;(Sum &gt;= sum)<br> &nbsp; &nbsp; &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sum -= sum;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;Notify?.Invoke(</span><span class="c1">this</span><span class="c2">, </span><span
+                        class="c1">new</span><span class="c2">&nbsp;AccountEventArgs(</span><span class="c7">$&quot;Suma
+                        {sum} retras&#259; din cont&quot;</span><span class="c2">, sum));<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c1">else</span><span class="c2"><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;Notify?.Invoke(</span><span class="c1">this</span><span class="c2">, </span><span
+                        class="c1">new</span><span class="c2">&nbsp;AccountEventArgs(</span><span class="c7">&quot;Nu
+                        sunt suficien&#539;i bani &icirc;n cont&quot;</span><span class="c2">, sum));<br> &nbsp; &nbsp;
+                        &nbsp; &nbsp;}<br> &nbsp; &nbsp;}<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Comparativ cu versiunea anterioar&#259; a clasei Account, aici s-a modificat doar
+            num&#259;rul de parametri ai delegatului &#537;i, &icirc;n consecin&#539;&#259;, num&#259;rul de parametri
+            la apelarea evenimentului. Acum delegatul AccountHandler prime&#537;te ca prim parametru obiectul care a
+            declan&#537;at evenimentul, adic&#259; obiectul curent Account. Iar ca al doilea parametru prime&#537;te
+            obiectul AccountEventArgs, care stocheaz&#259; informa&#539;ii despre eveniment, ob&#539;inut&#259; prin
+            constructor.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Acum modific&#259;m programul principal:</span></p>
+    <p class="c3"><span class="c0"></span></p><a id="t.ba94fefcb8110f4573219d8de02c0f6bdce3e1ef"></a><a id="t.25"></a>
+    <table class="c11">
+        <tr class="c5">
+            <td class="c6" colspan="1" rowspan="1">
+                <p class="c12"><span class="c2">Account acc = </span><span class="c1">new</span><span
+                        class="c2">&nbsp;Account(</span><span class="c8">100</span><span class="c2">);<br>acc.Notify +=
+                        DisplayMessage;<br>acc.Put(</span><span class="c8">20</span><span
+                        class="c2">);<br>acc.Take(</span><span class="c8">70</span><span
+                        class="c2">);<br>acc.Take(</span><span class="c8">150</span><span
+                        class="c2">);<br><br></span><span class="c1">void</span><span class="c2">&nbsp;</span><span
+                        class="c4">DisplayMessage</span><span class="c2">(Account sender, AccountEventArgs e)<br>{<br>
+                        &nbsp; &nbsp;Console.WriteLine(</span><span class="c7">$&quot;Suma tranzac&#539;iei:
+                        {e.Sum}&quot;</span><span class="c2">);<br> &nbsp; &nbsp;Console.WriteLine(e.Message);<br>
+                        &nbsp; &nbsp;Console.WriteLine(</span><span class="c7">$&quot;Suma curent&#259; &icirc;n cont:
+                        {sender.Sum}&quot;</span><span class="c2">);<br>}</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c3"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">Comparativ cu varianta anterioar&#259;, aici doar modific&#259;m num&#259;rul de
+            parametri &#537;i utilizarea lor &icirc;n handler-ul DisplayMessage. Datorit&#259; primului parametru,
+            &icirc;n metod&#259; putem ob&#539;ine informa&#539;ii despre emitentul evenimentului - contul cu care se
+            realizeaz&#259; opera&#539;ia. Iar prin al doilea parametru putem ob&#539;ine informa&#539;ii despre starea
+            opera&#539;iei.</span></p>
+    <p class="c3"><span class="c0"></span></p>
+</body>
+
+</html>

@@ -1,0 +1,836 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=cGvuclDC_Z1vE_cnVEU6AQ3B2cQio22zuQYmMduN3_l7ONtQ5a4SPXkjZSXpzESjP2gInyaGnGxV-h1PT8k4ug);
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c10 {
+        border-right-style: solid;
+        padding: 5pt 5pt 5pt 5pt;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 0pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 0pt;
+        border-top-style: solid;
+        background-color: #333333;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 468pt;
+        border-top-color: #000000;
+        border-bottom-style: solid;
+      }
+      .c2 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt;
+      }
+      .c11 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 27pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c7 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: normal;
+      }
+      .c8 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c3 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 400;
+      }
+      .c13 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fcc28c;
+        font-weight: 400;
+      }
+      .c4 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #d36363;
+        font-weight: 400;
+      }
+      .c5 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffaa;
+        font-weight: 400;
+      }
+      .c6 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #a2fca2;
+        font-weight: 400;
+      }
+      .c12 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ade5fc;
+        font-weight: 400;
+      }
+      .c19 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #fc9b9b;
+        font-weight: 400;
+      }
+      .c1 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #ffffff;
+        font-weight: 400;
+      }
+      .c9 {
+        background-color: #333333;
+        font-size: 12pt;
+        font-family: "Consolas";
+        color: #62c8f3;
+        font-weight: 700;
+      }
+      .c17 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto;
+      }
+      .c0 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+      }
+      .c15 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-style: italic;
+        font-weight: 400;
+      }
+      .c18 {
+        font-size: 12pt;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+      .c16 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c14 {
+        height: 0pt;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c16 doc-content">
+    <h1 class="c8 c11">Crearea temelor CSS cu ajutorul variabilelor.</h1>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c7"
+        >Utilizarea variabilelor &icirc;n CSS ne permite s&#259; cre&#259;m
+        &#537;i s&#259; aplic&#259;m teme pe o pagin&#259; web. De exemplu,
+        s&#259; definim urm&#259;toarea pagin&#259; web:</span
+      >
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <a id="t.bb06b724648a1c96352d9fa04e82413fc9a8406b"></a><a id="t.0"></a>
+    <table class="c17">
+      <tr class="c14">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c0">
+            <span class="c19">&lt;!DOCTYPE html&gt;</span
+            ><span class="c1"><br /></span><span class="c3">&lt;</span
+            ><span class="c9">html</span><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">head</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">meta</span
+            ><span class="c3">&nbsp;charset=</span
+            ><span class="c6">&quot;utf-8&quot;</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">meta</span
+            ><span class="c3">&nbsp;name=</span
+            ><span class="c6">&quot;viewport&quot;</span
+            ><span class="c3">&nbsp;content=</span
+            ><span class="c6">&quot;width=device-width&quot;</span
+            ><span class="c3">&nbsp;/&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">title</span
+            ><span class="c3">&gt;</span
+            ><span class="c1">Teme &icirc;n CSS3</span
+            ><span class="c3">&lt;/</span><span class="c9">title</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">style</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;:root {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--panel-bg-color</span><span class="c1">: </span
+            ><span class="c4">#dfe4ea</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--container-bg-color</span
+            ><span class="c1">: </span><span class="c4">#f1f2f6</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--text-color</span><span class="c1">: </span
+            ><span class="c4">#2f3542</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;:root[theme=&#39;dark&#39;] {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--panel-bg-color</span><span class="c1">: </span
+            ><span class="c4">#2f3542</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--container-bg-color</span
+            ><span class="c1">: </span><span class="c4">#57606f</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">--text-color</span><span class="c1">: </span
+            ><span class="c4">#ced6e0</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;* {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">margin</span><span class="c1">: </span
+            ><span class="c4">0</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">html</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">height</span><span class="c1">: </span
+            ><span class="c4">100%</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">body</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">height</span><span class="c1">: </span
+            ><span class="c4">100%</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">font-family</span
+            ><span class="c1"
+              >: Verdana;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">display</span
+            ><span class="c1"
+              >: flex;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">flex-direction</span
+            ><span class="c1"
+              >: column;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">color</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--text-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">nav</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">padding</span><span class="c1">: </span
+            ><span class="c4">1.2rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">background</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--panel-bg-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">nav</span><span class="c1">&nbsp;</span
+            ><span class="c13">a</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">padding</span><span class="c1">: </span
+            ><span class="c4">1.1rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c12">.container</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">flex</span><span class="c1">: </span
+            ><span class="c4">1</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">padding</span><span class="c1">: </span
+            ><span class="c4">1rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">background</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--container-bg-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">footer</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">padding</span><span class="c1">: </span
+            ><span class="c4">1rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">background</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--panel-bg-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">input</span
+            ><span class="c1"
+              >[type=button] {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">color</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--text-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">background</span><span class="c1">: </span
+            ><span class="c5">var</span
+            ><span class="c1"
+              >(--panel-bg-color);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">padding</span><span class="c1">: </span
+            ><span class="c4">0.3rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">margin</span><span class="c1">: </span
+            ><span class="c4">0.2rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">font-size</span><span class="c1">: </span
+            ><span class="c4">1rem</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">style</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">head</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">body</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">nav</span
+            ><span class="c3">&nbsp;class=</span
+            ><span class="c6">&quot;navbar&quot;</span
+            ><span class="c3">&gt;&lt;</span><span class="c9">a</span
+            ><span class="c3">&gt;</span><span class="c1">Principal&#259;</span
+            ><span class="c3">&lt;/</span><span class="c9">a</span
+            ><span class="c3">&gt;</span><span class="c1">|</span
+            ><span class="c3">&lt;</span><span class="c9">a</span
+            ><span class="c3">&gt;</span><span class="c1">Contacte</span
+            ><span class="c3">&lt;/</span><span class="c9">a</span
+            ><span class="c3">&gt;</span><span class="c1">|</span
+            ><span class="c3">&lt;</span><span class="c9">a</span
+            ><span class="c3">&gt;</span><span class="c1">Despre</span
+            ><span class="c3">&lt;/</span><span class="c9">a</span
+            ><span class="c3">&gt;&lt;/</span><span class="c9">nav</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">div</span
+            ><span class="c3">&nbsp;class=</span
+            ><span class="c6">&quot;container&quot;</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">div</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">input</span
+            ><span class="c3">&nbsp;type=</span
+            ><span class="c6">&quot;button&quot;</span
+            ><span class="c3">&nbsp;value=</span
+            ><span class="c6">&quot;Toggle&quot;</span
+            ><span class="c3">&nbsp;id=</span
+            ><span class="c6">&quot;toggle-theme&quot;</span
+            ><span class="c3">&nbsp;/&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">div</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">h2</span
+            ><span class="c3">&nbsp;class=</span
+            ><span class="c6">&quot;title&quot;</span
+            ><span class="c3">&gt;</span><span class="c1">Titlu</span
+            ><span class="c3">&lt;/</span><span class="c9">h2</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">p</span
+            ><span class="c3">&nbsp;class=</span
+            ><span class="c6">&quot;content&quot;</span
+            ><span class="c3">&gt;</span
+            ><span class="c1">Con&#539;inut principal...</span
+            ><span class="c3">&lt;/</span><span class="c9">p</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">div</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">footer</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">p</span
+            ><span class="c3">&gt;</span
+            ><span class="c1">Toate drepturile rezervate (c)2018</span
+            ><span class="c3">&lt;/</span><span class="c9">p</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">footer</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;</span><span class="c9">script</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">const</span
+            ><span class="c1">&nbsp;toggleBtn = </span
+            ><span class="c5">document</span
+            ><span class="c1">.querySelector(</span
+            ><span class="c6">&quot;#toggle-theme&quot;</span
+            ><span class="c1"
+              >);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;toggleBtn.addEventListener(</span
+            ><span class="c6">&quot;click&quot;</span><span class="c1">, </span
+            ><span class="c13">function</span
+            ><span class="c1"
+              >() {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c13">if</span><span class="c1">(</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.hasAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span
+            ><span class="c1"
+              >)) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.removeAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span
+            ><span class="c1"
+              >);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} </span
+            ><span class="c13">else</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.setAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span><span class="c1">, </span
+            ><span class="c6">&quot;dark&quot;</span
+            ><span class="c1"
+              >);<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;});<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">script</span
+            ><span class="c3">&gt;</span
+            ><span class="c1"
+              ><br />
+              &nbsp; &nbsp;</span
+            ><span class="c3">&lt;/</span><span class="c9">body</span
+            ><span class="c3">&gt;</span><span class="c1"><br /></span
+            ><span class="c3">&lt;/</span><span class="c9">html</span
+            ><span class="c3">&gt;</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c7"
+        >&Icirc;n stilurile paginii sunt definite de fapt dou&#259; teme,
+        fiecare con&#539;in&acirc;nd trei variabile:</span
+      >
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <a id="t.56a572d09170e5789b8dfbdb3c5bea5453082b44"></a><a id="t.1"></a>
+    <table class="c17">
+      <tr class="c14">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c0">
+            <span class="c1"
+              >:root {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--panel-bg-color</span><span class="c1">: </span
+            ><span class="c4">#dfe4ea</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--container-bg-color</span
+            ><span class="c1">: </span><span class="c4">#f1f2f6</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--text-color</span><span class="c1">: </span
+            ><span class="c4">#2f3542</span
+            ><span class="c1"
+              >;<br />}<br />:root[theme=&#39;dark&#39;] {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--panel-bg-color</span><span class="c1">: </span
+            ><span class="c4">#2f3542</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--container-bg-color</span
+            ><span class="c1">: </span><span class="c4">#57606f</span
+            ><span class="c1"
+              >;<br />
+              &nbsp; &nbsp;</span
+            ><span class="c5">--text-color</span><span class="c1">: </span
+            ><span class="c4">#ced6e0</span><span class="c1">;<br />}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c18"
+        >Prima tem&#259; este una luminoas&#259;, iar a doua este una
+        &icirc;ntunecat&#259;. &Icirc;n cazul temei &icirc;ntunecate, elementul
+        r&#259;d&#259;cin&#259;, adic&#259; elementul html, va avea atributul </span
+      ><span class="c15">theme=&quot;dark&quot;</span><span class="c7">.</span>
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c7"
+        >Apoi, aceste variabile sunt utilizate pentru a seta
+        propriet&#259;&#539;ile de stil ale elementelor individuale.</span
+      >
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c7"
+        >Pentru a comuta &icirc;ntre teme, butonul are un simplu cod JavaScript
+        ata&#537;at, care verific&#259; prezen&#539;a atributului theme (ceea ce
+        va &icirc;nsemna c&#259; este setat&#259; tema &icirc;ntunecat&#259;).
+        Dac&#259; atributul exist&#259;, acesta este eliminat, iar dac&#259; nu
+        exist&#259;, este ad&#259;ugat.</span
+      >
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <a id="t.20c17948a742ee2319ceba6a7f3d20d85b0ce997"></a><a id="t.2"></a>
+    <table class="c17">
+      <tr class="c14">
+        <td class="c10" colspan="1" rowspan="1">
+          <p class="c0">
+            <span class="c13">const</span
+            ><span class="c1">&nbsp;toggleBtn = </span
+            ><span class="c5">document</span
+            ><span class="c1">.querySelector(</span
+            ><span class="c6">&quot;#toggle-theme&quot;</span
+            ><span class="c1">);<br />toggleBtn.addEventListener(</span
+            ><span class="c6">&quot;click&quot;</span><span class="c1">, </span
+            ><span class="c13">function</span
+            ><span class="c1"
+              >() {<br />
+              &nbsp; &nbsp;</span
+            ><span class="c13">if</span><span class="c1">(</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.hasAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span
+            ><span class="c1"
+              >)) {<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.removeAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span
+            ><span class="c1"
+              >);<br />
+              &nbsp; &nbsp;} </span
+            ><span class="c13">else</span
+            ><span class="c1"
+              >&nbsp;{<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;</span
+            ><span class="c5">document</span
+            ><span class="c1">.documentElement.setAttribute(</span
+            ><span class="c6">&quot;theme&quot;</span><span class="c1">, </span
+            ><span class="c6">&quot;dark&quot;</span
+            ><span class="c1"
+              >);<br />
+              &nbsp; &nbsp;}<br />});</span
+            >
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span class="c7"
+        >&Icirc;n rezultat, la ap&#259;sarea butonului se va produce comutarea
+        global&#259; a stilurilor paginii web:</span
+      >
+    </p>
+    <p class="c2"><span class="c7"></span></p>
+    <p class="c8">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 624px;
+          height: 578.67px;
+        "
+        ><img
+          alt=""
+          src="images/image1.png"
+          style="
+            width: 624px;
+            height: 578.67px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c8">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 624px;
+          height: 564px;
+        "
+        ><img
+          alt=""
+          src="images/image2.png"
+          style="
+            width: 624px;
+            height: 564px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+  </body>
+</html>
