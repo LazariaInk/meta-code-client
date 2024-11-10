@@ -2,17 +2,15 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Servește fișierele statice din `build` (fișierele React) și `public`
+// Servește fișierele statice din `build` și `public`
 app.use(express.static(path.join(__dirname, 'build')));
 app.use('/lessons', express.static(path.join(__dirname, 'public', 'lessons')));
+app.use('/static', express.static(path.join(__dirname, 'build', 'static')));
+app.use('/manifest.json', express.static(path.join(__dirname, 'build', 'manifest.json')));
 
-// Dacă cererea nu este pentru un fișier static, redirecționează către `index.html` pentru React Router
+// Orice altă cerere este redirecționată către `index.html` pentru suport React Router
 app.get('*', (req, res) => {
-  if (!req.path.startsWith('/lessons')) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  } else {
-    res.status(404).send('File not found');
-  }
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;

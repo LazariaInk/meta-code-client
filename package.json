@@ -1,6 +1,7 @@
 {
   "name": "meta-code-client",
   "version": "0.1.0",
+  "homepage": ".",   // Setează pentru a asigura încărcarea relativă a resurselor
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,14 +20,13 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "start:server": "node api/server.js", 
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-}
-,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start:server": "node api/server.js", 
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
