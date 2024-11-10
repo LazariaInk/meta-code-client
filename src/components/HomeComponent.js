@@ -6,6 +6,7 @@ import PublicFooter from './PublicFooter';
 import SocialLinks from './SocialLinks';
 import topicsData from '../database/topic.json';
 import styles from '../styles/HomeComponent.module.css';
+import TopicsNavigation from './TopicsNavigation';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
@@ -40,13 +41,13 @@ function HomeComponent() {
   };
 
   const topicDescriptions = {
-    "C-sharp": "Învață C# pentru dezvoltare software, jocuri și aplicații web. Cursul nostru include fundamentele limbajului, sintaxă avansată și proiecte practice.",
-    "HTML": "Începe cu HTML, limbajul de bază al paginilor web. Învață să creezi structuri și să le stilizezi, esențial pentru dezvoltarea web.",
-    "Java": "Descoperă Java, unul dintre cele mai utilizate limbaje de programare pentru aplicații enterprise și Android. Învață concepte de bază și avansate.",
-    "JavaScript": "Îmbunătățește-ți abilitățile cu JavaScript pentru a crea pagini web interactive și dinamice. Perfect pentru front-end development.",
-    "MySQL": "Învață MySQL pentru gestionarea bazelor de date, de la comenzi SQL de bază la optimizarea interogărilor pentru aplicații de mari dimensiuni.",
-    "PHP": "PHP este esențial pentru dezvoltarea back-end. Învață să creezi aplicații web dinamice, baze de date și funcționalități avansate.",
-    "Python": "Python este perfect pentru începători și proiecte avansate de AI, data science și web development. Începe cu sintaxa simplă și continuă cu proiecte practice."
+    "C-sharp": "Explorează C# pentru aplicații de software, jocuri și web. Învață fundamentele limbajului și îmbunătățește-ți abilitățile prin practică.",
+    "HTML": "Începe să construiești pagini web cu HTML, totul în limba română. Acest limbaj esențial îți oferă control complet asupra structurii și stilizării site-urilor.",
+    "Java": "Java este limbajul ideal pentru aplicații enterprise și dezvoltare Android. Învață de la concepte de bază la tehnici avansate, explicate pas cu pas în limba română.",
+    "JavaScript": "Creează pagini web interactive cu JavaScript! Acest limbaj este vital pentru front-end development și oferă funcționalități dinamice, cu explicații clare în limba română.",
+    "MySQL": "Gestionează baze de date cu MySQL, de la comenzi SQL de bază la optimizare și interogări pentru aplicații complexe, totul în limba română.",
+    "PHP": "Stăpânește dezvoltarea back-end cu PHP! Învață să creezi aplicații web dinamice și să gestionezi date în mod eficient, explicat în detaliu în limba română.",
+    "Python": "Python este limbajul ideal pentru proiecte de inteligență artificială, data science și dezvoltare web. Învață de la zero și implementează proiecte avansate în limba română."
   };
 
   const colorClasses = ["yellow", "light_green", "medium_green", "green", "dark_green"];
@@ -54,29 +55,32 @@ function HomeComponent() {
   return (
     <>
       <Helmet>
-        <title>Cursuri Gratuite de Programare - Java, Python și Altele | Platformă Educațională</title>
+        <title>Cursuri Gratuite de Programare în Română - Java, Python, SQL și Altele | Platformă Educațională în Română</title>
         <meta
           name="description"
-          content="Descoperă o platformă educațională completă și gratuită pentru învățarea programării. Învățați Java, Python, PHP și alte limbaje de top cu cursuri structurate și comunitate de suport."
+          content="Platformă educațională gratuită în limba română unde poți învăța programare de la zero la expert. Găsește cursuri de Java, Python, SQL, JavaScript, PHP, HTML și multe altele, explicate pas cu pas în română."
         />
-        <meta name="keywords" content="cursuri programare gratuite, învățare programare, Java, Python, PHP, educație online, comunitate învățare" />
+        <meta
+          name="keywords"
+          content="cursuri programare gratuite în română, învățare programare în limba română, Java, Python, SQL, PHP, educație online, comunitate de învățare, HTML, CSS, JavaScript, Dart"
+        />
       </Helmet>
-
+      <TopicsNavigation />
       <Container fluid className={styles.home_container}>
         {/* Hero Section */}
         <Row className={`${styles.hero_section} ${styles.shadow}`}>
           <div className={styles.hero_content}>
-            <h1 className={styles.home_title}>Învață Programare Gratuit și Eficient</h1>
+            <h1 className={styles.home_title}>Învățare Gratuită și Structurată de Programare în Limba Română</h1>
             <p className={styles.home_intro}>
-              Alătură-te platformei noastre și începe să explorezi cursuri complete de Java, Python, PHP, JavaScript și altele. Totul este gratuit și structurat pentru învățare ușoară!
+              Descoperă platforma educațională gratuită în limba română, unde poți învăța programare de la zero, cu lecții structurate și exerciții practice. Alătură-te și explorează cursuri de Java, Python, PHP, SQL și multe altele. Învață eficient și îmbunătățește-ți abilitățile, totul explicat clar în română!
             </p>
           </div>
         </Row>
 
         {/* Topics Section */}
         <Row id="topics" className={styles.featured_section}>
-          <h2 className={styles.home_subtitle}>Subiectele Noastre</h2>
-          <p className={styles.section_intro}>Descoperă diversele subiecte și limbaje de programare pe care le oferim. Fiecare curs este structurat cu lecții pas cu pas pentru învățare eficientă.</p>
+          <h2 className={styles.home_subtitle}>Limbajele Noastre de Programare (în Română)</h2>
+          <p className={styles.section_intro}>Alege dintre limbajele și tehnologiile disponibile și începe să înveți programare pas cu pas, în limba română. Fiecare curs este structurat pentru o învățare clară și eficientă, cu lecții ușor de urmat.</p>
           {topics.map((topic, index) => (
             <div key={topic} className={`${styles.topic_card} ${styles[colorClasses[index % colorClasses.length]]}`} onClick={() => handleTopicClick(topic)}>
               <div className={styles.topic_card_content}>
@@ -90,11 +94,11 @@ function HomeComponent() {
         {/* Additional Info Section */}
         <Row className={styles.info_section}>
           <Col md={6} className={styles.info_content}>
-            <h3 style={{ color: '#383E42' }}>De ce să alegi platforma noastră?</h3>
-            <p>Fie că ești începător sau avansat, platforma noastră îți oferă resurse gratuite și comunitatea necesară pentru a deveni un expert în programare.</p>
+            <h3 style={{ color: '#383E42' }}>De ce să alegi platforma noastră în limba română?</h3>
+            <p>Fie că ești începător sau avansat, platforma noastră îți oferă acces gratuit la resurse în limba română, necesare pentru a deveni un expert în programare. Actualizăm frecvent cursurile, adăugăm teme noi și îți oferim suport pentru a te ajuta să avansezi rapid. Totul este explicat pe înțelesul tău!</p>
           </Col>
           <Col md={6} className={styles.info_image}>
-            <img className = {styles.newimage} src="/images/new.png" alt="Programare"/>
+            <img className={styles.newimage} src="/images/new.png" alt="Programare" />
           </Col>
         </Row>
 
