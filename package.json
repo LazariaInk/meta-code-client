@@ -22,7 +22,7 @@
 "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
-  "start:server": "node api/server.js",
+  "start:server": "node api/server.js", 
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
