@@ -62,7 +62,7 @@ function ContentNavigation() {
   const loadLessonContent = async () => {
     try {
       // Căi ajustate pentru a respecta spațiile
-      const adjustedChapterName = chapterName;
+      const adjustedChapterName = chapterName.replace(/_/g, ' ');
       const adjustedLessonName = lessonName.replace(/_/g, ' ');
   
       const filePath = `/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/index.html`;
@@ -74,7 +74,6 @@ function ContentNavigation() {
   
       let htmlContent = await response.text();
   
-      // Înlocuiește căile relative ale imaginilor cu căi absolute
       htmlContent = htmlContent.replace(
         /src="(?!http)([^"]+)"/g,
         `src="/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/$1"`
