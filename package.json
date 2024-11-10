@@ -25,7 +25,8 @@
   "start:server": "node api/server.js",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
-},
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",
