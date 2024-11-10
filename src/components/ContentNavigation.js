@@ -69,7 +69,6 @@ function ContentNavigation() {
       console.log("Generated file path:", filePath);
   
       const response = await fetch(filePath);
-      alert(filePath);
       if (!response.ok) throw new Error("File not found");
   
       let htmlContent = await response.text();
