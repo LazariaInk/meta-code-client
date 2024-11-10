@@ -1,4 +1,3 @@
-// ContentNavigation.js
 import React, { useEffect, useState } from 'react';
 import './../App.css';
 import TopicsNavigation from './TopicsNavigation';
@@ -15,30 +14,26 @@ function ContentNavigation() {
   const [lessonContent, setLessonContent] = useState('');
   const [lessons, setLessons] = useState([]);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(null);
-  const [activeChapter, setActiveChapter] = useState(chapterName);
-  const [activeLesson, setActiveLesson] = useState(lessonName);
-
-  const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
-  const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (topicName && chapterName) fetchLessonList();
   }, [topicName, chapterName]);
 
   useEffect(() => {
-    if (lessonName && chapterName) fetchLessonContent(chapterName, lessonName);
+    if (lessonName && chapterName) fetchLessonContent();
   }, [chapterName, lessonName]);
 
   const fetchLessonList = async () => {
     try {
       const response = await import(`../database/${topicName}.json`);
       const chapters = Object.keys(response.default);
-      const lessons = response.default[decodeNameFromURL(chapterName)];
+      const lessons = response.default[chapterName]; 
 
       if (lessons) {
         setLessons(lessons);
         if (!lessonName) {
-          navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(lessons[0])}`);
+          navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${lessons[0]}`);
         }
       }
     } catch (error) {
@@ -46,29 +41,56 @@ function ContentNavigation() {
     }
   };
 
-  const fetchLessonContent = (chapterName, lessonName) => {
-    setActiveChapter(chapterName);
-    setActiveLesson(lessonName);
-    setLessonContent(`<h1>${lessonName}</h1><p>Lesson content goes here.</p>`);
+  const fetchLessonContent = () => {
+    loadLessonContent();
   };
 
   const handleNextLesson = () => {
     if (currentLessonIndex < lessons.length - 1) {
       const nextLesson = lessons[currentLessonIndex + 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(nextLesson)}`);
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${nextLesson}`);
     }
   };
 
   const handlePreviousLesson = () => {
     if (currentLessonIndex > 0) {
       const previousLesson = lessons[currentLessonIndex - 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${encodeNameForURL(previousLesson)}`);
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${previousLesson}`);
     }
   };
 
+  const loadLessonContent = async () => {
+    try {
+      // Căi ajustate pentru a respecta spațiile
+      const adjustedChapterName = chapterName;
+      const adjustedLessonName = lessonName.replace(/_/g, ' ');
+  
+      const filePath = `/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/index.html`;
+      console.log("Generated file path:", filePath);
+  
+      const response = await fetch(filePath);
+  
+      if (!response.ok) throw new Error("File not found");
+  
+      let htmlContent = await response.text();
+  
+      // Înlocuiește căile relative ale imaginilor cu căi absolute
+      htmlContent = htmlContent.replace(
+        /src="(?!http)([^"]+)"/g,
+        `src="/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/$1"`
+      );
+  
+      setLessonContent(htmlContent);
+    } catch (err) {
+      console.error("Error loading lesson content:", err);
+      setError("Unable to load lesson content.");
+    }
+  };
+  
+
   useEffect(() => {
     if (lessonName && lessons.length > 0) {
-      const index = lessons.findIndex((lesson) => encodeNameForURL(lesson) === lessonName);
+      const index = lessons.findIndex((lesson) => lesson === lessonName);
       setCurrentLessonIndex(index);
     }
   }, [lessons, lessonName]);
@@ -90,8 +112,6 @@ function ContentNavigation() {
                   <ChapterNavigation
                     topicName={topicName}
                     onLessonClick={fetchLessonContent}
-                    activeChapter={activeChapter}
-                    activeLesson={activeLesson}
                   />
                 </div>
               </div>
@@ -101,8 +121,12 @@ function ContentNavigation() {
         <div className={styles.middle_contant}>
           <div className={styles.lesson_content} dangerouslySetInnerHTML={{ __html: lessonContent }} />
           <div className={styles.navigation_buttons}>
-            <button onClick={handlePreviousLesson} className="btn btn-success">Previous Lesson</button>
-            <button onClick={handleNextLesson} className="btn btn-success">Next Lesson</button>
+            <button onClick={handlePreviousLesson} className="btn btn-success" disabled={currentLessonIndex <= 0}>
+              Previous Lesson
+            </button>
+            <button onClick={handleNextLesson} className="btn btn-success" disabled={currentLessonIndex >= lessons.length - 1}>
+              Next Lesson
+            </button>
           </div>
         </div>
         <div className={styles.right_ads}>
