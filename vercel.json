@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/api/(.*)", "dest": "api/server.js" },
+      { "src": "/lessons/(.*)", "dest": "public/lessons/$1" },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
+  
