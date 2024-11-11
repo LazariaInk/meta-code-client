@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './../App.css';
 import TopicsNavigation from './TopicsNavigation';
 import ChapterNavigation from './ChapterNavigation';
@@ -15,10 +15,20 @@ function ContentNavigation() {
   const [lessons, setLessons] = useState([]);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(null);
   const [error, setError] = useState(null);
+  const menuRef = useRef(null);
+  const hamburgerIconRef = useRef(null);
 
   useEffect(() => {
     if (topicName && chapterName) fetchLessonList();
   }, [topicName, chapterName]);
+
+  const toggleMenu = () => {
+    menuRef.current?.classList.toggle(styles.menushow);
+  };
+
+  const closeMenu = () => {
+    menuRef.current?.classList.remove(styles.menushow); // Închide meniul
+  };
 
   useEffect(() => {
     if (lessonName && chapterName) fetchLessonContent();
@@ -61,30 +71,28 @@ function ContentNavigation() {
 
   const loadLessonContent = async () => {
     try {
-      // Căi ajustate pentru a respecta spațiile
       const adjustedChapterName = chapterName.replace(/_/g, ' ');
       const adjustedLessonName = lessonName.replace(/_/g, ' ');
-  
+
       const filePath = `/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/index.html`;
       console.log("Generated file path:", filePath);
-  
+
       const response = await fetch(filePath);
       if (!response.ok) throw new Error("File not found");
-  
+
       let htmlContent = await response.text();
-  
+
       htmlContent = htmlContent.replace(
         /src="(?!http)([^"]+)"/g,
         `src="/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/$1"`
       );
-      
+
       setLessonContent(htmlContent);
     } catch (err) {
       console.error("Error loading lesson content:", err);
       setError("Unable to load lesson content.");
     }
   };
-  
 
   useEffect(() => {
     if (lessonName && lessons.length > 0) {
@@ -101,15 +109,23 @@ function ContentNavigation() {
           <div className={`${styles.sidenav} ${styles.chapters_content}`}>
             <div className={styles.left}>
               <div className={styles.menu_container}>
-                <div className={styles.hamburger_icon}>
+                <div
+                  className={styles.hamburger_icon}
+                  onClick={toggleMenu}
+                  ref={hamburgerIconRef}
+                >
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
-                <div className={styles.menu}>
-                  <ChapterNavigation
-                    topicName={topicName}
-                    onLessonClick={fetchLessonContent}
+                <div ref={menuRef} className={styles.menu}>
+                  <ChapterNavigation 
+                    topicName={topicName} 
+                    onLessonClick={(chapterName, lessonName) => {
+                      fetchLessonContent(chapterName, lessonName);
+                      closeMenu(); // Închide meniul după ce se face click pe lecție
+                    }} 
+                    menuRef={menuRef} 
                   />
                 </div>
               </div>
