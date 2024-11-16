@@ -1,10 +1,9 @@
-import styles from '../styles/PublicApp.module.css'
+import styles from '../styles/PublicApp.module.css';
 
-function DonationPopup ({ onClose }) {
-
+function DonationPopup({ onClose }) {
   return (
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.donationPopup} onClick={e => e.stopPropagation()}>
+      <div className={styles.donationPopup} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeButton} onClick={onClose}>
           &#10006;
         </button>
@@ -14,23 +13,21 @@ function DonationPopup ({ onClose }) {
           gratuit la resurse de programare și sprijinind comunitatea pasionată de tehnologie.
         </p>
         <p>
-          Fiecare donație ne aduce mai aproape de misiunea noastră: de a oferi educație de calitate tuturor,
+          Fiecare contribuție ne aduce mai aproape de misiunea noastră: de a oferi educație de calitate tuturor,
           indiferent de nivelul de cunoștințe sau locație.
         </p>
         <p>
-          Donează acum și ajută la construirea viitorului tehnologic! Cont Revolut:
+          Susține viitorul educației digitale acum! Cont Revolut:
           <strong> RO21 BREL 0005 5453 8388 0100</strong>
         </p>
         <p>
-          De asemenea, poți împărtăși această inițiativă cu prietenii tăi pentru a amplifica impactul pozitiv al
-          comunității noastre.
+          În semn de recunoștință, toți sponsorii vor fi adăugați în <strong>tabela noastră de susținători</strong>, pentru
+          a le mulțumi public pentru contribuțiile lor. Fii parte din comunitatea noastră de sprijin!
         </p>
-        <p>
-          Îți mulțumim pentru susținere și pentru că ești alături de noi în această călătorie! 🌟
-        </p>
+
       </div>
     </div>
-  )
+  );
 }
 
-export default DonationPopup
+export default DonationPopup;
