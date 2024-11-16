@@ -4,7 +4,7 @@ function SocialLinks() {
   return (
     <div className={styles.social_links_container}>
       <a
-        href='https://discord.com'
+        href='https://discord.com/invite/Bvf4wXfkMV?fbclid=PAZXh0bgNhZW0CMTEAAaYH0_aUofV8BoIDfvH-mjuTqg5mfTiO7RvC7hPdKmORzfMBnXkp4U5-MnM_aem_sOQf7hTHC9p25CPGWPMbvw'
         target='_blank'
         rel='noopener noreferrer'
         className={styles.social_link}
@@ -16,7 +16,7 @@ function SocialLinks() {
         />
       </a>
       <a
-        href='https://www.tiktok.com'
+        href='https://www.tiktok.com/@fabricadecoduri'
         target='_blank'
         rel='noopener noreferrer'
         className={styles.social_link}
@@ -28,7 +28,7 @@ function SocialLinks() {
         />
       </a>
       <a
-        href='https://www.youtube.com'
+        href='https://www.youtube.com/@FabricadeCoduri'
         target='_blank'
         rel='noopener noreferrer'
         className={styles.social_link}
