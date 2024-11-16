@@ -7,6 +7,9 @@ import SocialLinks from './SocialLinks';
 import topicsData from '../database/topic.json';
 import styles from '../styles/HomeComponent.module.css';
 import TopicsNavigation from './TopicsNavigation';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
@@ -40,6 +43,38 @@ function HomeComponent() {
     }
   };
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  };
+
+
+  const newsItems = [
+    {
+      title: "Limbajul de Programare DART",
+      description: 
+        "Dart este limbajul perfect pentru dezvoltarea aplicațiilor rapide și scalabile, utilizat intens pentru framework-ul Flutter. În curând, pe platforma noastră vor fi disponibile lecții detaliate care te vor ghida pas cu pas să stăpânești acest limbaj modern și versatil. Rămâi conectat pentru a descoperi totul despre Dart și cum îl poți folosi pentru proiectele tale!",
+      image: "https://dart.dev/assets/img/logo_lockup_dart_horizontal.png",
+    },
+    {
+      title: "Cursuri Java libGDX pe YouTube",
+      description: 
+        "LibGDX este framework-ul de top pentru dezvoltarea jocurilor 2D și 3D în Java. Vrei să creezi jocuri captivante? Urmărește-ne pe YouTube, unde vom publica lecții detaliate despre utilizarea acestui framework, de la configurare la dezvoltarea completă a unui joc. Alătură-te comunității noastre și învață să transformi ideile în realitate!",
+      image: "https://libgdx.com/assets/brand/logo.svg",
+    },
+    {
+      title: "Exerciții Noi în Secțiunea Exerciții",
+      description: 
+        "Practicarea problemelor de programare este cel mai bun mod de a-ți dezvolta abilitățile și de a deveni un expert. În curând, vom adăuga o gamă variată de exerciții practice pentru diferite limbaje de programare, inclusiv Python, Java, și multe altele. Pregătește-te să rezolvi probleme provocatoare care te vor ajuta să înveți mai eficient!",
+      image: "https://via.placeholder.com/800x400?text=More+Exercises+Coming+Soon",
+    },
+  ];
+  
   const topicDescriptions = {
     "C-sharp": "Explorează C# pentru aplicații de software, jocuri și web. Învață fundamentele limbajului și îmbunătățește-ți abilitățile prin practică.",
     "HTML": "Începe să construiești pagini web cu HTML, totul în limba română. Acest limbaj esențial îți oferă control complet asupra structurii și stilizării site-urilor.",
@@ -66,6 +101,7 @@ function HomeComponent() {
         />
       </Helmet>
       <TopicsNavigation />
+
       <Container fluid className={styles.home_container}>
         {/* Hero Section */}
         <Row className={`${styles.hero_section} ${styles.shadow}`}>
@@ -90,6 +126,29 @@ function HomeComponent() {
             </div>
           ))}
         </Row>
+
+
+        <br></br>
+ <h2 className={styles.slider_title}>Noutăți de pe Platforma Noastră</h2>
+        <Row className={styles.news_slider}>
+        <Slider {...sliderSettings}>
+          {newsItems.map((item, index) => (
+            <div key={index} className={styles.slider_item}>
+              <div
+                className={styles.slider_background}
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                }}
+              >
+                <div className={styles.slider_text}>
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </Row>
 
         {/* Additional Info Section */}
         <Row className={styles.info_section}>

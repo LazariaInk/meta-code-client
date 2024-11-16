@@ -213,18 +213,62 @@ body {
   margin: 0;
 }
 
-
-.newimage{
-  position: static;
-  width: 900px;
-  height: 1200px;
-  margin-top: -520px;
-  margin-left: -200px;
+.news_slider {
+  margin: 2rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media only screen and (max-width: 1300px) {
-  .newimage{
-    display: none;
-  }
+.slider_item {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Fixăm înălțimea slider-ului */
 }
+
+.slider_background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider_text {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Fundal semi-transparent pentru text */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.slider_text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.slider_text p {
+  font-size: 1.2rem;
+}
+
+.slider_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay întunecat */
+  z-index: 1;
+}
+
+
+
 
