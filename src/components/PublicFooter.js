@@ -14,7 +14,6 @@ function PublicFooter({ fullWidth }) {
     setDonationPopupOpen(false);
   };
 
-
   useEffect(() => {
     initGA();
     logPageView();
@@ -37,27 +36,47 @@ function PublicFooter({ fullWidth }) {
       <footer className='footer'>
         <div className={styles.footer_container}>
           <div className='row'>
+            {/* Despre Secțiune */}
             <div className='col-md-4'>
-              <h3 className={styles.footerTitle}>Despre FdC</h3>
-              <p className={styles.footerText}>About footer text</p>
+              <h3 className={styles.footerTitle}>Despre Noi</h3>
+              <p className={styles.footerText}>
+                Suntem dedicați să te ajutăm să înveți programarea într-un mod interactiv și captivant.
+                Explorează limbaje precum JavaScript, Python, Java și altele, toate într-o singură platformă.
+              </p>
             </div>
+
+            {/* Donează Secțiune */}
             <div className='col-md-4'>
-              <h3 className={styles.footerTitle}>Donează</h3>
-              <p className={styles.footerText}>Donate footer content</p>
+              <h3 className={styles.footerTitle}>Susține Platforma</h3>
+              <p className={styles.footerText}>
+                Ne ajutăm comunitatea să crească! Donează pentru a susține educația digitală și a sprijini dezvoltarea
+                continuă a platformei noastre. Fiecare contribuție contează.
+              </p>
               <button className='btn btn-success' onClick={openDonationPopup}>
                 Donează acum!
               </button>
             </div>
+
+            {/* Contact Secțiune */}
             <div className={`col-md-4 ${styles.footerContact}`}>
-              <h3 className={styles.footerTitle}>Contact</h3>
-              <p className={styles.footerText}>content footer text</p>
+              <h3 className={styles.footerTitle}>Contactează-ne</h3>
+              <p className={styles.footerText}>
+                Ai întrebări sau sugestii? Suntem aici pentru tine! Scrie-ne la{' '}
+                <a href="fabricadecoduri@gmail.com">fabricadecoduri@gmail.com</a>
+              </p>
             </div>
           </div>
         </div>
+
         <hr />
+
+        {/* Informații Proprietar */}
         <div className='row'>
           <div className={`col-md-12 ${styles.footerOwnerInfo}`}>
-            <p className={styles.footerText}>owner info text</p>
+            <p className={styles.footerText}>
+              &copy; {new Date().getFullYear()} Fabrica de Coduri. Toate drepturile rezervate. Creat cu pasiune
+              pentru educație și tehnologie.
+            </p>
           </div>
         </div>
       </footer>

@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 999;
+  z-index: 500;
 }
 
 .topics_nav_toggle {
@@ -113,7 +113,7 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #ccc #f5f5f5;
-  z-index: 999;
+  /* z-index: 450; */
   margin-top: 160px;
 }
 
@@ -455,7 +455,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  /* bottom: 0; */
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,6 +466,7 @@ a {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  z-index: 800;
   border-radius: 5px;
   max-width: 400px;
   text-align: center;
@@ -691,7 +692,6 @@ p {
     bottom: 0;
     overflow-y: auto;
     background: #f1f1f1;
-    z-index: 999;
   }
 
   .middle_contant {
