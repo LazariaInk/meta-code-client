@@ -97,9 +97,6 @@ function HomeComponent() {
             <h3 style={{ color: '#383E42' }}>De ce să alegi platforma noastră în limba română?</h3>
             <p>Fie că ești începător sau avansat, platforma noastră îți oferă acces gratuit la resurse în limba română, necesare pentru a deveni un expert în programare. Actualizăm frecvent cursurile, adăugăm teme noi și îți oferim suport pentru a te ajuta să avansezi rapid. Totul este explicat pe înțelesul tău!</p>
           </Col>
-          <Col md={6} className={styles.info_image}>
-            <img className={styles.newimage} src="/images/new.png" alt="Programare" />
-          </Col>
         </Row>
 
         {/* Social Links and Footer */}
