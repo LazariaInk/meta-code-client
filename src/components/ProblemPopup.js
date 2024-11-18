@@ -5,25 +5,41 @@ import Tabs from 'react-bootstrap/Tabs';
 import Button from 'react-bootstrap/Button';
 
 function ProblemPopup({ problem, onClose }) {
-  const [activeKey, setActiveKey] = useState('problemContent');
+  const [activeKey, setActiveKey] = useState('problemContent'); // Tracks active tab
 
   return (
-    <Modal show={!!problem} onHide={onClose} size="lg">
+    <Modal
+      show={!!problem}
+      onHide={onClose} // Trigger onClose when clicking outside or pressing the close button
+      size="lg"
+      centered
+    >
       <Modal.Header closeButton>
         <Modal.Title>Problem Details</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Tabs activeKey={activeKey} onSelect={(k) => setActiveKey(k)} id="problem-tabs">
-          <Tab eventKey="problemContent" title="Problem Content">
+        <Tabs
+          activeKey={activeKey}
+          onSelect={(k) => setActiveKey(k)}
+          id="problem-tabs"
+          className="mb-3"
+        >
+          <Tab eventKey="problemContent" title="Conținutul problemei">
             <div>
-              <p>Problem Content:</p>
-              <div>{problem?.problemContent}</div>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: problem?.problemContent || '<p>No content available.</p>',
+                }}
+              />
             </div>
           </Tab>
-          <Tab eventKey="problemSolution" title="Problem Solution">
+          <Tab eventKey="problemSolution" title="Rezolvarea problemei">
             <div>
-              <p>Problem Solution:</p>
-              <div dangerouslySetInnerHTML={{ __html: problem?.problemSolution }} />
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: problem?.problemSolution || '<p>No solution available.</p>',
+                }}
+              />
             </div>
           </Tab>
         </Tabs>

@@ -732,5 +732,58 @@ p {
   width: 200px;
 }
 
+.problemListContainer {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.filterContainer {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.problemTable {
+  margin-top: 20px;
+}
+
+.explanatoryText {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.explanatoryText h2 {
+  color: #333;
+}
+
+.explanatoryText ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
 
 
