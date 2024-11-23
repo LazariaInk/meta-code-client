@@ -13,93 +13,104 @@ function ContentNavigation() {
   const navigate = useNavigate();
   const [lessonContent, setLessonContent] = useState('');
   const [lessons, setLessons] = useState([]);
-  const [currentLessonIndex, setCurrentLessonIndex] = useState(null);
+  const [currentLessonIndex, setCurrentLessonIndex] = useState(-1);
   const [error, setError] = useState(null);
   const menuRef = useRef(null);
-  const hamburgerIconRef = useRef(null);
 
   useEffect(() => {
-    if (topicName && chapterName) fetchLessonList();
+    console.log("Lessons:", lessons);
+    console.log("Current lesson name:", lessonName);
+    console.log("Current lesson index:", currentLessonIndex);
+  }, [lessons, lessonName, currentLessonIndex]);
+
+  useEffect(() => {
+    if (topicName && chapterName) {
+      fetchLessonList();
+    }
   }, [topicName, chapterName]);
 
-  const toggleMenu = () => {
-    menuRef.current?.classList.toggle(styles.menushow);
-  };
-
-  const closeMenu = () => {
-    menuRef.current?.classList.remove(styles.menushow); // Închide meniul
-  };
+  useEffect(() => {
+    if (lessonName && lessons.length > 0) {
+      const index = lessons.findIndex((lesson) => normalizeString(lesson) === normalizeString(lessonName));
+      setCurrentLessonIndex(index);
+    }
+  }, [lessons, lessonName]);
 
   useEffect(() => {
-    if (lessonName && chapterName) fetchLessonContent();
+    if (lessonName && chapterName) {
+      fetchLessonContent();
+    }
   }, [chapterName, lessonName]);
+
+  const normalizeString = (str) => str.replace(/_/g, ' ').toLowerCase();
 
   const fetchLessonList = async () => {
     try {
+      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`);
       const response = await import(`../database/${topicName}.json`);
-      const chapters = Object.keys(response.default);
-      const lessons = response.default[chapterName]; 
+      console.log("JSON Response:", response);
 
-      if (lessons) {
+      const lessons = response.default[chapterName];
+      console.log("Lessons from JSON:", lessons);
+
+      if (lessons && lessons.length > 0) {
         setLessons(lessons);
+
         if (!lessonName) {
-          navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${lessons[0]}`);
+          navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessons[0])}`);
         }
+      } else {
+        setError("No lessons found for this chapter.");
       }
     } catch (error) {
       console.error("Error loading chapter lessons:", error);
+      setError("Unable to load lessons.");
     }
   };
 
-  const fetchLessonContent = () => {
-    loadLessonContent();
-  };
-
-  const handleNextLesson = () => {
-    if (currentLessonIndex < lessons.length - 1) {
-      const nextLesson = lessons[currentLessonIndex + 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${nextLesson}`);
-    }
-  };
-
-  const handlePreviousLesson = () => {
-    if (currentLessonIndex > 0) {
-      const previousLesson = lessons[currentLessonIndex - 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${previousLesson}`);
-    }
-  };
-
-  const loadLessonContent = async () => {
+  const fetchLessonContent = async () => {
     try {
       const adjustedChapterName = chapterName.replace(/_/g, ' ');
       const adjustedLessonName = lessonName.replace(/_/g, ' ');
-
       const filePath = `/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/index.html`;
-      console.log("Generated file path:", filePath);
 
       const response = await fetch(filePath);
       if (!response.ok) throw new Error("File not found");
 
       let htmlContent = await response.text();
-
       htmlContent = htmlContent.replace(
         /src="(?!http)([^"]+)"/g,
         `src="/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/$1"`
       );
-
       setLessonContent(htmlContent);
+      setError(null);
     } catch (err) {
       console.error("Error loading lesson content:", err);
       setError("Unable to load lesson content.");
     }
   };
 
-  useEffect(() => {
-    if (lessonName && lessons.length > 0) {
-      const index = lessons.findIndex((lesson) => lesson === lessonName);
-      setCurrentLessonIndex(index);
+  const handleNextLesson = () => {
+    if (currentLessonIndex < lessons.length - 1) {
+      const nextLesson = lessons[currentLessonIndex + 1];
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(nextLesson)}`);
     }
-  }, [lessons, lessonName]);
+  };
+
+  const handlePreviousLesson = () => {
+    if (currentLessonIndex > 0) {
+      const previousLesson = lessons[currentLessonIndex - 1];
+      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(previousLesson)}`);
+    }
+  };
+
+  const toggleMenu = () => {
+    menuRef.current?.classList.toggle(styles.menushow);
+  };
+
+  const closeMenu = () => {
+    menuRef.current?.classList.remove(styles.menushow);
+  };
 
   return (
     <div className={styles.appContainer}>
@@ -112,20 +123,20 @@ function ContentNavigation() {
                 <div
                   className={styles.hamburger_icon}
                   onClick={toggleMenu}
-                  ref={hamburgerIconRef}
+                  ref={menuRef}
                 >
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
                 <div ref={menuRef} className={styles.menu}>
-                  <ChapterNavigation 
-                    topicName={topicName} 
+                  <ChapterNavigation
+                    topicName={topicName}
                     onLessonClick={(chapterName, lessonName) => {
-                      fetchLessonContent(chapterName, lessonName);
-                      closeMenu(); // Închide meniul după ce se face click pe lecție
-                    }} 
-                    menuRef={menuRef} 
+                      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessonName)}`);
+                      closeMenu();
+                    }}
+                    menuRef={menuRef}
                   />
                 </div>
               </div>
@@ -133,15 +144,14 @@ function ContentNavigation() {
           </div>
         </div>
         <div className={styles.middle_contant}>
-          <div className={styles.lesson_content} dangerouslySetInnerHTML={{ __html: lessonContent }} />
-          <div className={styles.navigation_buttons}>
-            <button onClick={handlePreviousLesson} className="btn btn-success" disabled={currentLessonIndex <= 0}>
-              Previous Lesson
-            </button>
-            <button onClick={handleNextLesson} className="btn btn-success" disabled={currentLessonIndex >= lessons.length - 1}>
-              Next Lesson
-            </button>
-          </div>
+          {error ? (
+            <div className="alert alert-danger">{error}</div>
+          ) : (
+            <div
+              className={styles.lesson_content}
+              dangerouslySetInnerHTML={{ __html: lessonContent }}
+            />
+          )}
         </div>
         <div className={styles.right_ads}>
           <SponsorTable />

@@ -724,12 +724,14 @@ p {
 
 .navigation_buttons {
   display: flex;
+  z-index: 9999;
   justify-content: space-between;
   margin-top: 20px;
 }
 
 .navigation_buttons button {
   width: 200px;
+  z-index: 9999;
 }
 
 .problemListContainer {
