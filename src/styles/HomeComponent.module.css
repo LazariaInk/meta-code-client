@@ -323,4 +323,74 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .home_title {
+    font-size: 2rem;
+  }
+
+  .section_intro{
+    font-size: 1.5rem;
+  }
+
+  .home_intro {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_title {
+    font-size: 1.5rem;
+  }
+
+  .section_intro{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .news_slider {
+    margin: 1rem 0;
+  }
+
+  .slider_item {
+    height: 250px;
+  }
+
+  .slider_text h2 {
+    font-size: 1.8rem;
+  }
+
+  .slider_text p {
+    font-size: 1rem;
+  }
+
+  .slider_text {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .news_slider {
+    margin: 0.5rem 0;
+  }
+
+  .slider_item {
+    height: 280px;
+  }
+
+  .slider_text h2 {
+    font-size: 1rem;
+  }
+
+  .slider_text p {
+    font-size: 0.8rem;
+  }
+
+  .slider_text {
+    padding: 1rem 0.5rem;
+  }
+}
+
+
 

@@ -787,5 +787,25 @@ p {
   padding-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .home_title {
+    font-size: 2rem;
+  }
+
+  .section_intro{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_title {
+    font-size: 1.5rem;
+  }
+
+  .section_intro{
+    font-size: 0.5rem;
+  }
+}
+
 
 

@@ -49,6 +49,7 @@ const SponsorTable = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.sponsorLink}
+                
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
