@@ -1,536 +1,104 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <style type="text/css">
-        @import url(https://themes.googleusercontent.com/fonts/css?kit=iMc4-4exjgqA-toZgqqJBf35jAjY-31lSKWZb9Fa77M);
-
-        ol {
-            margin: 0;
-            padding: 0
-        }
-
-        table td,
-        table th {
-            padding: 0
-        }
-
-        .c9 {
-            color: #000000;
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 15pt;
-            font-family: "Open Sans";
-            font-style: normal
-        }
-
-        .c3 {
-            color: #000000;
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 27pt;
-            font-family: "Open Sans";
-            font-style: normal
-        }
-
-        .c0 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 12pt;
-            font-family: "Open Sans";
-            font-style: normal
-        }
-
-        .c1 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.5;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        .c10 {
-            -webkit-text-decoration-skip: none;
-            color: #1155cc;
-            text-decoration: underline;
-            text-decoration-skip-ink: none
-        }
-
-        .c11 {
-            color: #000000;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-style: normal
-        }
-
-        .c21 {
-            background-color: #ffffff;
-            max-width: 504pt;
-            padding: 72pt 27pt 72pt 81pt
-        }
-
-        .c4 {
-            font-size: 12pt;
-            font-family: "Open Sans";
-            font-weight: 700
-        }
-
-        .c6 {
-            font-size: 12pt;
-            font-family: "Open Sans";
-            font-weight: 400
-        }
-
-        .c18 {
-            color: inherit;
-            text-decoration: inherit
-        }
-
-        .c15 {
-            margin-left: -27pt;
-            text-indent: -18pt
-        }
-
-        .c12 {
-            margin-left: 22.5pt
-        }
-
-        .c20 {
-            margin-left: -18pt
-        }
-
-        .c5 {
-            margin-left: -9pt
-        }
-
-        .c19 {
-            margin-left: 9pt
-        }
-
-        .c8 {
-            text-indent: -27pt
-        }
-
-        .c16 {
-            margin-left: 27pt
-        }
-
-        .c17 {
-            margin-left: -27pt
-        }
-
-        .c2 {
-            height: 11pt
-        }
-
-        .c22 {
-            margin-left: -22.5pt
-        }
-
-        .c13 {
-            margin-left: -40.5pt
-        }
-
-        .c14 {
-            margin-left: -31.5pt
-        }
-
-        .c7 {
-            text-indent: -4.5pt
-        }
-
-        .title {
-            padding-top: 0pt;
-            color: #000000;
-            font-size: 26pt;
-            padding-bottom: 3pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        .subtitle {
-            padding-top: 0pt;
-            color: #666666;
-            font-size: 15pt;
-            padding-bottom: 16pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        li {
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Arial"
-        }
-
-        p {
-            margin: 0;
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Arial"
-        }
-
-        h1 {
-            padding-top: 20pt;
-            color: #000000;
-            font-size: 20pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h2 {
-            padding-top: 18pt;
-            color: #000000;
-            font-size: 16pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h3 {
-            padding-top: 16pt;
-            color: #434343;
-            font-size: 14pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h4 {
-            padding-top: 14pt;
-            color: #666666;
-            font-size: 12pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h5 {
-            padding-top: 12pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h6 {
-            padding-top: 12pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<body>
+    <div class="document-container">
+<h1 class="main-title">Introducere în MySQL.</h1>
+<h2 class="subtitle">Ce este MySQL. Instalare server.</h2>
+<p class="paragraph">MySQL reprezintă un sistem de gestionare a bazelor de date relaționale (SGBD). În prezent, este unul dintre cele mai populare sisteme de gestionare a bazelor de date.</p>
+<p class="paragraph">Dezvoltatorul inițial al acestui SGBD a fost compania suedeză MySQL AB. În 1995, au lansat prima versiune MySQL. În 2008, compania MySQL AB a fost achiziționată de către Sun Microsystems, iar în 2010, Oracle a preluat Sun, dobândind astfel drepturile asupra mărcii MySQL. Prin urmare, MySQL este în prezent dezvoltat sub arpia Oracle.</p>
+<p class="paragraph">Versiunea curentă și relevantă a SGBD este versiunea 8.0, lansată în ianuarie 2018, dar pentru aceasta sunt eliberate constant subversiuni.</p>
+<p class="paragraph">MySQL este caracterizat de compatibilitatea cu diferite platforme, având distribuții pentru diverse sisteme de operare, inclusiv cele mai populare versiuni de Linux, Windows și MacOS.</p>
+<p class="paragraph">Site-ul oficial al proiectului: https://www.mysql.com/.</p>
+<p class="paragraph">Acum să lăsăm istoria și să trecem la treabă!</p>
+<h2 class="subtitle">Instalarea MySQL.</h2>
+<p class="paragraph">Pentru a instala MySQL, descărcați distribuția de la adresa http://dev.mysql.com/downloads/mysql/ și alegeți versiunea dorită.</p>
+<div class="image-container">
+<img src="images/image1.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">După ce ați ales versiunea, apăsați pe butonul &quot;Go to Download Page&quot;, și veți fi redirecționat către pagina de descărcare a distribuției. Aici puteți alege fie descărcarea online, fie pachetul complet al instalatorului. Puteți alege oricare dintre ele:</p>
+<div class="image-container">
+<img src="images/image2.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Următorul pas poate fi să vă solicite să vă autentificați folosind un cont Oracle. Puteți sări peste această etapă și, fără a vă autentifica, să apăsați pe link-ul &quot;No thanks, just start my download&quot;, și descărcarea va începe:
 
-<body class="c21 doc-content">
-    <h„ class="c1 c3">Introducere în MySQL. </h1>
-    <p class="c1 c2"><span class="c11 c4"></span></p>
-    <p class="c1"><span class="c9">Ce este MySQL. Instalare server.</span></p>
-    <p class="c1 c2"><span class="c11 c4"></span></p>
-    <p class="c1"><span class="c0">MySQL reprezint&#259; un sistem de gestionare a bazelor de date rela&#539;ionale
-            (SGBD). &Icirc;n prezent, este unul dintre cele mai populare sisteme de gestionare a bazelor de date.</span>
-    </p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c0">Dezvoltatorul ini&#539;ial al acestui SGBD a fost compania suedez&#259; MySQL AB.
-            &Icirc;n 1995, au lansat prima versiune MySQL. &Icirc;n 2008, compania MySQL AB a fost
-            achizi&#539;ionat&#259; de c&#259;tre Sun Microsystems, iar &icirc;n 2010, Oracle a preluat Sun,
-            dob&acirc;ndind astfel drepturile asupra m&#259;rcii MySQL. Prin urmare, MySQL este &icirc;n prezent
-            dezvoltat sub egida Oracle.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c0">Versiunea curent&#259; &#537;i relevant&#259; a SGBD este versiunea 8.0, lansat&#259;
-            &icirc;n ianuarie 2018, dar pentru aceasta sunt eliberate constant subversiuni.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c0">MySQL este caracterizat de compatibilitatea cu diferite platforme, av&acirc;nd
-            distribu&#539;ii pentru diverse sisteme de operare, inclusiv cele mai populare versiuni de Linux, Windows
-            &#537;i MacOS.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c6">Site-ul oficial al proiectului: </span><span class="c4 c10"><a class="c18"
-                href="https://www.google.com/url?q=https://www.mysql.com/&amp;sa=D&amp;source=editors&amp;ust=1715612460226077&amp;usg=AOvVaw1bI_bmD_dAix0JCYxrr4Gw">https://www.mysql.com/</a></span><span
-            class="c4 c11">.</span></p>
-    <p class="c1 c2"><span class="c11 c4"></span></p>
-    <p class="c1"><span class="c9">Instalarea MySQL.</span></p>
-    <p class="c1 c2"><span class="c11 c4"></span></p>
-    <p class="c1"><span class="c6">Pentru a instala MySQL, desc&#259;rca&#539;i distribu&#539;ia de la adresa
-        </span><span class="c4">http://dev.mysql.com/downloads/mysql/ </span><span class="c0">&#537;i alege&#539;i
-            versiunea dorit&#259;.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 576.50px; height: 365.86px;"><img
-                alt="" src="images/image5.png"
-                style="width: 576.50px; height: 365.86px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1"><span class="c6">Dup&#259; ce a&#539;i ales versiunea, ap&#259;sa&#539;i pe butonul &quot;</span><span
-            class="c4">Go to Download Page</span><span class="c0">&quot;, &#537;i ve&#539;i fi redirec&#539;ionat
-            c&#259;tre pagina de desc&#259;rcare a distribu&#539;iei. Aici pute&#539;i alege fie desc&#259;rcarea
-            online, fie pachetul complet al instalatorului. Pute&#539;i alege oricare dintre ele:</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c17"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 709.50px; height: 584.66px;"><img
-                alt="" src="images/image6.png"
-                style="width: 709.50px; height: 584.66px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c6">Urm&#259;torul pas poate fi s&#259; v&#259; solicite s&#259; v&#259;
-            autentifica&#539;i folosind un cont Oracle. Pute&#539;i s&#259;ri peste aceast&#259; etap&#259; &#537;i,
-            f&#259;r&#259; a v&#259; autentifica, s&#259; ap&#259;sa&#539;i pe link-ul &quot;</span><span class="c4">No
-            thanks, just start my download</span><span class="c0">&quot;, &#537;i desc&#259;rcarea va
-            &icirc;ncepe:</span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 533.50px; height: 384.43px;"><img
-                alt="" src="images/image1.png"
-                style="width: 533.50px; height: 384.43px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c6">Ini&#539;ial, vi se va solicita s&#259; alege&#539;i tipul de instalare.
-            Selecta&#539;i tipul &quot;</span><span class="c4">Developer Default</span><span class="c6">&quot;, care
-            este suficient pentru nevoile de baz&#259;, &#537;i ap&#259;sa&#539;i pe butonul &quot;</span><span
-            class="c4">Next</span><span class="c6">&quot;(Pentru versiunile mai noi, posibil ca</span><span
-            class="c4">&nbsp;Developer Default </span><span class="c6">s&#259; nu mai fie, &icirc;nlocui&#539;i acest
-            tip cu </span><span class="c4">Full</span><span class="c0">):</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 539.50px; height: 406.80px;"><img
-                alt="" src="images/image3.png"
-                style="width: 539.50px; height: 406.80px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c0">Apoi, &icirc;n etapa de instalare, installer-ul va afi&#537;a lista complet&#259; a
-            componentelor care vor fi instalate. &Icirc;n cazul meu, arat&#259; a&#537;a: </span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 592.65px; height: 443.92px;"><img
-                alt="" src="images/image2.png"
-                style="width: 592.65px; height: 443.92px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c6">Pentru a efectua instalarea tuturor componentelor, ap&#259;sa&#539;i butonul
-            &quot;</span><span class="c4">Execute</span><span class="c6">&quot;. Dup&#259; ce toate componentele sunt
-            instalate, ap&#259;sa&#539;i butonul &quot;</span><span class="c4">Next</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c12"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 562.39px; height: 418.50px;"><img
-                alt="" src="images/image16.png"
-                style="width: 562.39px; height: 418.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c12 c2"><span class="c0"></span></p>
-    <p class="c1 c12"><span class="c0">Apoi, va ap&#259;rea o fereastr&#259; cu lista de produse preg&#259;tite pentru
-            configurare.</span></p>
-    <p class="c1 c12 c2"><span class="c0"></span></p>
-    <p class="c1 c19"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 524.50px; height: 286.79px;"><img
-                alt="" src="images/image7.png"
-                style="width: 524.50px; height: 286.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5"><span class="c6">Ap&#259;sa&#539;i pe butonul &quot;</span><span class="c4">Next</span><span
-            class="c6">&quot;, iar apoi vi se va solicita s&#259; configura&#539;i anumite set&#259;ri pentru serverul
-            MySQL. &Icirc;n special, ve&#539;i observa c&#259; pentru conectare se va utiliza protocolul </span><span
-            class="c4">TCP/IP</span><span class="c6">&nbsp;&#537;i portul </span><span class="c4">3306</span><span
-            class="c0">. L&#259;sa&#539;i toate aceste set&#259;ri de conexiune &#537;i port la valorile
-            implicite:</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c14"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 715.50px; height: 459.74px;"><img
-                alt="" src="images/image12.png"
-                style="width: 715.50px; height: 459.74px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c0">La urm&#259;torul pas, vi se va solicita s&#259; configura&#539;i metoda de
-            autentificare. L&#259;sa&#539;i set&#259;rile la valorile implicite:</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c15"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 741.50px; height: 560.13px;"><img
-                alt="" src="images/image18.png"
-                style="width: 741.50px; height: 560.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c0">Apoi, &icirc;n urm&#259;toarea fereastr&#259; a programului de instalare,
-            specifica&#539;i o parol&#259; &#537;i memoriza&#539;i-o, deoarece va fi necesar&#259; mai t&acirc;rziu
-            atunci c&acirc;nd v&#259; conecta&#539;i la serverul MySQL:</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c13"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 736.50px; height: 466.64px;"><img
-                alt="" src="images/image11.png"
-                style="width: 736.50px; height: 466.64px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c0">Urm&#259;torul set de configura&#539;ii, pe care, de asemenea, &icirc;l
-            l&#259;s&#259;m la valorile implicite, indic&#259; faptul c&#259; serverul va fi pornit ca un serviciu
-            Windows la pornirea sistemului de operare:</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 581.50px; height: 364.18px;"><img
-                alt="" src="images/image19.png"
-                style="width: 581.50px; height: 364.18px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c6">&#536;i, pe ecranul urm&#259;tor, trebuie s&#259; aplica&#539;i toate
-            configura&#539;iile anterior instalate ap&#259;s&acirc;nd butonul &quot;</span><span
-            class="c4">Execute</span><span class="c0">&quot;:</span></p>
-    <p class="c1 c5"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 621.45px; height: 367.49px;"><img
-                alt="" src="images/image4.png"
-                style="width: 621.45px; height: 367.49px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5"><span class="c6">Dup&#259; aplicarea configura&#539;iilor, serverul MySQL va fi complet instalat
-            &#537;i configurat. Ap&#259;sa&#539;i butonul &quot;</span><span class="c4">Finish</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c6">Apoi, din nou, va ap&#259;rea o fereastr&#259; cu lista de produse preg&#259;tite
-            pentru configurare. Ap&#259;sa&#539;i butonul &quot;</span><span class="c4">Next</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c8 c22"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 747.47px; height: 411.48px;"><img
-                alt="" src="images/image10.png"
-                style="width: 747.47px; height: 411.48px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5"><span class="c6">&#536;i apoi vi se va solicita s&#259; configura&#539;i set&#259;rile pentru al
-            doilea produs - </span><span class="c4">MySQL Router</span><span class="c0">:</span></p>
-    <p class="c1 c5 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c8"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 531.50px; height: 398.63px;"><img
-                alt="" src="images/image17.png"
-                style="width: 531.50px; height: 398.63px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c8"><span class="c6">Nu vom face nici o schimbare, l&#259;s&acirc;nd toate set&#259;rile la valorile
-            implicite, &#537;i vom ap&#259;sa pe butonul &quot;</span><span class="c4">Finish</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c8"><span class="c6">Apoi, din nou, va ap&#259;rea o fereastr&#259; cu lista de produse
-            preg&#259;tite pentru configurare. Ap&#259;sa&#539;i butonul &quot;</span><span class="c4">Next</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c8"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 621.50px; height: 331.60px;"><img
-                alt="" src="images/image9.png"
-                style="width: 621.50px; height: 331.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c8"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#536;i apoi vi se va cere
-            s&#259; configura&#539;i set&#259;rile pentru al treilea produs - Samples and Examples (Exemple &#537;i
-            mostre pentru MySQL). &Icirc;n mod special, va trebui s&#259; specifica&#539;i instan&#539;a serverului
-            MySQL pentru a ob&#539;ine exemple pentru lucru cu MySQL. Instan&#539;a instalat&#259; va fi automat
-            bifat&#259; &icirc;n list&#259;. De asemenea, vi se va sugera s&#259; testa&#539;i conexiunile. &Icirc;n
-            c&acirc;mpul &quot;</span><span class="c4">Password</span><span class="c6">&quot;, introduce&#539;i parola
-            indicat&#259; anterior &#537;i ap&#259;sa&#539;i pe butonul &quot;</span><span class="c4">Check</span><span
-            class="c0">&quot;:</span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c5 c7"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 674.24px; height: 448.13px;"><img
-                alt="" src="images/image13.png"
-                style="width: 674.24px; height: 448.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c8 c16"><span class="c6">&Icirc;n cazul unei conexiuni de succes la MySQL, va ap&#259;rea un mesaj
-            eviden&#539;iat cu verde &quot;</span><span class="c4">Connection succeeded</span><span class="c6">&quot;.
-            Ap&#259;sa&#539;i pe butonul &quot;</span><span class="c4">Next</span><span class="c0">&quot;.</span></p>
-    <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1 c8 c16"><span class="c0">Pe ultima fereastr&#259;, va trebui s&#259; aplica&#539;i configura&#539;ia
-            pentru:</span></p>
-    <p class="c1 c8 c16"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 639.23px; height: 282.10px;"><img
-                alt="" src="images/image8.png"
-                style="width: 639.23px; height: 282.10px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c8 c16"><span class="c6">Continu&#259;m s&#259; vedem fereastra cu lista de produse instalate &#537;i
-            configurate. Ap&#259;sa&#539;i butonul &quot;</span><span class="c4">Next</span><span
-            class="c0">&quot;.</span></p>
-    <p class="c1 c8 c16 c2"><span class="c0"></span></p>
-    <p class="c1 c7"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 613.36px; height: 347.68px;"><img
-                alt="" src="images/image14.png"
-                style="width: 613.36px; height: 347.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c2 c7"><span class="c0"></span></p>
-    <p class="c1 c7"><span class="c6">Pe ultimul ecran, ve&#539;i vedea dou&#259; casete bifate: &quot;</span><span
-            class="c4">Start MySQL Workbench after setup</span><span class="c6">&quot; &#537;i &quot;</span><span
-            class="c4">Start MySQL Shell after setup</span><span class="c0">&quot;. Aceste casete permit pornirea
-            aplica&#539;iilor grafice &#537;i a clientului de consol&#259; pentru gestionarea serverului MySQL.
-            Debifa&#539;i aceste casete, deoarece momentan nu inten&#539;ion&#259;m s&#259; pornim aceste
-            programe.</span></p>
-    <p class="c1 c2 c7"><span class="c0"></span></p>
-    <p class="c1 c7"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 668.50px; height: 466.25px;"><img
-                alt="" src="images/image15.png"
-                style="width: 668.50px; height: 466.25px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
-    <p class="c1 c5 c8 c2"><span class="c0"></span></p>
-    <p class="c1 c20"><span class="c6">&#536;i ap&#259;sa&#539;i butonul &quot;</span><span
-            class="c4">Finish</span><span class="c0">&quot;. Gata! MySQL este complet instalat, configurat &#537;i
-            pornit. Acum suntem gata s&#259; &icirc;ncepem s&#259; lucr&#259;m cu el.</span></p>
+</p>
+<div class="image-container">
+<img src="images/image3.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Inițial, vi se va solicita să alegeți tipul de instalare. Selectați tipul &quot;Developer Default&quot;, care este suficient pentru nevoile de bază, și apăsați pe butonul &quot;Next&quot;(Pentru versiunile mai noi, posibil ca Developer Default să nu mai fie, înlocuiți acest tip cu Full):</p>
+<div class="image-container">
+<img src="images/image4.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Apoi, în etapa de instalare, installer-ul va afișa lista completă a componentelor care vor fi instalate. În cazul meu, arată așa:</p>
+<div class="image-container">
+<img src="images/image5.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Pentru a efectua instalarea tuturor componentelor, apăsați butonul &quot;Execute&quot;. După ce toate componentele sunt instalate, apăsați butonul &quot;Next&quot;.</p>
+<div class="image-container">
+<img src="images/image6.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Apoi, va apărea o fereastră cu lista de produse pregătite pentru configurare.</p>
+<div class="image-container">
+<img src="images/image7.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Apăsați pe butonul &quot;Next&quot;, iar apoi vi se va solicita să configurați anumite setări pentru serverul MySQL. În special, veți observa că pentru conectare se va utiliza protocolul TCP/IP și portul 3306. Lăsați toate aceste setări de conexiune și port la valorile implicite:</p>
+<div class="image-container">
+<img src="images/image8.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">La următorul pas, vi se va solicita să configurați metoda de autentificare. Lăsați setările la valorile implicite:</p>
+<div class="image-container">
+<img src="images/image9.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Apoi, în următoarea fereastră a programului de instalare, specificați o parolă și memorizați-o, deoarece va fi necesară mai târziu atunci când vă conectați la serverul MySQL:</p>
+<div class="image-container">
+<img src="images/image10.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Următorul set de configurații, pe care, de asemenea, îl lăsăm la valorile implicite, indică faptul că serverul va fi pornit ca un serviciu Windows la pornirea sistemului de operare:</p>
+<div class="image-container">
+<img src="images/image11.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">
+Și, pe ecranul următor, trebuie să aplicați toate configurațiile anterior instalate apăsând butonul &quot;Execute&quot;:</p>
+<div class="image-container">
+<img src="images/image12.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">După aplicarea configurațiilor, serverul MySQL va fi complet instalat și configurat. Apăsați butonul &quot;Finish&quot;.</p>
+<p class="paragraph">Apoi, din nou, va apărea o fereastră cu lista de produse pregătite pentru configurare. Apăsați butonul &quot;Next&quot;.</p>
+<div class="image-container">
+<img src="images/image13.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Și apoi vi se va solicita să configurați setările pentru al doilea produs - MySQL Router:</p>
+<div class="image-container">
+<img src="images/image14.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Nu vom face nici o schimbare, lăsând toate setările la valorile implicite, și vom apăsa pe butonul &quot;Finish&quot;.</p>
+<p class="paragraph">Apoi, din nou, va apărea o fereastră cu lista de produse pregătite pentru configurare. Apăsați butonul &quot;Next&quot;.</p>
+<div class="image-container">
+<img src="images/image15.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Și apoi vi se va cere să configurați setările pentru al treilea produs - Samples and Examples (Exemple și mostre pentru MySQL). În mod special, va trebui să specificați instanța serverului MySQL pentru a obține exemple pentru lucru cu MySQL. Instanța instalată va fi automat bifată în listă. De asemenea, vi se va sugera să testați conexiunile. În câmpul &quot;Password&quot;, introduceți parola indicată anterior și apăsați pe butonul &quot;Check&quot;:</p>
+<div class="image-container">
+<img src="images/image16.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">În cazul unei conexiuni de succes la MySQL, va apărea un mesaj evidențiat cu verde &quot;Connection succeeded&quot;. Apăsați pe butonul &quot;Next&quot;.</p>
+<p class="paragraph">Pe ultima fereastră, va trebui să aplicați configurația pentru:</p>
+<div class="image-container">
+<img src="images/image17.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Continuăm să vedem fereastra cu lista de produse instalate și configurate. Apăsați butonul &quot;Next&quot;.</p>
+<div class="image-container">
+<img src="images/image18.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Pe ultimul ecran, veți vedea două casete bifate: &quot;Start MySQL Workbench after setup&quot; și &quot;Start MySQL Shell after setup&quot;. Aceste casete permit pornirea aplicațiilor grafice și a clientului de consolă pentru gestionarea serverului MySQL. Debifați aceste casete, deoarece momentan nu intenționăm să pornim aceste programe.</p>
+<div class="image-container">
+<img src="images/image19.png" alt="" class="responsive-image">
+</div>
+<p class="paragraph">Și apăsați butonul &quot;Finish&quot;. Gata! MySQL este complet instalat, configurat și pornit. Acum suntem gata să începem să lucrăm cu el.</p>
+    </div>
 </body>
-
 </html>
