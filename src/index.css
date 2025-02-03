@@ -33,7 +33,7 @@ body {
 }
 
 .document-container {
-  width: 80%;
+  width:100%;
   margin: 0 auto;
   padding: 20px;
   background: #fff;
@@ -73,27 +73,40 @@ body {
 }
 
 /* General Styles for Code Snippets */
-.code-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 .code-inline {
   background: #2d2d2d;
   color: #ffffff;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.95em;
   border-radius: 4px;
-  margin: 0;
-  overflow-x: auto;
+  margin: 10px 0;
+  padding: 10px;
   box-sizing: border-box;
+  white-space: pre;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #2d2d2d;
 }
 
-@media (max-width: 768px) {
-  .code-inline {
-    max-width: 100%;
-  }
+/* Stilizare scrollbar pentru Chrome, Edge, Safari */
+.code-inline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code-inline::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.code-inline::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.code-inline:active {
+  cursor: grabbing;
 }
 
 .ide-style {

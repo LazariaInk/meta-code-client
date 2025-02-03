@@ -16,6 +16,7 @@ function ContentNavigation() {
   const [currentLessonIndex, setCurrentLessonIndex] = useState(-1);
   const [error, setError] = useState(null);
   const menuRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     console.log("Lessons:", lessons);
@@ -69,6 +70,7 @@ function ContentNavigation() {
   };
 
   const fetchLessonContent = async () => {
+    setIsLoading(true);
     try {
       const adjustedChapterName = chapterName.replace(/_/g, ' ');
       const adjustedLessonName = lessonName.replace(/_/g, ' ');
@@ -87,6 +89,8 @@ function ContentNavigation() {
     } catch (err) {
       console.error("Error loading lesson content:", err);
       setError("Unable to load lesson content.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -144,14 +148,17 @@ function ContentNavigation() {
           </div>
         </div>
         <div className={styles.middle_contant}>
-          {error ? (
-            <div className="alert alert-danger">{error}</div>
+          {isLoading ? (
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
           ) : (
             <div
               className={styles.lesson_content}
               dangerouslySetInnerHTML={{ __html: lessonContent }}
             />
           )}
+
         </div>
         <div className={styles.right_ads}>
           <SponsorTable />
