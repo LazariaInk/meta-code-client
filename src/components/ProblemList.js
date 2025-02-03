@@ -187,15 +187,15 @@ function ProblemList() {
       <div className={styles.explanatoryText}>
         <h2>Pregătire pentru Succes în Programare</h2>
         <p>
-          Descoperă probleme din <strong>Căutare Binara</strong>, 
-          <strong> Structuri de Date</strong>, <strong>Recursie</strong>, 
+          Descoperă probleme din <strong>Căutare Binara</strong>,
+          <strong> Structuri de Date</strong>, <strong>Recursie</strong>,
           și <strong>Programare Dinamică</strong> pentru olimpiade și interviuri FAANG.
         </p>
-        
+
       </div>
 
       <ProblemPopup problem={selectedProblem} onClose={closeProblemPopup} />
-      
+
     </div>
   );
 }

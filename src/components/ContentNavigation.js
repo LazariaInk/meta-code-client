@@ -94,20 +94,6 @@ function ContentNavigation() {
     }
   };
 
-  const handleNextLesson = () => {
-    if (currentLessonIndex < lessons.length - 1) {
-      const nextLesson = lessons[currentLessonIndex + 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(nextLesson)}`);
-    }
-  };
-
-  const handlePreviousLesson = () => {
-    if (currentLessonIndex > 0) {
-      const previousLesson = lessons[currentLessonIndex - 1];
-      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(previousLesson)}`);
-    }
-  };
-
   const toggleMenu = () => {
     menuRef.current?.classList.toggle(styles.menushow);
   };

@@ -18,7 +18,7 @@ function HomeComponent() {
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
 
   useEffect(() => {
-    setTopics(topicsData.topics); // Set topics from topic.json
+    setTopics(topicsData.topics);
   }, []);
 
   const handleTopicClick = async (topic) => {
@@ -53,28 +53,27 @@ function HomeComponent() {
     autoplaySpeed: 4000,
   };
 
-
   const newsItems = [
     {
       title: "Limbajul de Programare DART",
-      description: 
+      description:
         "Dart este limbajul perfect pentru dezvoltarea aplicațiilor rapide și scalabile, utilizat intens pentru framework-ul Flutter. În curând, pe platforma noastră vor fi disponibile lecții detaliate care te vor ghida pas cu pas să stăpânești acest limbaj modern și versatil. Rămâi conectat pentru a descoperi totul despre Dart și cum îl poți folosi pentru proiectele tale!",
       image: "https://dart.dev/assets/img/logo_lockup_dart_horizontal.png",
     },
     {
       title: "Cursuri Java libGDX pe YouTube",
-      description: 
+      description:
         "LibGDX este framework-ul de top pentru dezvoltarea jocurilor 2D și 3D în Java. Vrei să creezi jocuri captivante? Urmărește-ne pe YouTube, unde vom publica lecții detaliate despre utilizarea acestui framework, de la configurare la dezvoltarea completă a unui joc. Alătură-te comunității noastre și învață să transformi ideile în realitate!",
       image: "https://libgdx.com/assets/brand/logo.svg",
     },
     {
       title: "Exerciții Noi în Secțiunea Exerciții",
-      description: 
+      description:
         "Practicarea problemelor de programare este cel mai bun mod de a-ți dezvolta abilitățile și de a deveni un expert. În curând, vom adăuga o gamă variată de exerciții practice pentru diferite limbaje de programare, inclusiv Python, Java, și multe altele. Pregătește-te să rezolvi probleme provocatoare care te vor ajuta să înveți mai eficient!",
       image: "https://via.placeholder.com/800x400?text=More+Exercises+Coming+Soon",
     },
   ];
-  
+
   const topicDescriptions = {
     "C-sharp": "Explorează C# pentru aplicații de software, jocuri și web. Învață fundamentele limbajului și îmbunătățește-ți abilitățile prin practică.",
     "HTML": "Începe să construiești pagini web cu HTML, totul în limba română. Acest limbaj esențial îți oferă control complet asupra structurii și stilizării site-urilor.",
@@ -103,7 +102,7 @@ function HomeComponent() {
       <TopicsNavigation />
 
       <Container fluid className={styles.home_container}>
-        {/* Hero Section */}
+
         <Row className={`${styles.hero_section} ${styles.shadow}`}>
           <div className={styles.hero_content}>
             <h1 className={styles.home_title}>Învățare Gratuită și Structurată de Programare în Limba Română</h1>
@@ -113,7 +112,6 @@ function HomeComponent() {
           </div>
         </Row>
 
-        {/* Topics Section */}
         <Row id="topics" className={styles.featured_section}>
           <h2 className={styles.home_subtitle}>Limbajele Noastre de Programare (în Română)</h2>
           <p className={styles.section_intro}>Alege dintre limbajele și tehnologiile disponibile și începe să înveți programare pas cu pas, în limba română. Fiecare curs este structurat pentru o învățare clară și eficientă, cu lecții ușor de urmat.</p>
@@ -127,30 +125,28 @@ function HomeComponent() {
           ))}
         </Row>
 
-
         <br></br>
- <h2 className={styles.slider_title}>Noutăți de pe Platforma Noastră</h2>
+        <h2 className={styles.slider_title}>Noutăți de pe Platforma Noastră</h2>
         <Row className={styles.news_slider}>
-        <Slider {...sliderSettings}>
-          {newsItems.map((item, index) => (
-            <div key={index} className={styles.slider_item}>
-              <div
-                className={styles.slider_background}
-                style={{
-                  backgroundImage: `url(${item.image})`,
-                }}
-              >
-                <div className={styles.slider_text}>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
+          <Slider {...sliderSettings}>
+            {newsItems.map((item, index) => (
+              <div key={index} className={styles.slider_item}>
+                <div
+                  className={styles.slider_background}
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                  }}
+                >
+                  <div className={styles.slider_text}>
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </Row>
+            ))}
+          </Slider>
+        </Row>
 
-        {/* Additional Info Section */}
         <Row className={styles.info_section}>
           <Col md={6} className={styles.info_content}>
             <h3 style={{ color: '#383E42' }}>De ce să alegi platforma noastră în limba română?</h3>
@@ -158,7 +154,6 @@ function HomeComponent() {
           </Col>
         </Row>
 
-        {/* Social Links and Footer */}
         <SocialLinks />
         <PublicFooter fullWidth={true} />
       </Container>

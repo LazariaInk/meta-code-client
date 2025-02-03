@@ -5,12 +5,12 @@ import Tabs from 'react-bootstrap/Tabs';
 import Button from 'react-bootstrap/Button';
 
 function ProblemPopup({ problem, onClose }) {
-  const [activeKey, setActiveKey] = useState('problemContent'); // Tracks active tab
+  const [activeKey, setActiveKey] = useState('problemContent');
 
   return (
     <Modal
       show={!!problem}
-      onHide={onClose} // Trigger onClose when clicking outside or pressing the close button
+      onHide={onClose}
       size="lg"
       centered
     >

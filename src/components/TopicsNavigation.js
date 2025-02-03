@@ -18,7 +18,7 @@ function TopicsNavigation() {
   const decodeNameFromURL = (name) => name ? name.replace(/_/g, ' ') : '';
 
   useEffect(() => {
-    setTopics(topicsData.topics); // Set topics from local JSON file
+    setTopics(topicsData.topics);
   }, []);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function TopicsNavigation() {
 
   const handleTopicClick = async (topicName) => {
     try {
-      // Dynamically import JSON data for the selected topic
+
       const topicData = await import(`../database/${topicName}.json`);
       const chapters = Object.keys(topicData.default);
 

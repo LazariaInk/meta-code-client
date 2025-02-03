@@ -8,6 +8,8 @@ body {
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
 .container,
 .container-fluid,
 .container-lg,
@@ -23,7 +25,6 @@ body {
   margin-right: auto;
 }
 
-/* Reset and Base Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -33,7 +34,7 @@ body {
 }
 
 .document-container {
-  width:100%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   background: #fff;
@@ -42,12 +43,14 @@ body {
 }
 
 .main-title {
+  font-weight: bold;
   font-size: 2.5em;
   color: #2c3e50;
   margin-bottom: 20px;
 }
 
 .subtitle {
+  font-weight: bold;
   font-size: 1.8em;
   color: #34495e;
   margin-top: 20px;
@@ -72,7 +75,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* General Styles for Code Snippets */
 .code-inline {
   background: #2d2d2d;
   color: #ffffff;
@@ -91,7 +93,6 @@ body {
   scrollbar-color: #888 #2d2d2d;
 }
 
-/* Stilizare scrollbar pentru Chrome, Edge, Safari */
 .code-inline::-webkit-scrollbar {
   height: 8px;
 }

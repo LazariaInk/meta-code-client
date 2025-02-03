@@ -36,7 +36,7 @@ function PublicFooter({ fullWidth }) {
       <footer className='footer'>
         <div className={styles.footer_container}>
           <div className='row'>
-            {/* Despre Secțiune */}
+
             <div className='col-md-4'>
               <h3 className={styles.footerTitle}>Despre Noi</h3>
               <p className={styles.footerText}>
@@ -45,7 +45,6 @@ function PublicFooter({ fullWidth }) {
               </p>
             </div>
 
-            {/* Donează Secțiune */}
             <div className='col-md-4'>
               <h3 className={styles.footerTitle}>Susține Platforma</h3>
               <p className={styles.footerText}>
@@ -57,7 +56,6 @@ function PublicFooter({ fullWidth }) {
               </button>
             </div>
 
-            {/* Contact Secțiune */}
             <div className={`col-md-4 ${styles.footerContact}`}>
               <h3 className={styles.footerTitle}>Contactează-ne</h3>
               <p className={styles.footerText}>
@@ -70,7 +68,6 @@ function PublicFooter({ fullWidth }) {
 
         <hr />
 
-        {/* Informații Proprietar */}
         <div className='row'>
           <div className={`col-md-12 ${styles.footerOwnerInfo}`}>
             <p className={styles.footerText}>
