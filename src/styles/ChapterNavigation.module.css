@@ -85,22 +85,68 @@
 }
 
 @media (max-width: 1300px) {
-    .lessons_menu {
+    .lessons_menu { 
         position: fixed;
-        top: 20;
         left: 0;
         width: 100vw;
         height: 100vh;
-        overflow-y: auto;
-        z-index: 1000;
         background-color: #f1f1f1;
-       margin-top:-11px;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
     }
+
+    .lessons_menu.open {
+        transform: translateY(0);
+    }
+
 
     .chapter {
         padding-bottom: 5px;
         font-size: 16px;
         font-weight: bold !important;
     }
-    
+
+    .mobileHeader {
+        display: none;
+        width: 100%;
+        background-color: #a09e9e;
+        color: white;
+        position: fixed;
+        top: 150px;
+        left: 0;
+        z-index: 1100;
+    }
+
+    .mobileMenuButton {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    @media (max-width: 1300px) {
+        .mobileHeader {
+            display: block;
+        }
+
+        .lessons_menu { 
+            position: fixed;
+            top:176px;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            background-color: #f1f1f1;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+            overflow-y: auto;
+
+        }
+
+        .lessons_menu.open {
+            transform: translateY(0);
+        }
+    }
+
 }

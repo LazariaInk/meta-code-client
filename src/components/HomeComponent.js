@@ -10,6 +10,7 @@ import TopicsNavigation from './TopicsNavigation';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ChapterNavigation from './ChapterNavigation';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
@@ -156,6 +157,8 @@ function HomeComponent() {
 
         <SocialLinks />
         <PublicFooter fullWidth={true} />
+        <TopicsNavigation />
+        <TopicsNavigation />
       </Container>
     </>
   );

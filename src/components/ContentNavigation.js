@@ -19,12 +19,6 @@ function ContentNavigation() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    console.log("Lessons:", lessons);
-    console.log("Current lesson name:", lessonName);
-    console.log("Current lesson index:", currentLessonIndex);
-  }, [lessons, lessonName, currentLessonIndex]);
-
-  useEffect(() => {
     if (topicName && chapterName) {
       fetchLessonList();
     }
@@ -47,16 +41,10 @@ function ContentNavigation() {
 
   const fetchLessonList = async () => {
     try {
-      console.log(`Fetching lessons for topic: ${topicName}, chapter: ${chapterName}`);
       const response = await import(`../database/${topicName}.json`);
-      console.log("JSON Response:", response);
-
       const lessons = response.default[chapterName];
-      console.log("Lessons from JSON:", lessons);
-
       if (lessons && lessons.length > 0) {
         setLessons(lessons);
-
         if (!lessonName) {
           navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessons[0])}`);
         }
@@ -64,7 +52,6 @@ function ContentNavigation() {
         setError("No lessons found for this chapter.");
       }
     } catch (error) {
-      console.error("Error loading chapter lessons:", error);
       setError("Unable to load lessons.");
     }
   };
@@ -75,10 +62,8 @@ function ContentNavigation() {
       const adjustedChapterName = chapterName.replace(/_/g, ' ');
       const adjustedLessonName = lessonName.replace(/_/g, ' ');
       const filePath = `/lessons/${topicName}/${adjustedChapterName}/${adjustedLessonName}/index.html`;
-
       const response = await fetch(filePath);
       if (!response.ok) throw new Error("File not found");
-
       let htmlContent = await response.text();
       htmlContent = htmlContent.replace(
         /src="(?!http)([^"]+)"/g,
@@ -87,68 +72,28 @@ function ContentNavigation() {
       setLessonContent(htmlContent);
       setError(null);
     } catch (err) {
-      console.error("Error loading lesson content:", err);
       setError("Unable to load lesson content.");
     } finally {
       setIsLoading(false);
     }
   };
 
-  const toggleMenu = () => {
-    menuRef.current?.classList.toggle(styles.menushow);
-  };
-
-  const closeMenu = () => {
-    menuRef.current?.classList.remove(styles.menushow);
-  };
-
   return (
-    <div className={styles.appContainer}>
-      <TopicsNavigation />
-      <div className={styles.content_container}>
-        <div className={styles.left_menu}>
-          <div className={`${styles.sidenav} ${styles.chapters_content}`}>
-            <div className={styles.left}>
-              <div className={styles.menu_container}>
-                <div
-                  className={styles.hamburger_icon}
-                  onClick={toggleMenu}
-                  ref={menuRef}
-                >
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div ref={menuRef} className={styles.menu}>
-                  <ChapterNavigation
-                    topicName={topicName}
-                    onLessonClick={(chapterName, lessonName) => {
-                      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessonName)}`);
-                      closeMenu();
-                    }}
-                    menuRef={menuRef}
-                  />
-                </div>
-              </div>
-            </div>
+    <div className={styles.layoutContainer}>
+      <TopicsNavigation/>
+      <div className={styles.sidebar}><ChapterNavigation topicName={topicName} onLessonClick={(chapterName, lessonName) => navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessonName)}`)} /></div>
+      <div className={styles.contentContainer}>
+        {isLoading ? (
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
-        </div>
-        <div className={styles.middle_contant}>
-          {isLoading ? (
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-          ) : (
-            <div
-              className={styles.lesson_content}
-              dangerouslySetInnerHTML={{ __html: lessonContent }}
-            />
-          )}
-
-        </div>
-        <div className={styles.right_ads}>
-          <SponsorTable />
-        </div>
+        ) : (
+          <div className={styles.lessonContent} dangerouslySetInnerHTML={{ __html: lessonContent }} />
+        )}
+      </div>
+      <div className={styles.adsSection}>
+        <div className={styles.ads}>Google Ads Here</div>
+        <SponsorTable />
       </div>
       <PublicFooter fullWidth={false} />
     </div>
