@@ -4,7 +4,7 @@ import TopicsNavigation from './TopicsNavigation';
 import ChapterNavigation from './ChapterNavigation';
 import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './../styles/PublicApp.module.css';
+import styles from './../styles/ContentNavigation.module.css';
 import PublicFooter from './PublicFooter';
 import SponsorTable from './SponsorTable';
 
@@ -94,63 +94,31 @@ function ContentNavigation() {
     }
   };
 
-  const toggleMenu = () => {
-    menuRef.current?.classList.toggle(styles.menushow);
-  };
-
   const closeMenu = () => {
     menuRef.current?.classList.remove(styles.menushow);
   };
 
   return (
     <div className={styles.appContainer}>
-      <TopicsNavigation />
-      <div className={styles.content_container}>
-        <div className={styles.left_menu}>
-          <div className={`${styles.sidenav} ${styles.chapters_content}`}>
-            <div className={styles.left}>
-              <div className={styles.menu_container}>
-                <div
-                  className={styles.hamburger_icon}
-                  onClick={toggleMenu}
-                  ref={menuRef}
-                >
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div ref={menuRef} className={styles.menu}>
-                  <ChapterNavigation
-                    topicName={topicName}
-                    onLessonClick={(chapterName, lessonName) => {
-                      navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessonName)}`);
-                      closeMenu();
-                    }}
-                    menuRef={menuRef}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className={styles.leftMenu}><ChapterNavigation
+        topicName={topicName}
+        onLessonClick={(chapterName, lessonName) => {
+          navigate(`/topics/${topicName}/chapters/${chapterName}/lessons/${normalizeString(lessonName)}`);
+          closeMenu();
+        }}
+        menuRef={menuRef}></ChapterNavigation></div>
+      <div className={styles.content}>{isLoading ? (
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
-        <div className={styles.middle_contant}>
-          {isLoading ? (
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-          ) : (
-            <div
-              className={styles.lesson_content}
-              dangerouslySetInnerHTML={{ __html: lessonContent }}
-            />
-          )}
-
-        </div>
-        <div className={styles.right_ads}>
-          <SponsorTable />
-        </div>
-      </div>
-      <PublicFooter fullWidth={false} />
+      ) : (
+        <div
+          className={styles.lesson_content}
+          dangerouslySetInnerHTML={{ __html: lessonContent }}
+        />
+      )}</div>
+      <div className={styles.rightMenu}><SponsorTable /></div>
+      <footer className={styles.footer}><PublicFooter/></footer>
     </div>
   );
 }

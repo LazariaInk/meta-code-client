@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import DonationPopup from './DonationPopup';
 import styles from '../styles/Navigation.module.css';
+import TopicsNavigation from './TopicsNavigation';
 
 function PublicNavigation() {
   const [isDonationPopupOpen, setDonationPopupOpen] = useState(false);
@@ -68,6 +69,7 @@ function PublicNavigation() {
           </li>
         </ul>
       </div>
+      <TopicsNavigation/>
       {isDonationPopupOpen && <DonationPopup onClose={closeDonationPopup} />}
     </div>
   );

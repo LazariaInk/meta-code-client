@@ -1,8 +1,7 @@
-// ChapterNavigation.js
-
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styles from '../styles/ChapterNavigation.module.css';
+import { Menu, X } from 'lucide-react';
 
 const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
   const [error, setError] = useState(null);
@@ -11,11 +10,9 @@ const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
   const [lessons, setLessons] = useState({});
   const [localActiveChapter, setLocalActiveChapter] = useState(activeChapter || null);
   const [localActiveLesson, setLocalActiveLesson] = useState(activeLesson || null);
-  const { topicName, chapterName } = useParams();
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { topicName, chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
   const navigate = useNavigate();
-  const { chapterName: chapterFromURL, lessonName: lessonFromURL } = useParams();
-  const location = useLocation();
 
   const encodeNameForURL = (name) => (name ? name.replace(/ /g, '_') : '');
   const decodeNameFromURL = (name) => (name ? name.replace(/_/g, ' ') : '');
@@ -33,7 +30,6 @@ const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
         setIsLoaded(true);
       }
     };
-
     loadData();
   }, [topicName]);
 
@@ -59,18 +55,14 @@ const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
     if (chapterFromURL && lessonFromURL) {
       const decodedChapter = decodeNameFromURL(chapterFromURL);
       const decodedLesson = decodeNameFromURL(lessonFromURL);
-
-      if (localActiveChapter !== decodedChapter) setLocalActiveChapter(decodedChapter);
-      if (localActiveLesson !== decodedLesson) setLocalActiveLesson(decodedLesson);
-
+      setLocalActiveChapter(decodedChapter);
+      setLocalActiveLesson(decodedLesson);
       if (!lessons[decodedChapter]) fetchLessons(decodedChapter);
     }
   }, [chapterFromURL, lessonFromURL]);
 
   const handleChapterClick = (chapterName) => {
-    if (!lessons[chapterName]) {
-      fetchLessons(chapterName);
-    }
+    if (!lessons[chapterName]) fetchLessons(chapterName);
     setLocalActiveChapter(chapterName);
   };
 
@@ -78,13 +70,11 @@ const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
     onLessonClick(chapterName, lessonName);
     setLocalActiveLesson(lessonName);
     setLocalActiveChapter(chapterName);
-
     navigate(
-      `/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(
-        chapterName
-      )}/lessons/${encodeNameForURL(lessonName)}`,
+      `/topics/${encodeNameForURL(topicName)}/chapters/${encodeNameForURL(chapterName)}/lessons/${encodeNameForURL(lessonName)}`,
       { replace: true }
     );
+    setIsMenuOpen(false);
   };
 
   if (error) return <div>Error: {error.message}</div>;
@@ -92,38 +82,28 @@ const ChapterNavigation = ({ onLessonClick, activeChapter, activeLesson }) => {
 
   return (
     <div>
-      <ul className={`${styles.lessons_menu} ${styles.tree}`}>
+      <div className={styles.mobileHeader}>
+        <div className={styles.mobileMenuButton} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </div>
+      </div>
+      <ul className={`${styles.lessons_menu} ${styles.tree} ${isMenuOpen ? styles.open : ''}`}>
         {chapters.map((chapter) => (
           <li
             key={chapter}
-            className={`${styles.chapter} ${
-              localActiveChapter === chapter ||
-              (lessons[chapter] && lessons[chapter].includes(localActiveLesson))
-                ? styles.activeChapter
-                : ''
-            }`}
+            className={`${styles.chapter} ${localActiveChapter === chapter ? styles.activeChapter : ''}`}
             onClick={() => handleChapterClick(chapter)}
           >
             {chapter}
-            <ul
-              style={{
-                display: localActiveChapter === chapter ||
-                  (lessons[chapter] && lessons[chapter].includes(localActiveLesson))
-                  ? 'block'
-                  : 'none',
-              }}
-            >
+            <ul style={{ display: localActiveChapter === chapter ? 'block' : 'none' }}>
               {lessons[chapter] &&
                 lessons[chapter].map((lesson) => (
                   <li
                     key={lesson}
-                    className={`${styles.lesson} ${localActiveLesson === lesson ? styles.activeLesson : ''
-                    }`}
+                    className={`${styles.lesson} ${localActiveLesson === lesson ? styles.activeLesson : ''}`}
                     onClick={() => handleLessonClick(chapter, lesson)}
                   >
-                    <a className={styles.lessonLink} href="#">
-                      {lesson}
-                    </a>
+                    <a className={styles.lessonLink} href="#">{lesson}</a>
                   </li>
                 ))}
             </ul>

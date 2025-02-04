@@ -1,0 +1,50 @@
+.appContainer {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto;
+    gap: 10px;
+    min-height: 100vh;
+    padding: 10px;
+  }
+  
+  .leftMenu {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top:80px;
+  }
+  
+  .content {
+    background: #fff;
+    padding: 20px;
+    margin-top:120px;
+  }
+  
+  .rightMenu {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top:120px;
+  }
+  
+  .footer {
+    grid-column: 1 / -1;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media (max-width: 1300px) {
+  
+    .appContainer {
+      grid-template-columns: auto;
+    }
+  
+    .rightMenu {
+      grid-column: 1;
+    }
+  
+    .footer {
+      grid-column: 1;
+    }
+  }
+  

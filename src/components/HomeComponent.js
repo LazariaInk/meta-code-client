@@ -99,7 +99,6 @@ function HomeComponent() {
           content="cursuri programare gratuite în română, învățare programare în limba română, Java, Python, SQL, PHP, educație online, comunitate de învățare, HTML, CSS, JavaScript, Dart"
         />
       </Helmet>
-      <TopicsNavigation />
 
       <Container fluid className={styles.home_container}>
 
@@ -156,6 +155,8 @@ function HomeComponent() {
 
         <SocialLinks />
         <PublicFooter fullWidth={true} />
+        <TopicsNavigation />
+        <TopicsNavigation />
       </Container>
     </>
   );
