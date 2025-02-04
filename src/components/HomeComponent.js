@@ -10,7 +10,6 @@ import TopicsNavigation from './TopicsNavigation';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ChapterNavigation from './ChapterNavigation';
 
 function HomeComponent() {
   const [topics, setTopics] = useState([]);
@@ -100,7 +99,6 @@ function HomeComponent() {
           content="cursuri programare gratuite în română, învățare programare în limba română, Java, Python, SQL, PHP, educație online, comunitate de învățare, HTML, CSS, JavaScript, Dart"
         />
       </Helmet>
-      <TopicsNavigation />
 
       <Container fluid className={styles.home_container}>
 
