@@ -143,3 +143,24 @@ body {
     line-height: 1.6;
   }
 }
+
+@media (max-width: 768px) {
+  .code-inline {
+    font-size: 0.85em;
+    padding: 8px;
+    max-width: 90vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 375px) {
+  .code-inline {
+    font-size: 0.75em;
+    padding: 6px;
+    max-width: 85vw;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
