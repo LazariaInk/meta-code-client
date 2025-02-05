@@ -116,7 +116,7 @@
         position: fixed;
         top: 150px;
         left: 0;
-        z-index: 1100;
+        z-index: 500;
     }
 
     .mobileMenuButton {
