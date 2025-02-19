@@ -57,14 +57,14 @@ function PublicNavigation() {
         </div>
         <ul className={`${styles.nav_links} ${isNavOpen ? styles.nav_active : ''}`}>
           <li>
-            <Link to='/' onClick={closeNav}>Acasa</Link>
+            <Link to='/' onClick={closeNav}>Acasă</Link>
           </li>
           <li>
             <Link to='/problems' onClick={closeNav}>Exerciții</Link>
           </li>
           <li>
             <a href='#' onClick={() => { openDonationPopup(); closeNav(); }}>
-              Doneaza
+              Donează
             </a>
           </li>
         </ul>
