@@ -15,7 +15,7 @@
   
   .content {
     background: #fff;
-    margin-top:120px;
+    margin-top:130px;
   }
   
   .rightMenu {
@@ -33,6 +33,10 @@
   }
   
   @media (max-width: 1300px) {
+
+    .content{
+      margin-top: 50px;
+    }
   
     .appContainer {
       grid-template-columns: auto;
